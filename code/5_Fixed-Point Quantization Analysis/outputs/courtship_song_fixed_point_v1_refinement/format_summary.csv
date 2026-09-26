@@ -1,0 +1,5 @@
+format_name,max_key_response_error_percent,tuning_direction_agreements,tuning_direction_comparisons,intervention_direction_agreements,intervention_direction_comparisons,state_saturation_events,accumulator_saturation_events,acceptance_pass,state_bits,state_frac,weight_bits,weight_frac,decay_bits,decay_frac,accumulator_bits,weight_quantization_saturations,decay_quantization_saturations
+q34_refined,5.660377358490566,8,8,24,24,0,0,False,34,22,34,28,32,30,62,0,0
+q32_refined,18.181818181818183,8,8,24,24,0,0,False,32,20,32,26,32,30,60,0,0
+q30_refined,5.660377358490566,8,8,24,24,0,0,False,30,18,30,24,30,28,58,0,0
+q28_refined,54.716981132075475,8,8,22,24,0,0,False,28,16,28,22,28,26,56,0,0

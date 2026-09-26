@@ -1,0 +1,36 @@
+{
+  "name": "courtship_song_v0",
+  "description": "MaleCNS v1.0 auditory courtship-song sensorimotor candidate subgraph.",
+  "data": {
+    "annotations": "../../../support/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+    "neurotransmitters": "../../../support/body-neurotransmitters-male-cns-v1.0.feather",
+    "connectivity": "../../../support/connectome-weights-male-cns-v1.0-minconf-0.5.feather"
+  },
+  "selectors": {
+    "inputs": [
+      {"field": "type", "pattern": "^JO-(?:A|B)", "label": "auditory Johnston's-organ neurons"}
+    ],
+    "relays": [
+      {"field": "type", "pattern": "vPN1", "label": "vPN1 auditory projection neurons"},
+      {"field": "type", "pattern": "^pC1", "label": "pC1 courtship integration neurons"}
+    ],
+    "outputs": [
+      {"field": "type", "pattern": "^pIP10$", "label": "pIP10 descending neurons"},
+      {"field": "type", "pattern": "^pMP2$", "label": "pMP2 descending neurons"}
+    ]
+  },
+  "extraction": {
+    "max_hops": 4,
+    "min_synapse_weight": 5,
+    "max_frontier_nodes": 250000,
+    "require_annotated_endpoints": true,
+    "batch_rows": 2000000
+  },
+  "fpga_estimate": {
+    "neuron_record_bits": 64,
+    "synapse_record_bits": 64,
+    "offset_entry_bits": 32,
+    "bram36_bits": 36864,
+    "alignment_bits": 64
+  }
+}

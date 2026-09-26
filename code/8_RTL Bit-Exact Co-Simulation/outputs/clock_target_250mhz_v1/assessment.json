@@ -1,0 +1,12 @@
+{
+  "target_clock_mhz": 250.0,
+  "clock_period_ns": 4.0,
+  "maximum_cycles_per_timestep": 167668,
+  "observed_worst_case_time_us": 670.672,
+  "deadline_us": 1000.0,
+  "deadline_slack_us": 329.328,
+  "deadline_utilization_percent": 67.0672,
+  "minimum_clock_mhz": 167.668,
+  "observed_budget_pass": true,
+  "timing_closure_claimed": false
+}

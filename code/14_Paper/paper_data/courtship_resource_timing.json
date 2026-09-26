@@ -1,0 +1,13 @@
+{
+  "clock_mhz": 200,
+  "lut": 11912,
+  "ff": 4093,
+  "ramb36e2": 589,
+  "ramb18e2": 3,
+  "dsp48e2": 4,
+  "setup_wns_ns": 0.073,
+  "hold_whs_ns": 0.03,
+  "setup_user_uncertainty_ns": 0.2,
+  "hold_user_uncertainty_ns": 0.05,
+  "bitstream_sha256": "0dfb8e09e9509c40cf5f48e616ddd3b31ccc279d03946446fbc21e80523a53a9"
+}

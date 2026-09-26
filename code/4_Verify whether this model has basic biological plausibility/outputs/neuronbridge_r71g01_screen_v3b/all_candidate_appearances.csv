@@ -1,0 +1,4 @@
+Number,Neuron ID,Score,Matched Pixels,Library,Sex,Alignment Space,Anatomical Area,Neuron Type,Neuron Instance,source_file,bodyId
+1466,male-cns:v0.9:10217,2729.3433,391,FlyEM_Male_CNS_Brain_v0.9,m,JRC2018_Unisex_20x_HR,Brain,,,20191213_64_H1_Channel2.csv,10217
+2135,male-cns:v0.9:10217,1101.2965,237,FlyEM_Male_CNS_Brain_v0.9,m,JRC2018_Unisex_20x_HR,Brain,pC1x_b,pC1x_b_L,20191213_64_H4_Channel3.csv,10217
+3032,male-cns:v0.9:10217,985.41724,240,FlyEM_Male_CNS_Brain_v0.9,m,JRC2018_Unisex_20x_HR,Brain,,,20191213_64_H4_Channel2.csv,10217

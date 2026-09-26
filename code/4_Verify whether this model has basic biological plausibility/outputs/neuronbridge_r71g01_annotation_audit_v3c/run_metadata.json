@@ -1,0 +1,31 @@
+{
+  "verdict": "BROAD_PC1_RECOVERY_WITH_PATH_LIMIT_EXCLUSIONS",
+  "model_freeze_recommended": false,
+  "source_table_count": 18,
+  "source_result_rows": 69110,
+  "male_cns_result_rows": 21930,
+  "unique_male_cns_bodyIds": 2797,
+  "v09_to_v10_joined_rows": 21930,
+  "v09_to_v10_unmatched_rows": 0,
+  "pc1_result_rows_after_v10_enrichment": 1372,
+  "unique_pc1_search_candidates": 148,
+  "pc1_search_candidates_in_frozen_ir": 107,
+  "pc1_search_candidates_outside_frozen_ir": 41,
+  "all_v10_pc1_annotations": 156,
+  "extraction_reason_counts": {
+    "selected": 112,
+    "distance_sum_exceeds_limit": 44
+  },
+  "bodyId_10217": {
+    "type": "pC1x_b",
+    "input_distance": 3,
+    "output_distance": 2,
+    "distance_sum": 5,
+    "max_hops": 4,
+    "reason": "distance_sum_exceeds_limit",
+    "found_in_search": true,
+    "best_rank": 1466
+  },
+  "protocol_lock_sha256": "365723e1154416bfb049a942095d87adb96578d0219928ee5d007f5a09b408bc",
+  "frozen_inputs_unchanged": true
+}

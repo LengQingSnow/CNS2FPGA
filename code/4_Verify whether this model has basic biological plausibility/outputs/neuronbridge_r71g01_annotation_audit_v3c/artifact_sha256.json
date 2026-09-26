@@ -1,0 +1,11 @@
+{
+  "all_malecns_hits_enriched.csv": "d23d95d91066e1bdc52b1afa9141ce3e74e203bd28a220476f2ab0f98dcb10e8",
+  "all_pc1_extraction_status.csv": "8844782e2ef92989fe95b9e468c1773719cf9ca706720a8db6e4e6f64e74af80",
+  "pc1_hit_rows_enriched.csv": "4a68cd479ce3753c58761294b8c466515c25eb4419bc11e7c0cd11d2f78f22bc",
+  "pc1_search_candidate_summary.csv": "f99146121ad96b32f5b767e445b8df0cef1f51d66668cac2b15204a71ae7ad77",
+  "per_file_coverage.csv": "3748414af69a8830c7b89e66f1d29520cc362ea336ed0241baefdbe13add6724",
+  "protocol_lock.json": "365723e1154416bfb049a942095d87adb96578d0219928ee5d007f5a09b408bc",
+  "report.md": "8ce3c9c59c2c9ed5d5e34332f1ad8c4bf1344274e7763205363c6e32cce55324",
+  "run_metadata.json": "5f4171e87333348838a00b2fa3f7fa7fc42704a14ea3f66bfb6ad40b3b39c942",
+  "top50_pc1_search_candidates.csv": "774d94476bb39c5c2492d76e12905790b9036f0d141cf6c6a09984e97dc9cee4"
+}

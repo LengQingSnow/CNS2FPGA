@@ -1,0 +1,12 @@
++===============+===============+=============================================+
+| Launch Clock  | Capture Clock | Pin                                         |
++===============+===============+=============================================+
+| clk_200m_mmcm | clk_200m_mmcm | experiment/core/syn_input_sum_reg_reg[33]/D |
+| clk_200m_mmcm | clk_200m_mmcm | experiment/core/syn_input_sum_reg_reg[35]/D |
+| clk_200m_mmcm | clk_200m_mmcm | experiment/core/syn_input_sum_reg_reg[34]/D |
+| clk_200m_mmcm | clk_200m_mmcm | experiment/core/synapse_read_reg[0]/D       |
+| clk_200m_mmcm | clk_200m_mmcm | experiment/bus_rd_data_reg[27]/D            |
+| clk_200m_mmcm | clk_200m_mmcm | experiment/bus_rd_data_reg[16]/D            |
+| clk_200m_mmcm | clk_200m_mmcm | experiment/bus_rd_data_reg[26]/D            |
+| clk_200m_mmcm | clk_200m_mmcm | experiment/core/syn_input_sum_reg_reg[25]/D |
++---------------+---------------+---------------------------------------------+

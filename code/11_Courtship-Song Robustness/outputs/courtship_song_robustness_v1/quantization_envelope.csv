@@ -1,0 +1,5 @@
+format_name,max_key_response_error_percent,state_saturation_events,acceptance_pass,pC1_error_pct,exact_events
+safe_wf24,0.0,0,True,0.0,True
+compact_wf23,0.0,0,True,0.0,True
+boundary_wf22,0.0,0,True,0.0,True
+boundary_wf21,24.52830188679245,0,False,0.0,True

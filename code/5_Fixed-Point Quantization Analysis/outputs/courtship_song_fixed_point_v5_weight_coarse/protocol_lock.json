@@ -1,0 +1,226 @@
+{
+  "locked_at_utc": "2026-09-19T02:34:17.258791+00:00",
+  "config": {
+    "schema_version": 1,
+    "name": "courtship_song_fixed_point_v5_weight_coarse",
+    "golden_config": "../../3_CPU Floating-Point Golden Model/configs/courtship_song_lif_v0.json",
+    "golden_src": "../../3_CPU Floating-Point Golden Model/src",
+    "plausibility_src": "../../4_Verify whether this model has basic biological plausibility/src",
+    "v1_config": "../../4_Verify whether this model has basic biological plausibility/configs/courtship_song_equal_pulse_v1.json",
+    "reference_runs": {
+      "v1": "../../4_Verify whether this model has basic biological plausibility/outputs/courtship_song_equal_pulse_v1",
+      "v2": "../../4_Verify whether this model has basic biological plausibility/outputs/courtship_song_mechanism_v2",
+      "v2b": "../../4_Verify whether this model has basic biological plausibility/outputs/courtship_song_mal_v2b",
+      "v3d": "../../4_Verify whether this model has basic biological plausibility/outputs/courtship_song_roi_robustness_v3d"
+    },
+    "reference_ipi_ms": 35,
+    "comparison_ipi_ms": [
+      15,
+      25,
+      85,
+      95
+    ],
+    "acceptance": {
+      "max_key_response_error_percent": 5.0,
+      "required_tuning_direction_agreements": 8,
+      "required_intervention_direction_agreements": 24,
+      "allow_state_saturation": false,
+      "allow_accumulator_saturation": false
+    },
+    "formats": [
+      {
+        "name": "wf24",
+        "state_bits": 33,
+        "state_frac": 24,
+        "weight_bits": 30,
+        "weight_frac": 24,
+        "decay_bits": 32,
+        "decay_frac": 30,
+        "accumulator_bits": 34
+      },
+      {
+        "name": "wf20",
+        "state_bits": 33,
+        "state_frac": 24,
+        "weight_bits": 26,
+        "weight_frac": 20,
+        "decay_bits": 32,
+        "decay_frac": 30,
+        "accumulator_bits": 30
+      },
+      {
+        "name": "wf16",
+        "state_bits": 33,
+        "state_frac": 24,
+        "weight_bits": 22,
+        "weight_frac": 16,
+        "decay_bits": 32,
+        "decay_frac": 30,
+        "accumulator_bits": 26
+      },
+      {
+        "name": "wf12",
+        "state_bits": 33,
+        "state_frac": 24,
+        "weight_bits": 18,
+        "weight_frac": 12,
+        "decay_bits": 32,
+        "decay_frac": 30,
+        "accumulator_bits": 22
+      },
+      {
+        "name": "wf8",
+        "state_bits": 33,
+        "state_frac": 24,
+        "weight_bits": 14,
+        "weight_frac": 8,
+        "decay_bits": 32,
+        "decay_frac": 30,
+        "accumulator_bits": 18
+      }
+    ]
+  },
+  "arithmetic_contract": {
+    "signed": true,
+    "rounding": "nearest_ties_away_from_zero",
+    "overflow": "saturate",
+    "update_order": [
+      "propagate_previous_spikes",
+      "saturate_accumulator",
+      "requantize_synaptic_drive",
+      "decay_voltage",
+      "add_drive",
+      "saturate_state",
+      "threshold_and_reset"
+    ]
+  },
+  "input_and_source_sha256": {
+    "E:\\Workspace\\CNS2FPGA\\code\\5_Fixed-Point Quantization Analysis\\configs\\courtship_song_fixed_point_v5_weight_coarse.json": "7d14a83bbc98d1e60d9bcd3694bde35c2aacf500ff927c8c4d32164bc0150389",
+    "E:\\Workspace\\CNS2FPGA\\code\\3_CPU Floating-Point Golden Model\\configs\\courtship_song_lif_v0.json": "cabed7b422f69cd30c213cc95cf819edcac11bdf0705205b46939ac9e069518a",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\configs\\courtship_song_equal_pulse_v1.json": "7c65c0edac43958beecaa3dcb5599ac1dd9ea470f72d9d16f7571c4f2b8cc117",
+    "E:\\Workspace\\CNS2FPGA\\code\\2_Subcircuit Automatic Extraction Tool\\outputs\\courtship_song_v0\\neuron_table.csv": "4e025152b9d6e6f76e913c4434cb92c621ae8a0a0e11dc1ff6f4a55fb6fb3e5e",
+    "E:\\Workspace\\CNS2FPGA\\code\\2_Subcircuit Automatic Extraction Tool\\outputs\\courtship_song_v0\\synapse_table.csv": "6e86a30f46a636553e0cb82bfc062c900ce9102637cd4c3504df0f254e078dd7",
+    "E:\\Workspace\\CNS2FPGA\\code\\2_Subcircuit Automatic Extraction Tool\\outputs\\courtship_song_v0\\offset_table.csv": "46cf272270679cedd0398c121d8159cee24a6196373483a0e0c0e0dc844ad924",
+    "E:\\Workspace\\CNS2FPGA\\code\\2_Subcircuit Automatic Extraction Tool\\outputs\\courtship_song_v0\\metadata.json": "2cf83270394245ed7164b2457326afc589699f0ce7c0c031c7e132f1d9f2c016",
+    "E:\\Workspace\\CNS2FPGA\\code\\5_Fixed-Point Quantization Analysis\\run_quantization_analysis.py": "dbd0bc8888c0c84da9c8044f3fa403bc8bdd285c2170fb3d0694240236efabf7",
+    "E:\\Workspace\\CNS2FPGA\\code\\5_Fixed-Point Quantization Analysis\\src\\cns2fpga_fixed\\__init__.py": "77b76b766cdd65fc9103db74ccc040231ef12a665048dc3911f1f2ac8b8315c8",
+    "E:\\Workspace\\CNS2FPGA\\code\\5_Fixed-Point Quantization Analysis\\src\\cns2fpga_fixed\\fixed_lif.py": "bfe7942bee431222f9c86cfce0779041174bdfb978272f43956a0621f9b5271c",
+    "E:\\Workspace\\CNS2FPGA\\code\\3_CPU Floating-Point Golden Model\\src\\cns2fpga_golden\\__init__.py": "5522ceba883005cbb8ff70f129a1b3a0357eb1e3c15a1d9a47fd700a35f78b08",
+    "E:\\Workspace\\CNS2FPGA\\code\\3_CPU Floating-Point Golden Model\\src\\cns2fpga_golden\\analysis.py": "ed8449bb648f8efba3d966328b5a53ba230eadc19b7f269b8bdcdbf087a478e2",
+    "E:\\Workspace\\CNS2FPGA\\code\\3_CPU Floating-Point Golden Model\\src\\cns2fpga_golden\\model.py": "04f09124c9b36ece34f80bf299fd38554ea7b0144d0b1218ceb56c17feaf913f",
+    "E:\\Workspace\\CNS2FPGA\\code\\3_CPU Floating-Point Golden Model\\src\\cns2fpga_golden\\stimulus.py": "a85fbcad79b2466944a356999bb8d32c3973aa328b4bb7e9a182fbf712be0dbb",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\src\\cns2fpga_plausibility\\protocol.py": "a0674970f161cfc7a15b3e4c8025f944d0e24af8f19c2a6ca260c420e9f42123",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_equal_pulse_v1\\protocol_lock.json": "d3d0e82f3e88f6a7baa39b03a9b56157a2c642a2a0a9743e8690c71b493c02a6",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_equal_pulse_v1\\run_metadata.json": "fcd9162bd492db00a4d84f9209e08fa68d9518daee333538e5e1419bf214820c",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_mechanism_v2\\protocol_lock.json": "f80de45cd615ce4602953e14b80fe855b03f045fa45a62229c64d941afb8250d",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_mechanism_v2\\run_metadata.json": "e84fdab12e276b4eb00ebba22c6ba0e7432d6ae7a15ba8375c0c03694046a245",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_mal_v2b\\protocol_lock.json": "eb1c14017802b27f0736b42134dbfea10bcb4cbd6e23de9ab6687e47b638a6d0",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_mal_v2b\\run_metadata.json": "c987f7a207d570c3c2cb7183e99508f646f6255f9820d7ef2a4568cdc7a0aae0",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_roi_robustness_v3d\\protocol_lock.json": "3d202b1f04743098e84bcbb27658ec09e4b795fb263d5921ecfc5948fb0d2932",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_roi_robustness_v3d\\run_metadata.json": "925c22cf47cdb1c307f68d7d7e126ea2577e7e7189cc312b97a195b09472976d",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_equal_pulse_v1\\population_activity\\intact_ipi_15.npz": "8242adcdc92d5add6420862f74f5020b5982ac27b006fc98453c2e51ca90a9d7",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_equal_pulse_v1\\population_activity\\intact_ipi_25.npz": "1f4a1ac9f78c45c9d5c049752568632c8a951bccac150191c965af92289ce2fc",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_equal_pulse_v1\\population_activity\\intact_ipi_35.npz": "3310e4b56fb12c49e7b3484d4a070cf7316b517400c290cdd8eb06773857b3da",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_equal_pulse_v1\\population_activity\\intact_ipi_45.npz": "cff04e0d9667917c253c28b9eb3e85a484a3953445f4ca0208971adcb6caae10",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_equal_pulse_v1\\population_activity\\intact_ipi_55.npz": "2481c5f80959ef500f1d03aa961de8364c9d2e69220d2d0556189e6c9bbb3f9d",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_equal_pulse_v1\\population_activity\\intact_ipi_65.npz": "faa36fe0e40cb6f424d06343920346bdaff13eb81f31061e5d49c37e975617fb",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_equal_pulse_v1\\population_activity\\intact_ipi_75.npz": "a5f8d95990565272ed53f9f2a7a4c766d99888fbc962f70b63818a1a58cbff5d",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_equal_pulse_v1\\population_activity\\intact_ipi_85.npz": "cd148ec1ef6971a4e11ee16a346de6029403cc5c69a3e9e0b7f3dc1832f7cb4b",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_equal_pulse_v1\\population_activity\\intact_ipi_95.npz": "04c7d0ce44117627eecda2b56c7d49498d47c0505b6cf7fa6a1c905254fc6608",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_equal_pulse_v1\\population_activity\\silence_vPN1_ipi_35.npz": "b34d2de9b115f7a7201f665a6495f613d44947b9dffd77b9e8e95f146058b14f",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_mechanism_v2\\population_activity\\cut_vPN1_to_pC1_ipi_35.npz": "84e0235f34b358443003bb27e7ed96d125025d47978831e53e6d053e07b084a7",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_mechanism_v2\\population_activity\\cut_vPN1_to_other_ipi_35.npz": "07caafe7f60a33d7d87a008960871c992f9f032160d0a9cfea5b6379a451b767",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_mechanism_v2\\population_activity\\cut_vPN1_all_output_ipi_35.npz": "a2b975aa23f7bc609b7e115bad801a7f4e10f64750d30e9e6296bc26cfec4bc1",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_mechanism_v2\\population_activity\\silence_aPN1_ipi_35.npz": "38d82e0845b4304f7e990132f2f4f4b9eee16f012357e24c4337e4d0feeda1d4",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_mal_v2b\\population_activity\\cut_vPN1_to_mAL_bridge_ipi_35.npz": "2f1b990436391f32d86c757a717f58f05aa735418e6f7fc0e8d317d1acf4d3f3",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_mal_v2b\\population_activity\\cut_mAL_bridge_to_pC1_ipi_35.npz": "706c316fd9398ff3c87c3ece41c6c056132b99b929c7bd58f71a9e08feffd1f3",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_mal_v2b\\population_activity\\cut_both_bridge_segments_ipi_35.npz": "b3f45a6ae8550e46279f4f50306e32049e231dfda01c7c42a78e03563db22923"
+  },
+  "jobs": [
+    {
+      "condition_id": "intact",
+      "reference_run": "v1",
+      "ipi_ms": 15.0
+    },
+    {
+      "condition_id": "intact",
+      "reference_run": "v1",
+      "ipi_ms": 25.0
+    },
+    {
+      "condition_id": "intact",
+      "reference_run": "v1",
+      "ipi_ms": 35.0
+    },
+    {
+      "condition_id": "intact",
+      "reference_run": "v1",
+      "ipi_ms": 45.0
+    },
+    {
+      "condition_id": "intact",
+      "reference_run": "v1",
+      "ipi_ms": 55.0
+    },
+    {
+      "condition_id": "intact",
+      "reference_run": "v1",
+      "ipi_ms": 65.0
+    },
+    {
+      "condition_id": "intact",
+      "reference_run": "v1",
+      "ipi_ms": 75.0
+    },
+    {
+      "condition_id": "intact",
+      "reference_run": "v1",
+      "ipi_ms": 85.0
+    },
+    {
+      "condition_id": "intact",
+      "reference_run": "v1",
+      "ipi_ms": 95.0
+    },
+    {
+      "condition_id": "silence_vPN1",
+      "reference_run": "v1",
+      "ipi_ms": 35.0
+    },
+    {
+      "condition_id": "cut_vPN1_to_pC1",
+      "reference_run": "v2",
+      "ipi_ms": 35.0
+    },
+    {
+      "condition_id": "cut_vPN1_to_other",
+      "reference_run": "v2",
+      "ipi_ms": 35.0
+    },
+    {
+      "condition_id": "cut_vPN1_all_output",
+      "reference_run": "v2",
+      "ipi_ms": 35.0
+    },
+    {
+      "condition_id": "silence_aPN1",
+      "reference_run": "v2",
+      "ipi_ms": 35.0
+    },
+    {
+      "condition_id": "cut_vPN1_to_mAL_bridge",
+      "reference_run": "v2b",
+      "ipi_ms": 35.0
+    },
+    {
+      "condition_id": "cut_mAL_bridge_to_pC1",
+      "reference_run": "v2b",
+      "ipi_ms": 35.0
+    },
+    {
+      "condition_id": "cut_both_bridge_segments",
+      "reference_run": "v2b",
+      "ipi_ms": 35.0
+    }
+  ]
+}

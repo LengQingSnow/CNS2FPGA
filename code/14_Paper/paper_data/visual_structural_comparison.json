@@ -1,0 +1,10 @@
+{
+  "automatic_neurons": 226,
+  "automatic_edges": 1730,
+  "manual_neurons": 226,
+  "manual_edges": 888,
+  "manual_edges_overlapping_real": 321,
+  "edge_jaccard": 0.13974749673487158,
+  "automatic_synapses": 33748,
+  "manual_synapses": 59612
+}

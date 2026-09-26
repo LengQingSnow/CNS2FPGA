@@ -1,0 +1,12 @@
+{
+  "verdict": "NO_FORMAT_MET_ALL_ACCEPTANCE_GATES",
+  "safe_format": null,
+  "compact_format": null,
+  "formats_tested": 6,
+  "fixed_trials": 102,
+  "reference_archives": 17,
+  "protocol_lock_sha256": "64d61ea2c52d72603ea628a73fd01101d5f9474f00dbd6391b07d96b63d56775",
+  "frozen_inputs_unchanged": true,
+  "runtime_seconds": 155.77271610000003,
+  "python": "3.12.14"
+}

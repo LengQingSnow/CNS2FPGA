@@ -1,0 +1,14 @@
+neuron_index,bodyId,type,consensus_nt,nt_model_sign,dimorphism,from_vPN1_synapses,to_pC1_synapses
+611,11519,mAL_m5b,gaba,-1,male-specific,51,240
+1193,13430,mAL_m5c,gaba,-1,male-specific,22,182
+1591,15311,mAL_m5b,gaba,-1,male-specific,34,219
+1636,15532,mAL_m5b,gaba,-1,male-specific,14,238
+1840,16738,mAL_m7,gaba,-1,male-specific,5,161
+4329,513042,mAL_m1,gaba,-1,male-specific,13,232
+4352,513312,mAL_m5b,gaba,-1,male-specific,18,257
+4474,515276,mAL_m5c,gaba,-1,male-specific,5,111
+4673,519904,mAL_m5b,gaba,-1,male-specific,40,177
+4699,520086,mAL_m5b,gaba,-1,male-specific,31,206
+4700,520088,mAL_m7,gaba,-1,male-specific,6,160
+4856,522407,mAL_m11,gaba,-1,male-specific,42,201
+4868,522750,mAL_m11,gaba,-1,male-specific,48,168

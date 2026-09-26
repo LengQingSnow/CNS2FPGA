@@ -1,0 +1,17 @@
+{
+  "verdict": "BIT_EXACT_PASS",
+  "timesteps": 8,
+  "neurons": 6279,
+  "neuron_timestep_states": 50232,
+  "state_fields_compared": 4,
+  "total_spikes": 2475,
+  "total_mismatches": 0,
+  "maximum_cycles_per_timestep": 167668,
+  "minimum_clock_mhz_for_1ms_at_observed_max": 167.668,
+  "modelsim_errors": 0,
+  "modelsim_warnings": 0,
+  "synthesis_claimed": false,
+  "protocol_lock_sha256": "e16591cf464a6ce1f031e5b8f6c90c7437b7cfd7c012eed9e5d9ed0e3c2c7829",
+  "frozen_inputs_unchanged": true,
+  "runtime_seconds": 0.06894950000014433
+}

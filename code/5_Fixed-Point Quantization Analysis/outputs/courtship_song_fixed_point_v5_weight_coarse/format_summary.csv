@@ -1,0 +1,6 @@
+format_name,max_key_response_error_percent,tuning_direction_agreements,tuning_direction_comparisons,intervention_direction_agreements,intervention_direction_comparisons,state_saturation_events,accumulator_saturation_events,acceptance_pass,state_bits,state_frac,weight_bits,weight_frac,decay_bits,decay_frac,accumulator_bits,weight_quantization_saturations,decay_quantization_saturations
+wf24,0.0,8,8,24,24,0,0,True,33,24,30,24,32,30,34,0,0
+wf20,18.181818181818183,8,8,24,24,0,0,False,33,24,26,20,32,30,30,0,0
+wf16,18.181818181818183,8,8,23,24,0,0,False,33,24,22,16,32,30,26,0,0
+wf12,45.45454545454545,7,8,8,24,0,0,False,33,24,18,12,32,30,22,0,0
+wf8,81.81818181818181,7,8,8,24,0,0,False,33,24,14,8,32,30,18,0,0

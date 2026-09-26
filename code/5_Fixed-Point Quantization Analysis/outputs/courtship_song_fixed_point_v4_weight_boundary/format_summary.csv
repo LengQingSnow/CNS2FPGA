@@ -1,0 +1,4 @@
+format_name,max_key_response_error_percent,tuning_direction_agreements,tuning_direction_comparisons,intervention_direction_agreements,intervention_direction_comparisons,state_saturation_events,accumulator_saturation_events,acceptance_pass,state_bits,state_frac,weight_bits,weight_frac,decay_bits,decay_frac,accumulator_bits,weight_quantization_saturations,decay_quantization_saturations
+weight28_s33w34a38,0.0,8,8,24,24,0,0,True,33,24,34,28,32,30,38,0,0
+weight27_s33w33a37,0.0,8,8,24,24,0,0,True,33,24,33,27,32,30,37,0,0
+weight26_s33w32a36,0.0,8,8,24,24,0,0,True,33,24,32,26,32,30,36,0,0

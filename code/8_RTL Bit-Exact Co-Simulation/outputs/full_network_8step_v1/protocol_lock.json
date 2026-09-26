@@ -1,0 +1,40 @@
+{
+  "locked_at_utc": "2026-09-19T03:08:02.851577+00:00",
+  "scope": "Full 6279-neuron state comparison for 8 timesteps",
+  "comparison_fields": [
+    "spike",
+    "voltage",
+    "syn_current",
+    "refractory",
+    "saturation_flags"
+  ],
+  "tolerance": 0,
+  "input_and_source_sha256": {
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\lock_cosimulation.py": "5d76612002bf415ccff383ae1cf1e51be97bf4d6c66de2ad122a9fc56d8f9758",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\generate_reference.py": "1aa969c29ce7caa3a0a29487beeae5c57032ad8b75b82ff60a94f7e1bcbd43ea",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\src\\reference_stepper.py": "9cbd1555f842b83c21bdcc1ed98a663ac7b21f9649b8faa0b1e49e5100e1a495",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\rtl\\cns2fpga_core_sync.sv": "1794e5a159280936b05e5f5ea202932d67f92f26545498a97ac34c661805aeea",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\sim\\tb_bit_exact_full.sv": "3da54806f96b1dc91822b1993e1ce4378a5f0962b3025cec3e9a36d33ad334df",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\sim\\run_bit_exact.do": "0f778c7eb9b0fdf6952d161342fb95c778de13976848a6957caa772ee396aa6a",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\docs\\cosimulation_contract_v1.md": "0bd17bd635b823608daf9d85556fe85174545ccfdaf76db8053d7ce45a5f48f3",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\README.md": "7d23c037a6a02b5d5b190234b340948683faa09cee22313df03c296ab61f46d6",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\configs\\full_network_8step_v1.json": "183777c6c476721c5c841c1e7e541fd2a7bfe9b116947b40b5bed5ad7e5b7da9",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\sim\\bit_exact_transcript.log": "42709d04bb57601d17d1c1f23dd681e9e6ed9963b1582fe3df962b49c934e8c6",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\sim\\rtl_step_summary.csv": "d1494e8bb5f2e80245c264d0b40fdfc5e629421e25b072f434259f79910687b8",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\sim\\reference\\full_network_8step_v1\\artifact_sha256.json": "cb55d25e7d5a586ebf3da76c142a82f672da434e02c1f713c5e41293abe88882",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\sim\\reference\\full_network_8step_v1\\expected_refractory.mem": "f61cb6baa6bee85a59f5ad5ad4772dca0a8f618ee642d127669e9bf76cef61dd",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\sim\\reference\\full_network_8step_v1\\expected_spike.mem": "8b9751b64a2a7240d96a074002327fac05fbccd8d3418fdaa66f916171ff2c27",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\sim\\reference\\full_network_8step_v1\\expected_syn_current.mem": "13dc552d98365331f3c89b02d84ba1d0840c3a91b9b2db3ee9c498371c7878ea",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\sim\\reference\\full_network_8step_v1\\expected_voltage.mem": "066dd44c7cfa7fb81063eb3a34d28c8cf92d287cba63ab53ac803a3cc1c936ed",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\sim\\reference\\full_network_8step_v1\\reference_manifest.json": "280943586d8e62426230d0b115ba525fd8e181726cfb22c8c982763e7134e043",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\sim\\reference\\full_network_8step_v1\\reference_summary.csv": "e048a6277a173553d07569fb9ef7be6baa7c87011062c5df6eacfdeb3b171d8d",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\sim\\reference\\full_network_8step_v1\\stimulus.mem": "0f54ef4d433f2c99ce11ef3c727c7576533a5c2941c0ef9db42e1c05b9b5be24",
+    "E:\\Workspace\\CNS2FPGA\\code\\6_Connectome Compiler\\outputs\\courtship_song_hw_ir_v1\\protocol_lock.json": "c5673c0e76b3443a01c102ca1c0331f18c90e3804f91ae9425230a62301f237c",
+    "E:\\Workspace\\CNS2FPGA\\code\\6_Connectome Compiler\\outputs\\courtship_song_hw_ir_v1\\artifact_sha256.json": "3539b0efd9edad18a3d6cc53c29591cc5882ee285d46a2b178e6188ae4989cc3",
+    "E:\\Workspace\\CNS2FPGA\\code\\6_Connectome Compiler\\outputs\\courtship_song_hw_ir_v1\\compiler_manifest.json": "1449d7b7206e2681659a0ed53f8642bb61a4ed15e281553c7825ad045360ed99",
+    "E:\\Workspace\\CNS2FPGA\\code\\6_Connectome Compiler\\outputs\\courtship_song_hw_ir_v1\\neuron_param.mem": "c31854a6d57620b36f50b2ccc0be5dbd45e84ea0a014c19bfe387eba5fb308ef",
+    "E:\\Workspace\\CNS2FPGA\\code\\6_Connectome Compiler\\outputs\\courtship_song_hw_ir_v1\\synapse.mem": "562dc194aac0c594ab2eff6626951ae6badb406973b19c98fae8961b152a1a87",
+    "E:\\Workspace\\CNS2FPGA\\code\\6_Connectome Compiler\\outputs\\courtship_song_hw_ir_v1\\offset.mem": "dc168da0c07111411ab5800842463ea6b0e414755e37c9ffe3ecbe4f88bbe2cc",
+    "E:\\Workspace\\CNS2FPGA\\code\\6_Connectome Compiler\\outputs\\courtship_song_hw_ir_v1\\type_sign.mem": "cbacfa8b11ecd855f844f845bf51078f28bff6dc4d216169c3d4a48c30660a2c"
+  }
+}

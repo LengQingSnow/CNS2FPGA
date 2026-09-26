@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "name": "visual_rtl_8step_v0",
+  "compiler_output": "../outputs/visual_hw_ir_v0",
+  "source_ir": "../outputs/visual_to_steering_v0",
+  "golden_config": "visual_lif_v0.json",
+  "fixed_src": "../../5_Fixed-Point Quantization Analysis/src",
+  "fixed_config": "../../5_Fixed-Point Quantization Analysis/configs/courtship_song_fixed_point_v6_final.json",
+  "fixed_format": "safe_wf24",
+  "stimulus": [1.2, 1.2, 1.2, 0.0, 0.0, 1.2, 1.2, 1.2]
+}

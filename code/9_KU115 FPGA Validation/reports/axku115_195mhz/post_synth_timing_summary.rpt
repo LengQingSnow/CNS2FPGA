@@ -1,0 +1,2091 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date              : Sat Sep 19 17:42:43 2026
+| Host              : LAPTOP-KMF3OJ9O running 64-bit major release  (build 9200)
+| Command           : report_timing_summary -delay_type max -max_paths 20 -file {E:/Workspace/CNS2FPGA/code/9_KU115 FPGA Validation/reports/axku115_195mhz/post_synth_timing_summary.rpt}
+| Design            : cns2fpga_axku115_top
+| Device            : xcku115-flva1517
+| Speed File        : -2  PRODUCTION 1.26 12-04-2018
+| Temperature Grade : I
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (1)
+6. checking no_output_delay (2)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (1)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There is 1 input port with no input delay but user has a false path constraint. (MEDIUM)
+
+
+6. checking no_output_delay (2)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 2 ports with no output delay but user has a false path constraint (MEDIUM)
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      1.319        0.000                      0                59395        1.584        0.000                       0                  6087  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock            Waveform(ns)         Period(ns)      Frequency(MHz)
+-----            ------------         ----------      --------------
+clk_50m          {0.000 10.000}       20.000          50.000          
+  clk_195m_mmcm  {0.000 2.564}        5.128           195.000         
+  clkfb_mmcm     {0.000 10.000}       20.000          50.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_50m                                                                                      4.000        0.000                       0                     1  
+  clk_195m_mmcm        1.319        0.000                      0                59395        1.584        0.000                       0                  6083  
+  clkfb_mmcm                                                                                18.621        0.000                       0                     3  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_50m
+  To Clock:  clk_50m
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        4.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_50m
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { clk_50m }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     MMCME3_ADV/CLKIN1  n/a            1.071         20.000      18.929               clock_manager/CLKIN1
+Low Pulse Width   Slow    MMCME3_ADV/CLKIN1  n/a            6.000         10.000      4.000                clock_manager/CLKIN1
+Low Pulse Width   Fast    MMCME3_ADV/CLKIN1  n/a            6.000         10.000      4.000                clock_manager/CLKIN1
+High Pulse Width  Slow    MMCME3_ADV/CLKIN1  n/a            6.000         10.000      4.000                clock_manager/CLKIN1
+High Pulse Width  Fast    MMCME3_ADV/CLKIN1  n/a            6.000         10.000      4.000                clock_manager/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_195m_mmcm
+  To Clock:  clk_195m_mmcm
+
+Setup :            0  Failing Endpoints,  Worst Slack        1.319ns,  Total Violation        0.000ns
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        1.584ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.319ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_1_2/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/syn_current_mem_reg_1_8/DINADIN[0]
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        3.017ns  (logic 2.150ns (71.263%)  route 0.867ns (28.737%))
+  Logic Levels:           6  (CARRY8=4 LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_2/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[0])
+                                                      1.416     1.429 r  core/syn_current_mem_reg_1_2/DOUTBDOUT[0]
+                         net (fo=2, unplaced)         0.349     1.778    core/accumulator_read[8]
+                         LUT2 (Prop_LUT2_I0_O)        0.071     1.849 r  core/accumulator_overflow2_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     1.849    core/accumulator_overflow2_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.262 r  core/accumulator_overflow2_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     2.262    core/accumulator_overflow2_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     2.293 r  core/accumulator_overflow2_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     2.293    core/accumulator_overflow2_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     2.324 r  core/accumulator_overflow2_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     2.324    core/accumulator_overflow2_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[3])
+                                                      0.073     2.397 r  core/accumulator_overflow2_carry__3/CO[3]
+                         net (fo=36, unplaced)        0.318     2.715    core/accumulator_overflow2_carry__3_n_4
+                         LUT4 (Prop_LUT4_I0_O)        0.115     2.830 r  core/syn_current_mem_reg_1_8_i_3/O
+                         net (fo=2, unplaced)         0.200     3.030    core/p_2_in[32]
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_8/DINADIN[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_8/CLKARDCLK
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         RAMB36E2 (Setup_RAMB36E2_CLKARDCLK_DINADIN[0])
+                                                     -0.402     4.349    core/syn_current_mem_reg_1_8
+  -------------------------------------------------------------------
+                         required time                          4.349    
+                         arrival time                          -3.030    
+  -------------------------------------------------------------------
+                         slack                                  1.319    
+
+Slack (MET) :             1.319ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_1_2/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/syn_current_mem_reg_2_8/DINADIN[0]
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        3.017ns  (logic 2.150ns (71.263%)  route 0.867ns (28.737%))
+  Logic Levels:           6  (CARRY8=4 LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_2/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[0])
+                                                      1.416     1.429 r  core/syn_current_mem_reg_1_2/DOUTBDOUT[0]
+                         net (fo=2, unplaced)         0.349     1.778    core/accumulator_read[8]
+                         LUT2 (Prop_LUT2_I0_O)        0.071     1.849 r  core/accumulator_overflow2_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     1.849    core/accumulator_overflow2_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.262 r  core/accumulator_overflow2_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     2.262    core/accumulator_overflow2_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     2.293 r  core/accumulator_overflow2_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     2.293    core/accumulator_overflow2_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     2.324 r  core/accumulator_overflow2_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     2.324    core/accumulator_overflow2_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[3])
+                                                      0.073     2.397 r  core/accumulator_overflow2_carry__3/CO[3]
+                         net (fo=36, unplaced)        0.318     2.715    core/accumulator_overflow2_carry__3_n_4
+                         LUT4 (Prop_LUT4_I0_O)        0.115     2.830 r  core/syn_current_mem_reg_1_8_i_3/O
+                         net (fo=2, unplaced)         0.200     3.030    core/p_2_in[32]
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_8/DINADIN[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_8/CLKARDCLK
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         RAMB36E2 (Setup_RAMB36E2_CLKARDCLK_DINADIN[0])
+                                                     -0.402     4.349    core/syn_current_mem_reg_2_8
+  -------------------------------------------------------------------
+                         required time                          4.349    
+                         arrival time                          -3.030    
+  -------------------------------------------------------------------
+                         slack                                  1.319    
+
+Slack (MET) :             1.345ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_1_2/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/syn_current_mem_reg_1_8/DINADIN[1]
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        3.036ns  (logic 2.150ns (70.817%)  route 0.886ns (29.183%))
+  Logic Levels:           6  (CARRY8=4 LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_2/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[0])
+                                                      1.416     1.429 r  core/syn_current_mem_reg_1_2/DOUTBDOUT[0]
+                         net (fo=2, unplaced)         0.349     1.778    core/accumulator_read[8]
+                         LUT2 (Prop_LUT2_I0_O)        0.071     1.849 r  core/accumulator_overflow2_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     1.849    core/accumulator_overflow2_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.262 r  core/accumulator_overflow2_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     2.262    core/accumulator_overflow2_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     2.293 r  core/accumulator_overflow2_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     2.293    core/accumulator_overflow2_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     2.324 r  core/accumulator_overflow2_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     2.324    core/accumulator_overflow2_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[3])
+                                                      0.073     2.397 r  core/accumulator_overflow2_carry__3/CO[3]
+                         net (fo=36, unplaced)        0.318     2.715    core/accumulator_overflow2_carry__3_n_4
+                         LUT4 (Prop_LUT4_I0_O)        0.115     2.830 r  core/syn_current_mem_reg_1_8_i_2/O
+                         net (fo=2, unplaced)         0.219     3.049    core/p_2_in[33]
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_8/DINADIN[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_8/CLKARDCLK
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         RAMB36E2 (Setup_RAMB36E2_CLKARDCLK_DINADIN[1])
+                                                     -0.357     4.394    core/syn_current_mem_reg_1_8
+  -------------------------------------------------------------------
+                         required time                          4.394    
+                         arrival time                          -3.049    
+  -------------------------------------------------------------------
+                         slack                                  1.345    
+
+Slack (MET) :             1.345ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_1_2/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/syn_current_mem_reg_2_8/DINADIN[1]
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        3.036ns  (logic 2.150ns (70.817%)  route 0.886ns (29.183%))
+  Logic Levels:           6  (CARRY8=4 LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_2/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[0])
+                                                      1.416     1.429 r  core/syn_current_mem_reg_1_2/DOUTBDOUT[0]
+                         net (fo=2, unplaced)         0.349     1.778    core/accumulator_read[8]
+                         LUT2 (Prop_LUT2_I0_O)        0.071     1.849 r  core/accumulator_overflow2_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     1.849    core/accumulator_overflow2_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.262 r  core/accumulator_overflow2_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     2.262    core/accumulator_overflow2_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     2.293 r  core/accumulator_overflow2_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     2.293    core/accumulator_overflow2_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     2.324 r  core/accumulator_overflow2_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     2.324    core/accumulator_overflow2_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[3])
+                                                      0.073     2.397 r  core/accumulator_overflow2_carry__3/CO[3]
+                         net (fo=36, unplaced)        0.318     2.715    core/accumulator_overflow2_carry__3_n_4
+                         LUT4 (Prop_LUT4_I0_O)        0.115     2.830 r  core/syn_current_mem_reg_1_8_i_2/O
+                         net (fo=2, unplaced)         0.219     3.049    core/p_2_in[33]
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_8/DINADIN[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_8/CLKARDCLK
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         RAMB36E2 (Setup_RAMB36E2_CLKARDCLK_DINADIN[1])
+                                                     -0.357     4.394    core/syn_current_mem_reg_2_8
+  -------------------------------------------------------------------
+                         required time                          4.394    
+                         arrival time                          -3.049    
+  -------------------------------------------------------------------
+                         slack                                  1.345    
+
+Slack (MET) :             1.347ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_1_2/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/syn_current_mem_reg_1_7/DINADIN[0]
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        2.989ns  (logic 2.187ns (73.168%)  route 0.802ns (26.832%))
+  Logic Levels:           5  (CARRY8=3 LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_2/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[0])
+                                                      1.416     1.429 r  core/syn_current_mem_reg_1_2/DOUTBDOUT[0]
+                         net (fo=2, unplaced)         0.349     1.778    core/accumulator_read[8]
+                         LUT2 (Prop_LUT2_I0_O)        0.071     1.849 r  core/accumulator_overflow2_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     1.849    core/accumulator_overflow2_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.262 r  core/accumulator_overflow2_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     2.262    core/accumulator_overflow2_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     2.293 r  core/accumulator_overflow2_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     2.293    core/accumulator_overflow2_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[4])
+                                                      0.141     2.434 r  core/accumulator_overflow2_carry__2/O[4]
+                         net (fo=1, unplaced)         0.253     2.687    core/accumulator_overflow2_carry__2_n_11
+                         LUT4 (Prop_LUT4_I3_O)        0.115     2.802 r  core/syn_current_mem_reg_1_7_i_4/O
+                         net (fo=2, unplaced)         0.200     3.002    core/p_2_in[28]
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_7/DINADIN[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_7/CLKARDCLK
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         RAMB36E2 (Setup_RAMB36E2_CLKARDCLK_DINADIN[0])
+                                                     -0.402     4.349    core/syn_current_mem_reg_1_7
+  -------------------------------------------------------------------
+                         required time                          4.349    
+                         arrival time                          -3.002    
+  -------------------------------------------------------------------
+                         slack                                  1.347    
+
+Slack (MET) :             1.347ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_1_2/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/syn_current_mem_reg_2_7/DINADIN[0]
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        2.989ns  (logic 2.187ns (73.168%)  route 0.802ns (26.832%))
+  Logic Levels:           5  (CARRY8=3 LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_2/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[0])
+                                                      1.416     1.429 r  core/syn_current_mem_reg_1_2/DOUTBDOUT[0]
+                         net (fo=2, unplaced)         0.349     1.778    core/accumulator_read[8]
+                         LUT2 (Prop_LUT2_I0_O)        0.071     1.849 r  core/accumulator_overflow2_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     1.849    core/accumulator_overflow2_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.262 r  core/accumulator_overflow2_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     2.262    core/accumulator_overflow2_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     2.293 r  core/accumulator_overflow2_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     2.293    core/accumulator_overflow2_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[4])
+                                                      0.141     2.434 r  core/accumulator_overflow2_carry__2/O[4]
+                         net (fo=1, unplaced)         0.253     2.687    core/accumulator_overflow2_carry__2_n_11
+                         LUT4 (Prop_LUT4_I3_O)        0.115     2.802 r  core/syn_current_mem_reg_1_7_i_4/O
+                         net (fo=2, unplaced)         0.200     3.002    core/p_2_in[28]
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_7/DINADIN[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_7/CLKARDCLK
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         RAMB36E2 (Setup_RAMB36E2_CLKARDCLK_DINADIN[0])
+                                                     -0.402     4.349    core/syn_current_mem_reg_2_7
+  -------------------------------------------------------------------
+                         required time                          4.349    
+                         arrival time                          -3.002    
+  -------------------------------------------------------------------
+                         slack                                  1.347    
+
+Slack (MET) :             1.361ns  (required time - arrival time)
+  Source:                 core/decay_product_reg_reg__0/DSP_OUTPUT_INST/CLK
+                            (rising edge-triggered cell DSP_OUTPUT clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/decay_rounded_reg_reg[30]/D
+                            (rising edge-triggered cell FDRE clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        3.436ns  (logic 2.196ns (63.912%)  route 1.240ns (36.088%))
+  Logic Levels:           10  (CARRY8=6 LUT1=2 LUT2=1 LUT3=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/decay_product_reg_reg__0/CLK
+                         DSP_OUTPUT                                   r  core/decay_product_reg_reg__0/DSP_OUTPUT_INST/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_CLK_P[7])
+                                                      0.323     0.336 r  core/decay_product_reg_reg__0/DSP_OUTPUT_INST/P[7]
+                         net (fo=2, unplaced)         0.405     0.741    core/decay_product_reg_reg__0_n_98
+                         LUT2 (Prop_LUT2_I0_O)        0.071     0.812 r  core/decay_product_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     0.812    core/decay_product_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     1.225 r  core/decay_product_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     1.225    core/decay_product_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.133     1.358 f  core/decay_product_carry__1/O[1]
+                         net (fo=2, unplaced)         0.248     1.606    core/decay_product_reg_reg__1[33]
+                         LUT1 (Prop_LUT1_I0_O)        0.040     1.646 r  core/round_decay0_carry_i_18/O
+                         net (fo=1, unplaced)         0.000     1.646    core/round_decay0_carry_i_18_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.059 r  core/round_decay0_carry_i_10/CO[7]
+                         net (fo=1, unplaced)         0.000     2.059    core/round_decay0_carry_i_10_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[6])
+                                                      0.136     2.195 f  core/round_decay0_carry__0_i_9/O[6]
+                         net (fo=1, unplaced)         0.254     2.449    core/round_decay2[47]
+                         LUT1 (Prop_LUT1_I0_O)        0.040     2.489 r  core/round_decay0_carry__1_i_8/O
+                         net (fo=1, unplaced)         0.000     2.489    core/round_decay0_carry__1_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.902 r  core/round_decay0_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     2.902    core/round_decay0_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[5])
+                                                      0.174     3.076 r  core/round_decay0_carry__2/O[5]
+                         net (fo=1, unplaced)         0.310     3.386    core/round_decay0[30]
+                         LUT3 (Prop_LUT3_I1_O)        0.040     3.426 r  core/decay_rounded_reg[30]_i_1/O
+                         net (fo=1, unplaced)         0.023     3.449    core/round_decay_return[30]
+                         FDRE                                         r  core/decay_rounded_reg_reg[30]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         FDRE                                         r  core/decay_rounded_reg_reg[30]/C
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         FDRE (Setup_FDRE_C_D)        0.059     4.810    core/decay_rounded_reg_reg[30]
+  -------------------------------------------------------------------
+                         required time                          4.810    
+                         arrival time                          -3.449    
+  -------------------------------------------------------------------
+                         slack                                  1.361    
+
+Slack (MET) :             1.375ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_1_2/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/syn_current_mem_reg_1_7/DINADIN[1]
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        3.006ns  (logic 2.220ns (73.852%)  route 0.786ns (26.148%))
+  Logic Levels:           5  (CARRY8=3 LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_2/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[0])
+                                                      1.416     1.429 r  core/syn_current_mem_reg_1_2/DOUTBDOUT[0]
+                         net (fo=2, unplaced)         0.349     1.778    core/accumulator_read[8]
+                         LUT2 (Prop_LUT2_I0_O)        0.071     1.849 r  core/accumulator_overflow2_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     1.849    core/accumulator_overflow2_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.262 r  core/accumulator_overflow2_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     2.262    core/accumulator_overflow2_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     2.293 r  core/accumulator_overflow2_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     2.293    core/accumulator_overflow2_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[5])
+                                                      0.174     2.467 r  core/accumulator_overflow2_carry__2/O[5]
+                         net (fo=1, unplaced)         0.218     2.685    core/accumulator_overflow2_carry__2_n_10
+                         LUT4 (Prop_LUT4_I3_O)        0.115     2.800 r  core/syn_current_mem_reg_1_7_i_3/O
+                         net (fo=2, unplaced)         0.219     3.019    core/p_2_in[29]
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_7/DINADIN[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_7/CLKARDCLK
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         RAMB36E2 (Setup_RAMB36E2_CLKARDCLK_DINADIN[1])
+                                                     -0.357     4.394    core/syn_current_mem_reg_1_7
+  -------------------------------------------------------------------
+                         required time                          4.394    
+                         arrival time                          -3.019    
+  -------------------------------------------------------------------
+                         slack                                  1.375    
+
+Slack (MET) :             1.375ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_1_2/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/syn_current_mem_reg_2_7/DINADIN[1]
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        3.006ns  (logic 2.220ns (73.852%)  route 0.786ns (26.148%))
+  Logic Levels:           5  (CARRY8=3 LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_2/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[0])
+                                                      1.416     1.429 r  core/syn_current_mem_reg_1_2/DOUTBDOUT[0]
+                         net (fo=2, unplaced)         0.349     1.778    core/accumulator_read[8]
+                         LUT2 (Prop_LUT2_I0_O)        0.071     1.849 r  core/accumulator_overflow2_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     1.849    core/accumulator_overflow2_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.262 r  core/accumulator_overflow2_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     2.262    core/accumulator_overflow2_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     2.293 r  core/accumulator_overflow2_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     2.293    core/accumulator_overflow2_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[5])
+                                                      0.174     2.467 r  core/accumulator_overflow2_carry__2/O[5]
+                         net (fo=1, unplaced)         0.218     2.685    core/accumulator_overflow2_carry__2_n_10
+                         LUT4 (Prop_LUT4_I3_O)        0.115     2.800 r  core/syn_current_mem_reg_1_7_i_3/O
+                         net (fo=2, unplaced)         0.219     3.019    core/p_2_in[29]
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_7/DINADIN[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_7/CLKARDCLK
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         RAMB36E2 (Setup_RAMB36E2_CLKARDCLK_DINADIN[1])
+                                                     -0.357     4.394    core/syn_current_mem_reg_2_7
+  -------------------------------------------------------------------
+                         required time                          4.394    
+                         arrival time                          -3.019    
+  -------------------------------------------------------------------
+                         slack                                  1.375    
+
+Slack (MET) :             1.378ns  (required time - arrival time)
+  Source:                 core/decay_product_reg_reg__0/DSP_OUTPUT_INST/CLK
+                            (rising edge-triggered cell DSP_OUTPUT clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/decay_rounded_reg_reg[34]/D
+                            (rising edge-triggered cell FDRE clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        3.419ns  (logic 2.241ns (65.545%)  route 1.178ns (34.455%))
+  Logic Levels:           11  (CARRY8=7 LUT1=2 LUT2=1 LUT3=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/decay_product_reg_reg__0/CLK
+                         DSP_OUTPUT                                   r  core/decay_product_reg_reg__0/DSP_OUTPUT_INST/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_CLK_P[7])
+                                                      0.323     0.336 r  core/decay_product_reg_reg__0/DSP_OUTPUT_INST/P[7]
+                         net (fo=2, unplaced)         0.405     0.741    core/decay_product_reg_reg__0_n_98
+                         LUT2 (Prop_LUT2_I0_O)        0.071     0.812 r  core/decay_product_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     0.812    core/decay_product_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     1.225 r  core/decay_product_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     1.225    core/decay_product_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     1.256 r  core/decay_product_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     1.256    core/decay_product_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.133     1.389 f  core/decay_product_carry__2/O[1]
+                         net (fo=2, unplaced)         0.248     1.637    core/decay_product_reg_reg__1[41]
+                         LUT1 (Prop_LUT1_I0_O)        0.040     1.677 r  core/round_decay0_carry__0_i_17/O
+                         net (fo=1, unplaced)         0.000     1.677    core/round_decay0_carry__0_i_17_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.090 r  core/round_decay0_carry__0_i_9/CO[7]
+                         net (fo=1, unplaced)         0.000     2.090    core/round_decay0_carry__0_i_9_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[6])
+                                                      0.136     2.226 f  core/round_decay0_carry__1_i_9/O[6]
+                         net (fo=1, unplaced)         0.254     2.480    core/round_decay2[55]
+                         LUT1 (Prop_LUT1_I0_O)        0.040     2.520 r  core/round_decay0_carry__2_i_8/O
+                         net (fo=1, unplaced)         0.000     2.520    core/round_decay0_carry__2_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.933 r  core/round_decay0_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     2.933    core/round_decay0_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.133     3.066 r  core/round_decay0_carry__3/O[1]
+                         net (fo=1, unplaced)         0.248     3.314    core/round_decay0[34]
+                         LUT3 (Prop_LUT3_I1_O)        0.095     3.409 r  core/decay_rounded_reg[34]_i_1/O
+                         net (fo=1, unplaced)         0.023     3.432    core/round_decay_return[34]
+                         FDRE                                         r  core/decay_rounded_reg_reg[34]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         FDRE                                         r  core/decay_rounded_reg_reg[34]/C
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         FDRE (Setup_FDRE_C_D)        0.059     4.810    core/decay_rounded_reg_reg[34]
+  -------------------------------------------------------------------
+                         required time                          4.810    
+                         arrival time                          -3.432    
+  -------------------------------------------------------------------
+                         slack                                  1.378    
+
+Slack (MET) :             1.378ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_1_2/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/syn_current_mem_reg_1_5/DINADIN[0]
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        2.958ns  (logic 2.156ns (72.887%)  route 0.802ns (27.113%))
+  Logic Levels:           4  (CARRY8=2 LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_2/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[0])
+                                                      1.416     1.429 r  core/syn_current_mem_reg_1_2/DOUTBDOUT[0]
+                         net (fo=2, unplaced)         0.349     1.778    core/accumulator_read[8]
+                         LUT2 (Prop_LUT2_I0_O)        0.071     1.849 r  core/accumulator_overflow2_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     1.849    core/accumulator_overflow2_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.262 r  core/accumulator_overflow2_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     2.262    core/accumulator_overflow2_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[4])
+                                                      0.141     2.403 r  core/accumulator_overflow2_carry__1/O[4]
+                         net (fo=1, unplaced)         0.253     2.656    core/accumulator_overflow2_carry__1_n_11
+                         LUT4 (Prop_LUT4_I3_O)        0.115     2.771 r  core/syn_current_mem_reg_1_5_i_4/O
+                         net (fo=2, unplaced)         0.200     2.971    core/p_2_in[20]
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_5/DINADIN[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_5/CLKARDCLK
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         RAMB36E2 (Setup_RAMB36E2_CLKARDCLK_DINADIN[0])
+                                                     -0.402     4.349    core/syn_current_mem_reg_1_5
+  -------------------------------------------------------------------
+                         required time                          4.349    
+                         arrival time                          -2.971    
+  -------------------------------------------------------------------
+                         slack                                  1.378    
+
+Slack (MET) :             1.378ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_1_2/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/syn_current_mem_reg_2_5/DINADIN[0]
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        2.958ns  (logic 2.156ns (72.887%)  route 0.802ns (27.113%))
+  Logic Levels:           4  (CARRY8=2 LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_2/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[0])
+                                                      1.416     1.429 r  core/syn_current_mem_reg_1_2/DOUTBDOUT[0]
+                         net (fo=2, unplaced)         0.349     1.778    core/accumulator_read[8]
+                         LUT2 (Prop_LUT2_I0_O)        0.071     1.849 r  core/accumulator_overflow2_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     1.849    core/accumulator_overflow2_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.262 r  core/accumulator_overflow2_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     2.262    core/accumulator_overflow2_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[4])
+                                                      0.141     2.403 r  core/accumulator_overflow2_carry__1/O[4]
+                         net (fo=1, unplaced)         0.253     2.656    core/accumulator_overflow2_carry__1_n_11
+                         LUT4 (Prop_LUT4_I3_O)        0.115     2.771 r  core/syn_current_mem_reg_1_5_i_4/O
+                         net (fo=2, unplaced)         0.200     2.971    core/p_2_in[20]
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_5/DINADIN[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_5/CLKARDCLK
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         RAMB36E2 (Setup_RAMB36E2_CLKARDCLK_DINADIN[0])
+                                                     -0.402     4.349    core/syn_current_mem_reg_2_5
+  -------------------------------------------------------------------
+                         required time                          4.349    
+                         arrival time                          -2.971    
+  -------------------------------------------------------------------
+                         slack                                  1.378    
+
+Slack (MET) :             1.400ns  (required time - arrival time)
+  Source:                 core/decay_product_reg_reg__0/DSP_OUTPUT_INST/CLK
+                            (rising edge-triggered cell DSP_OUTPUT clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/decay_rounded_reg_reg[31]/D
+                            (rising edge-triggered cell FDRE clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        3.397ns  (logic 2.213ns (65.146%)  route 1.184ns (34.854%))
+  Logic Levels:           10  (CARRY8=6 LUT1=2 LUT2=1 LUT3=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/decay_product_reg_reg__0/CLK
+                         DSP_OUTPUT                                   r  core/decay_product_reg_reg__0/DSP_OUTPUT_INST/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_CLK_P[7])
+                                                      0.323     0.336 r  core/decay_product_reg_reg__0/DSP_OUTPUT_INST/P[7]
+                         net (fo=2, unplaced)         0.405     0.741    core/decay_product_reg_reg__0_n_98
+                         LUT2 (Prop_LUT2_I0_O)        0.071     0.812 r  core/decay_product_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     0.812    core/decay_product_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     1.225 r  core/decay_product_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     1.225    core/decay_product_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.133     1.358 f  core/decay_product_carry__1/O[1]
+                         net (fo=2, unplaced)         0.248     1.606    core/decay_product_reg_reg__1[33]
+                         LUT1 (Prop_LUT1_I0_O)        0.040     1.646 r  core/round_decay0_carry_i_18/O
+                         net (fo=1, unplaced)         0.000     1.646    core/round_decay0_carry_i_18_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.059 r  core/round_decay0_carry_i_10/CO[7]
+                         net (fo=1, unplaced)         0.000     2.059    core/round_decay0_carry_i_10_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[6])
+                                                      0.136     2.195 f  core/round_decay0_carry__0_i_9/O[6]
+                         net (fo=1, unplaced)         0.254     2.449    core/round_decay2[47]
+                         LUT1 (Prop_LUT1_I0_O)        0.040     2.489 r  core/round_decay0_carry__1_i_8/O
+                         net (fo=1, unplaced)         0.000     2.489    core/round_decay0_carry__1_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.902 r  core/round_decay0_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     2.902    core/round_decay0_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[6])
+                                                      0.136     3.038 r  core/round_decay0_carry__2/O[6]
+                         net (fo=1, unplaced)         0.254     3.292    core/round_decay0[31]
+                         LUT3 (Prop_LUT3_I1_O)        0.095     3.387 r  core/decay_rounded_reg[31]_i_1/O
+                         net (fo=1, unplaced)         0.023     3.410    core/round_decay_return[31]
+                         FDRE                                         r  core/decay_rounded_reg_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         FDRE                                         r  core/decay_rounded_reg_reg[31]/C
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         FDRE (Setup_FDRE_C_D)        0.059     4.810    core/decay_rounded_reg_reg[31]
+  -------------------------------------------------------------------
+                         required time                          4.810    
+                         arrival time                          -3.410    
+  -------------------------------------------------------------------
+                         slack                                  1.400    
+
+Slack (MET) :             1.404ns  (required time - arrival time)
+  Source:                 core/decay_product_reg_reg__0/DSP_OUTPUT_INST/CLK
+                            (rising edge-triggered cell DSP_OUTPUT clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/decay_rounded_reg_reg[65]/D
+                            (rising edge-triggered cell FDRE clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        3.393ns  (logic 2.242ns (66.077%)  route 1.151ns (33.923%))
+  Logic Levels:           11  (CARRY8=7 LUT1=2 LUT2=1 LUT3=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/decay_product_reg_reg__0/CLK
+                         DSP_OUTPUT                                   r  core/decay_product_reg_reg__0/DSP_OUTPUT_INST/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_CLK_P[7])
+                                                      0.323     0.336 r  core/decay_product_reg_reg__0/DSP_OUTPUT_INST/P[7]
+                         net (fo=2, unplaced)         0.405     0.741    core/decay_product_reg_reg__0_n_98
+                         LUT2 (Prop_LUT2_I0_O)        0.071     0.812 r  core/decay_product_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     0.812    core/decay_product_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     1.225 r  core/decay_product_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     1.225    core/decay_product_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     1.256 r  core/decay_product_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     1.256    core/decay_product_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.133     1.389 f  core/decay_product_carry__2/O[1]
+                         net (fo=2, unplaced)         0.248     1.637    core/decay_product_reg_reg__1[41]
+                         LUT1 (Prop_LUT1_I0_O)        0.040     1.677 r  core/round_decay0_carry__0_i_17/O
+                         net (fo=1, unplaced)         0.000     1.677    core/round_decay0_carry__0_i_17_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.090 r  core/round_decay0_carry__0_i_9/CO[7]
+                         net (fo=1, unplaced)         0.000     2.090    core/round_decay0_carry__0_i_9_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[6])
+                                                      0.136     2.226 f  core/round_decay0_carry__1_i_9/O[6]
+                         net (fo=1, unplaced)         0.254     2.480    core/round_decay2[55]
+                         LUT1 (Prop_LUT1_I0_O)        0.040     2.520 r  core/round_decay0_carry__2_i_8/O
+                         net (fo=1, unplaced)         0.000     2.520    core/round_decay0_carry__2_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.933 f  core/round_decay0_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     2.933    core/round_decay0_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[4])
+                                                      0.134     3.067 f  core/round_decay0_carry__3/CO[4]
+                         net (fo=1, unplaced)         0.221     3.288    core/round_decay0_carry__3_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.095     3.383 r  core/decay_rounded_reg[65]_i_2/O
+                         net (fo=1, unplaced)         0.023     3.406    core/round_decay_return[65]
+                         FDRE                                         r  core/decay_rounded_reg_reg[65]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         FDRE                                         r  core/decay_rounded_reg_reg[65]/C
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         FDRE (Setup_FDRE_C_D)        0.059     4.810    core/decay_rounded_reg_reg[65]
+  -------------------------------------------------------------------
+                         required time                          4.810    
+                         arrival time                          -3.406    
+  -------------------------------------------------------------------
+                         slack                                  1.404    
+
+Slack (MET) :             1.406ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_1_2/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/syn_current_mem_reg_1_5/DINADIN[1]
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        2.975ns  (logic 2.189ns (73.580%)  route 0.786ns (26.420%))
+  Logic Levels:           4  (CARRY8=2 LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_2/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[0])
+                                                      1.416     1.429 r  core/syn_current_mem_reg_1_2/DOUTBDOUT[0]
+                         net (fo=2, unplaced)         0.349     1.778    core/accumulator_read[8]
+                         LUT2 (Prop_LUT2_I0_O)        0.071     1.849 r  core/accumulator_overflow2_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     1.849    core/accumulator_overflow2_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.262 r  core/accumulator_overflow2_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     2.262    core/accumulator_overflow2_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[5])
+                                                      0.174     2.436 r  core/accumulator_overflow2_carry__1/O[5]
+                         net (fo=1, unplaced)         0.218     2.654    core/accumulator_overflow2_carry__1_n_10
+                         LUT4 (Prop_LUT4_I3_O)        0.115     2.769 r  core/syn_current_mem_reg_1_5_i_3/O
+                         net (fo=2, unplaced)         0.219     2.988    core/p_2_in[21]
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_5/DINADIN[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_5/CLKARDCLK
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         RAMB36E2 (Setup_RAMB36E2_CLKARDCLK_DINADIN[1])
+                                                     -0.357     4.394    core/syn_current_mem_reg_1_5
+  -------------------------------------------------------------------
+                         required time                          4.394    
+                         arrival time                          -2.988    
+  -------------------------------------------------------------------
+                         slack                                  1.406    
+
+Slack (MET) :             1.406ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_1_2/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/syn_current_mem_reg_2_5/DINADIN[1]
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        2.975ns  (logic 2.189ns (73.580%)  route 0.786ns (26.420%))
+  Logic Levels:           4  (CARRY8=2 LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_2/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[0])
+                                                      1.416     1.429 r  core/syn_current_mem_reg_1_2/DOUTBDOUT[0]
+                         net (fo=2, unplaced)         0.349     1.778    core/accumulator_read[8]
+                         LUT2 (Prop_LUT2_I0_O)        0.071     1.849 r  core/accumulator_overflow2_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     1.849    core/accumulator_overflow2_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.262 r  core/accumulator_overflow2_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     2.262    core/accumulator_overflow2_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[5])
+                                                      0.174     2.436 r  core/accumulator_overflow2_carry__1/O[5]
+                         net (fo=1, unplaced)         0.218     2.654    core/accumulator_overflow2_carry__1_n_10
+                         LUT4 (Prop_LUT4_I3_O)        0.115     2.769 r  core/syn_current_mem_reg_1_5_i_3/O
+                         net (fo=2, unplaced)         0.219     2.988    core/p_2_in[21]
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_5/DINADIN[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_5/CLKARDCLK
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         RAMB36E2 (Setup_RAMB36E2_CLKARDCLK_DINADIN[1])
+                                                     -0.357     4.394    core/syn_current_mem_reg_2_5
+  -------------------------------------------------------------------
+                         required time                          4.394    
+                         arrival time                          -2.988    
+  -------------------------------------------------------------------
+                         slack                                  1.406    
+
+Slack (MET) :             1.410ns  (required time - arrival time)
+  Source:                 core/decay_product_reg_reg__0/DSP_OUTPUT_INST/CLK
+                            (rising edge-triggered cell DSP_OUTPUT clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/decay_rounded_reg_reg[32]/D
+                            (rising edge-triggered cell FDRE clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        3.387ns  (logic 2.208ns (65.190%)  route 1.179ns (34.810%))
+  Logic Levels:           10  (CARRY8=6 LUT1=2 LUT2=1 LUT3=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/decay_product_reg_reg__0/CLK
+                         DSP_OUTPUT                                   r  core/decay_product_reg_reg__0/DSP_OUTPUT_INST/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_CLK_P[7])
+                                                      0.323     0.336 r  core/decay_product_reg_reg__0/DSP_OUTPUT_INST/P[7]
+                         net (fo=2, unplaced)         0.405     0.741    core/decay_product_reg_reg__0_n_98
+                         LUT2 (Prop_LUT2_I0_O)        0.071     0.812 r  core/decay_product_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     0.812    core/decay_product_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     1.225 r  core/decay_product_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     1.225    core/decay_product_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.133     1.358 f  core/decay_product_carry__1/O[1]
+                         net (fo=2, unplaced)         0.248     1.606    core/decay_product_reg_reg__1[33]
+                         LUT1 (Prop_LUT1_I0_O)        0.040     1.646 r  core/round_decay0_carry_i_18/O
+                         net (fo=1, unplaced)         0.000     1.646    core/round_decay0_carry_i_18_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.059 r  core/round_decay0_carry_i_10/CO[7]
+                         net (fo=1, unplaced)         0.000     2.059    core/round_decay0_carry_i_10_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[6])
+                                                      0.136     2.195 f  core/round_decay0_carry__0_i_9/O[6]
+                         net (fo=1, unplaced)         0.254     2.449    core/round_decay2[47]
+                         LUT1 (Prop_LUT1_I0_O)        0.040     2.489 r  core/round_decay0_carry__1_i_8/O
+                         net (fo=1, unplaced)         0.000     2.489    core/round_decay0_carry__1_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.902 r  core/round_decay0_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     2.902    core/round_decay0_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[7])
+                                                      0.186     3.088 r  core/round_decay0_carry__2/O[7]
+                         net (fo=1, unplaced)         0.249     3.337    core/round_decay0[32]
+                         LUT3 (Prop_LUT3_I1_O)        0.040     3.377 r  core/decay_rounded_reg[32]_i_1/O
+                         net (fo=1, unplaced)         0.023     3.400    core/round_decay_return[32]
+                         FDRE                                         r  core/decay_rounded_reg_reg[32]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         FDRE                                         r  core/decay_rounded_reg_reg[32]/C
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         FDRE (Setup_FDRE_C_D)        0.059     4.810    core/decay_rounded_reg_reg[32]
+  -------------------------------------------------------------------
+                         required time                          4.810    
+                         arrival time                          -3.400    
+  -------------------------------------------------------------------
+                         slack                                  1.410    
+
+Slack (MET) :             1.411ns  (required time - arrival time)
+  Source:                 core/decay_product_reg_reg__0/DSP_OUTPUT_INST/CLK
+                            (rising edge-triggered cell DSP_OUTPUT clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/decay_rounded_reg_reg[33]/D
+                            (rising edge-triggered cell FDRE clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        3.386ns  (logic 2.207ns (65.180%)  route 1.179ns (34.820%))
+  Logic Levels:           11  (CARRY8=7 LUT1=2 LUT2=1 LUT3=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/decay_product_reg_reg__0/CLK
+                         DSP_OUTPUT                                   r  core/decay_product_reg_reg__0/DSP_OUTPUT_INST/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_CLK_P[7])
+                                                      0.323     0.336 r  core/decay_product_reg_reg__0/DSP_OUTPUT_INST/P[7]
+                         net (fo=2, unplaced)         0.405     0.741    core/decay_product_reg_reg__0_n_98
+                         LUT2 (Prop_LUT2_I0_O)        0.071     0.812 r  core/decay_product_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     0.812    core/decay_product_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     1.225 r  core/decay_product_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     1.225    core/decay_product_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     1.256 r  core/decay_product_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     1.256    core/decay_product_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.133     1.389 f  core/decay_product_carry__2/O[1]
+                         net (fo=2, unplaced)         0.248     1.637    core/decay_product_reg_reg__1[41]
+                         LUT1 (Prop_LUT1_I0_O)        0.040     1.677 r  core/round_decay0_carry__0_i_17/O
+                         net (fo=1, unplaced)         0.000     1.677    core/round_decay0_carry__0_i_17_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.090 r  core/round_decay0_carry__0_i_9/CO[7]
+                         net (fo=1, unplaced)         0.000     2.090    core/round_decay0_carry__0_i_9_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[6])
+                                                      0.136     2.226 f  core/round_decay0_carry__1_i_9/O[6]
+                         net (fo=1, unplaced)         0.254     2.480    core/round_decay2[55]
+                         LUT1 (Prop_LUT1_I0_O)        0.040     2.520 r  core/round_decay0_carry__2_i_8/O
+                         net (fo=1, unplaced)         0.000     2.520    core/round_decay0_carry__2_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.933 r  core/round_decay0_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     2.933    core/round_decay0_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.099     3.032 r  core/round_decay0_carry__3/O[0]
+                         net (fo=1, unplaced)         0.249     3.281    core/round_decay0[33]
+                         LUT3 (Prop_LUT3_I1_O)        0.095     3.376 r  core/decay_rounded_reg[33]_i_1/O
+                         net (fo=1, unplaced)         0.023     3.399    core/round_decay_return[33]
+                         FDRE                                         r  core/decay_rounded_reg_reg[33]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         FDRE                                         r  core/decay_rounded_reg_reg[33]/C
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         FDRE (Setup_FDRE_C_D)        0.059     4.810    core/decay_rounded_reg_reg[33]
+  -------------------------------------------------------------------
+                         required time                          4.810    
+                         arrival time                          -3.399    
+  -------------------------------------------------------------------
+                         slack                                  1.411    
+
+Slack (MET) :             1.411ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_1_2/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/syn_current_mem_reg_1_6/DINADIN[3]
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        2.988ns  (logic 2.184ns (73.092%)  route 0.804ns (26.908%))
+  Logic Levels:           5  (CARRY8=3 LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_2/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[0])
+                                                      1.416     1.429 r  core/syn_current_mem_reg_1_2/DOUTBDOUT[0]
+                         net (fo=2, unplaced)         0.349     1.778    core/accumulator_read[8]
+                         LUT2 (Prop_LUT2_I0_O)        0.071     1.849 r  core/accumulator_overflow2_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     1.849    core/accumulator_overflow2_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.262 r  core/accumulator_overflow2_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     2.262    core/accumulator_overflow2_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     2.293 r  core/accumulator_overflow2_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     2.293    core/accumulator_overflow2_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[3])
+                                                      0.138     2.431 r  core/accumulator_overflow2_carry__2/O[3]
+                         net (fo=1, unplaced)         0.256     2.687    core/accumulator_overflow2_carry__2_n_12
+                         LUT4 (Prop_LUT4_I3_O)        0.115     2.802 r  core/syn_current_mem_reg_1_6_i_1/O
+                         net (fo=2, unplaced)         0.199     3.001    core/p_2_in[27]
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_6/DINADIN[3]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_6/CLKARDCLK
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         RAMB36E2 (Setup_RAMB36E2_CLKARDCLK_DINADIN[3])
+                                                     -0.339     4.412    core/syn_current_mem_reg_1_6
+  -------------------------------------------------------------------
+                         required time                          4.412    
+                         arrival time                          -3.001    
+  -------------------------------------------------------------------
+                         slack                                  1.411    
+
+Slack (MET) :             1.411ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_1_2/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Destination:            core/syn_current_mem_reg_2_6/DINADIN[3]
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_195m_mmcm  {rise@0.000ns fall@2.564ns period=5.128ns})
+  Path Group:             clk_195m_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.128ns  (clk_195m_mmcm rise@5.128ns - clk_195m_mmcm rise@0.000ns)
+  Data Path Delay:        2.988ns  (logic 2.184ns (73.092%)  route 0.804ns (26.908%))
+  Logic Levels:           5  (CARRY8=3 LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.623ns = ( 4.505 - 5.128 ) 
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    0.492ns
+  Clock Uncertainty:      0.245ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.057ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_195m_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL14                                              0.000     0.000 r  clk_50m (IN)
+                         net (fo=0)                   0.000     0.000    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.922     0.922 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.092     1.014    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.043     1.057 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.785     1.842    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.854    -3.012 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.358    -2.654    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083    -2.571 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.584     0.013    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_1_2/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[0])
+                                                      1.416     1.429 r  core/syn_current_mem_reg_1_2/DOUTBDOUT[0]
+                         net (fo=2, unplaced)         0.349     1.778    core/accumulator_read[8]
+                         LUT2 (Prop_LUT2_I0_O)        0.071     1.849 r  core/accumulator_overflow2_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.000     1.849    core/accumulator_overflow2_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.413     2.262 r  core/accumulator_overflow2_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     2.262    core/accumulator_overflow2_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     2.293 r  core/accumulator_overflow2_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     2.293    core/accumulator_overflow2_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[3])
+                                                      0.138     2.431 r  core/accumulator_overflow2_carry__2/O[3]
+                         net (fo=1, unplaced)         0.256     2.687    core/accumulator_overflow2_carry__2_n_12
+                         LUT4 (Prop_LUT4_I3_O)        0.115     2.802 r  core/syn_current_mem_reg_1_6_i_1/O
+                         net (fo=2, unplaced)         0.199     3.001    core/p_2_in[27]
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_6/DINADIN[3]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_195m_mmcm rise edge)
+                                                      5.128     5.128 r  
+    AL14                                              0.000     5.128 r  clk_50m (IN)
+                         net (fo=0)                   0.000     5.128    clock_input_buffer/I
+    AL14                 INBUF (Prop_INBUF_HRIO_PAD_O)
+                                                      0.656     5.784 r  clock_input_buffer/INBUF_INST/O
+                         net (fo=1, routed)           0.059     5.843    clock_input_buffer/OUT
+    AL14                 IBUFCTRL (Prop_IBUFCTRL_HRIO_I_O)
+                                                      0.032     5.875 r  clock_input_buffer/IBUFCTRL_INST/O
+                         net (fo=1, unplaced)         0.708     6.583    clk_50m_ibuf
+                         MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.900     1.683 r  clock_manager/CLKOUT0
+                         net (fo=1, unplaced)         0.308     1.991    clk_195m_mmcm
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     2.066 r  system_clock_buffer/O
+                         net (fo=6103, unplaced)      2.439     4.505    core/clk_195m
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_6/CLKARDCLK
+                         clock pessimism              0.492     4.997    
+                         clock uncertainty           -0.245     4.751    
+                         RAMB36E2 (Setup_RAMB36E2_CLKARDCLK_DINADIN[3])
+                                                     -0.339     4.412    core/syn_current_mem_reg_2_6
+  -------------------------------------------------------------------
+                         required time                          4.412    
+                         arrival time                          -3.001    
+  -------------------------------------------------------------------
+                         slack                                  1.411    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_195m_mmcm
+Waveform(ns):       { 0.000 2.564 }
+Period(ns):         5.128
+Sources:            { clock_manager/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/refractory_mem_reg_0/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/refractory_mem_reg_1/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/syn_current_mem_reg_1_0/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/syn_current_mem_reg_1_1/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/syn_current_mem_reg_1_2/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/syn_current_mem_reg_1_3/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/syn_current_mem_reg_1_4/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/syn_current_mem_reg_1_5/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/syn_current_mem_reg_1_6/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/syn_current_mem_reg_1_7/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/syn_current_mem_reg_1_8/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/syn_current_mem_reg_2_0/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/syn_current_mem_reg_2_1/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/syn_current_mem_reg_2_2/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/syn_current_mem_reg_2_3/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/syn_current_mem_reg_2_4/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/syn_current_mem_reg_2_5/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/syn_current_mem_reg_2_6/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/syn_current_mem_reg_2_7/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         5.128       3.167                core/syn_current_mem_reg_2_8/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/refractory_mem_reg_0/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/refractory_mem_reg_0/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/refractory_mem_reg_1/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/refractory_mem_reg_1/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_0/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_0/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_1/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_1/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_2/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_2/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_3/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_3/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_4/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_4/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_5/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_5/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_6/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_6/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_7/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_7/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/refractory_mem_reg_0/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/refractory_mem_reg_0/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/refractory_mem_reg_1/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/refractory_mem_reg_1/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_0/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_0/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_1/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_1/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_2/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_2/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_3/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_3/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_4/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_4/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_5/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_5/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_6/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_6/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_7/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.564       1.584                core/syn_current_mem_reg_1_7/CLKARDCLK
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfb_mmcm
+  To Clock:  clkfb_mmcm
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack       18.621ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfb_mmcm
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { clock_manager/CLKFBOUT }
+
+Check Type  Corner  Lib Pin              Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period  n/a     BUFGCE/I             n/a            1.379         20.000      18.621               feedback_clock_buffer/I
+Min Period  n/a     MMCME3_ADV/CLKFBOUT  n/a            1.071         20.000      18.929               clock_manager/CLKFBOUT
+Min Period  n/a     MMCME3_ADV/CLKFBIN   n/a            1.071         20.000      18.929               clock_manager/CLKFBIN
+
+
+

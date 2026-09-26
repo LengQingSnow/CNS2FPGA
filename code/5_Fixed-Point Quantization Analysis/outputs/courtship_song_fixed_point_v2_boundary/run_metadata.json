@@ -1,0 +1,12 @@
+{
+  "verdict": "PASSING_FORMATS_FOUND",
+  "safe_format": "q38_boundary",
+  "compact_format": "q36_boundary",
+  "formats_tested": 3,
+  "fixed_trials": 51,
+  "reference_archives": 17,
+  "protocol_lock_sha256": "f4b6ac9a6258add6758903f5628ab2e71fd49b36724d0b875a6cea2a629c69c4",
+  "frozen_inputs_unchanged": true,
+  "runtime_seconds": 43.30080409999982,
+  "python": "3.12.14"
+}

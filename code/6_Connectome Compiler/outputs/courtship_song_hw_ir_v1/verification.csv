@@ -1,0 +1,9 @@
+check,status,detail
+neuron_record_count,PASS,6279 == 6279
+neuron_constants_roundtrip,PASS,threshold/reset/decay/refractory
+synapse_post_roundtrip,PASS,350185 post indices
+synapse_weight_roundtrip,PASS,350185 signed weights
+offset_roundtrip,PASS,6279 CSR entries
+type_sign_roundtrip,PASS,6279 sign/pC1 records
+input_mapping_roundtrip,PASS,93 input indices
+source_counts_match_metadata,PASS,step-2 metadata

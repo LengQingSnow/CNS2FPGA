@@ -1,0 +1,9 @@
+{
+  "expected_refractory.mem": "efd9b4634acece701572845cecc2e8d44f75af813fcb826c1ff942179e99b0cb",
+  "expected_spike.mem": "f043e26e1c1d1578342859790873efb4c71cbfbb3137be6319e4f756ba4c0946",
+  "expected_syn_current.mem": "93f3dd8566af59a022ae60637714a3f61150b1e69e89b526e193491cac3c1554",
+  "expected_voltage.mem": "0dc81a870cdccf2183c2df0da3965edac0c282b00fef3c9cf1c026f6648b9194",
+  "reference_manifest.json": "b515c25d87ee2849e05a29526254fce7afe67e4682ac4c2a3cd4b76b8d76e5ed",
+  "reference_summary.csv": "133e02634474fba1575f67fd32b0576990e8789505f0e1791a7967dd676bd543",
+  "stimulus.mem": "497afa0e48b8b88e59ebe640944c68547926d96747c9f9903ff9a40ab388bbfe"
+}

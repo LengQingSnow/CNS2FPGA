@@ -1,0 +1,6 @@
+source,destination,edges,aggregate_synapses,active_weight_edges
+auditory_input,aPN1,82,884,82
+aPN1,vPN1,34,435,34
+vPN1,pC1,99,1069,99
+pC1,pIP10,93,1796,93
+pC1,pMP2,38,1645,38

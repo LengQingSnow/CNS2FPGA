@@ -1,0 +1,83 @@
+{
+  "locked_at_utc": "2026-09-18T08:00:08.508527+00:00",
+  "config": {
+    "schema_version": 3,
+    "name": "courtship_song_roi_mapping_v3",
+    "ir_neurons": "../../2_Subcircuit Automatic Extraction Tool/outputs/courtship_song_v0/neuron_table.csv",
+    "reference_runs": [
+      "../outputs/courtship_song_equal_pulse_v1",
+      "../outputs/courtship_song_mechanism_v2",
+      "../outputs/courtship_song_mal_v2b"
+    ],
+    "experiments": [
+      {
+        "id": "zhou2015_vPN1_split_gal4",
+        "readout": "vPN1 cell-body GCaMP6m and vPN1 perturbation",
+        "driver": "R72E10-GAL4AD ∩ VT9665-GAL4DBD; fruM-positive vPN1",
+        "mapping_rule": "synonyms contains 'Zhou 2015: vPN1'",
+        "mapping_status": "EXACT_ANNOTATION_NAME_MATCH",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4575990/"
+      },
+      {
+        "id": "zhou2015_pC1_intersection",
+        "readout": "pC1 anatomy and inactivation",
+        "driver": "R71G01-LexA ∩ dsxGAL4",
+        "mapping_rule": "no per-neuron R71G01 expression field in local MaleCNS annotation table",
+        "mapping_status": "NOT_IDENTIFIABLE_FROM_LOCAL_ANNOTATIONS",
+        "reported_male_count_per_hemisphere": 23,
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4575990/"
+      },
+      {
+        "id": "zhou2015_pC1_calcium_roi",
+        "readout": "peak GCaMP6m ΔF/F in dsxGAL4 pC1 neurites in LPC",
+        "driver": "dsxGAL4; selected pC1 neurites in the lateral protocerebral complex",
+        "mapping_rule": "requires driver-expression and neurite/ROI overlap, neither is a field in the local IR",
+        "mapping_status": "NOT_IDENTIFIABLE_FROM_LOCAL_ANNOTATIONS",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4575990/"
+      }
+    ],
+    "annotation_candidates": [
+      {
+        "id": "pC1_type_all",
+        "rule": "type starts with pC1",
+        "status": "TYPE_IDENTITY_REFERENCE_ONLY"
+      },
+      {
+        "id": "pC1_fruDsx_nonmissing",
+        "rule": "type starts with pC1 and fruDsx is nonempty",
+        "status": "ANNOTATION_COMPATIBLE_CANDIDATE_NOT_DRIVER_MAP"
+      },
+      {
+        "id": "pC1_fruDsx_coexpress",
+        "rule": "type starts with pC1 and fruDsx starts with coexpress",
+        "status": "P1_RELATED_CANDIDATE_NOT_DRIVER_MAP"
+      },
+      {
+        "id": "pC1_pMP_alias",
+        "rule": "type starts with pC1 and synonym has pMP-e or pMP4",
+        "status": "HISTORICAL_ALIAS_CANDIDATE_NOT_DRIVER_MAP"
+      }
+    ],
+    "external_evidence_requirements": [
+      "A versioned, sex- and age-matched R71G01∩dsx expression-to-bodyId table, or an explicit morphology registration protocol with one-to-one bodyId assignments.",
+      "For calcium comparison, an ROI/neurite mask or an explicit bodyId-to-ROI membership rule in the same template space.",
+      "For quantitative calibration, raw or digitized experimental traces plus acquisition/normalization metadata; no values may be silently inferred from a plot."
+    ],
+    "scope": "Mapping provenance audit only. It changes neither the Step-2 IR nor any Step-3/4 simulation parameter or verdict."
+  },
+  "input_and_source_sha256": {
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\configs\\courtship_song_roi_mapping_v3.json": "845772b36a2ff77224377eded4a18e21bd1dbb362907338f3969602a9827b2ff",
+    "E:\\Workspace\\CNS2FPGA\\code\\2_Subcircuit Automatic Extraction Tool\\outputs\\courtship_song_v0\\neuron_table.csv": "4e025152b9d6e6f76e913c4434cb92c621ae8a0a0e11dc1ff6f4a55fb6fb3e5e",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\run_roi_mapping_audit.py": "87c39fb4e16d892d96d472bb2e2e88022839ede9ee0ebbc39d68a3e9d55ddc6b",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\src\\cns2fpga_plausibility\\roi_mapping_v3.py": "fb56dc7a9f98038440aa6f50abd8383bf77e5db64560f5df50b79e244c6c6252",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_equal_pulse_v1\\protocol_lock.json": "d3d0e82f3e88f6a7baa39b03a9b56157a2c642a2a0a9743e8690c71b493c02a6",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_equal_pulse_v1\\run_metadata.json": "fcd9162bd492db00a4d84f9209e08fa68d9518daee333538e5e1419bf214820c",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_mechanism_v2\\protocol_lock.json": "f80de45cd615ce4602953e14b80fe855b03f045fa45a62229c64d941afb8250d",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_mechanism_v2\\run_metadata.json": "e84fdab12e276b4eb00ebba22c6ba0e7432d6ae7a15ba8375c0c03694046a245",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_mechanism_v2\\artifact_sha256.json": "025a3566a1dffff3bfc361395ee2a9eec66d19403c4a890ad70f435746165032",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_mal_v2b\\protocol_lock.json": "eb1c14017802b27f0736b42134dbfea10bcb4cbd6e23de9ab6687e47b638a6d0",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_mal_v2b\\run_metadata.json": "c987f7a207d570c3c2cb7183e99508f646f6255f9820d7ef2a4568cdc7a0aae0",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\outputs\\courtship_song_mal_v2b\\artifact_sha256.json": "ac31026d16c06ccc329a6bcb7e224a7ae1411ce17671c726334f2e3059d6db66"
+  },
+  "scope": "Mapping provenance audit only. It changes neither the Step-2 IR nor any Step-3/4 simulation parameter or verdict."
+}

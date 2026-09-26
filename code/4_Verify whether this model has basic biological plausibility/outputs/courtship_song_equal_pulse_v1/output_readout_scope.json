@@ -1,0 +1,10 @@
+{
+  "status": "UNVALIDATED_BEHAVIOR_MAPPING",
+  "separate_readouts": [
+    "pIP10",
+    "pMP2"
+  ],
+  "exploratory_combined_readout": "output_combined_exploratory",
+  "acceptance_threshold": null,
+  "reason": "The cited perception study does not validate mean pIP10+pMP2 firing as the chaining index. Old warning is preserved as a scope limitation, not converted into a biological pass."
+}

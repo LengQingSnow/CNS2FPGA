@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "name": "full_network_8step_v1",
+  "compiler_output": "../../6_Connectome Compiler/outputs/courtship_song_hw_ir_v1",
+  "source_ir": "../../2_Subcircuit Automatic Extraction Tool/outputs/courtship_song_v0",
+  "golden_config": "../../3_CPU Floating-Point Golden Model/configs/courtship_song_lif_v0.json",
+  "fixed_src": "../../5_Fixed-Point Quantization Analysis/src",
+  "fixed_config": "../../5_Fixed-Point Quantization Analysis/configs/courtship_song_fixed_point_v6_final.json",
+  "fixed_format": "safe_wf24",
+  "stimulus": [1.2, 1.2, 1.2, 0.0, 0.0, 0.0, 0.0, 0.0]
+}

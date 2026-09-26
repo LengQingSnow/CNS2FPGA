@@ -1,0 +1,8 @@
+board=ALINX_AXKU115_V1.0
+part=xcku115-flva1517-2-i
+core_clock_mhz=200.000
+wns_ns=0.073
+whs_ns=-0.085
+unrouted_nets=0
+partially_routed_nets=0
+drc_error_count=0

@@ -1,0 +1,10 @@
+evidence_id,citation,constraint
+courtship_2015,"Zhou et al., eLife 2015, doi:10.7554/eLife.08477",aPN1-vPN1-pC1 is the reported labeled-line pathway for male courtship-song perception.
+courtship_2015,"Zhou et al., eLife 2015, doi:10.7554/eLife.08477",Male chaining is strongest near the conspecific 35-ms IPI.
+courtship_2015,"Zhou et al., eLife 2015, doi:10.7554/eLife.08477","vPN1 strongly responds at 35 ms and longer, with attenuation below 25 ms."
+courtship_2015,"Zhou et al., eLife 2015, doi:10.7554/eLife.08477",pC1 is band-pass: strong at 35-65 ms and reduced at 15-25 and 85-95 ms.
+courtship_2015,"Zhou et al., eLife 2015, doi:10.7554/eLife.08477",pC1 inactivation almost completely abolishes song-induced chaining.
+lif_2024,"Shiu et al., Nature 2024, doi:10.1038/s41586-024-07763-9",Connectome-derived LIF modelling uses connectivity weights and presynaptic neurotransmitter identity.
+lif_2024,"Shiu et al., Nature 2024, doi:10.1038/s41586-024-07763-9",The published sign convention treats acetylcholine as excitatory and GABA/glutamate as inhibitory.
+lif_2024,"Shiu et al., Nature 2024, doi:10.1038/s41586-024-07763-9",In-silico silencing is a biologically interpretable validation experiment.
+lif_2024,"Shiu et al., Nature 2024, doi:10.1038/s41586-024-07763-9",Absolute firing rates are not expected to be quantitatively accurate in this simple model class.

@@ -1,0 +1,13 @@
+{
+  "name": "clock_target_250mhz_v1",
+  "target_clock_mhz": 250.0,
+  "clock_period_ns": 4.0,
+  "clock_uncertainty_ns": 0.2,
+  "biological_timestep_us": 1000.0,
+  "observed_maximum_cycles_per_timestep": 167668,
+  "source_run_metadata": "../outputs/full_network_8step_v1/run_metadata.json",
+  "constraint_file": "../constraints/cns2fpga_250mhz.xdc",
+  "device_family": "Kintex UltraScale KU115",
+  "exact_part": null,
+  "timing_closure_claimed": false
+}

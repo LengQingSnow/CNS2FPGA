@@ -1,0 +1,58 @@
+{
+  "locked_at_utc": "2026-09-18T15:54:09.613560+00:00",
+  "config": {
+    "schema_version": 1,
+    "name": "neuronbridge_r71g01_annotation_audit_v3c",
+    "scope": "Join every MaleCNS v0.9 NeuronBridge result to pinned MaleCNS v1.0 annotations and audit the frozen step-2 path criterion.",
+    "search_config": "neuronbridge_r71g01_screen_v3b.json",
+    "extractor_root": "../../2_Subcircuit Automatic Extraction Tool",
+    "extractor_config": "../../2_Subcircuit Automatic Extraction Tool/configs/courtship_song_v0.json",
+    "annotation_table": "../../../support/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+    "connectivity_table": "../../../support/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+    "frozen_ir": "../../2_Subcircuit Automatic Extraction Tool/outputs/courtship_song_v0/neuron_table.csv",
+    "interpretation": {
+      "search_score": "NeuronBridge search score is retained for ranking within an export and is not treated as a calibrated confidence probability.",
+      "driver_scope": "R71G01 MCFO alone does not identify the Zhou 2015 R71G01-LexA∩dsxGAL4 intersection or calcium ROI.",
+      "version_join": "v0.9 result body IDs are checked against the pinned v1.0 annotation table; unmatched IDs remain explicit."
+    }
+  },
+  "search_query_provenance": {
+    "line": "R71G01",
+    "sex": "male",
+    "anatomical_area": "Brain",
+    "library": "FlyLight Gen1 MCFO v1.1",
+    "alignment_space": "JRC2018_Unisex_20x_HR",
+    "query_exported_by": "user",
+    "important_limit": "R71G01 alone is not the Zhou 2015 R71G01-LexA∩dsxGAL4 intersection."
+  },
+  "input_and_source_sha256": {
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\configs\\neuronbridge_r71g01_annotation_audit_v3c.json": "f9d6a0b55009ec20d8fba8a1f65f01ea1148aaba3f2b984f27dbb0a4b6963a8f",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\configs\\neuronbridge_r71g01_screen_v3b.json": "2e68fdb4c190f408c54ead0b0cea171214a88566df7627863246210acf350db5",
+    "E:\\Workspace\\CNS2FPGA\\code\\2_Subcircuit Automatic Extraction Tool\\configs\\courtship_song_v0.json": "a207c44eb501fea7791ae021952e2f66ce0eddacd639e4db0d72c755b57f87d1",
+    "E:\\Workspace\\CNS2FPGA\\support\\body-annotations-male-cns-v1.0-minconf-0.5.feather": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+    "E:\\Workspace\\CNS2FPGA\\support\\connectome-weights-male-cns-v1.0-minconf-0.5.feather": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+    "E:\\Workspace\\CNS2FPGA\\code\\2_Subcircuit Automatic Extraction Tool\\outputs\\courtship_song_v0\\neuron_table.csv": "4e025152b9d6e6f76e913c4434cb92c621ae8a0a0e11dc1ff6f4a55fb6fb3e5e",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\run_neuronbridge_annotation_audit.py": "f540494e883f7dc50f29ef6e2d432f91ede919bbae878a84e5737b77fb2e52b3",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\src\\cns2fpga_plausibility\\neuronbridge_annotation_audit.py": "b6c219d2d7e6a52f1150d033ed1fe65d240fcf301d2840e9e0fbdc11e94aeb8f",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\src\\cns2fpga_plausibility\\neuronbridge_screen.py": "bf3b73babe706eeb54bcdd77bd72b6d2617e95df1d8c2454d74b25274e251f0c",
+    "E:\\Workspace\\CNS2FPGA\\code\\2_Subcircuit Automatic Extraction Tool\\src\\cns2fpga_extractor\\core.py": "6a2e48ece13ee8445b62e6acef586b9a4b27d6d0119a79257b6df70dd7152853",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\support\\20191213_64_H1_Channel1.csv": "1ee33f30fe195e0336aae1283bae49f45f4e2e27a51a4fb97f7e3b6b202dc93b",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\support\\20191213_64_H1_Channel2.csv": "7afc9ba8c3e110e009377f472111e0daec496db32e3c049500046447e1f6930e",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\support\\20191213_64_H1_Channel3.csv": "9487fad8f92fadbc2201bb1bb143354bfe4cc90b553131bb32e979d22aeec3be",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\support\\20191213_64_H2_Channel1.csv": "c4ff445f653ef5f06b95ae14886bb974ba202eedafd5e82fba04e238ec12059d",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\support\\20191213_64_H2_Channel2.csv": "ec5cdbd2d345d892f8e37a0bb1ed3c775961f3ef12f920f99081ec71c14976f8",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\support\\20191213_64_H2_Channel3.csv": "38601bf30b8d6ef0913bed21a7f6d47e1e64d04024fdb7cd8b3419590ab86f97",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\support\\20191213_64_H3_Channel1.csv": "e0e42f800800db81d56763d82822b2c7370dd19eae68fd2fc99242693286d254",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\support\\20191213_64_H3_Channel2.csv": "2549304d771dd79fad415cce4e4cf20db3b3580848147f2488987b88bc73bb89",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\support\\20191213_64_H3_Channel3.csv": "1e6c0e1f79d2093234ac031a41947029f828e9f5289a9230000e3baf401f7185",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\support\\20191213_64_H4_Channel1.csv": "d8733be2e2a1fc008e09e3ea2e604fc07387ae71114bd5ee1ddab7ffe8d92b7f",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\support\\20191213_64_H4_Channel2.csv": "9eaf2d77b5fc27348ba099489cad2ce6cc3354a02b78e391af38f00e0fecb41b",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\support\\20191213_64_H4_Channel3.csv": "528a8521511b29dc0e11284fda5c4d6db9df0f0addd841a4dec10dac96205a58",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\support\\20191213_64_H5_Channel1.csv": "b5158feb599da269bd358e933c3769f36fe1144cf781bd8234721b6c3603acbd",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\support\\20191213_64_H5_Channel2.csv": "9047515656ad47771551d84904b3956ddc55a1193f7690a0695d04a2a1dd4358",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\support\\20191213_64_H5_Channel3.csv": "fc8d360ec3bb662abfef650fe7eb53e91f3c742aa95aa3e7e1d9d3b0282ef0fc",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\support\\20191213_64_H6_Channel1.csv": "3781528eea0e80b8b06fed6dafcd21bc7f3e46c659f119cbfa6e54901b76e200",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\support\\20191213_64_H6_Channel2.csv": "cdc0c36fbd23cbfd4f1b2d34d5b71f67fd3dafbaa2424eb3fbb5be6fe3eb8744",
+    "E:\\Workspace\\CNS2FPGA\\code\\4_Verify whether this model has basic biological plausibility\\support\\20191213_64_H6_Channel3.csv": "7158e856ce1d76b3b75eacf258531141bf526600f9d0879d7c1494231520758c"
+  }
+}

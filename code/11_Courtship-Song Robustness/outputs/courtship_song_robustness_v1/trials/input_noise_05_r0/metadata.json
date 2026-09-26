@@ -1,0 +1,38 @@
+{
+  "schema": "cns2fpga.step9.stimulus",
+  "schema_version": 1,
+  "trial": "input_noise_05_r0",
+  "network_neurons": 6279,
+  "dt_ms": 1,
+  "timesteps": 4308,
+  "input_current_encoding": {
+    "signed": true,
+    "bits": 34,
+    "frac_bits": 24,
+    "rounding": "nearest_ties_away_from_zero",
+    "word_order": "low32_then_high2",
+    "binary_word_endianness": "little",
+    "binary_words_per_timestep": 2
+  },
+  "details": {
+    "profile": "step11",
+    "family": "input_noise",
+    "level_pct": 5,
+    "replicate": 0,
+    "seed": 20291425,
+    "noise_sigma": 0.06,
+    "response_start_ms": 100,
+    "response_end_ms": 1968
+  },
+  "source_sha256": {
+    "code\\8_RTL Bit-Exact Co-Simulation\\configs\\full_network_8step_v1.json": "183777c6c476721c5c841c1e7e541fd2a7bfe9b116947b40b5bed5ad7e5b7da9",
+    "code\\4_Verify whether this model has basic biological plausibility\\configs\\courtship_song_equal_pulse_v1.json": "7c65c0edac43958beecaa3dcb5599ac1dd9ea470f72d9d16f7571c4f2b8cc117",
+    "code\\5_Fixed-Point Quantization Analysis\\configs\\courtship_song_fixed_point_v6_final.json": "5829b58460d35f436299b9f1c9995815ffddff38b0f6363505dc3ebef487542c",
+    "code\\8_RTL Bit-Exact Co-Simulation\\sim\\reference\\full_network_8step_v1\\reference_manifest.json": "280943586d8e62426230d0b115ba525fd8e181726cfb22c8c982763e7134e043"
+  },
+  "artifact_sha256": {
+    "stimulus.mem": "1da1af094dc27ea702bfb41d1952f84418fdaea61626fc114c6cd23ea26dbcfc",
+    "stimulus_words.bin": "3842ad97593912c63b5b574951de4eef04d48166ad2b1b488f6a1a36169b5690",
+    "stimulus_words.csv": "40f3a202e4eb721b727df4092de9381c7f1d7ab2cc69bcc26b4c8ff44695315a"
+  }
+}

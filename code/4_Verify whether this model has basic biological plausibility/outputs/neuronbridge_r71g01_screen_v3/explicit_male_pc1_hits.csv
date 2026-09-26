@@ -1,0 +1,2 @@
+Number,Neuron ID,Score,Matched Pixels,Library,Sex,Alignment Space,Anatomical Area,Neuron Type,Neuron Instance,source_file,bodyId,type,instance,somaSide,synonyms,fruDsx,status,neuron_index,in_frozen_ir
+2135,male-cns:v0.9:10217,1101.2965,237,FlyEM_Male_CNS_Brain_v0.9,m,JRC2018_Unisex_20x_HR,Brain,pC1x_b,pC1x_b_L,20191213_64_H4_Channel3.csv,10217,pC1x_b,pC1x_b_L,L,"Lee 2002, Rideout 2010, Nojima 2021: pC1, Sten 2025: pC1x",dsx_high,Traced,,False

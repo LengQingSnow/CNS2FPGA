@@ -1,0 +1,12 @@
+{
+  "safe": null,
+  "compact": null,
+  "status": "NO_FORMAT_MET_ALL_ACCEPTANCE_GATES",
+  "acceptance": {
+    "max_key_response_error_percent": 5.0,
+    "required_tuning_direction_agreements": 8,
+    "required_intervention_direction_agreements": 24,
+    "allow_state_saturation": false,
+    "allow_accumulator_saturation": false
+  }
+}

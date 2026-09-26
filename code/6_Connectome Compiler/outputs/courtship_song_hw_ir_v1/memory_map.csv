@@ -1,0 +1,7 @@
+file,records,record_bits,logical_bits,bram36_if_independent
+neuron_param.mem,6279,128,803712,22
+synapse.mem,350185,64,22411840,608
+offset.mem,6279,32,200928,6
+type_sign.mem,6279,16,100464,3
+input_mapping.mem,93,16,1488,1
+global_config.mem,8,64,512,1

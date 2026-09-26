@@ -1,0 +1,31 @@
+{
+  "schema": "cns2fpga.rtl_reference",
+  "schema_version": 1,
+  "neurons": 6279,
+  "synapses": 350185,
+  "timesteps": 8,
+  "fixed_format": {
+    "name": "safe_wf24",
+    "state_bits": 34,
+    "state_frac": 24,
+    "weight_bits": 30,
+    "weight_frac": 24,
+    "decay_bits": 32,
+    "decay_frac": 30,
+    "accumulator_bits": 35
+  },
+  "flattening": "address=timestep*neurons+neuron_index",
+  "input_and_source_sha256": {
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\configs\\full_network_8step_v1.json": "183777c6c476721c5c841c1e7e541fd2a7bfe9b116947b40b5bed5ad7e5b7da9",
+    "E:\\Workspace\\CNS2FPGA\\code\\3_CPU Floating-Point Golden Model\\configs\\courtship_song_lif_v0.json": "cabed7b422f69cd30c213cc95cf819edcac11bdf0705205b46939ac9e069518a",
+    "E:\\Workspace\\CNS2FPGA\\code\\5_Fixed-Point Quantization Analysis\\configs\\courtship_song_fixed_point_v6_final.json": "5829b58460d35f436299b9f1c9995815ffddff38b0f6363505dc3ebef487542c",
+    "E:\\Workspace\\CNS2FPGA\\code\\2_Subcircuit Automatic Extraction Tool\\outputs\\courtship_song_v0\\neuron_table.csv": "4e025152b9d6e6f76e913c4434cb92c621ae8a0a0e11dc1ff6f4a55fb6fb3e5e",
+    "E:\\Workspace\\CNS2FPGA\\code\\2_Subcircuit Automatic Extraction Tool\\outputs\\courtship_song_v0\\synapse_table.csv": "6e86a30f46a636553e0cb82bfc062c900ce9102637cd4c3504df0f254e078dd7",
+    "E:\\Workspace\\CNS2FPGA\\code\\2_Subcircuit Automatic Extraction Tool\\outputs\\courtship_song_v0\\offset_table.csv": "46cf272270679cedd0398c121d8159cee24a6196373483a0e0c0e0dc844ad924",
+    "E:\\Workspace\\CNS2FPGA\\code\\6_Connectome Compiler\\outputs\\courtship_song_hw_ir_v1\\protocol_lock.json": "c5673c0e76b3443a01c102ca1c0331f18c90e3804f91ae9425230a62301f237c",
+    "E:\\Workspace\\CNS2FPGA\\code\\6_Connectome Compiler\\outputs\\courtship_song_hw_ir_v1\\artifact_sha256.json": "3539b0efd9edad18a3d6cc53c29591cc5882ee285d46a2b178e6188ae4989cc3",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\generate_reference.py": "1aa969c29ce7caa3a0a29487beeae5c57032ad8b75b82ff60a94f7e1bcbd43ea",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\src\\reference_stepper.py": "9cbd1555f842b83c21bdcc1ed98a663ac7b21f9649b8faa0b1e49e5100e1a495",
+    "E:\\Workspace\\CNS2FPGA\\code\\5_Fixed-Point Quantization Analysis\\src\\cns2fpga_fixed\\fixed_lif.py": "bfe7942bee431222f9c86cfce0779041174bdfb978272f43956a0621f9b5271c"
+  }
+}

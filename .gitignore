@@ -1,0 +1,42 @@
+# Original MaleCNS source data are downloaded separately.
+support/*.feather
+support/*.pdf
+support/*.part
+support/.*.part
+
+# Local Python environments and caches.
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Vivado/ModelSim generated state and route checkpoints.
+**/.Xil/
+**/build/
+**/work/
+**/work_*/
+**/-p/
+*.dcp
+*.jou
+*.log
+**/transcript
+!code/7_Minimum FPGA Architecture/sim/transcript.log
+!code/7_Minimum FPGA Architecture/sim/full_image_load.log
+!code/8_RTL Bit-Exact Co-Simulation/sim/bit_exact_transcript.log
+*.wlf
+*.qdb
+*.qpg
+*.qtl
+*.rtd
+
+# Paper visual-QA raster and archival duplicate package.
+**/qa_render/
+**/CNS2FPGA_paper_package_v2.zip
+
+# Host/editor noise.
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db

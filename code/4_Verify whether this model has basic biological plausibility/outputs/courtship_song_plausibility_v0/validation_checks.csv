@@ -1,0 +1,18 @@
+category,check_id,status,observed,expected,evidence_id,details
+structure,auditory_input_present,PASS,93 JO-A/JO-B anchors,>0 auditory inputs,courtship_2015,
+structure,aPN1_present,PASS,15 labeled aPN1 neurons,>0 explicit aPN1 neurons,courtship_2015,
+structure,vPN1_present,PASS,11 labeled vPN1 neurons,>0 explicit vPN1 neurons,courtship_2015,
+structure,pC1_present,PASS,112 pC1 neurons,>0 pC1 neurons,courtship_2015,
+structure,selected_outputs_present,PASS,4 pIP10/pMP2 neurons,>0 selected outputs,project_definition,
+sign,signed_neuron_coverage,PASS,97.977%,>=85.0%,lif_2024,
+sign,acetylcholine_sign,PASS,100.0% mapped to +1 (n=3812),>=99% mapped to +1,lif_2024,
+sign,gaba_sign,PASS,100.0% mapped to -1 (n=1727),>=99% mapped to -1,lif_2024,
+sign,glutamate_sign,PASS,100.0% mapped to -1 (n=613),>=99% mapped to -1,lif_2024,
+dynamics,pC1_ipi_discrimination,PASS,normalized range=28.0% (2.857 Hz),>=20% normalized modulation,courtship_2015,
+dynamics,pC1_short_ipi_attenuation,PASS,36 ms=10.214 Hz; 16 ms=7.357 Hz,36-ms response > 16-ms response,courtship_2015,
+dynamics,pC1_three_point_bandpass,PASS,16/36/56 ms=7.357/10.214/8.071 Hz,36 ms exceeds both 16 and 56 ms,courtship_2015,
+dynamics,output_proxy_conspecific_peak,WARN,16/36/56 ms=20.000/17.000/15.000 Hz,pIP10+pMP2 proxy at 36 ms exceeds both 16 and 56 ms,courtship_2015,Downstream firing is only a proxy for the published chaining behavior.
+dynamics,vPN1_short_ipi_attenuation,PASS,36 ms=15.636 Hz; 16 ms=4.364 Hz,36-ms response > 16-ms response,courtship_2015,
+ablation,pC1_output_influence,PASS,88.24% pIP10+pMP2 rate drop,>=20%,courtship_2015,
+ablation,pC1_specificity_vs_random,PASS,pC1=88.24%; random 95th percentile=37.94%,pC1 drop > matched-random 95th percentile,lif_2024,
+ablation,auditory_input_necessity,PASS,100.00% pIP10+pMP2 rate drop,>=80%,project_definition,

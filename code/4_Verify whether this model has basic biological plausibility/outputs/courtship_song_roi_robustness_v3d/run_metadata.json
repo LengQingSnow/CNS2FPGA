@@ -1,0 +1,21 @@
+{
+  "verdict": "EXPLORATORY_ROI_READOUT_SENSITIVITY_COMPLETED",
+  "biological_pass_claimed": false,
+  "model_freeze_recommended": false,
+  "candidate_readouts": {
+    "pC1_type_all": 112,
+    "pC1_fruDsx_nonmissing": 111,
+    "pC1_fruDsx_coexpress": 65,
+    "pC1_pMP_alias": 63,
+    "pC1_neuronbridge_any_hit": 107,
+    "pC1_neuronbridge_best_rank_le_100": 15
+  },
+  "event_archives_reused": 81,
+  "new_simulations": 0,
+  "all_pC1_peak_tuning_comparisons_passed": 4,
+  "all_pC1_peak_tuning_comparisons_total": 4,
+  "readouts_with_identical_tuning_pattern_to_all_pC1": 2,
+  "readouts_with_identical_35ms_intervention_directions_to_all_pC1": 3,
+  "protocol_lock_sha256": "3d202b1f04743098e84bcbb27658ec09e4b795fb263d5921ecfc5948fb0d2932",
+  "frozen_inputs_unchanged": true
+}

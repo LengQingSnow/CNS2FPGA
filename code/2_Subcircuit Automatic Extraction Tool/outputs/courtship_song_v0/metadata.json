@@ -1,0 +1,88 @@
+{
+  "config": {
+    "name": "courtship_song_v0",
+    "dataset": "MaleCNS v1.0",
+    "data": {
+      "annotations": "../../../support/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "neurotransmitters": "../../../support/body-neurotransmitters-male-cns-v1.0.feather",
+      "connectivity": "../../../support/connectome-weights-male-cns-v1.0-minconf-0.5.feather"
+    },
+    "selectors": {
+      "inputs": [
+        {
+          "field": "type",
+          "regex": "^JO-(?:A|B)",
+          "label": "Johnston organ auditory neurons"
+        }
+      ],
+      "relays": [
+        {
+          "field": "synonyms",
+          "regex": "Vaughan 2014: aPN1",
+          "label": "aPN1 auditory relay (MaleCNS literature alias)"
+        },
+        {
+          "field": "synonyms",
+          "regex": "Zhou 2015: vPN1",
+          "label": "vPN1 auditory relay (MaleCNS literature alias)"
+        },
+        {
+          "field": "type",
+          "regex": "^pC1",
+          "label": "pC1 courtship integration"
+        }
+      ],
+      "outputs": [
+        {
+          "field": "type",
+          "regex": "^pIP10$",
+          "label": "pIP10 descending output"
+        },
+        {
+          "field": "type",
+          "regex": "^pMP2$",
+          "label": "pMP2 descending output"
+        }
+      ]
+    },
+    "annotation_filters": {
+      "include": [],
+      "exclude": []
+    },
+    "extraction": {
+      "max_hops": 4,
+      "min_synapse_count": 5,
+      "batch_rows": 2000000,
+      "max_frontier_nodes": 250000
+    },
+    "ir": {
+      "neuron_record_bits": 64,
+      "synapse_record_bits": 64,
+      "offset_entry_bits": 32,
+      "bram36_bits": 36864
+    }
+  },
+  "counts": {
+    "input anchors matched": 138,
+    "relay anchors matched": 184,
+    "output anchors matched": 4,
+    "input anchors retained": 93,
+    "relay anchors retained": 138,
+    "output anchors retained": 4,
+    "forward reachable neurons": 165677,
+    "backward reachable neurons": 162668,
+    "path-retained neurons": 6279
+  },
+  "graph": {
+    "neurons": 6279,
+    "nonzero_edges": 350185,
+    "aggregate_synapses": 7029800,
+    "max_fan_out_edges": 843,
+    "max_fan_in_edges": 545
+  },
+  "storage": {
+    "total_bits": 23014656,
+    "bram36_equivalent": 625,
+    "assumption": "Storage estimate only; excludes buffers, port replication and control logic."
+  }
+}

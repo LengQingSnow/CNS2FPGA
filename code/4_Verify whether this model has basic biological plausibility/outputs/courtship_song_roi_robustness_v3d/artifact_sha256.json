@@ -1,0 +1,13 @@
+{
+  "archive_integrity.csv": "2cc2bca64ab9e4ab57f504b30229a3efc0a546a2e2f44c9bccbdb1fa27df0b2b",
+  "candidate_membership.csv": "318f7d7ba0c64ffa936a87c39adf6d33b796fce662d6819210512f53f697dac1",
+  "candidate_tuning.png": "ab704da46ddd1091b62fc2c5288bc3f6e7f170c0b61df78e9047d87a2dcce35c",
+  "intervention_effects.csv": "2c554074105afcb146adb5a45e883ef4fa4078e742428eafb7a94e8ce81534ac",
+  "intervention_effects_35ms.png": "34bab32daea81194edc88f3c13b6e7d32afd5e3488757371c846b0740ae5cafd",
+  "protocol_lock.json": "3d202b1f04743098e84bcbb27658ec09e4b795fb263d5921ecfc5948fb0d2932",
+  "report.md": "9a4e88c310bf527ff9d1324c4614d5bd4e4297e77bddd20751507c38550b2d29",
+  "response_summary.csv": "bbce6356e1ea44f05a2d94872d05df57377b42384f0bc208dea445c05a00a230",
+  "run_metadata.json": "925c22cf47cdb1c307f68d7d7e126ea2577e7e7189cc312b97a195b09472976d",
+  "stability_summary.csv": "d0e1c50ebb0d5ceff147277ef71d51520b0197db97042cce137b8f141d94a3a3",
+  "tuning_checks.csv": "b0bdbde2d0ab2b9df2705f73739f46e278fb12aa4577fdac2bdc87447081ddd3"
+}

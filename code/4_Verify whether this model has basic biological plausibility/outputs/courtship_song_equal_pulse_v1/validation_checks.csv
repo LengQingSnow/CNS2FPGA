@@ -1,0 +1,22 @@
+check_id,category,status,gate,observed,expected,basis
+presynaptic_sign_consistency,engineering,PASS,True,True,Every edge sign equals its presynaptic neuron sign,IR invariant
+acetylcholine_policy,engineering,PASS,True,"n=3812, sign=1",All annotated cells follow the declared sign convention,"Modelling assumption, Shiu 2024; not receptor verification"
+gaba_policy,engineering,PASS,True,"n=1727, sign=-1",All annotated cells follow the declared sign convention,"Modelling assumption, Shiu 2024; not receptor verification"
+glutamate_policy,engineering,PASS,True,"n=613, sign=-1",All annotated cells follow the declared sign convention,"Modelling assumption, Shiu 2024; not receptor verification"
+named_pathway_edges,engineering,PASS,True,"[82, 34, 99]",Nonzero signed edges in JO->aPN1->vPN1->pC1,Structural coverage; does not assert a unique pathway
+equal_pulse_charge,engineering,PASS,True,"[40, 40, 40, 40, 40, 40, 40, 40, 40]",40 pulses and equal current integral in every trial,Stimulus invariant
+silence_baseline,engineering,PASS,True,0 spikes,Quiescent model without stimulus,Frozen bias/noise/reset=0
+vPN1_short_ipi_attenuation/peak_rate_hz,literature_proxy,PASS,True,reference=20; competitors=10,vPN1 35 ms > each of [15] ms,Zhou 2015 Fig 5H/6K direction applied to a spike proxy; not a calcium/statistical replication
+vPN1_short_ipi_attenuation/evoked_spikes_per_neuron_per_pulse,literature_proxy,PASS,False,reference=0.504545; competitors=0.0568182,vPN1 35 ms > each of [15] ms,Zhou 2015 Fig 5H/6K direction applied to a spike proxy; not a calcium/statistical replication
+pC1_short_ipi_attenuation/peak_rate_hz,literature_proxy,PASS,True,"reference=13.125; competitors=11.1607,13.0357","pC1 35 ms > each of [15, 25] ms",Zhou 2015 Fig 5H/6K direction applied to a spike proxy; not a calcium/statistical replication
+pC1_short_ipi_attenuation/evoked_spikes_per_neuron_per_pulse,literature_proxy,PASS,False,"reference=0.387277; competitors=0.136384,0.227679","pC1 35 ms > each of [15, 25] ms",Zhou 2015 Fig 5H/6K direction applied to a spike proxy; not a calcium/statistical replication
+pC1_long_ipi_attenuation/peak_rate_hz,literature_proxy,PASS,True,"reference=13.125; competitors=11.6071,11.0714","pC1 35 ms > each of [85, 95] ms",Zhou 2015 Fig 5H/6K direction applied to a spike proxy; not a calcium/statistical replication
+pC1_long_ipi_attenuation/evoked_spikes_per_neuron_per_pulse,literature_proxy,FAIL,False,"reference=0.387277; competitors=0.486607,0.499554","pC1 35 ms > each of [85, 95] ms",Zhou 2015 Fig 5H/6K direction applied to a spike proxy; not a calcium/statistical replication
+silenced_cells_never_spike,engineering,PASS,True,0 clamped-cell spikes,0 in every targeted/random trial,Execution invariant
+finite_voltages,engineering,PASS,True,maximum absolute voltage=208.081,Finite throughout all simulations,"Numerical check, not biological voltage units"
+weights_unchanged_by_ablation,engineering,PASS,True,896828108e292e7006c34878ae4d22fc8ac7ef0d7e22b2057e3608747eb6dc58,Same weights in every condition; no post-ablation renormalization,Execution invariant
+input_ablation_stops_downstream,engineering,PASS,True,max residual=0,No downstream evoked spikes when all external input cells are clamped,"Computational input necessity, not a behavioral ablation claim"
+vPN1_silencing_reduces_pC1,causal_hypothesis,PASS,True,0.387277 -> 0.372545; drop=3.804%,Strict reduction at 35 ms in evoked spikes / neuron / pulse,"Project causal hypothesis motivated by ascending pathway, not calibrated behavioral threshold"
+activity_at_response_window_end,scope,PASS,False,No residual spikes in the final 100 ms,Report window dependence of integrated counts,"A 500-ms tail is an engineering choice, not a fitted neural/calcium decay constant"
+behavior_readout_mapping,scope,NOT_EVALUABLE,False,pIP10/pMP2 separately measured; combination exploratory,Independent evidence before equating rates with chaining,No direct experimental mapping supplied
+experimental_numeric_correlation,scope,NOT_EVALUABLE,False,No raw/digitized calcium reference or calibrated observation model,Matched experimental quantity and sourced reference values,Direction-only comparison

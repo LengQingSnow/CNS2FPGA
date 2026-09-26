@@ -1,0 +1,31 @@
+{
+  "schema": "cns2fpga.rtl_reference",
+  "schema_version": 1,
+  "neurons": 226,
+  "synapses": 1730,
+  "timesteps": 8,
+  "fixed_format": {
+    "name": "safe_wf24",
+    "state_bits": 34,
+    "state_frac": 24,
+    "weight_bits": 30,
+    "weight_frac": 24,
+    "decay_bits": 32,
+    "decay_frac": 30,
+    "accumulator_bits": 35
+  },
+  "flattening": "address=timestep*neurons+neuron_index",
+  "input_and_source_sha256": {
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\configs\\visual_left_rtl_8step_v0.json": "cb8a9822f9002b17135fab45c343c6edab17f127be00a85b912122e1a371a93a",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\configs\\visual_lif_v0.json": "487f6b62b3a38c7c58bfcbb617ad563f434c78a8c48f0298bd913e733a213182",
+    "E:\\Workspace\\CNS2FPGA\\code\\5_Fixed-Point Quantization Analysis\\configs\\courtship_song_fixed_point_v6_final.json": "5829b58460d35f436299b9f1c9995815ffddff38b0f6363505dc3ebef487542c",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\outputs\\visual_left_input_ir_v0\\neuron_table.csv": "a77c550865313eb39979911176a6f2b1491242da0b6a71d9ce5b70e8c901dcee",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\outputs\\visual_left_input_ir_v0\\synapse_table.csv": "cfc1125e96be9e0d6ba4339c724c6dddf0c37d06ea7edc0f1ed1724247cf8405",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\outputs\\visual_left_input_ir_v0\\offset_table.csv": "422e0ad4df2e0bb497bc0d168ab9b111af9fe41b086e6e0f293fb21bb4707aaa",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\outputs\\visual_left_hw_ir_v0\\protocol_lock.json": "eb2ebf9fca38d83818049b687fd151c63dd15ffa6d07edae3daabd9f85ffdc5a",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\outputs\\visual_left_hw_ir_v0\\artifact_sha256.json": "ff85a20fec733ccb3e4ff38caceb14a5fdd80c353a566d1f73edb2b5a6b4e823",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\generate_reference.py": "1aa969c29ce7caa3a0a29487beeae5c57032ad8b75b82ff60a94f7e1bcbd43ea",
+    "E:\\Workspace\\CNS2FPGA\\code\\8_RTL Bit-Exact Co-Simulation\\src\\reference_stepper.py": "9cbd1555f842b83c21bdcc1ed98a663ac7b21f9649b8faa0b1e49e5100e1a495",
+    "E:\\Workspace\\CNS2FPGA\\code\\5_Fixed-Point Quantization Analysis\\src\\cns2fpga_fixed\\fixed_lif.py": "bfe7942bee431222f9c86cfce0779041174bdfb978272f43956a0621f9b5271c"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "verdict": "PASS",
+  "network_neurons": 226,
+  "graph_edges": 1730,
+  "input_neurons": 109,
+  "timesteps": 250,
+  "ordered_events_compared": 560,
+  "per_timestep_total_compared": 250,
+  "DNa02_L_spikes": 5,
+  "DNa02_R_spikes": 0,
+  "max_latency_cycles": 4439,
+  "period_cycles": 200000,
+  "diagnostic_sum": {
+    "state_saturation": 0,
+    "accumulator_saturation": 0,
+    "deadline_miss": 0,
+    "event_overflow": 0
+  },
+  "bitstream_sha256": "aa11a5965beaef316c6a388bba3075294a5c4efe02616cdf2ed073d9af0cc572",
+  "stimulus_sha256": "d4902419f18b2c02f825e3de12a6181ebed2c15381b25a6708e2c9278aa7acf5",
+  "capture_sha256": {
+    "registers.csv": "9d4e13dd0977b662f227d79053976814cb68986cb0819f8bb9ee84ebc6b576dd",
+    "summary_words.hex": "4b6fc195063d788dec919df4fb5b8fbd4830cb121c85afb7f5a448fa083504b3",
+    "event_words.hex": "3312ec497cc7087671cfd1737b46795f30c18ef2377fd71b5dc24beacfb49c04"
+  }
+}

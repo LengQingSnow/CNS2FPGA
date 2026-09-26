@@ -1,0 +1,113 @@
+neuron_index,bodyId,type,somaSide,fruDsx,synonyms,neuronbridge_best_rank,pC1_type_all,pC1_fruDsx_nonmissing,pC1_fruDsx_coexpress,pC1_pMP_alias,pC1_neuronbridge_any_hit,pC1_neuronbridge_best_rank_le_100
+277,10666,pC1x_c,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1, Sten 2025: pC1x",,True,True,False,False,False,False
+860,12257,pC1x_c,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1, Sten 2025: pC1x",,True,True,False,False,False,False
+913,12442,pC1_4a,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",6,True,True,False,False,True,True
+916,12448,pC1_18a,L,dsx_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1",30,True,True,False,False,True,True
+1047,12893,pC1x_d,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1, Sten 2025: pC1x",,True,True,False,False,False,False
+1152,13266,pC1_3b,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",114,True,True,True,True,True,False
+1199,13449,pC1x_d,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1, Sten 2025: pC1x",,True,True,False,False,False,False
+1207,13495,pC1_11a,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",204,True,True,False,False,True,False
+1219,13562,pC1_12b,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",788,True,True,False,False,True,False
+1247,13655,pC1_11b,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",523,True,True,False,False,True,False
+1535,15035,pC1_18b,R,dsx_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1047,True,True,False,False,True,False
+1565,15208,pC1_1a,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",526,True,True,True,True,True,False
+1760,16262,pC1_1b,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",912,True,True,True,True,True,False
+1772,16364,pC1_9b,L,,,2129,True,False,False,False,True,False
+1836,16719,pC1_4b,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",139,True,True,False,False,True,False
+1900,17089,pC1_12b,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",342,True,True,False,False,True,False
+1904,17098,pC1_6a,L,coexpress_low,Cachero 2010: pMP-e; Yu 2010: pMP4,1407,True,True,True,True,True,False
+1958,17434,pC1_10c,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1088,True,True,False,False,True,False
+2027,17851,pC1_12b,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",813,True,True,False,False,True,False
+2029,17867,pC1_4b,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",249,True,True,False,False,True,False
+2055,18017,pC1_3c,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",20,True,True,True,True,True,True
+2125,18554,pC1_12b,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",166,True,True,False,False,True,False
+2174,18913,pC1_2b,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",895,True,True,True,True,True,False
+2176,18934,pC1_15c,L,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",2506,True,True,True,True,True,False
+2182,18974,pC1_3a,R,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",62,True,True,True,True,True,True
+2186,18990,pC1_11a,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",459,True,True,False,False,True,False
+2210,19136,pC1_3c,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",272,True,True,True,True,True,False
+2279,19650,pC1_3a,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",36,True,True,True,True,True,True
+2282,19672,pC1_13a,R,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",2109,True,True,True,True,True,False
+2287,19705,pC1_2b,R,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",616,True,True,True,True,True,False
+2318,19948,pC1_3c,R,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",3,True,True,True,True,True,True
+2341,20117,pC1_4a,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",21,True,True,False,False,True,True
+2357,20255,pC1_1a,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",965,True,True,True,True,True,False
+2364,20392,pC1_2c,R,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",93,True,True,True,True,True,True
+2397,20597,pC1_6a,R,coexpress_low,Cachero 2010: pMP-e; Yu 2010: pMP4,1552,True,True,True,True,True,False
+2422,20751,pC1_16a,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",595,True,True,True,True,True,False
+2427,20803,pC1_4a,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",40,True,True,False,False,True,True
+2499,21507,pC1_6a,R,coexpress_low,Cachero 2010: pMP-e; Yu 2010: pMP4,1158,True,True,True,True,True,False
+2504,21538,pC1_13b,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",2461,True,True,False,False,True,False
+2558,22093,pC1_2c,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",281,True,True,True,True,True,False
+2626,22818,pC1_17a,R,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1584,True,True,True,True,True,False
+2690,23695,pC1_14a,L,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1734,True,True,True,True,True,False
+2700,23787,pC1_13c,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",2020,True,True,False,False,True,False
+2701,23789,pC1_16a,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",844,True,True,True,True,True,False
+2714,23924,pC1_13b,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1861,True,True,False,False,True,False
+2717,23952,pC1_16a,R,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",820,True,True,True,True,True,False
+2720,23968,pC1_4a,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",137,True,True,False,False,True,False
+2786,24623,pC1_6b,R,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",626,True,True,True,False,True,False
+2797,24727,pC1_8a,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",,True,True,False,False,False,False
+2844,25204,pC1_13a,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",2044,True,True,True,True,True,False
+2866,25521,pC1_8a,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",908,True,True,False,False,True,False
+2869,25542,pC1_7a,R,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",393,True,True,True,True,True,False
+2885,25690,pC1_15b,R,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1804,True,True,True,True,True,False
+2888,25740,pC1_14b,R,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1649,True,True,True,True,True,False
+2934,26543,pC1_6a,L,coexpress_low,Cachero 2010: pMP-e; Yu 2010: pMP4,1035,True,True,True,True,True,False
+2947,26746,pC1_7b,R,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",758,True,True,True,True,True,False
+2963,26993,pC1_1b,R,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",139,True,True,True,True,True,False
+3082,28972,pC1_15b,L,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",2701,True,True,True,True,True,False
+3085,29043,pC1_7a,L,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1070,True,True,True,True,True,False
+3091,29143,pC1_5b,R,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",52,True,True,True,True,True,True
+3097,29214,pC1_14a,R,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1569,True,True,True,True,True,False
+3107,29388,pC1_15c,R,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",2577,True,True,True,True,True,False
+3118,29483,pC1_5b,R,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",75,True,True,True,True,True,True
+3163,30391,pC1_8b,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",270,True,True,False,False,True,False
+3170,30546,pC1_10d,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",838,True,True,False,False,True,False
+3241,32437,pC1_15a,R,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1930,True,True,True,True,True,False
+3248,32788,pC1_18b,R,dsx_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1",394,True,True,False,False,True,False
+3254,32950,pC1_5a,R,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",361,True,True,True,True,True,False
+3279,33553,pC1_14a,R,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1925,True,True,True,True,True,False
+3499,41518,pC1_8c,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",283,True,True,False,False,True,False
+3537,43592,pC1_7b,R,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",724,True,True,True,True,True,False
+3549,44515,pC1_14a,L,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",2554,True,True,True,True,True,False
+3587,46570,pC1_14b,L,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",2165,True,True,True,True,True,False
+3596,47325,pC1_8c,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1036,True,True,False,False,True,False
+3664,53355,pC1_7a,L,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",786,True,True,True,True,True,False
+3687,55986,pC1_14a,L,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1748,True,True,True,True,True,False
+3783,68624,pC1_19,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",77,True,True,False,False,True,True
+3792,70011,pC1_5b,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",307,True,True,True,True,True,False
+3797,70815,pC1_17a,L,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1547,True,True,True,True,True,False
+3801,71385,pC1_7a,R,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1084,True,True,True,True,True,False
+3860,79642,pC1_19,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",243,True,True,False,False,True,False
+3912,87497,pC1_18b,L,dsx_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1293,True,True,False,False,True,False
+3971,98113,pC1_19,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",187,True,True,False,False,True,False
+3990,102224,pC1_5a,L,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1218,True,True,True,True,True,False
+4014,108816,pC1_15a,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1931,True,True,True,True,True,False
+4063,125721,pC1_19,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",189,True,True,False,False,True,False
+4068,127881,pC1_19,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",193,True,True,False,False,True,False
+4123,156865,pC1_19,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1777,True,True,False,False,True,False
+4142,170209,pC1_19,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",63,True,True,False,False,True,True
+4151,180724,pC1_15c,L,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",2085,True,True,True,True,True,False
+4190,220200,pC1_13b,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1418,True,True,False,False,True,False
+4267,512011,pC1_12a,R,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",279,True,True,True,True,True,False
+4341,513129,pC1_8b,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",539,True,True,False,False,True,False
+4374,513650,pC1_12a,L,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",907,True,True,True,True,True,False
+4375,513651,pC1_7b,L,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1246,True,True,True,True,True,False
+4376,513652,pC1_7b,L,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",999,True,True,True,True,True,False
+4406,514077,pC1_11b,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",561,True,True,False,False,True,False
+4500,515977,pC1_10b,R,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1077,True,True,False,False,True,False
+4525,516522,pC1_14a,R,coexpress_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1822,True,True,True,True,True,False
+4575,517735,pC1_6b,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",808,True,True,True,False,True,False
+4592,518253,pC1_18b,L,dsx_low,"Lee 2002, Rideout 2010, Nojima 2021: pC1",155,True,True,False,False,True,False
+4601,518589,pC1_10c,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1383,True,True,False,False,True,False
+4646,519518,pC1_4a,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",141,True,True,False,False,True,False
+4678,519914,pC1_1a,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",988,True,True,True,True,True,False
+4798,521453,pC1_6a,L,coexpress_low,Cachero 2010: pMP-e; Yu 2010: pMP4,1733,True,True,True,True,True,False
+4859,522419,pC1_4a,L,dsx_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1",20,True,True,False,False,True,True
+4975,524296,pC1_1a,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",631,True,True,True,True,True,False
+5000,524747,pC1_2a,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",623,True,True,True,True,True,False
+5064,526918,pC1_1a,R,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",560,True,True,True,True,True,False
+5081,528986,pC1_6a,R,coexpress_low,Cachero 2010: pMP-e; Yu 2010: pMP4,1153,True,True,True,True,True,False
+5222,535835,pC1_16b,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",811,True,True,True,True,True,False
+5296,557035,pC1_5b,L,coexpress_high,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",91,True,True,True,True,True,True

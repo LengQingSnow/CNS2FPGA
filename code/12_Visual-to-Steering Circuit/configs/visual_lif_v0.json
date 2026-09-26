@@ -1,0 +1,32 @@
+{
+  "name": "visual_lif_v0",
+  "description": "Engineering LIF reference for the MaleCNS LC10a-AOTU-DNa02 candidate pathway; not a behavioral steering model.",
+  "ir": {
+    "neuron_table": "../outputs/visual_to_steering_v0/neuron_table.csv",
+    "synapse_table": "../outputs/visual_to_steering_v0/synapse_table.csv",
+    "offset_table": "../outputs/visual_to_steering_v0/offset_table.csv",
+    "metadata": "../outputs/visual_to_steering_v0/metadata.json"
+  },
+  "model": {
+    "dt_ms": 1.0,
+    "duration_ms": 250.0,
+    "tau_membrane_ms": 20.0,
+    "threshold": 1.0,
+    "reset_voltage": 0.0,
+    "refractory_ms": 2.0,
+    "bias_current": 0.0,
+    "noise_std": 0.0,
+    "random_seed": 20260926,
+    "propagation_backend": "scipy_csr",
+    "weight_mode": "raw_linear",
+    "recurrent_gain": 0.015
+  },
+  "stimulus": {"kind": "pulse_train", "start_ms": 20.0, "stop_ms": 220.0, "pulse_width_ms": 3.0, "amplitude": 1.2, "ipi_ms": [20.0, 40.0, 80.0]},
+  "observations": [
+    {"name": "visual_input", "flag": "is_input_anchor"},
+    {"name": "AOTU019", "field": "type", "regex": "^AOTU019$"},
+    {"name": "AOTU025", "field": "type", "regex": "^AOTU025$"},
+    {"name": "DNa02", "field": "type", "regex": "^DNa02$"}
+  ],
+  "max_trace_neurons_per_group": 2
+}

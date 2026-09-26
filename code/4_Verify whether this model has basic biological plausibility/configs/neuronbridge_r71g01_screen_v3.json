@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "name": "neuronbridge_r71g01_screen_v3",
+  "scope": "Read-only audit of six male R71G01 FlyLight MCFO slides searched against NeuronBridge; this is morphology-candidate evidence, not an R71G01∩dsx ROI map.",
+  "search_dir": "../support",
+  "annotation_table": "../../../support/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+  "frozen_ir": "../../2_Subcircuit Automatic Extraction Tool/outputs/courtship_song_v0/neuron_table.csv",
+  "expected_files": [
+    "20191213_64_H1_Channel1.csv", "20191213_64_H1_Channel2.csv", "20191213_64_H1_Channel3.csv",
+    "20191213_64_H2_Channel1.csv", "20191213_64_H2_Channel2.csv", "20191213_64_H2_Channel3.csv",
+    "20191213_64_H3_Channel1.csv", "20191213_64_H3_Channel2.csv", "20191213_64_H3_Channel3.csv",
+    "20191213_64_H4_Channel1.csv", "20191213_64_H4_Channel2.csv", "20191213_64_H4_Channel3.csv",
+    "20191213_64_H5_Channel1.csv", "20191213_64_H5_Channel2.csv", "20191213_64_H5_Channel3.csv",
+    "20191213_64_H6_Channel1.csv", "20191213_64_H6_Channel2.csv", "20191213_64_H6_Channel3.csv"
+  ],
+  "query_provenance": {
+    "line": "R71G01",
+    "sex": "male",
+    "anatomical_area": "Brain",
+    "library": "FlyLight Gen1 MCFO v1.1",
+    "alignment_space": "JRC2018_Unisex_20x_HR",
+    "query_exported_by": "user",
+    "important_limit": "R71G01 alone is not the Zhou 2015 R71G01-LexA∩dsxGAL4 intersection."
+  }
+}

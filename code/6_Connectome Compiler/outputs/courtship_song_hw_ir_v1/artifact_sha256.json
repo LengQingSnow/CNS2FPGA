@@ -1,0 +1,16 @@
+{
+  "body_id_map.csv": "9b692b8a6ce8c7d5a95a79db214ea750e70a0f9623cbd0f2a863b987f03a0fdb",
+  "cns2fpga_config.svh": "efc338bb9a89e38859d691981603cc632ca734ecd05e5ebcf24708d218875d3e",
+  "compiler_manifest.json": "1449d7b7206e2681659a0ed53f8642bb61a4ed15e281553c7825ad045360ed99",
+  "global_config.mem": "5fb1b4dabc871f2a35ce786824b3b547c6e26d69c89c126bbaa6b7913f29792f",
+  "input_mapping.mem": "4bf642fe4a24e214cb33bda201722163a509ba3f3193d7b4020c5f7aaba1ab8f",
+  "memory_map.csv": "7e9e7a505878261dda37eee603db15deaed7b78cf791c07aeb7672ae6d74cbc6",
+  "neuron_param.mem": "c31854a6d57620b36f50b2ccc0be5dbd45e84ea0a014c19bfe387eba5fb308ef",
+  "offset.mem": "dc168da0c07111411ab5800842463ea6b0e414755e37c9ffe3ecbe4f88bbe2cc",
+  "protocol_lock.json": "c5673c0e76b3443a01c102ca1c0331f18c90e3804f91ae9425230a62301f237c",
+  "report.md": "f72be943ef56f973208642b0db097f6429122fff63f3f78657784280641e55e0",
+  "run_metadata.json": "8d07fc76c44f47573ee637358a891526ac22ff99a79eb1be2ee534cc37c92979",
+  "synapse.mem": "562dc194aac0c594ab2eff6626951ae6badb406973b19c98fae8961b152a1a87",
+  "type_sign.mem": "cbacfa8b11ecd855f844f845bf51078f28bff6dc4d216169c3d4a48c30660a2c",
+  "verification.csv": "239f3144dbf1d9340324f3cbdc2f508a6aef98b0c101c29c638df98ab412a693"
+}

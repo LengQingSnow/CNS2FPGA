@@ -1,0 +1,14 @@
+{
+  "name": "courtship_song_mal_v2b",
+  "parent_run": "../outputs/courtship_song_mechanism_v2",
+  "reference_ipi_ms": 35,
+  "mal_type_regex": "^mAL(?:_|$)",
+  "bridge_definition": "All annotated mAL cells receiving negative vPN1 edges and sending negative edges to pC1, without activity-based selection",
+  "interventions": ["cut_vPN1_to_mAL_bridge", "cut_mAL_bridge_to_pC1", "cut_both_bridge_segments"],
+  "reference": {
+    "doi": "10.1016/j.cell.2026.08.015",
+    "url": "https://doi.org/10.1016/j.cell.2026.08.015",
+    "evidence": "The MaleCNS paper proposes vPN1 inhibits a male-specific mAL which inhibits pC1 (Figure S5G). This audit selects all matching signed two-edge motifs in the current IR, not a verified one-to-one map to the figure's specific cells."
+  },
+  "scope": "Exploratory literature-led follow-up after v2, not a new acceptance gate or calibrated biological model"
+}

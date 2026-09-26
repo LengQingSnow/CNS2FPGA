@@ -1,0 +1,45 @@
+{
+  "verdict": "DIAGNOSTIC_ONLY_NOT_BIOLOGICAL_PASS",
+  "model_freeze_recommended": false,
+  "protocol_lock_sha256": "f80de45cd615ce4602953e14b80fe855b03f045fa45a62229c64d941afb8250d",
+  "baseline_lock_sha256": "d3d0e82f3e88f6a7baa39b03a9b56157a2c642a2a0a9743e8690c71b493c02a6",
+  "locked_at_utc": "2026-09-18T07:42:18.559628+00:00",
+  "completed_at_utc": "2026-09-18T07:43:10.617385+00:00",
+  "frozen_inputs_unchanged": true,
+  "model_parameter_changes": {},
+  "reference_replay_exact": true,
+  "all_output_cut_matches_vPN1_clamp_outside_vPN1": [
+    15.0,
+    25.0,
+    35.0,
+    45.0,
+    55.0,
+    65.0,
+    75.0,
+    85.0,
+    95.0
+  ],
+  "reused_stimulus_trials": 18,
+  "new_stimulus_trials": 36,
+  "replay_trials": 1,
+  "quiet_trials": 5,
+  "pC1_neurons": 112,
+  "pC1_type_labels": 43,
+  "vPN1_nt_consensus_counts": {
+    "gaba": 11
+  },
+  "vPN1_nonmissing_ground_truth": 0,
+  "vPN1_direct_pC1_edges": 99,
+  "vPN1_direct_pC1_synapses": 1069,
+  "vPN1_direct_pC1_recipients": 38,
+  "vPN1_fraction_all_pC1_incoming_synapses": 0.011703269032865494,
+  "pC1_reachable_without_vPN1_positive_only": 112,
+  "runtime_seconds": 52.64960439999413,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  }
+}

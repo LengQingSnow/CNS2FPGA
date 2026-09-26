@@ -1,0 +1,14 @@
+{
+  "verdict": "MORPHOLOGY_CANDIDATE_OUTSIDE_FROZEN_SUBCIRCUIT",
+  "model_freeze_recommended": false,
+  "source_table_count": 18,
+  "source_result_rows": 69110,
+  "explicit_male_pc1_hit_rows": 1,
+  "unique_explicit_male_pc1_candidates": 1,
+  "candidates_in_frozen_ir": 0,
+  "candidate_bodyIds": [
+    10217
+  ],
+  "protocol_lock_sha256": "e8663dd5baac5d53a73641af2c9b1db8d0d0444df0604ab7bb434d2976c139e9",
+  "frozen_inputs_unchanged": true
+}

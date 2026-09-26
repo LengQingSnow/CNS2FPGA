@@ -1,0 +1,5 @@
+format_name,state_bits,weight_bits,weight_frac,pC1_spikes,pC1_error_pct,exact_events,state_saturation_events,accumulator_saturation_events
+safe_wf24,34,30,24,1735,0.0,True,0,0
+compact_wf23,33,29,23,1735,0.0,True,0,0
+boundary_wf22,33,28,22,1735,0.0,True,0,0
+boundary_wf21,33,27,21,1735,0.0,True,0,0

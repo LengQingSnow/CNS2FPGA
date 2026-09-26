@@ -1,0 +1,41 @@
+{
+  "name": "courtship_song_lif_v0",
+  "description": "Floating-point LIF reference for the MaleCNS courtship-song V0 subgraph.",
+  "ir": {
+    "neuron_table": "../../2_Subcircuit Automatic Extraction Tool/outputs/courtship_song_v0/neuron_table.csv",
+    "synapse_table": "../../2_Subcircuit Automatic Extraction Tool/outputs/courtship_song_v0/synapse_table.csv",
+    "offset_table": "../../2_Subcircuit Automatic Extraction Tool/outputs/courtship_song_v0/offset_table.csv",
+    "metadata": "../../2_Subcircuit Automatic Extraction Tool/outputs/courtship_song_v0/metadata.json"
+  },
+  "model": {
+    "dt_ms": 1.0,
+    "duration_ms": 250.0,
+    "tau_membrane_ms": 20.0,
+    "threshold": 1.0,
+    "reset_voltage": 0.0,
+    "refractory_ms": 2.0,
+    "bias_current": 0.0,
+    "noise_std": 0.0,
+    "random_seed": 20260918,
+    "propagation_backend": "scipy_csr",
+    "weight_mode": "raw_linear",
+    "recurrent_gain": 0.015
+  },
+  "stimulus": {
+    "kind": "pulse_train",
+    "start_ms": 20.0,
+    "stop_ms": 220.0,
+    "pulse_width_ms": 3.0,
+    "amplitude": 1.2,
+    "ipi_ms": [16.0, 36.0, 56.0]
+  },
+  "observations": [
+    {"name": "auditory_input", "flag": "is_input_anchor"},
+    {"name": "aPN1", "field": "synonyms", "regex": "Vaughan 2014: aPN1"},
+    {"name": "vPN1", "field": "synonyms", "regex": "Zhou 2015: vPN1"},
+    {"name": "pC1", "field": "type", "regex": "^pC1"},
+    {"name": "pIP10", "field": "type", "regex": "^pIP10$"},
+    {"name": "pMP2", "field": "type", "regex": "^pMP2$"}
+  ],
+  "max_trace_neurons_per_group": 4
+}

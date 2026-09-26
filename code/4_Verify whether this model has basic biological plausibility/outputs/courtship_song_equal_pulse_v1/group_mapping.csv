@@ -1,0 +1,240 @@
+group,neuron_index,bodyId,type,instance,synonyms,nt_model_sign
+auditory_input,2835,25108,JO-A2,JO-A2_L,,1
+auditory_input,3123,29561,JO-A2,JO-A2_L,,1
+auditory_input,3322,35351,JO-A1,JO-A1_L,,1
+auditory_input,3526,42619,JO-B1_a,JO-B1_a_L,,1
+auditory_input,3579,46071,JO-A2,JO-A2_L,,1
+auditory_input,3675,54078,JO-A2,JO-A2_L,,1
+auditory_input,3688,56087,JO-B1_c,JO-B1_c_L,,1
+auditory_input,3858,79498,JO-B1_c,JO-B1_c_L,,1
+auditory_input,3861,79679,JO-B1_a,JO-B1_a_L,,1
+auditory_input,3863,79855,JO-B3,JO-B3_L,,1
+auditory_input,3869,80565,JO-A1,JO-A1_L,,1
+auditory_input,3883,82361,JO-B1_a,JO-B1_a_L,,1
+auditory_input,3939,91617,JO-B4_a,JO-B4_a_L,,1
+auditory_input,3965,97027,JO-B1_c,JO-B1_c_L,,1
+auditory_input,4007,106702,JO-B1_a,JO-B1_a_L,,1
+auditory_input,4021,111277,JO-B3,JO-B3_L,,1
+auditory_input,4023,112105,JO-B3,JO-B3_L,,1
+auditory_input,4034,114598,JO-B4_b,JO-B4_b_L,,1
+auditory_input,4042,117756,JO-B1_c,JO-B1_c_L,,1
+auditory_input,4052,121617,JO-B1_c,JO-B1_c_L,,1
+auditory_input,4058,123650,JO-B3,JO-B3_L,,1
+auditory_input,4065,126498,JO-A1,JO-A1_R,,1
+auditory_input,4072,129290,JO-B4_a,JO-B4_a_L,,1
+auditory_input,4093,141560,JO-B3,JO-B3_L,,1
+auditory_input,4096,144112,JO-B4_a,JO-B4_a_L,,1
+auditory_input,4106,149854,JO-B2,JO-B2_L,,1
+auditory_input,4107,149913,JO-B4_b,JO-B4_b_L,,1
+auditory_input,4109,150421,JO-B1_b,JO-B1_b_L,,1
+auditory_input,4117,153859,JO-B1_b,JO-B1_b_L,,1
+auditory_input,4128,158576,JO-B1_b,JO-B1_b_L,,1
+auditory_input,4139,168652,JO-B2,JO-B2_L,,1
+auditory_input,4164,190894,JO-B4_b,JO-B4_b_L,,1
+auditory_input,4167,195446,JO-B2,JO-B2_L,,1
+auditory_input,4175,205974,JO-B1_b,JO-B1_b_L,,1
+auditory_input,4177,207663,JO-B4_b,JO-B4_b_L,,1
+auditory_input,4181,210416,JO-B1_c,JO-B1_c_L,,1
+auditory_input,4182,213985,JO-B1_a,JO-B1_a_L,,1
+auditory_input,4200,232880,JO-A1,JO-A1_L,,1
+auditory_input,4201,233170,JO-B3,JO-B3_L,,1
+auditory_input,4204,241016,JO-B3,JO-B3_R,,1
+auditory_input,4209,248488,JO-B2,JO-B2_R,,1
+auditory_input,4213,258426,JO-B2,JO-B2_L,,1
+auditory_input,4217,274169,JO-B1_b,JO-B1_b_L,,1
+auditory_input,4220,283806,JO-B4_b,JO-B4_b_L,,1
+auditory_input,4224,308087,JO-A1,JO-A1_R,,1
+auditory_input,4229,381870,JO-B1_b,JO-B1_b_R,,1
+auditory_input,4231,387990,JO-A1,JO-A1_L,,1
+auditory_input,4233,397749,JO-B4_b,JO-B4_b_R,,1
+auditory_input,4234,398883,JO-A1,JO-A1_R,,1
+auditory_input,4235,403791,JO-B1_c,JO-B1_c_L,,1
+auditory_input,4238,427762,JO-A2,JO-A2_R,,1
+auditory_input,4244,478230,JO-B1_c,JO-B1_c_L,,1
+auditory_input,4245,491190,JO-A2,JO-A2_L,,1
+auditory_input,4326,512975,JO-A3,JO-A3_L,,1
+auditory_input,4522,516499,JO-B4_b,JO-B4_b_L,,1
+auditory_input,4641,519458,JO-B1_a,JO-B1_a_R,,1
+auditory_input,4666,519875,JO-B1_a,JO-B1_a_L,,1
+auditory_input,4710,520189,JO-A3,JO-A3_L,,1
+auditory_input,4746,520657,JO-B4_b,JO-B4_b_L,,1
+auditory_input,4810,521628,JO-A2,JO-A2_L,,1
+auditory_input,4843,522305,JO-B1_a,JO-B1_a_L,,1
+auditory_input,4844,522306,JO-B1_a,JO-B1_a_L,,1
+auditory_input,5051,526066,JO-B2,JO-B2_L,,1
+auditory_input,5215,534437,JO-B1_b,JO-B1_b_L,,1
+auditory_input,5223,535965,JO-B2,JO-B2_R,,1
+auditory_input,5230,536998,JO-B1_c,JO-B1_c_R,,1
+auditory_input,5250,547920,JO-B1_a,JO-B1_a_L,,1
+auditory_input,5251,549014,JO-B2,JO-B2_L,,1
+auditory_input,5253,552035,JO-A2,JO-A2_L,,1
+auditory_input,5313,559386,JO-B1_c,JO-B1_c_L,,1
+auditory_input,5327,565953,JO-B3,JO-B3_L,,1
+auditory_input,6210,919061,JO-A2,JO-A2_L,,1
+auditory_input,6213,920914,JO-B4_b,JO-B4_b_L,,1
+auditory_input,6215,922950,JO-B1_a,JO-B1_a_L,,1
+auditory_input,6222,928361,JO-B1_a,JO-B1_a_L,,1
+auditory_input,6225,928855,JO-A2,JO-A2_L,,1
+auditory_input,6226,928916,JO-B3,JO-B3_L,,1
+auditory_input,6231,930760,JO-A2,JO-A2_L,,1
+auditory_input,6235,932780,JO-B1_a,JO-B1_a_R,,1
+auditory_input,6240,934247,JO-A1,JO-A1_R,,1
+auditory_input,6252,943463,JO-B1_b,JO-B1_b_L,,1
+auditory_input,6253,944907,JO-B2,JO-B2_L,,1
+auditory_input,6256,957696,JO-B1_a,JO-B1_a_L,,1
+auditory_input,6257,130272750,JO-A2,JO-A2_R,,1
+auditory_input,6258,137801097,JO-B3,JO-B3_L,,1
+auditory_input,6263,367193015,JO-A4,JO-A4_R,,1
+auditory_input,6264,369423058,JO-A4,JO-A4_R,,1
+auditory_input,6267,469098413,JO-A4,JO-A4_L,,1
+auditory_input,6268,610917351,JO-B4_b,JO-B4_b_R,,1
+auditory_input,6271,727132040,JO-B4_b,JO-B4_b_L,,1
+auditory_input,6273,750369552,JO-B3,JO-B3_L,,1
+auditory_input,6274,846271510,JO-A2,JO-A2_L,,1
+auditory_input,6275,974267957,JO-B4_b,JO-B4_b_R,,1
+aPN1,65,10153,SAD051_b,SAD051_b_L,Cachero 2010: aDT-e; Vaughan 2014: aPN1,1
+aPN1,336,10784,SAD051_b,SAD051_b_R,Cachero 2010: aDT-e; Vaughan 2014: aPN1,1
+aPN1,516,11275,CB1078,CB1078_L,Cachero 2010: aDT-e; Vaughan 2014: aPN1,1
+aPN1,518,11285,CB1078,CB1078_R,Cachero 2010: aDT-e; Vaughan 2014: aPN1,1
+aPN1,526,11301,SAD051_b,SAD051_b_R,Cachero 2010: aDT-e; Vaughan 2014: aPN1,1
+aPN1,784,12040,SAD051_a,SAD051_a_R,Cachero 2010: aDT-e; Vaughan 2014: aPN1,1
+aPN1,791,12066,SAD051_a,SAD051_a_L,Cachero 2010: aDT-e; Vaughan 2014: aPN1,1
+aPN1,819,12150,CB1542,CB1542_R,Cachero 2010: aDT-e; Vaughan 2014: aPN1,1
+aPN1,855,12246,SAD051_b,SAD051_b_R,Cachero 2010: aDT-e; Vaughan 2014: aPN1,1
+aPN1,878,12329,CB1078,CB1078_R,Cachero 2010: aDT-e; Vaughan 2014: aPN1,1
+aPN1,1024,12820,SAD051_b,SAD051_b_L,Cachero 2010: aDT-e; Vaughan 2014: aPN1,1
+aPN1,1213,13522,SAD051_b,SAD051_b_L,Cachero 2010: aDT-e; Vaughan 2014: aPN1,1
+aPN1,1216,13546,SAD051_a,SAD051_a_L,Cachero 2010: aDT-e; Vaughan 2014: aPN1,1
+aPN1,1755,16231,CB1078,CB1078_L,Cachero 2010: aDT-e; Vaughan 2014: aPN1,1
+aPN1,4842,522302,SAD051_a,SAD051_a_L,Cachero 2010: aDT-e; Vaughan 2014: aPN1,1
+vPN1,1281,13790,AVLP761m,AVLP761m_L,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,-1
+vPN1,1851,16805,AVLP761m,AVLP761m_R,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,-1
+vPN1,1937,17337,AVLP761m,AVLP761m_R,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,-1
+vPN1,1994,17618,AVLP761m,AVLP761m_L,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,-1
+vPN1,2227,19236,AVLP762m,AVLP762m_R,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,-1
+vPN1,2271,19600,AVLP763m,AVLP763m_R,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,-1
+vPN1,2302,19818,AVLP762m,AVLP762m_R,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,-1
+vPN1,2512,21586,AVLP762m,AVLP762m_L,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,-1
+vPN1,4976,524297,AVLP763m,AVLP763m_L,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,-1
+vPN1,5105,529875,AVLP762m,AVLP762m_L,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,-1
+vPN1,5277,555811,AVLP762m,AVLP762m_L,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,-1
+pC1,277,10666,pC1x_c,pC1x_c_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1, Sten 2025: pC1x",1
+pC1,860,12257,pC1x_c,pC1x_c_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1, Sten 2025: pC1x",1
+pC1,913,12442,pC1_4a,pC1_4a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,916,12448,pC1_18a,pC1_18a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,1047,12893,pC1x_d,pC1x_d_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1, Sten 2025: pC1x",1
+pC1,1152,13266,pC1_3b,pC1_3b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,1199,13449,pC1x_d,pC1x_d_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1, Sten 2025: pC1x",1
+pC1,1207,13495,pC1_11a,pC1_11a_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,1219,13562,pC1_12b,pC1_12b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,1247,13655,pC1_11b,pC1_11b_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,1535,15035,pC1_18b,pC1_18b_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,1565,15208,pC1_1a,pC1_1a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,1760,16262,pC1_1b,pC1_1b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,1772,16364,pC1_9b,pC1_9b_L,,1
+pC1,1836,16719,pC1_4b,pC1_4b_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,1900,17089,pC1_12b,pC1_12b_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,1904,17098,pC1_6a,pC1_6a_L,Cachero 2010: pMP-e; Yu 2010: pMP4,1
+pC1,1958,17434,pC1_10c,pC1_10c_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,2027,17851,pC1_12b,pC1_12b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,2029,17867,pC1_4b,pC1_4b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,2055,18017,pC1_3c,pC1_3c_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2125,18554,pC1_12b,pC1_12b_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,2174,18913,pC1_2b,pC1_2b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2176,18934,pC1_15c,pC1_15c_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2182,18974,pC1_3a,pC1_3a_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2186,18990,pC1_11a,pC1_11a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,2210,19136,pC1_3c,pC1_3c_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2279,19650,pC1_3a,pC1_3a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2282,19672,pC1_13a,pC1_13a_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2287,19705,pC1_2b,pC1_2b_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2318,19948,pC1_3c,pC1_3c_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2341,20117,pC1_4a,pC1_4a_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,2357,20255,pC1_1a,pC1_1a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2364,20392,pC1_2c,pC1_2c_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2397,20597,pC1_6a,pC1_6a_R,Cachero 2010: pMP-e; Yu 2010: pMP4,1
+pC1,2422,20751,pC1_16a,pC1_16a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2427,20803,pC1_4a,pC1_4a_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,2499,21507,pC1_6a,pC1_6a_R,Cachero 2010: pMP-e; Yu 2010: pMP4,1
+pC1,2504,21538,pC1_13b,pC1_13b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,2558,22093,pC1_2c,pC1_2c_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2626,22818,pC1_17a,pC1_17a_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2690,23695,pC1_14a,pC1_14a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2700,23787,pC1_13c,pC1_13c_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,2701,23789,pC1_16a,pC1_16a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2714,23924,pC1_13b,pC1_13b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,2717,23952,pC1_16a,pC1_16a_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2720,23968,pC1_4a,pC1_4a_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,2786,24623,pC1_6b,pC1_6b_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,2797,24727,pC1_8a,pC1_8a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,2844,25204,pC1_13a,pC1_13a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2866,25521,pC1_8a,pC1_8a_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,2869,25542,pC1_7a,pC1_7a_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2885,25690,pC1_15b,pC1_15b_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2888,25740,pC1_14b,pC1_14b_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2934,26543,pC1_6a,pC1_6a_L,Cachero 2010: pMP-e; Yu 2010: pMP4,1
+pC1,2947,26746,pC1_7b,pC1_7b_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,2963,26993,pC1_1b,pC1_1b_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,3082,28972,pC1_15b,pC1_15b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,3085,29043,pC1_7a,pC1_7a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,3091,29143,pC1_5b,pC1_5b_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,3097,29214,pC1_14a,pC1_14a_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,3107,29388,pC1_15c,pC1_15c_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,3118,29483,pC1_5b,pC1_5b_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,3163,30391,pC1_8b,pC1_8b_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,3170,30546,pC1_10d,pC1_10d_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,3241,32437,pC1_15a,pC1_15a_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,3248,32788,pC1_18b,pC1_18b_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,3254,32950,pC1_5a,pC1_5a_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,3279,33553,pC1_14a,pC1_14a_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,3499,41518,pC1_8c,pC1_8c_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,3537,43592,pC1_7b,pC1_7b_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,3549,44515,pC1_14a,pC1_14a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,3587,46570,pC1_14b,pC1_14b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,3596,47325,pC1_8c,pC1_8c_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,3664,53355,pC1_7a,pC1_7a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,3687,55986,pC1_14a,pC1_14a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,3783,68624,pC1_19,pC1_19_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,3792,70011,pC1_5b,pC1_5b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,3797,70815,pC1_17a,pC1_17a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,3801,71385,pC1_7a,pC1_7a_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,3860,79642,pC1_19,pC1_19_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,3912,87497,pC1_18b,pC1_18b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,3971,98113,pC1_19,pC1_19_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,3990,102224,pC1_5a,pC1_5a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,4014,108816,pC1_15a,pC1_15a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,4063,125721,pC1_19,pC1_19_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,4068,127881,pC1_19,pC1_19_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,4123,156865,pC1_19,pC1_19_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,4142,170209,pC1_19,pC1_19_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,4151,180724,pC1_15c,pC1_15c_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,4190,220200,pC1_13b,pC1_13b_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,4267,512011,pC1_12a,pC1_12a_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,4341,513129,pC1_8b,pC1_8b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,4374,513650,pC1_12a,pC1_12a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,4375,513651,pC1_7b,pC1_7b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,4376,513652,pC1_7b,pC1_7b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,4406,514077,pC1_11b,pC1_11b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,4500,515977,pC1_10b,pC1_10b_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,4525,516522,pC1_14a,pC1_14a_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,4575,517735,pC1_6b,pC1_6b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,4592,518253,pC1_18b,pC1_18b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,4601,518589,pC1_10c,pC1_10c_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,4646,519518,pC1_4a,pC1_4a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,4678,519914,pC1_1a,pC1_1a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,4798,521453,pC1_6a,pC1_6a_L,Cachero 2010: pMP-e; Yu 2010: pMP4,1
+pC1,4859,522419,pC1_4a,pC1_4a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1",1
+pC1,4975,524296,pC1_1a,pC1_1a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,5000,524747,pC1_2a,pC1_2a_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,5064,526918,pC1_1a,pC1_1a_R,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,5081,528986,pC1_6a,pC1_6a_R,Cachero 2010: pMP-e; Yu 2010: pMP4,1
+pC1,5222,535835,pC1_16b,pC1_16b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pC1,5296,557035,pC1_5b,pC1_5b_L,"Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",1
+pIP10,464,11116,pIP10,pIP10_R,"Kimura 2008, Kohatsu 2010: P2b; Cachero 2010: pIP-a; Yu 2010: pIP1",1
+pIP10,4947,523998,pIP10,pIP10_L,"Kimura 2008, Kohatsu 2010: P2b; Cachero 2010: pIP-a; Yu 2010: pIP1",1
+pMP2,325,10765,pMP2,pMP2_R,,1
+pMP2,396,10930,pMP2,pMP2_L,,1
+output_combined_exploratory,325,10765,pMP2,pMP2_R,,1
+output_combined_exploratory,396,10930,pMP2,pMP2_L,,1
+output_combined_exploratory,464,11116,pIP10,pIP10_R,"Kimura 2008, Kohatsu 2010: P2b; Cachero 2010: pIP-a; Yu 2010: pIP1",1
+output_combined_exploratory,4947,523998,pIP10,pIP10_L,"Kimura 2008, Kohatsu 2010: P2b; Cachero 2010: pIP-a; Yu 2010: pIP1",1

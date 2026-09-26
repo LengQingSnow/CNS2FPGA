@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "visual_left_hw_ir_v0",
+  "source_ir": "../outputs/visual_left_input_ir_v0",
+  "golden_config": "visual_lif_v0.json",
+  "fixed_config": "../../5_Fixed-Point Quantization Analysis/configs/courtship_song_fixed_point_v6_final.json",
+  "fixed_result": "../../5_Fixed-Point Quantization Analysis/outputs/courtship_song_fixed_point_v6_final",
+  "fixed_format_role": "safe",
+  "bram36_bits": 36864,
+  "memory_format": "fixed-width uppercase hexadecimal, one record per line, two's-complement signed fields",
+  "layouts": {
+    "neuron_param": {"record_bits": 128},
+    "synapse": {"record_bits": 64, "post_index_bits": 13},
+    "offset": {"record_bits": 32, "edge_start_bits": 19, "edge_count_bits": 10},
+    "type_sign": {"record_bits": 16},
+    "input_mapping": {"record_bits": 16, "neuron_index_bits": 13},
+    "global_config": {"record_bits": 64}
+  }
+}

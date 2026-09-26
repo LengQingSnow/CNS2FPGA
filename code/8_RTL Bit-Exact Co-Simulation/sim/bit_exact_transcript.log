@@ -1,0 +1,13 @@
+# CNS2FPGA curated evidence excerpt; not the full ModelSim transcript.
+# Original local bit_exact_transcript.log SHA-256: 42709d04bb57601d17d1c1f23dd681e9e6ed9963b1582fe3df962b49c934e8c6
+# Selected project testbench results and final simulator summary:
+PASS timestep=0 cycles=19618 spikes=93 exact_state_neurons=6279
+PASS timestep=1 cycles=46771 spikes=138 exact_state_neurons=6279
+PASS timestep=2 cycles=93196 spikes=322 exact_state_neurons=6279
+PASS timestep=3 cycles=167668 spikes=636 exact_state_neurons=6279
+PASS timestep=4 cycles=135037 spikes=616 exact_state_neurons=6279
+PASS timestep=5 cycles=74296 spikes=346 exact_state_neurons=6279
+PASS timestep=6 cycles=65146 spikes=227 exact_state_neurons=6279
+PASS timestep=7 cycles=34075 spikes=97 exact_state_neurons=6279
+PASS BIT-EXACT full-network timesteps=8 neurons=6279
+Errors: 0, Warnings: 0

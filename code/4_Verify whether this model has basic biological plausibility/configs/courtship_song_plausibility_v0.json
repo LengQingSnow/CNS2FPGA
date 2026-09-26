@@ -1,0 +1,45 @@
+{
+  "name": "courtship_song_plausibility_v0",
+  "description": "Basic biological-plausibility audit of the MaleCNS courtship-song V0 floating-point model.",
+  "paths": {
+    "golden_config": "../../3_CPU Floating-Point Golden Model/configs/courtship_song_lif_v0.json",
+    "golden_src": "../../3_CPU Floating-Point Golden Model/src",
+    "neuron_table": "../../2_Subcircuit Automatic Extraction Tool/outputs/courtship_song_v0/neuron_table.csv",
+    "synapse_table": "../../2_Subcircuit Automatic Extraction Tool/outputs/courtship_song_v0/synapse_table.csv",
+    "offset_table": "../../2_Subcircuit Automatic Extraction Tool/outputs/courtship_song_v0/offset_table.csv",
+    "courtship_paper": "../../../doc/03_Courtship_Song_Perception_eLife_2015.pdf",
+    "lif_paper": "../../../doc/02_Computational_Brain_Model_Nature_2024.pdf"
+  },
+  "literature": {
+    "courtship_2015": {
+      "citation": "Zhou et al., eLife 2015, doi:10.7554/eLife.08477",
+      "constraints": [
+        "aPN1-vPN1-pC1 is the reported labeled-line pathway for male courtship-song perception.",
+        "Male chaining is strongest near the conspecific 35-ms IPI.",
+        "vPN1 strongly responds at 35 ms and longer, with attenuation below 25 ms.",
+        "pC1 is band-pass: strong at 35-65 ms and reduced at 15-25 and 85-95 ms.",
+        "pC1 inactivation almost completely abolishes song-induced chaining."
+      ]
+    },
+    "lif_2024": {
+      "citation": "Shiu et al., Nature 2024, doi:10.1038/s41586-024-07763-9",
+      "constraints": [
+        "Connectome-derived LIF modelling uses connectivity weights and presynaptic neurotransmitter identity.",
+        "The published sign convention treats acetylcholine as excitatory and GABA/glutamate as inhibitory.",
+        "In-silico silencing is a biologically interpretable validation experiment.",
+        "Absolute firing rates are not expected to be quantitatively accurate in this simple model class."
+      ]
+    }
+  },
+  "validation": {
+    "short_ipi_ms": 16.0,
+    "preferred_ipi_ms": 36.0,
+    "long_ipi_ms": 56.0,
+    "minimum_pC1_modulation_fraction": 0.20,
+    "minimum_signed_neuron_fraction": 0.85,
+    "minimum_pC1_output_drop_percent": 20.0,
+    "minimum_input_output_drop_percent": 80.0,
+    "random_ablation_replicates": 12,
+    "random_seed": 20260918
+  }
+}

@@ -1,0 +1,4 @@
+condition_id,removed_edges,removed_synapses,recipients,negative_edges,unchanged_other_weights,all_selected_weights_zero
+cut_vPN1_to_pC1,99,1069,38,99,True,True
+cut_vPN1_to_other,626,6596,282,626,True,True
+cut_vPN1_all_output,725,7665,320,725,True,True

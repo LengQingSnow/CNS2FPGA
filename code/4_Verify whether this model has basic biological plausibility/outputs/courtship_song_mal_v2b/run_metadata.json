@@ -1,0 +1,24 @@
+{
+  "verdict": "EXPLORATORY_MOTIF_AUDIT_NOT_BIOLOGICAL_PASS",
+  "model_freeze_recommended": false,
+  "protocol_lock_sha256": "eb1c14017802b27f0736b42134dbfea10bcb4cbd6e23de9ab6687e47b638a6d0",
+  "model_parameter_changes": {},
+  "frozen_inputs_unchanged": true,
+  "new_stimulus_trials": 27,
+  "reused_stimulus_trials": 18,
+  "quiet_trials": 3,
+  "mAL_all_neurons": 73,
+  "mAL_bridge_neurons": 13,
+  "mAL_bridge_type_labels": [
+    "mAL_m5b",
+    "mAL_m5c",
+    "mAL_m7",
+    "mAL_m1",
+    "mAL_m11"
+  ],
+  "first_segment_edges": 33,
+  "second_segment_edges": 134,
+  "first_segment_synapses": 329,
+  "second_segment_synapses": 2552,
+  "completed_at_utc": "2026-09-18T07:50:18.231146+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "verdict": "FUNCTIONAL_ARCHITECTURE_PASS",
+  "modelsim_smoke_pass": true,
+  "full_image_load_pass": true,
+  "neurons": 6279,
+  "synapses": 350185,
+  "maximum_observed_cycles_per_timestep": 58618,
+  "minimum_clock_mhz_for_observed_1ms_deadline": 58.618,
+  "theoretical_all_spike_cycles": 369022,
+  "theoretical_all_spike_clock_mhz_for_1ms": 369.022,
+  "synthesis_claimed": false,
+  "protocol_lock_sha256": "1124938d837349cb7d21eb244fe14832d292f2077e32cb33ad55f66190297484",
+  "frozen_inputs_unchanged": true,
+  "runtime_seconds": 0.09068059999981415
+}

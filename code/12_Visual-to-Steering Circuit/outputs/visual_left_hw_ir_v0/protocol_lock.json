@@ -1,0 +1,255 @@
+{
+  "locked_at_utc": "2026-09-25T18:06:04.165546+00:00",
+  "config": {
+    "schema_version": 1,
+    "name": "visual_left_hw_ir_v0",
+    "source_ir": "../outputs/visual_left_input_ir_v0",
+    "golden_config": "visual_lif_v0.json",
+    "fixed_config": "../../5_Fixed-Point Quantization Analysis/configs/courtship_song_fixed_point_v6_final.json",
+    "fixed_result": "../../5_Fixed-Point Quantization Analysis/outputs/courtship_song_fixed_point_v6_final",
+    "fixed_format_role": "safe",
+    "bram36_bits": 36864,
+    "memory_format": "fixed-width uppercase hexadecimal, one record per line, two's-complement signed fields",
+    "layouts": {
+      "neuron_param": {
+        "record_bits": 128
+      },
+      "synapse": {
+        "record_bits": 64,
+        "post_index_bits": 13
+      },
+      "offset": {
+        "record_bits": 32,
+        "edge_start_bits": 19,
+        "edge_count_bits": 10
+      },
+      "type_sign": {
+        "record_bits": 16
+      },
+      "input_mapping": {
+        "record_bits": 16,
+        "neuron_index_bits": 13
+      },
+      "global_config": {
+        "record_bits": 64
+      }
+    }
+  },
+  "selected_fixed_format": {
+    "name": "safe_wf24",
+    "state_bits": 34,
+    "state_frac": 24,
+    "weight_bits": 30,
+    "weight_frac": 24,
+    "decay_bits": 32,
+    "decay_frac": 30,
+    "accumulator_bits": 35
+  },
+  "input_and_source_sha256": {
+    "E:\\Workspace\\CNS2FPGA\\code\\6_Connectome Compiler\\compile_hardware_ir.py": "d8ebbe66796d7bca56ab3bffc2232a6e3cd0b209daba6420cac5137ed1424dc0",
+    "E:\\Workspace\\CNS2FPGA\\code\\6_Connectome Compiler\\src\\cns2fpga_compiler\\__init__.py": "76a30c55dfd570c63874e98d8343a9c39844d384f292fa73972c8d2a6c91fe92",
+    "E:\\Workspace\\CNS2FPGA\\code\\6_Connectome Compiler\\src\\cns2fpga_compiler\\layout.py": "18d56ebfeb023c4f4e2142ff4b2b6fb161cbc25a78957f5200e01eb18bb200d8",
+    "E:\\Workspace\\CNS2FPGA\\code\\5_Fixed-Point Quantization Analysis\\src\\cns2fpga_fixed\\fixed_lif.py": "bfe7942bee431222f9c86cfce0779041174bdfb978272f43956a0621f9b5271c",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\configs\\visual_left_hw_ir_v0.json": "d66b7a13fd4c54e10631bd5a26e16d592e4f832e68a4af3540b5b857c7dc53da",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\configs\\visual_lif_v0.json": "487f6b62b3a38c7c58bfcbb617ad563f434c78a8c48f0298bd913e733a213182",
+    "E:\\Workspace\\CNS2FPGA\\code\\5_Fixed-Point Quantization Analysis\\configs\\courtship_song_fixed_point_v6_final.json": "5829b58460d35f436299b9f1c9995815ffddff38b0f6363505dc3ebef487542c",
+    "E:\\Workspace\\CNS2FPGA\\code\\5_Fixed-Point Quantization Analysis\\outputs\\courtship_song_fixed_point_v6_final\\recommended_formats.json": "2985a43b8d5bb6ac63c68143856075ba7c992e13324829015ed999c48c690cd6",
+    "E:\\Workspace\\CNS2FPGA\\code\\5_Fixed-Point Quantization Analysis\\outputs\\courtship_song_fixed_point_v6_final\\protocol_lock.json": "65f278ce03174e02ca7fa7246882f01daf1a2474ad773b9d2054b0a5addbb7fa",
+    "E:\\Workspace\\CNS2FPGA\\code\\5_Fixed-Point Quantization Analysis\\outputs\\courtship_song_fixed_point_v6_final\\artifact_sha256.json": "32f19d17d78cc49c24586f09f71c65a0f176f59cacfa0bb62436c4cf22e1a08b",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\outputs\\visual_left_input_ir_v0\\neuron_table.csv": "a77c550865313eb39979911176a6f2b1491242da0b6a71d9ce5b70e8c901dcee",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\outputs\\visual_left_input_ir_v0\\synapse_table.csv": "cfc1125e96be9e0d6ba4339c724c6dddf0c37d06ea7edc0f1ed1724247cf8405",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\outputs\\visual_left_input_ir_v0\\offset_table.csv": "422e0ad4df2e0bb497bc0d168ab9b111af9fe41b086e6e0f293fb21bb4707aaa",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\outputs\\visual_left_input_ir_v0\\metadata.json": "3a8eaf53c678c29e7dc5bfb8e6ebd30c5d1c94744954a9eefd742e84a52108b8"
+  },
+  "source_counts": {
+    "neurons": 226,
+    "edges": 1730,
+    "input_neurons": 109
+  },
+  "layouts": {
+    "neuron_param": {
+      "name": "neuron_param",
+      "record_bits": 128,
+      "fields": [
+        {
+          "name": "threshold",
+          "lsb": 0,
+          "msb": 33,
+          "width": 34,
+          "signed": true
+        },
+        {
+          "name": "reset",
+          "lsb": 34,
+          "msb": 67,
+          "width": 34,
+          "signed": true
+        },
+        {
+          "name": "decay",
+          "lsb": 68,
+          "msb": 99,
+          "width": 32,
+          "signed": true
+        },
+        {
+          "name": "refractory_steps",
+          "lsb": 100,
+          "msb": 107,
+          "width": 8,
+          "signed": false
+        },
+        {
+          "name": "nt_sign_code",
+          "lsb": 108,
+          "msb": 109,
+          "width": 2,
+          "signed": false
+        },
+        {
+          "name": "is_input",
+          "lsb": 110,
+          "msb": 110,
+          "width": 1,
+          "signed": false
+        },
+        {
+          "name": "is_relay",
+          "lsb": 111,
+          "msb": 111,
+          "width": 1,
+          "signed": false
+        },
+        {
+          "name": "is_output",
+          "lsb": 112,
+          "msb": 112,
+          "width": 1,
+          "signed": false
+        }
+      ]
+    },
+    "synapse": {
+      "name": "synapse",
+      "record_bits": 64,
+      "fields": [
+        {
+          "name": "post_index",
+          "lsb": 0,
+          "msb": 12,
+          "width": 13,
+          "signed": false
+        },
+        {
+          "name": "weight",
+          "lsb": 13,
+          "msb": 42,
+          "width": 30,
+          "signed": true
+        }
+      ]
+    },
+    "offset": {
+      "name": "offset",
+      "record_bits": 32,
+      "fields": [
+        {
+          "name": "edge_start",
+          "lsb": 0,
+          "msb": 18,
+          "width": 19,
+          "signed": false
+        },
+        {
+          "name": "edge_count",
+          "lsb": 19,
+          "msb": 28,
+          "width": 10,
+          "signed": false
+        }
+      ]
+    },
+    "type_sign": {
+      "name": "type_sign",
+      "record_bits": 16,
+      "fields": [
+        {
+          "name": "nt_sign_code",
+          "lsb": 0,
+          "msb": 1,
+          "width": 2,
+          "signed": false
+        },
+        {
+          "name": "is_input",
+          "lsb": 2,
+          "msb": 2,
+          "width": 1,
+          "signed": false
+        },
+        {
+          "name": "is_relay",
+          "lsb": 3,
+          "msb": 3,
+          "width": 1,
+          "signed": false
+        },
+        {
+          "name": "is_output",
+          "lsb": 4,
+          "msb": 4,
+          "width": 1,
+          "signed": false
+        },
+        {
+          "name": "is_aPN1",
+          "lsb": 5,
+          "msb": 5,
+          "width": 1,
+          "signed": false
+        },
+        {
+          "name": "is_vPN1",
+          "lsb": 6,
+          "msb": 6,
+          "width": 1,
+          "signed": false
+        },
+        {
+          "name": "is_pC1",
+          "lsb": 7,
+          "msb": 7,
+          "width": 1,
+          "signed": false
+        },
+        {
+          "name": "is_pIP10",
+          "lsb": 8,
+          "msb": 8,
+          "width": 1,
+          "signed": false
+        },
+        {
+          "name": "is_pMP2",
+          "lsb": 9,
+          "msb": 9,
+          "width": 1,
+          "signed": false
+        }
+      ]
+    },
+    "input_mapping": {
+      "name": "input_mapping",
+      "record_bits": 16,
+      "fields": [
+        {
+          "name": "neuron_index",
+          "lsb": 0,
+          "msb": 12,
+          "width": 13,
+          "signed": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+condition,ipi_ms,total_network_spikes,max_abs_voltage,auditory_input_neurons,auditory_input_spikes,auditory_input_mean_rate_hz,aPN1_neurons,aPN1_spikes,aPN1_mean_rate_hz,vPN1_neurons,vPN1_spikes,vPN1_mean_rate_hz,pC1_neurons,pC1_spikes,pC1_mean_rate_hz,pIP10_neurons,pIP10_spikes,pIP10_mean_rate_hz,pMP2_neurons,pMP2_spikes,pMP2_mean_rate_hz,duration_ms
+pulse_ipi_16ms,16.0,13346,125.26119829097897,93,1209,52.0,15,15,4.0,11,12,4.363636363636363,112,206,7.357142857142857,2,16,32.0,2,4,8.0,250.0
+pulse_ipi_36ms,36.0,12621,118.1044297984119,93,558,24.0,15,26,6.933333333333334,11,43,15.636363636363637,112,286,10.214285714285714,2,13,26.0,2,4,8.0,250.0
+pulse_ipi_56ms,56.0,9491,110.66780958839743,93,372,16.0,15,24,6.4,11,27,9.818181818181818,112,226,8.071428571428571,2,8,16.0,2,7,14.0,250.0

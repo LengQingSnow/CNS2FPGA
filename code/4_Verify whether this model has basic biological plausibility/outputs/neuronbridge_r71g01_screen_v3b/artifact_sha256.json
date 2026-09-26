@@ -1,0 +1,10 @@
+{
+  "all_candidate_appearances.csv": "b594eb11c94ed7225db1bbaf333de3c0d2a7df996ecbc21cef74930746f30055",
+  "candidate_summary.csv": "172aa6d2a0ad978c417d20dd107a0be9e19b9946f2729d0953ce4502e86d0668",
+  "explicit_male_pc1_hits.csv": "d65183382d431e44ec3aa62257033f0104268d3cbe8dbf534e5c6fd82f1fb2d5",
+  "frozen_ir_rows_for_candidates.csv": "7a43f357b8418b7b58ea3df7c7b5e4faefa552c256b704b6b8369f5b84443f9c",
+  "full_malecns_annotation_context.csv": "531151e063cf1125221a29019d928ae246ee8968fb9aaf810691a5ae6b4a2300",
+  "protocol_lock.json": "d9aaadf3baf0b442713a5d3cb448221bf4fd68251f85a3e16c3cc55da7c52cb4",
+  "report.md": "54658e6aeb5baec9b18888c978fcd6c3d86aace63bc3a9656fea2f8300b50b08",
+  "run_metadata.json": "a97f42c3e1b62b25f277084afe3cac2bd2b23b5daa5325b7b19c6984376405c3"
+}

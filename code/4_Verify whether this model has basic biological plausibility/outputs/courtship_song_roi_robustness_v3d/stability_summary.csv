@@ -1,0 +1,7 @@
+candidate_id,tuning_agreements,tuning_comparisons,tuning_agreement_fraction,intervention_35ms_direction_agreements,intervention_35ms_direction_comparisons,intervention_35ms_direction_agreement_fraction
+pC1_fruDsx_coexpress,6,8,0.75,23,24,0.9583333333333334
+pC1_fruDsx_nonmissing,8,8,1.0,24,24,1.0
+pC1_neuronbridge_any_hit,7,8,0.875,24,24,1.0
+pC1_neuronbridge_best_rank_le_100,4,8,0.5,16,24,0.6666666666666666
+pC1_pMP_alias,6,8,0.75,23,24,0.9583333333333334
+pC1_type_all,8,8,1.0,24,24,1.0

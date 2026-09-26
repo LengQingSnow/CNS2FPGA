@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "name": "courtship_song_fixed_point_v4_weight_boundary",
+  "golden_config": "../../3_CPU Floating-Point Golden Model/configs/courtship_song_lif_v0.json",
+  "golden_src": "../../3_CPU Floating-Point Golden Model/src",
+  "plausibility_src": "../../4_Verify whether this model has basic biological plausibility/src",
+  "v1_config": "../../4_Verify whether this model has basic biological plausibility/configs/courtship_song_equal_pulse_v1.json",
+  "reference_runs": {
+    "v1": "../../4_Verify whether this model has basic biological plausibility/outputs/courtship_song_equal_pulse_v1",
+    "v2": "../../4_Verify whether this model has basic biological plausibility/outputs/courtship_song_mechanism_v2",
+    "v2b": "../../4_Verify whether this model has basic biological plausibility/outputs/courtship_song_mal_v2b",
+    "v3d": "../../4_Verify whether this model has basic biological plausibility/outputs/courtship_song_roi_robustness_v3d"
+  },
+  "reference_ipi_ms": 35,
+  "comparison_ipi_ms": [15, 25, 85, 95],
+  "acceptance": {
+    "max_key_response_error_percent": 5.0,
+    "required_tuning_direction_agreements": 8,
+    "required_intervention_direction_agreements": 24,
+    "allow_state_saturation": false,
+    "allow_accumulator_saturation": false
+  },
+  "formats": [
+    {"name": "weight28_s33w34a38", "state_bits": 33, "state_frac": 24, "weight_bits": 34, "weight_frac": 28, "decay_bits": 32, "decay_frac": 30, "accumulator_bits": 38},
+    {"name": "weight27_s33w33a37", "state_bits": 33, "state_frac": 24, "weight_bits": 33, "weight_frac": 27, "decay_bits": 32, "decay_frac": 30, "accumulator_bits": 37},
+    {"name": "weight26_s33w32a36", "state_bits": 33, "state_frac": 24, "weight_bits": 32, "weight_frac": 26, "decay_bits": 32, "decay_frac": 30, "accumulator_bits": 36}
+  ]
+}

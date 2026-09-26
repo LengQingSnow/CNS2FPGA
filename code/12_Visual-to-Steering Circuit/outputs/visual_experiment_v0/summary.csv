@@ -1,0 +1,10 @@
+condition,stimulated_side,input_neurons,ipi_ms,float_total_spikes,fixed_total_spikes,event_f1,state_saturations,accumulator_saturations,float_LC10a_spikes,fixed_LC10a_spikes,float_AOTU019_spikes,fixed_AOTU019_spikes,float_AOTU025_spikes,fixed_AOTU025_spikes,float_DNa02_spikes,fixed_DNa02_spikes,float_DNa02_L_spikes,fixed_DNa02_L_spikes,float_DNa02_R_spikes,fixed_DNa02_R_spikes
+pulse_ipi_20ms,bilateral,220,20.0,2240,2240,1.0,0,0,2200,2200,20,20,20,20,0,0,0,0,0,0
+pulse_ipi_20ms,L,109,20.0,1120,1120,1.0,0,0,1090,1090,10,10,10,10,10,10,10,10,0,0
+pulse_ipi_20ms,R,111,20.0,1140,1140,1.0,0,0,1110,1110,10,10,10,10,10,10,0,0,10,10
+pulse_ipi_40ms,bilateral,220,40.0,1120,1120,1.0,0,0,1100,1100,10,10,10,10,0,0,0,0,0,0
+pulse_ipi_40ms,L,109,40.0,560,560,1.0,0,0,545,545,5,5,5,5,5,5,5,5,0,0
+pulse_ipi_40ms,R,111,40.0,570,570,1.0,0,0,555,555,5,5,5,5,5,5,0,0,5,5
+pulse_ipi_80ms,bilateral,220,80.0,672,672,1.0,0,0,660,660,6,6,6,6,0,0,0,0,0,0
+pulse_ipi_80ms,L,109,80.0,336,336,1.0,0,0,327,327,3,3,3,3,3,3,3,3,0,0
+pulse_ipi_80ms,R,111,80.0,342,342,1.0,0,0,333,333,3,3,3,3,3,3,0,0,3,3

@@ -1,0 +1,12 @@
+{
+  "schema": "cns2fpga.step9.capture",
+  "schema_version": 1,
+  "timesteps": 4308,
+  "period_cycles": 200000,
+  "max_latency_cycles": 199063,
+  "deadline_miss_steps_by_cycle_count": 0,
+  "event_words_parsed": 0,
+  "summary_words_sha256": "5390c872f9e888670e1539f8239fa8c949c16c6e870c3e797a1706ea24a0ecb6",
+  "event_words_sha256": null,
+  "counts_csv_sha256": "43f189e28e5afe2b4d3f08f813c06c0c7fc9a6de9b904a0f70b65b37ee2c5415"
+}

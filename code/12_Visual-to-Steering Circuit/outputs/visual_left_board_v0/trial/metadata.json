@@ -1,0 +1,39 @@
+{
+  "schema": "cns2fpga.step9.stimulus",
+  "schema_version": 1,
+  "trial": "visual_left_ipi_40ms",
+  "network_neurons": 226,
+  "dt_ms": 1,
+  "timesteps": 250,
+  "input_current_encoding": {
+    "signed": true,
+    "bits": 34,
+    "frac_bits": 24,
+    "rounding": "nearest_ties_away_from_zero",
+    "word_order": "low32_then_high2",
+    "binary_word_endianness": "little",
+    "binary_words_per_timestep": 2
+  },
+  "details": {
+    "input_side": "L",
+    "input_neurons": 109,
+    "ipi_ms": 40,
+    "pulse_width_ms": 3,
+    "amplitude": 1.2,
+    "expected_events": 560
+  },
+  "source_sha256": {
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\prepare_board_trial.py": "8852b7868ef23572715baf782908692561d7144549bb2b2b1017153da361b443",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\configs\\visual_lif_v0.json": "487f6b62b3a38c7c58bfcbb617ad563f434c78a8c48f0298bd913e733a213182",
+    "E:\\Workspace\\CNS2FPGA\\code\\5_Fixed-Point Quantization Analysis\\configs\\courtship_song_fixed_point_v6_final.json": "5829b58460d35f436299b9f1c9995815ffddff38b0f6363505dc3ebef487542c",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\outputs\\visual_left_input_ir_v0\\neuron_table.csv": "a77c550865313eb39979911176a6f2b1491242da0b6a71d9ce5b70e8c901dcee",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\outputs\\visual_left_input_ir_v0\\synapse_table.csv": "cfc1125e96be9e0d6ba4339c724c6dddf0c37d06ea7edc0f1ed1724247cf8405",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\outputs\\visual_left_input_ir_v0\\offset_table.csv": "422e0ad4df2e0bb497bc0d168ab9b111af9fe41b086e6e0f293fb21bb4707aaa",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\outputs\\visual_left_hw_ir_v0\\protocol_lock.json": "eb2ebf9fca38d83818049b687fd151c63dd15ffa6d07edae3daabd9f85ffdc5a"
+  },
+  "artifact_sha256": {
+    "expected_counts.csv": "ed6b5ac644f47b3b9aa1b6ecf8b503d8d72d666686432f3d5f01c178f07690ac",
+    "expected_events.csv": "57330a19ed1ed33d12bbdf0d2a9add91babde988bcf16865f5bb6d6d8469ff73",
+    "stimulus.mem": "d4902419f18b2c02f825e3de12a6181ebed2c15381b25a6708e2c9278aa7acf5"
+  }
+}

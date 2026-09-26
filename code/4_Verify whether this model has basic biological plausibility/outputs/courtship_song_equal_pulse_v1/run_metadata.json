@@ -1,0 +1,28 @@
+{
+  "verdict": "CONDITIONAL_SUPPORT",
+  "locked_at_utc": "2026-09-18T03:19:29.853711+00:00",
+  "completed_at_utc": "2026-09-18T03:21:12.265802+00:00",
+  "protocol_lock_sha256": "d3d0e82f3e88f6a7baa39b03a9b56157a2c642a2a0a9743e8690c71b493c02a6",
+  "frozen_inputs_unchanged": true,
+  "runtime_seconds": 102.65837910000118,
+  "model_parameter_changes": {
+    "duration_ms": 4308.0
+  },
+  "stimulus_trials": 84,
+  "silence_trials": 4,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "gate_status_counts": {
+    "PASS": 15
+  },
+  "all_status_counts": {
+    "PASS": 18,
+    "NOT_EVALUABLE": 2,
+    "FAIL": 1
+  }
+}

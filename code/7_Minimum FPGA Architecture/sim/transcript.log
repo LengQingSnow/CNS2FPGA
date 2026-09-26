@@ -1,0 +1,5 @@
+# CNS2FPGA curated evidence excerpt; not the full ModelSim transcript.
+# Original local transcript.log SHA-256: 769330b5949f2b32a03a5d430edeef7832a6cbdf6837bde4c0b97bb15ba5f4d5
+# Selected project testbench result and final simulator summary:
+PASS two-neuron one-cycle propagation, spikes=2
+Errors: 0, Warnings: 0

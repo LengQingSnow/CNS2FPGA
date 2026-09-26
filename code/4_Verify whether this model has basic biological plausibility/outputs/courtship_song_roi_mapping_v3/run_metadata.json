@@ -1,0 +1,17 @@
+{
+  "verdict": "INCOMPLETE_EXACT_PC1_DRIVER_ROI_MAPPING",
+  "model_freeze_recommended": false,
+  "protocol_lock_sha256": "4bfa197e634db670d49809fe9613934eebad76e6bfd0daff3dfb9c28f2ff2fc5",
+  "frozen_inputs_unchanged": true,
+  "experimental_definitions": 3,
+  "exact_local_mappings": 1,
+  "unresolved_local_mappings": 2,
+  "vPN1_exact_cells": 11,
+  "pC1_type_cells": 112,
+  "pC1_type_soma_sides": {
+    "L": 62,
+    "R": 50
+  },
+  "pC1_candidate_sets": 4,
+  "driver_or_roi_expression_fields": []
+}

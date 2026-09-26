@@ -1,0 +1,1847 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date              : Sat Sep 19 12:02:35 2026
+| Host              : LAPTOP-KMF3OJ9O running 64-bit major release  (build 9200)
+| Command           : report_timing_summary -delay_type max -max_paths 20 -file {E:/Workspace/CNS2FPGA/code/9_KU115 FPGA Validation/reports/ooc_250mhz/post_synth_timing_summary.rpt}
+| Design            : cns2fpga_ku115_ooc_top
+| Device            : xcku115-flva1517
+| Speed File        : -2  PRODUCTION 1.26 12-04-2018
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (36)
+6. checking no_output_delay (19)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (36)
+-------------------------------
+ There are 36 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (19)
+--------------------------------
+ There are 19 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     -1.797      -24.875                     36                58702        1.020        0.000                       0                  5994  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock    Waveform(ns)         Period(ns)      Frequency(MHz)
+-----    ------------         ----------      --------------
+sys_clk  {0.000 2.000}        4.000           250.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk            -1.797      -24.875                     36                58702        1.020        0.000                       0                  5994  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk
+  To Clock:  sys_clk
+
+Setup :           36  Failing Endpoints,  Worst Slack       -1.797ns,  Total Violation      -24.875ns
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        1.020ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -1.797ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_will_spike_reg_reg/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        5.476ns  (logic 3.302ns (60.299%)  route 2.174ns (39.701%))
+  Logic Levels:           14  (CARRY8=10 LUT1=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT5 (Prop_LUT5_I3_O)        0.095     7.037 r  core/update_will_spike_reg1_carry_i_8/O
+                         net (fo=1, unplaced)         0.294     7.331    core/update_will_spike_reg1_carry_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     7.704 r  core/update_will_spike_reg1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     7.704    core/update_will_spike_reg1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     7.735 r  core/update_will_spike_reg1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     7.735    core/update_will_spike_reg1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[0])
+                                                      0.096     7.831 r  core/update_will_spike_reg1_carry__1/CO[0]
+                         net (fo=1, unplaced)         0.249     8.080    core/update_will_spike_reg1
+                         LUT6 (Prop_LUT6_I5_O)        0.040     8.120 r  core/update_will_spike_reg_i_2/O
+                         net (fo=1, unplaced)         0.023     8.143    core/update_will_spike
+                         FDRE                                         r  core/update_will_spike_reg_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_will_spike_reg_reg/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_will_spike_reg_reg
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -8.143    
+  -------------------------------------------------------------------
+                         slack                                 -1.797    
+
+Slack (VIOLATED) :        -0.659ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_overflow_reg_reg/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        4.338ns  (logic 2.707ns (62.402%)  route 1.631ns (37.598%))
+  Logic Levels:           10  (CARRY8=7 LUT1=1 LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT2 (Prop_LUT2_I1_O)        0.040     6.982 r  core/update_overflow_reg_i_1/O
+                         net (fo=1, unplaced)         0.023     7.005    core/update_overflow
+                         FDRE                                         r  core/update_overflow_reg_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_overflow_reg_reg/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_overflow_reg_reg
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -7.005    
+  -------------------------------------------------------------------
+                         slack                                 -0.659    
+
+Slack (VIOLATED) :        -0.659ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_saturated_reg_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        4.338ns  (logic 2.707ns (62.402%)  route 1.631ns (37.598%))
+  Logic Levels:           10  (CARRY8=7 LUT1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT3 (Prop_LUT3_I2_O)        0.040     6.982 r  core/update_saturated_reg[0]_i_1/O
+                         net (fo=1, unplaced)         0.023     7.005    core/update_saturated[0]
+                         FDRE                                         r  core/update_saturated_reg_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_saturated_reg_reg[0]/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_saturated_reg_reg[0]
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -7.005    
+  -------------------------------------------------------------------
+                         slack                                 -0.659    
+
+Slack (VIOLATED) :        -0.659ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_saturated_reg_reg[10]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        4.338ns  (logic 2.707ns (62.402%)  route 1.631ns (37.598%))
+  Logic Levels:           10  (CARRY8=7 LUT1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT3 (Prop_LUT3_I2_O)        0.040     6.982 r  core/update_saturated_reg[10]_i_1/O
+                         net (fo=1, unplaced)         0.023     7.005    core/update_saturated[10]
+                         FDRE                                         r  core/update_saturated_reg_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_saturated_reg_reg[10]/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_saturated_reg_reg[10]
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -7.005    
+  -------------------------------------------------------------------
+                         slack                                 -0.659    
+
+Slack (VIOLATED) :        -0.659ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_saturated_reg_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        4.338ns  (logic 2.707ns (62.402%)  route 1.631ns (37.598%))
+  Logic Levels:           10  (CARRY8=7 LUT1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT3 (Prop_LUT3_I2_O)        0.040     6.982 r  core/update_saturated_reg[11]_i_1/O
+                         net (fo=1, unplaced)         0.023     7.005    core/update_saturated[11]
+                         FDRE                                         r  core/update_saturated_reg_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_saturated_reg_reg[11]/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_saturated_reg_reg[11]
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -7.005    
+  -------------------------------------------------------------------
+                         slack                                 -0.659    
+
+Slack (VIOLATED) :        -0.659ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_saturated_reg_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        4.338ns  (logic 2.707ns (62.402%)  route 1.631ns (37.598%))
+  Logic Levels:           10  (CARRY8=7 LUT1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT3 (Prop_LUT3_I2_O)        0.040     6.982 r  core/update_saturated_reg[12]_i_1/O
+                         net (fo=1, unplaced)         0.023     7.005    core/update_saturated[12]
+                         FDRE                                         r  core/update_saturated_reg_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_saturated_reg_reg[12]/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_saturated_reg_reg[12]
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -7.005    
+  -------------------------------------------------------------------
+                         slack                                 -0.659    
+
+Slack (VIOLATED) :        -0.659ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_saturated_reg_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        4.338ns  (logic 2.707ns (62.402%)  route 1.631ns (37.598%))
+  Logic Levels:           10  (CARRY8=7 LUT1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT3 (Prop_LUT3_I2_O)        0.040     6.982 r  core/update_saturated_reg[13]_i_1/O
+                         net (fo=1, unplaced)         0.023     7.005    core/update_saturated[13]
+                         FDRE                                         r  core/update_saturated_reg_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_saturated_reg_reg[13]/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_saturated_reg_reg[13]
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -7.005    
+  -------------------------------------------------------------------
+                         slack                                 -0.659    
+
+Slack (VIOLATED) :        -0.659ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_saturated_reg_reg[14]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        4.338ns  (logic 2.707ns (62.402%)  route 1.631ns (37.598%))
+  Logic Levels:           10  (CARRY8=7 LUT1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT3 (Prop_LUT3_I2_O)        0.040     6.982 r  core/update_saturated_reg[14]_i_1/O
+                         net (fo=1, unplaced)         0.023     7.005    core/update_saturated[14]
+                         FDRE                                         r  core/update_saturated_reg_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_saturated_reg_reg[14]/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_saturated_reg_reg[14]
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -7.005    
+  -------------------------------------------------------------------
+                         slack                                 -0.659    
+
+Slack (VIOLATED) :        -0.659ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_saturated_reg_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        4.338ns  (logic 2.707ns (62.402%)  route 1.631ns (37.598%))
+  Logic Levels:           10  (CARRY8=7 LUT1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT3 (Prop_LUT3_I2_O)        0.040     6.982 r  core/update_saturated_reg[15]_i_1/O
+                         net (fo=1, unplaced)         0.023     7.005    core/update_saturated[15]
+                         FDRE                                         r  core/update_saturated_reg_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_saturated_reg_reg[15]/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_saturated_reg_reg[15]
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -7.005    
+  -------------------------------------------------------------------
+                         slack                                 -0.659    
+
+Slack (VIOLATED) :        -0.659ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_saturated_reg_reg[16]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        4.338ns  (logic 2.707ns (62.402%)  route 1.631ns (37.598%))
+  Logic Levels:           10  (CARRY8=7 LUT1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT3 (Prop_LUT3_I2_O)        0.040     6.982 r  core/update_saturated_reg[16]_i_1/O
+                         net (fo=1, unplaced)         0.023     7.005    core/update_saturated[16]
+                         FDRE                                         r  core/update_saturated_reg_reg[16]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_saturated_reg_reg[16]/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_saturated_reg_reg[16]
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -7.005    
+  -------------------------------------------------------------------
+                         slack                                 -0.659    
+
+Slack (VIOLATED) :        -0.659ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_saturated_reg_reg[17]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        4.338ns  (logic 2.707ns (62.402%)  route 1.631ns (37.598%))
+  Logic Levels:           10  (CARRY8=7 LUT1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT3 (Prop_LUT3_I2_O)        0.040     6.982 r  core/update_saturated_reg[17]_i_1/O
+                         net (fo=1, unplaced)         0.023     7.005    core/update_saturated[17]
+                         FDRE                                         r  core/update_saturated_reg_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_saturated_reg_reg[17]/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_saturated_reg_reg[17]
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -7.005    
+  -------------------------------------------------------------------
+                         slack                                 -0.659    
+
+Slack (VIOLATED) :        -0.659ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_saturated_reg_reg[18]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        4.338ns  (logic 2.707ns (62.402%)  route 1.631ns (37.598%))
+  Logic Levels:           10  (CARRY8=7 LUT1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT3 (Prop_LUT3_I2_O)        0.040     6.982 r  core/update_saturated_reg[18]_i_1/O
+                         net (fo=1, unplaced)         0.023     7.005    core/update_saturated[18]
+                         FDRE                                         r  core/update_saturated_reg_reg[18]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_saturated_reg_reg[18]/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_saturated_reg_reg[18]
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -7.005    
+  -------------------------------------------------------------------
+                         slack                                 -0.659    
+
+Slack (VIOLATED) :        -0.659ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_saturated_reg_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        4.338ns  (logic 2.707ns (62.402%)  route 1.631ns (37.598%))
+  Logic Levels:           10  (CARRY8=7 LUT1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT3 (Prop_LUT3_I2_O)        0.040     6.982 r  core/update_saturated_reg[19]_i_1/O
+                         net (fo=1, unplaced)         0.023     7.005    core/update_saturated[19]
+                         FDRE                                         r  core/update_saturated_reg_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_saturated_reg_reg[19]/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_saturated_reg_reg[19]
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -7.005    
+  -------------------------------------------------------------------
+                         slack                                 -0.659    
+
+Slack (VIOLATED) :        -0.659ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_saturated_reg_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        4.338ns  (logic 2.707ns (62.402%)  route 1.631ns (37.598%))
+  Logic Levels:           10  (CARRY8=7 LUT1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT3 (Prop_LUT3_I2_O)        0.040     6.982 r  core/update_saturated_reg[1]_i_1/O
+                         net (fo=1, unplaced)         0.023     7.005    core/update_saturated[1]
+                         FDRE                                         r  core/update_saturated_reg_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_saturated_reg_reg[1]/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_saturated_reg_reg[1]
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -7.005    
+  -------------------------------------------------------------------
+                         slack                                 -0.659    
+
+Slack (VIOLATED) :        -0.659ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_saturated_reg_reg[20]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        4.338ns  (logic 2.707ns (62.402%)  route 1.631ns (37.598%))
+  Logic Levels:           10  (CARRY8=7 LUT1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT3 (Prop_LUT3_I2_O)        0.040     6.982 r  core/update_saturated_reg[20]_i_1/O
+                         net (fo=1, unplaced)         0.023     7.005    core/update_saturated[20]
+                         FDRE                                         r  core/update_saturated_reg_reg[20]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_saturated_reg_reg[20]/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_saturated_reg_reg[20]
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -7.005    
+  -------------------------------------------------------------------
+                         slack                                 -0.659    
+
+Slack (VIOLATED) :        -0.659ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_saturated_reg_reg[21]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        4.338ns  (logic 2.707ns (62.402%)  route 1.631ns (37.598%))
+  Logic Levels:           10  (CARRY8=7 LUT1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT3 (Prop_LUT3_I2_O)        0.040     6.982 r  core/update_saturated_reg[21]_i_1/O
+                         net (fo=1, unplaced)         0.023     7.005    core/update_saturated[21]
+                         FDRE                                         r  core/update_saturated_reg_reg[21]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_saturated_reg_reg[21]/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_saturated_reg_reg[21]
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -7.005    
+  -------------------------------------------------------------------
+                         slack                                 -0.659    
+
+Slack (VIOLATED) :        -0.659ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_saturated_reg_reg[22]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        4.338ns  (logic 2.707ns (62.402%)  route 1.631ns (37.598%))
+  Logic Levels:           10  (CARRY8=7 LUT1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT3 (Prop_LUT3_I2_O)        0.040     6.982 r  core/update_saturated_reg[22]_i_1/O
+                         net (fo=1, unplaced)         0.023     7.005    core/update_saturated[22]
+                         FDRE                                         r  core/update_saturated_reg_reg[22]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_saturated_reg_reg[22]/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_saturated_reg_reg[22]
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -7.005    
+  -------------------------------------------------------------------
+                         slack                                 -0.659    
+
+Slack (VIOLATED) :        -0.659ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_saturated_reg_reg[23]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        4.338ns  (logic 2.707ns (62.402%)  route 1.631ns (37.598%))
+  Logic Levels:           10  (CARRY8=7 LUT1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT3 (Prop_LUT3_I2_O)        0.040     6.982 r  core/update_saturated_reg[23]_i_1/O
+                         net (fo=1, unplaced)         0.023     7.005    core/update_saturated[23]
+                         FDRE                                         r  core/update_saturated_reg_reg[23]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_saturated_reg_reg[23]/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_saturated_reg_reg[23]
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -7.005    
+  -------------------------------------------------------------------
+                         slack                                 -0.659    
+
+Slack (VIOLATED) :        -0.659ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_saturated_reg_reg[24]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        4.338ns  (logic 2.707ns (62.402%)  route 1.631ns (37.598%))
+  Logic Levels:           10  (CARRY8=7 LUT1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT3 (Prop_LUT3_I2_O)        0.040     6.982 r  core/update_saturated_reg[24]_i_1/O
+                         net (fo=1, unplaced)         0.023     7.005    core/update_saturated[24]
+                         FDRE                                         r  core/update_saturated_reg_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_saturated_reg_reg[24]/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_saturated_reg_reg[24]
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -7.005    
+  -------------------------------------------------------------------
+                         slack                                 -0.659    
+
+Slack (VIOLATED) :        -0.659ns  (required time - arrival time)
+  Source:                 core/syn_current_mem_reg_2_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            core/update_saturated_reg_reg[25]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (sys_clk rise@4.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        4.338ns  (logic 2.707ns (62.402%)  route 1.631ns (37.598%))
+  Logic Levels:           10  (CARRY8=7 LUT1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.514ns = ( 6.514 - 4.000 ) 
+    Source Clock Delay      (SCD):    2.667ns
+    Clock Pessimism Removal (CPR):    0.008ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.083     0.083 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.584     2.667    core/core_clk
+                         RAMB36E2                                     r  core/syn_current_mem_reg_2_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[2])
+                                                      1.429     4.096 f  core/syn_current_mem_reg_2_0/DOUTBDOUT[2]
+                         net (fo=2, unplaced)         0.349     4.445    core/syn_current_read[2]
+                         LUT4 (Prop_LUT4_I0_O)        0.132     4.577 f  core/update_sum0__1_carry_i_5/O
+                         net (fo=2, unplaced)         0.313     4.890    core/update_sum0__1_carry_i_5_n_0
+                         CARRY8 (Prop_CARRY8_DI[3]_CO[7])
+                                                      0.346     5.236 f  core/update_sum0__1_carry/CO[7]
+                         net (fo=1, unplaced)         0.000     5.236    core/update_sum0__1_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.267 f  core/update_sum0__1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     5.267    core/update_sum0__1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.298 f  core/update_sum0__1_carry__1/CO[7]
+                         net (fo=1, unplaced)         0.000     5.298    core/update_sum0__1_carry__1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.031     5.329 f  core/update_sum0__1_carry__2/CO[7]
+                         net (fo=1, unplaced)         0.000     5.329    core/update_sum0__1_carry__2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[6])
+                                                      0.144     5.473 f  core/update_sum0__1_carry__3/CO[6]
+                         net (fo=58, unplaced)        0.327     5.800    core/update_sum0__1_carry__3_n_1
+                         LUT1 (Prop_LUT1_I0_O)        0.095     5.895 r  core/update_saturated1_carry__0_i_8/O
+                         net (fo=1, unplaced)         0.294     6.189    core/update_saturated1_carry__0_i_8_n_0
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.373     6.562 r  core/update_saturated1_carry__0/CO[7]
+                         net (fo=1, unplaced)         0.000     6.562    core/update_saturated1_carry__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[1])
+                                                      0.055     6.617 r  core/update_saturated1_carry__1/CO[1]
+                         net (fo=69, unplaced)        0.325     6.942    core/update_saturated1_carry__1_n_6
+                         LUT3 (Prop_LUT3_I2_O)        0.040     6.982 r  core/update_saturated_reg[25]_i_1/O
+                         net (fo=1, unplaced)         0.023     7.005    core/update_saturated[25]
+                         FDRE                                         r  core/update_saturated_reg_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    4.000     4.000 r  
+                                                      0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+                         BUFGCE (Prop_BUFGCE_I_O)     0.075     4.075 r  clock_buffer/O
+                         net (fo=6015, unplaced)      2.439     6.514    core/core_clk
+                         FDRE                                         r  core/update_saturated_reg_reg[25]/C
+                         clock pessimism              0.008     6.522    
+                         clock uncertainty           -0.235     6.287    
+                         FDRE (Setup_FDRE_C_D)        0.059     6.346    core/update_saturated_reg_reg[25]
+  -------------------------------------------------------------------
+                         required time                          6.346    
+                         arrival time                          -7.005    
+  -------------------------------------------------------------------
+                         slack                                 -0.659    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk
+Waveform(ns):       { 0.000 2.000 }
+Period(ns):         4.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/refractory_mem_reg_0/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/refractory_mem_reg_1/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/syn_current_mem_reg_1_0/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/syn_current_mem_reg_1_1/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/syn_current_mem_reg_1_2/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/syn_current_mem_reg_1_3/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/syn_current_mem_reg_1_4/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/syn_current_mem_reg_1_5/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/syn_current_mem_reg_1_6/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/syn_current_mem_reg_1_7/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/syn_current_mem_reg_1_8/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/syn_current_mem_reg_2_0/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/syn_current_mem_reg_2_1/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/syn_current_mem_reg_2_2/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/syn_current_mem_reg_2_3/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/syn_current_mem_reg_2_4/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/syn_current_mem_reg_2_5/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/syn_current_mem_reg_2_6/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/syn_current_mem_reg_2_7/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.961         4.000       2.039                core/syn_current_mem_reg_2_8/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/refractory_mem_reg_0/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/refractory_mem_reg_0/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/refractory_mem_reg_1/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/refractory_mem_reg_1/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_0/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_0/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_1/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_1/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_2/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_2/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_3/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_3/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_4/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_4/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_5/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_5/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_6/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_6/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_7/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_7/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/refractory_mem_reg_0/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/refractory_mem_reg_0/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/refractory_mem_reg_1/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/refractory_mem_reg_1/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_0/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_0/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_1/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_1/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_2/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_2/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_3/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_3/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_4/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_4/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_5/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_5/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_6/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_6/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_7/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.980         2.000       1.020                core/syn_current_mem_reg_1_7/CLKARDCLK
+
+
+

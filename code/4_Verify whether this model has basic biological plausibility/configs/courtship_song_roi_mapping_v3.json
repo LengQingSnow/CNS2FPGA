@@ -1,0 +1,49 @@
+{
+  "schema_version": 3,
+  "name": "courtship_song_roi_mapping_v3",
+  "ir_neurons": "../../2_Subcircuit Automatic Extraction Tool/outputs/courtship_song_v0/neuron_table.csv",
+  "reference_runs": [
+    "../outputs/courtship_song_equal_pulse_v1",
+    "../outputs/courtship_song_mechanism_v2",
+    "../outputs/courtship_song_mal_v2b"
+  ],
+  "experiments": [
+    {
+      "id": "zhou2015_vPN1_split_gal4",
+      "readout": "vPN1 cell-body GCaMP6m and vPN1 perturbation",
+      "driver": "R72E10-GAL4AD ∩ VT9665-GAL4DBD; fruM-positive vPN1",
+      "mapping_rule": "synonyms contains 'Zhou 2015: vPN1'",
+      "mapping_status": "EXACT_ANNOTATION_NAME_MATCH",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4575990/"
+    },
+    {
+      "id": "zhou2015_pC1_intersection",
+      "readout": "pC1 anatomy and inactivation",
+      "driver": "R71G01-LexA ∩ dsxGAL4",
+      "mapping_rule": "no per-neuron R71G01 expression field in local MaleCNS annotation table",
+      "mapping_status": "NOT_IDENTIFIABLE_FROM_LOCAL_ANNOTATIONS",
+      "reported_male_count_per_hemisphere": 23,
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4575990/"
+    },
+    {
+      "id": "zhou2015_pC1_calcium_roi",
+      "readout": "peak GCaMP6m ΔF/F in dsxGAL4 pC1 neurites in LPC",
+      "driver": "dsxGAL4; selected pC1 neurites in the lateral protocerebral complex",
+      "mapping_rule": "requires driver-expression and neurite/ROI overlap, neither is a field in the local IR",
+      "mapping_status": "NOT_IDENTIFIABLE_FROM_LOCAL_ANNOTATIONS",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4575990/"
+    }
+  ],
+  "annotation_candidates": [
+    {"id": "pC1_type_all", "rule": "type starts with pC1", "status": "TYPE_IDENTITY_REFERENCE_ONLY"},
+    {"id": "pC1_fruDsx_nonmissing", "rule": "type starts with pC1 and fruDsx is nonempty", "status": "ANNOTATION_COMPATIBLE_CANDIDATE_NOT_DRIVER_MAP"},
+    {"id": "pC1_fruDsx_coexpress", "rule": "type starts with pC1 and fruDsx starts with coexpress", "status": "P1_RELATED_CANDIDATE_NOT_DRIVER_MAP"},
+    {"id": "pC1_pMP_alias", "rule": "type starts with pC1 and synonym has pMP-e or pMP4", "status": "HISTORICAL_ALIAS_CANDIDATE_NOT_DRIVER_MAP"}
+  ],
+  "external_evidence_requirements": [
+    "A versioned, sex- and age-matched R71G01∩dsx expression-to-bodyId table, or an explicit morphology registration protocol with one-to-one bodyId assignments.",
+    "For calcium comparison, an ROI/neurite mask or an explicit bodyId-to-ROI membership rule in the same template space.",
+    "For quantitative calibration, raw or digitized experimental traces plus acquisition/normalization metadata; no values may be silently inferred from a plot."
+  ],
+  "scope": "Mapping provenance audit only. It changes neither the Step-2 IR nor any Step-3/4 simulation parameter or verdict."
+}

@@ -1,0 +1,12 @@
+neuron_index,bodyId,type,instance,synonyms,flywireType,hemibrainType,superclass,class,somaSide,dimorphism,fruDsx,consensus_nt,predicted_nt,predicted_nt_confidence,nt_model_sign,input_distance,output_distance,is_input_anchor,is_relay_anchor,is_output_anchor
+1281,13790,AVLP761m,AVLP761m_L,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,,,cb_intrinsic,,L,male-specific,fru_high,gaba,gaba,0.7528368560865255,-1,1,1,False,True,False
+1851,16805,AVLP761m,AVLP761m_R,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,,,cb_intrinsic,,R,male-specific,fru_high,gaba,gaba,0.7731761235079788,-1,2,1,False,True,False
+1937,17337,AVLP761m,AVLP761m_R,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,,,cb_intrinsic,,R,male-specific,fru_high,gaba,gaba,0.760572669411378,-1,2,1,False,True,False
+1994,17618,AVLP761m,AVLP761m_L,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,,,cb_intrinsic,,L,male-specific,fru_high,gaba,gaba,0.7814393712561746,-1,1,2,False,True,False
+2227,19236,AVLP762m,AVLP762m_R,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,,,cb_intrinsic,,R,male-specific,fru_high,gaba,gaba,0.6543273103492011,-1,2,2,False,True,False
+2271,19600,AVLP763m,AVLP763m_R,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,,,cb_intrinsic,,R,male-specific,fru_high,gaba,gaba,0.7164969357721003,-1,2,1,False,True,False
+2302,19818,AVLP762m,AVLP762m_R,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,,,cb_intrinsic,,R,male-specific,fru_high,gaba,gaba,0.6724108973960068,-1,2,1,False,True,False
+2512,21586,AVLP762m,AVLP762m_L,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,,,cb_intrinsic,,L,male-specific,fru_high,gaba,gaba,0.6899767073221191,-1,1,2,False,True,False
+4976,524297,AVLP763m,AVLP763m_L,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,,,cb_intrinsic,,L,male-specific,fru_high,gaba,gaba,0.7089622908847293,-1,1,1,False,True,False
+5105,529875,AVLP762m,AVLP762m_L,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,,,cb_intrinsic,,L,male-specific,fru_high,gaba,gaba,0.6529569128095489,-1,1,2,False,True,False
+5277,555811,AVLP762m,AVLP762m_L,Cachero 2010: aSP-k; Yu 2010: aSP8; Zhou 2015: vPN1,,,cb_intrinsic,,L,male-specific,fru_high,gaba,gaba,0.7160152123273451,-1,1,2,False,True,False

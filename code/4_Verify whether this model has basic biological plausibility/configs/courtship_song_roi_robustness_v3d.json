@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "name": "courtship_song_roi_robustness_v3d",
+  "scope": "Exploratory sensitivity of locked spike-event results to six pC1 readout definitions; no model fitting and no experimental ROI identity claim.",
+  "frozen_ir": "../../2_Subcircuit Automatic Extraction Tool/outputs/courtship_song_v0/neuron_table.csv",
+  "v1_config": "courtship_song_equal_pulse_v1.json",
+  "reference_runs": {
+    "v1": "../outputs/courtship_song_equal_pulse_v1",
+    "v2": "../outputs/courtship_song_mechanism_v2",
+    "v2b": "../outputs/courtship_song_mal_v2b"
+  },
+  "neuronbridge_audit": "../outputs/neuronbridge_r71g01_annotation_audit_v3c",
+  "neuronbridge_best_rank_cutoff": 100,
+  "reference_ipi_ms": 35,
+  "comparison_ipi_ms": [15, 25, 85, 95],
+  "conditions": {
+    "intact": "v1",
+    "silence_vPN1": "v1",
+    "cut_vPN1_to_pC1": "v2",
+    "cut_vPN1_to_other": "v2",
+    "cut_vPN1_all_output": "v2",
+    "silence_aPN1": "v2",
+    "cut_vPN1_to_mAL_bridge": "v2b",
+    "cut_mAL_bridge_to_pC1": "v2b",
+    "cut_both_bridge_segments": "v2b"
+  },
+  "metrics": ["peak_rate_hz", "evoked_spikes_per_neuron_per_pulse", "response_spikes"],
+  "numerical_tolerance": 1e-12
+}

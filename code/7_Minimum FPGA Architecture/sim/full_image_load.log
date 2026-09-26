@@ -1,0 +1,5 @@
+# CNS2FPGA curated evidence excerpt; not the full ModelSim transcript.
+# Original local full_image_load.log SHA-256: 1bf49fa1aac16d8bcede6d685e6ac92ee117599c923483db84d0c1d9d1f74c11
+# Selected project testbench result and final simulator summary:
+PASS full image load neurons=6279 synapses=350185 inputs=93 pC1=112
+Errors: 0, Warnings: 0

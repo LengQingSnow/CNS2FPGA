@@ -1,0 +1,12 @@
+{
+  "safe": "wf24",
+  "compact": "wf24",
+  "status": "PASSING_FORMATS_FOUND",
+  "acceptance": {
+    "max_key_response_error_percent": 5.0,
+    "required_tuning_direction_agreements": 8,
+    "required_intervention_direction_agreements": 24,
+    "allow_state_saturation": false,
+    "allow_accumulator_saturation": false
+  }
+}

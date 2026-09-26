@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "name": "courtship_song_fixed_point_v0",
+  "golden_config": "../../3_CPU Floating-Point Golden Model/configs/courtship_song_lif_v0.json",
+  "golden_src": "../../3_CPU Floating-Point Golden Model/src",
+  "plausibility_src": "../../4_Verify whether this model has basic biological plausibility/src",
+  "v1_config": "../../4_Verify whether this model has basic biological plausibility/configs/courtship_song_equal_pulse_v1.json",
+  "reference_runs": {
+    "v1": "../../4_Verify whether this model has basic biological plausibility/outputs/courtship_song_equal_pulse_v1",
+    "v2": "../../4_Verify whether this model has basic biological plausibility/outputs/courtship_song_mechanism_v2",
+    "v2b": "../../4_Verify whether this model has basic biological plausibility/outputs/courtship_song_mal_v2b",
+    "v3d": "../../4_Verify whether this model has basic biological plausibility/outputs/courtship_song_roi_robustness_v3d"
+  },
+  "reference_ipi_ms": 35,
+  "comparison_ipi_ms": [15, 25, 85, 95],
+  "acceptance": {
+    "max_key_response_error_percent": 5.0,
+    "required_tuning_direction_agreements": 8,
+    "required_intervention_direction_agreements": 24,
+    "allow_state_saturation": false,
+    "allow_accumulator_saturation": false
+  },
+  "formats": [
+    {"name": "wide_q24", "state_bits": 24, "state_frac": 14, "weight_bits": 24, "weight_frac": 18, "decay_bits": 24, "decay_frac": 22, "accumulator_bits": 48},
+    {"name": "q18", "state_bits": 18, "state_frac": 9, "weight_bits": 18, "weight_frac": 12, "decay_bits": 18, "decay_frac": 16, "accumulator_bits": 36},
+    {"name": "q16", "state_bits": 16, "state_frac": 7, "weight_bits": 16, "weight_frac": 10, "decay_bits": 16, "decay_frac": 14, "accumulator_bits": 32},
+    {"name": "q14", "state_bits": 14, "state_frac": 5, "weight_bits": 14, "weight_frac": 8, "decay_bits": 14, "decay_frac": 12, "accumulator_bits": 30},
+    {"name": "q12", "state_bits": 12, "state_frac": 4, "weight_bits": 12, "weight_frac": 6, "decay_bits": 14, "decay_frac": 12, "accumulator_bits": 28},
+    {"name": "q8", "state_bits": 8, "state_frac": 0, "weight_bits": 8, "weight_frac": 2, "decay_bits": 10, "decay_frac": 8, "accumulator_bits": 20}
+  ]
+}

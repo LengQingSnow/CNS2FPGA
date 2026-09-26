@@ -1,0 +1,17 @@
+{
+  "input_and_source_sha256": {
+    "E:\\Workspace\\CNS2FPGA\\code\\13_Baselines and Ablations\\run_baselines.py": "891165f4c75f427604d0b61639d9deeee5a87cf5dc329459bc0651c0a0c8bbf1",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\configs\\visual_lif_v0.json": "487f6b62b3a38c7c58bfcbb617ad563f434c78a8c48f0298bd913e733a213182",
+    "E:\\Workspace\\CNS2FPGA\\code\\5_Fixed-Point Quantization Analysis\\configs\\courtship_song_fixed_point_v6_final.json": "5829b58460d35f436299b9f1c9995815ffddff38b0f6363505dc3ebef487542c",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\outputs\\visual_to_steering_v0\\neuron_table.csv": "4b1c6d5762506781c1c8e570f8f5777b6524c5377d108ec248fbdc429d346981",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\outputs\\visual_to_steering_v0\\synapse_table.csv": "cfc1125e96be9e0d6ba4339c724c6dddf0c37d06ea7edc0f1ed1724247cf8405",
+    "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\outputs\\visual_to_steering_v0\\offset_table.csv": "422e0ad4df2e0bb497bc0d168ab9b111af9fe41b086e6e0f293fb21bb4707aaa"
+  },
+  "manual_graph_definition": "four complete bipartite type pairs; median real synapse count per type pair",
+  "formats": [
+    "safe_wf24",
+    "compact_wf23",
+    "boundary_wf22",
+    "boundary_wf21"
+  ]
+}

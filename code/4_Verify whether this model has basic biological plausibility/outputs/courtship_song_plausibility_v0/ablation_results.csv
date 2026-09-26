@@ -1,0 +1,15 @@
+label,kind,replicate,ablated_neurons,output_rate_hz,output_drop_percent
+pC1,targeted,0,112,2.0,88.23529411764706
+auditory_input,targeted,0,93,0.0,100.0
+random_00,random_control,0,112,11.0,35.294117647058826
+random_01,random_control,1,112,23.0,-35.294117647058826
+random_02,random_control,2,112,24.0,-41.1764705882353
+random_03,random_control,3,112,17.0,0.0
+random_04,random_control,4,112,17.0,0.0
+random_05,random_control,5,112,13.0,23.529411764705884
+random_06,random_control,6,112,14.0,17.647058823529413
+random_07,random_control,7,112,15.0,11.764705882352942
+random_08,random_control,8,112,17.0,0.0
+random_09,random_control,9,112,15.0,11.764705882352942
+random_10,random_control,10,112,10.0,41.1764705882353
+random_11,random_control,11,112,16.0,5.882352941176471

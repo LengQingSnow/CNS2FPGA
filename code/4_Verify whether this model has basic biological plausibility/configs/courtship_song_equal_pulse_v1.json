@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "name": "courtship_song_equal_pulse_v1",
+  "golden_config": "../../3_CPU Floating-Point Golden Model/configs/courtship_song_lif_v0.json",
+  "golden_src": "../../3_CPU Floating-Point Golden Model/src",
+  "protocol": {
+    "ipi_ms": [15, 25, 35, 45, 55, 65, 75, 85, 95],
+    "pulse_count": 40,
+    "pulse_width_ms": 3.0,
+    "amplitude": 1.2,
+    "start_ms": 100.0,
+    "tail_ms": 500.0,
+    "peak_window_ms": 100.0,
+    "primary_metric": "peak_rate_hz",
+    "secondary_metric": "evoked_spikes_per_neuron_per_pulse",
+    "ablation_metric": "evoked_spikes_per_neuron_per_pulse"
+  },
+  "tuning_rules": [
+    {"id": "vPN1_short_ipi_attenuation", "group": "vPN1", "reference_ipi_ms": 35, "lower_response_ipi_ms": [15]},
+    {"id": "pC1_short_ipi_attenuation", "group": "pC1", "reference_ipi_ms": 35, "lower_response_ipi_ms": [15, 25]},
+    {"id": "pC1_long_ipi_attenuation", "group": "pC1", "reference_ipi_ms": 35, "lower_response_ipi_ms": [85, 95]}
+  ],
+  "numerical_tolerance": 1e-12,
+  "ablation": {
+    "targets": ["vPN1", "pC1", "auditory_input"],
+    "random_targets": ["vPN1", "pC1"],
+    "reference_ipi_ms": 35,
+    "random_replicates": 24,
+    "random_seed": 20260918,
+    "matching": "neuron_count_and_nt_model_sign",
+    "causal_hypotheses": [
+      {"target": "vPN1", "readout": "pC1", "expected": "decrease"}
+    ]
+  },
+  "references": [
+    {
+      "id": "zhou2015", "doi": "10.7554/eLife.08477", "url": "https://elifesciences.org/articles/08477",
+      "evidence": "Figures 5H and 6K: 40-pulse peak calcium responses. vPN1 is attenuated below 25 ms; pC1 is attenuated at 15-25 and 85-95 ms relative to 35 ms. Figure 6E: pC1 inactivation reduces chaining. Neither pIP10+pMP2 sum nor the 100-ms spike-rate metric is validated as chaining or calcium."
+    },
+    {
+      "id": "shiu2024", "doi": "10.1038/s41586-024-07763-9", "url": "https://doi.org/10.1038/s41586-024-07763-9",
+      "evidence": "Connectome-constrained LIF modelling and computational silencing motivate the method. GABA/glutamate inhibitory signs are modelling assumptions, not receptor-level verification of every connection."
+    }
+  ]
+}

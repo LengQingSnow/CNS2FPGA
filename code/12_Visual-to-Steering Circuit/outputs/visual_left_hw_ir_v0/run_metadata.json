@@ -1,0 +1,15 @@
+{
+  "verdict": "PASS",
+  "schema": "cns2fpga.hardware_ir",
+  "schema_version": 1,
+  "fixed_format": "safe_wf24",
+  "neurons": 226,
+  "synapses": 1730,
+  "logical_bits": 152752,
+  "aggregate_bram36_equivalent": 5,
+  "independent_memory_bram36": 9,
+  "roundtrip_checks_passed": 8,
+  "protocol_lock_sha256": "eb2ebf9fca38d83818049b687fd151c63dd15ffa6d07edae3daabd9f85ffdc5a",
+  "frozen_inputs_unchanged": true,
+  "runtime_seconds": 0.1807526999982656
+}

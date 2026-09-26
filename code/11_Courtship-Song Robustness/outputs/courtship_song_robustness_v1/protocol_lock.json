@@ -1,0 +1,652 @@
+{
+  "schema": "cns2fpga.step11",
+  "version": 1,
+  "baseline": "Step 10, intact 35-ms IPI, 40 pulses at 1.2, 4308 steps",
+  "seed": 20260925,
+  "replicates": 5,
+  "levels_pct": [
+    5,
+    10,
+    20
+  ],
+  "response_window_ms": [
+    100,
+    1968
+  ],
+  "source_sha256": {
+    "11_Courtship-Song Robustness\\run_robustness.py": "972d6509dc6ddc4f7a3b7fcd68d7cb4c97dcc2186d0b5078e0cd368cb0e5badf",
+    "3_CPU Floating-Point Golden Model\\src\\cns2fpga_golden\\model.py": "76cb0df05b97117c7ac1330cec319dc76b212854ae46b8a69c25a089a4bd5aa3",
+    "5_Fixed-Point Quantization Analysis\\src\\cns2fpga_fixed\\fixed_lif.py": "b4f5afbba1656a02010a487a982adda1db75f5b1f56c14435d5b1d7d6f46ab07",
+    "10_Complete Courtship-Song Circuit Experiment\\run_experiment.py": "b45ab62cb69fba880c141c44f08b476e26603eba9c2111015230c304511e4951",
+    "10_Complete Courtship-Song Circuit Experiment\\outputs\\courtship_song_v1\\cpu\\ipi_35.npz": "574ed267f7f2f3f4fea6103456136d6ba628756bbfe1b39037a6ae321c7c8950",
+    "5_Fixed-Point Quantization Analysis\\configs\\courtship_song_fixed_point_v6_final.json": "5829b58460d35f436299b9f1c9995815ffddff38b0f6363505dc3ebef487542c",
+    "2_Subcircuit Automatic Extraction Tool\\outputs\\courtship_song_v0\\neuron_table.csv": "4e025152b9d6e6f76e913c4434cb92c621ae8a0a0e11dc1ff6f4a55fb6fb3e5e",
+    "2_Subcircuit Automatic Extraction Tool\\outputs\\courtship_song_v0\\synapse_table.csv": "6e86a30f46a636553e0cb82bfc062c900ce9102637cd4c3504df0f254e078dd7",
+    "2_Subcircuit Automatic Extraction Tool\\outputs\\courtship_song_v0\\offset_table.csv": "46cf272270679cedd0398c121d8159cee24a6196373483a0e0c0e0dc844ad924",
+    "2_Subcircuit Automatic Extraction Tool\\outputs\\courtship_song_v0\\metadata.json": "2cf83270394245ed7164b2457326afc589699f0ce7c0c031c7e132f1d9f2c016"
+  },
+  "cases": [
+    {
+      "name": "intact",
+      "family": "intact",
+      "level_pct": 0,
+      "replicate": 0,
+      "seed": null,
+      "selection_sha256": null,
+      "selection_count": 0
+    },
+    {
+      "name": "synapse_deletion_05_r0",
+      "family": "synapse_deletion",
+      "level_pct": 5,
+      "replicate": 0,
+      "seed": 20261425,
+      "selection_sha256": "349f808bcbe955d9d17d68b130759e02d5545244863a5deb51150b9fa63c94ad",
+      "selection_count": 17509
+    },
+    {
+      "name": "synapse_deletion_05_r1",
+      "family": "synapse_deletion",
+      "level_pct": 5,
+      "replicate": 1,
+      "seed": 20261426,
+      "selection_sha256": "714080e0b7bb66e41879b67904b7a4fc2f18697e5ea9b06bb2eee9225371157e",
+      "selection_count": 17509
+    },
+    {
+      "name": "synapse_deletion_05_r2",
+      "family": "synapse_deletion",
+      "level_pct": 5,
+      "replicate": 2,
+      "seed": 20261427,
+      "selection_sha256": "f4da97e1361ccf74bdd3408ee0f2a9e304cfa0d3368f7efcc75cc81fb2a304d1",
+      "selection_count": 17509
+    },
+    {
+      "name": "synapse_deletion_05_r3",
+      "family": "synapse_deletion",
+      "level_pct": 5,
+      "replicate": 3,
+      "seed": 20261428,
+      "selection_sha256": "85d44f7c60b3d3d254097641a7b3d854c34587d88388063761391330e0445836",
+      "selection_count": 17509
+    },
+    {
+      "name": "synapse_deletion_05_r4",
+      "family": "synapse_deletion",
+      "level_pct": 5,
+      "replicate": 4,
+      "seed": 20261429,
+      "selection_sha256": "a28969473f0ce5133ad37beab89c654f2537d30fe2ac934516e7b41db0a1627a",
+      "selection_count": 17509
+    },
+    {
+      "name": "synapse_deletion_10_r0",
+      "family": "synapse_deletion",
+      "level_pct": 10,
+      "replicate": 0,
+      "seed": 20261925,
+      "selection_sha256": "77bac7e95882e8d38faf9209cfc2c32846edcdab1e042cf81d032db53a659022",
+      "selection_count": 35018
+    },
+    {
+      "name": "synapse_deletion_10_r1",
+      "family": "synapse_deletion",
+      "level_pct": 10,
+      "replicate": 1,
+      "seed": 20261926,
+      "selection_sha256": "0bae9c35d2396572cd35bee5096ef2adba475855a5abd315ee2e969438591f39",
+      "selection_count": 35018
+    },
+    {
+      "name": "synapse_deletion_10_r2",
+      "family": "synapse_deletion",
+      "level_pct": 10,
+      "replicate": 2,
+      "seed": 20261927,
+      "selection_sha256": "d6fab73645ebbcaa90b4fa82da473258126c2b1e94c085141884252abc1ea151",
+      "selection_count": 35018
+    },
+    {
+      "name": "synapse_deletion_10_r3",
+      "family": "synapse_deletion",
+      "level_pct": 10,
+      "replicate": 3,
+      "seed": 20261928,
+      "selection_sha256": "799ff74795209ea885f2f72e3cd78c035fb949894749706a21cb41aedf633a34",
+      "selection_count": 35018
+    },
+    {
+      "name": "synapse_deletion_10_r4",
+      "family": "synapse_deletion",
+      "level_pct": 10,
+      "replicate": 4,
+      "seed": 20261929,
+      "selection_sha256": "47ad5402086c3a7552a13158c219a2480d7b4d2eb67a67cf17012db109a83f48",
+      "selection_count": 35018
+    },
+    {
+      "name": "synapse_deletion_20_r0",
+      "family": "synapse_deletion",
+      "level_pct": 20,
+      "replicate": 0,
+      "seed": 20262925,
+      "selection_sha256": "51a5186a1c80243df0a0cb425f17ae7c6a47e06ba1ad5e4e49c20e18191eb8d8",
+      "selection_count": 70037
+    },
+    {
+      "name": "synapse_deletion_20_r1",
+      "family": "synapse_deletion",
+      "level_pct": 20,
+      "replicate": 1,
+      "seed": 20262926,
+      "selection_sha256": "f9202e244c938e092cf21c7466d91bd1528d920fdbe112b5ac2cddc63446a5f6",
+      "selection_count": 70037
+    },
+    {
+      "name": "synapse_deletion_20_r2",
+      "family": "synapse_deletion",
+      "level_pct": 20,
+      "replicate": 2,
+      "seed": 20262927,
+      "selection_sha256": "1990d3683bbe4464d3fb13595d0af5533c5fad5b72ae534f8560d8569bdffc57",
+      "selection_count": 70037
+    },
+    {
+      "name": "synapse_deletion_20_r3",
+      "family": "synapse_deletion",
+      "level_pct": 20,
+      "replicate": 3,
+      "seed": 20262928,
+      "selection_sha256": "68fd6f9bd2b0d3e7fd6c1bcb48474bc7f49ce7cb4d120f3e3561e3ba6d7cd352",
+      "selection_count": 70037
+    },
+    {
+      "name": "synapse_deletion_20_r4",
+      "family": "synapse_deletion",
+      "level_pct": 20,
+      "replicate": 4,
+      "seed": 20262929,
+      "selection_sha256": "17b774c981847bcc13e4c2ffae73f7f1c87c1b1268dfce94fec2ca2eaef06b3e",
+      "selection_count": 70037
+    },
+    {
+      "name": "neuron_failure_05_r0",
+      "family": "neuron_failure",
+      "level_pct": 5,
+      "replicate": 0,
+      "seed": 20271425,
+      "selection_sha256": "df44fb81d51525e62092cc522004053f904a8f43051da959a7f6e634cc1fca48",
+      "selection_count": 314
+    },
+    {
+      "name": "neuron_failure_05_r1",
+      "family": "neuron_failure",
+      "level_pct": 5,
+      "replicate": 1,
+      "seed": 20271426,
+      "selection_sha256": "e86f7b8050d739b262750383b7a8fbd5f36ede875d3a065fa69c64cdf79d761f",
+      "selection_count": 314
+    },
+    {
+      "name": "neuron_failure_05_r2",
+      "family": "neuron_failure",
+      "level_pct": 5,
+      "replicate": 2,
+      "seed": 20271427,
+      "selection_sha256": "c8978f1b09a65bd69f2b03c348b75558f3e2d356e717277960df0689394ead0c",
+      "selection_count": 314
+    },
+    {
+      "name": "neuron_failure_05_r3",
+      "family": "neuron_failure",
+      "level_pct": 5,
+      "replicate": 3,
+      "seed": 20271428,
+      "selection_sha256": "ebf19d601e726afce737f6d07026c1d696070810e6c0d4420fbd57335675d0bf",
+      "selection_count": 314
+    },
+    {
+      "name": "neuron_failure_05_r4",
+      "family": "neuron_failure",
+      "level_pct": 5,
+      "replicate": 4,
+      "seed": 20271429,
+      "selection_sha256": "d03763248ef8a72f4c8832758ef7fd3d4b8b880b091079fe8aab758cea2e9eda",
+      "selection_count": 314
+    },
+    {
+      "name": "neuron_failure_10_r0",
+      "family": "neuron_failure",
+      "level_pct": 10,
+      "replicate": 0,
+      "seed": 20271925,
+      "selection_sha256": "d639bf5e976c3cbf89167a03247c4a27e480090d4c54f993f00351d5df8f914a",
+      "selection_count": 628
+    },
+    {
+      "name": "neuron_failure_10_r1",
+      "family": "neuron_failure",
+      "level_pct": 10,
+      "replicate": 1,
+      "seed": 20271926,
+      "selection_sha256": "8e2e9ebb9e9ffc84330060993fa5ab5cd0bf4a5d7eeb6ec0b0ea9201b1ad0e24",
+      "selection_count": 628
+    },
+    {
+      "name": "neuron_failure_10_r2",
+      "family": "neuron_failure",
+      "level_pct": 10,
+      "replicate": 2,
+      "seed": 20271927,
+      "selection_sha256": "af5ce87827418301e8b4702d8ca4aaccda122629ecdd2ec959dbb8adf470ed70",
+      "selection_count": 628
+    },
+    {
+      "name": "neuron_failure_10_r3",
+      "family": "neuron_failure",
+      "level_pct": 10,
+      "replicate": 3,
+      "seed": 20271928,
+      "selection_sha256": "7faab14bba5cfe6633104972d22ab6c73a30d1b681890266175c80e616759827",
+      "selection_count": 628
+    },
+    {
+      "name": "neuron_failure_10_r4",
+      "family": "neuron_failure",
+      "level_pct": 10,
+      "replicate": 4,
+      "seed": 20271929,
+      "selection_sha256": "a172a5429ecffafb5f4c1a182bc5d4cb97a21c7bdb45c5ee01aab47b5a3c95d3",
+      "selection_count": 628
+    },
+    {
+      "name": "neuron_failure_20_r0",
+      "family": "neuron_failure",
+      "level_pct": 20,
+      "replicate": 0,
+      "seed": 20272925,
+      "selection_sha256": "19dcfd7f28538b0c344fdd97647c0cb27a482ee29bfe86ba69bffc21e2d6ce8e",
+      "selection_count": 1256
+    },
+    {
+      "name": "neuron_failure_20_r1",
+      "family": "neuron_failure",
+      "level_pct": 20,
+      "replicate": 1,
+      "seed": 20272926,
+      "selection_sha256": "c6aba48fc3fe3d8c981d469c9faa1035a84254e3a9578478524f3e9755ecab28",
+      "selection_count": 1256
+    },
+    {
+      "name": "neuron_failure_20_r2",
+      "family": "neuron_failure",
+      "level_pct": 20,
+      "replicate": 2,
+      "seed": 20272927,
+      "selection_sha256": "f31bade2106e80ec2eb63958890f8d7fb8266f7a58f747cff11da430364d40eb",
+      "selection_count": 1256
+    },
+    {
+      "name": "neuron_failure_20_r3",
+      "family": "neuron_failure",
+      "level_pct": 20,
+      "replicate": 3,
+      "seed": 20272928,
+      "selection_sha256": "5111b3ceb418bc6f796fbf6964abdb85c961d4fbcbe7dcfc759d45a3984db045",
+      "selection_count": 1256
+    },
+    {
+      "name": "neuron_failure_20_r4",
+      "family": "neuron_failure",
+      "level_pct": 20,
+      "replicate": 4,
+      "seed": 20272929,
+      "selection_sha256": "8b6a1392c8079a63f0f6588fe5fca793a64abd30ad945874365c7db8701dd128",
+      "selection_count": 1256
+    },
+    {
+      "name": "weight_jitter_05_r0",
+      "family": "weight_jitter",
+      "level_pct": 5,
+      "replicate": 0,
+      "seed": 20281425,
+      "selection_sha256": "e5d62da9a5e82c25d31673d6e7de1fd4a69327462d9bdd5e66c7c76b3ee0aa15",
+      "selection_count": 350185,
+      "multiplier_mean": 0.9998999620226596
+    },
+    {
+      "name": "weight_jitter_05_r1",
+      "family": "weight_jitter",
+      "level_pct": 5,
+      "replicate": 1,
+      "seed": 20281426,
+      "selection_sha256": "a96cb7f899a8d5b84717c2acd963045a8c1478473c53a2d87eea16aab9a85102",
+      "selection_count": 350185,
+      "multiplier_mean": 0.9999566705380514
+    },
+    {
+      "name": "weight_jitter_05_r2",
+      "family": "weight_jitter",
+      "level_pct": 5,
+      "replicate": 2,
+      "seed": 20281427,
+      "selection_sha256": "df2f479f3e88d84a244e19d16a92b67e59c324e19970bde52a28884fb972b517",
+      "selection_count": 350185,
+      "multiplier_mean": 1.0001683441785651
+    },
+    {
+      "name": "weight_jitter_05_r3",
+      "family": "weight_jitter",
+      "level_pct": 5,
+      "replicate": 3,
+      "seed": 20281428,
+      "selection_sha256": "fafdca94cf2f27b970167a98375a98fc8f34c15e431d52f675b5878c00cdb280",
+      "selection_count": 350185,
+      "multiplier_mean": 0.9998080293365454
+    },
+    {
+      "name": "weight_jitter_05_r4",
+      "family": "weight_jitter",
+      "level_pct": 5,
+      "replicate": 4,
+      "seed": 20281429,
+      "selection_sha256": "47972927a2e0299c2ed9266cba1d803cc29738e62e397f63e20066d9d491ed61",
+      "selection_count": 350185,
+      "multiplier_mean": 1.0000699451461046
+    },
+    {
+      "name": "weight_jitter_10_r0",
+      "family": "weight_jitter",
+      "level_pct": 10,
+      "replicate": 0,
+      "seed": 20281925,
+      "selection_sha256": "55059ad87b31e66e94641d7bd509ca6c7e0a556434114d23b6de72f4571f2b0c",
+      "selection_count": 350185,
+      "multiplier_mean": 1.0000748273582354
+    },
+    {
+      "name": "weight_jitter_10_r1",
+      "family": "weight_jitter",
+      "level_pct": 10,
+      "replicate": 1,
+      "seed": 20281926,
+      "selection_sha256": "6c8849287f531cb764a6c63615d389ce5882634384527231a3e1e2c554bf206b",
+      "selection_count": 350185,
+      "multiplier_mean": 1.0002192462538542
+    },
+    {
+      "name": "weight_jitter_10_r2",
+      "family": "weight_jitter",
+      "level_pct": 10,
+      "replicate": 2,
+      "seed": 20281927,
+      "selection_sha256": "62b83cba8e530f9a2c855752ad688bcda6ac109184bdfb38938edbe911f004de",
+      "selection_count": 350185,
+      "multiplier_mean": 1.0000990229621483
+    },
+    {
+      "name": "weight_jitter_10_r3",
+      "family": "weight_jitter",
+      "level_pct": 10,
+      "replicate": 3,
+      "seed": 20281928,
+      "selection_sha256": "324c90d93baedd2fc8688367e6fdf2f973ce78e1ab03fd87106e5abd8a50cd58",
+      "selection_count": 350185,
+      "multiplier_mean": 0.9999928356642814
+    },
+    {
+      "name": "weight_jitter_10_r4",
+      "family": "weight_jitter",
+      "level_pct": 10,
+      "replicate": 4,
+      "seed": 20281929,
+      "selection_sha256": "ff5835bb47537d55dc61d53cbea83fefc2c0ed17cf726f8afcec14fae7802e4a",
+      "selection_count": 350185,
+      "multiplier_mean": 1.0001434428765796
+    },
+    {
+      "name": "weight_jitter_20_r0",
+      "family": "weight_jitter",
+      "level_pct": 20,
+      "replicate": 0,
+      "seed": 20282925,
+      "selection_sha256": "2e0adb92801897b184a9058fe0c2879d24e4db333964438963b097645dad7012",
+      "selection_count": 350185,
+      "multiplier_mean": 1.0000646571875105
+    },
+    {
+      "name": "weight_jitter_20_r1",
+      "family": "weight_jitter",
+      "level_pct": 20,
+      "replicate": 1,
+      "seed": 20282926,
+      "selection_sha256": "d0949d18125356b20dff743678309995216112859448d6bb89f2da03bde485e8",
+      "selection_count": 350185,
+      "multiplier_mean": 1.0005900734360758
+    },
+    {
+      "name": "weight_jitter_20_r2",
+      "family": "weight_jitter",
+      "level_pct": 20,
+      "replicate": 2,
+      "seed": 20282927,
+      "selection_sha256": "765d6f3d2693df7d96fab43f36b6b10e6c74d1d773243977aaf7d7b303114ed7",
+      "selection_count": 350185,
+      "multiplier_mean": 0.9999980485404909
+    },
+    {
+      "name": "weight_jitter_20_r3",
+      "family": "weight_jitter",
+      "level_pct": 20,
+      "replicate": 3,
+      "seed": 20282928,
+      "selection_sha256": "9fb2a70bc0df68e8168370b663eba70760ba302714d8737993d7c41e0fe7a9d7",
+      "selection_count": 350185,
+      "multiplier_mean": 0.9998531072724843
+    },
+    {
+      "name": "weight_jitter_20_r4",
+      "family": "weight_jitter",
+      "level_pct": 20,
+      "replicate": 4,
+      "seed": 20282929,
+      "selection_sha256": "712bc9384b921bea5fe218057abe0508bcfb78f9fdd3f78fc6cc786827bdeb24",
+      "selection_count": 350185,
+      "multiplier_mean": 0.9997638959725448
+    },
+    {
+      "name": "input_noise_05_r0",
+      "family": "input_noise",
+      "level_pct": 5,
+      "replicate": 0,
+      "seed": 20291425,
+      "selection_sha256": "8216179a22ad9eeb2b6f82e5c7ed62c5375bc769be667fd0e1939075fe64c95a",
+      "selection_count": 4308,
+      "noise_sigma": 0.06,
+      "fpga_stimulus_mem_sha256": "1da1af094dc27ea702bfb41d1952f84418fdaea61626fc114c6cd23ea26dbcfc"
+    },
+    {
+      "name": "input_noise_05_r1",
+      "family": "input_noise",
+      "level_pct": 5,
+      "replicate": 1,
+      "seed": 20291426,
+      "selection_sha256": "1cffd902267361f02272ff82fb21353d6668a93aa2a765bd9ded4ef27097a7de",
+      "selection_count": 4308,
+      "noise_sigma": 0.06
+    },
+    {
+      "name": "input_noise_05_r2",
+      "family": "input_noise",
+      "level_pct": 5,
+      "replicate": 2,
+      "seed": 20291427,
+      "selection_sha256": "78d64cd6b0181aaaaf63c6af01e98478112e7b1f8455635e2cdeb62f7648f6b3",
+      "selection_count": 4308,
+      "noise_sigma": 0.06
+    },
+    {
+      "name": "input_noise_05_r3",
+      "family": "input_noise",
+      "level_pct": 5,
+      "replicate": 3,
+      "seed": 20291428,
+      "selection_sha256": "cd81e402918587852ba5593fed73f48cee98e9d3bbbd8fac75f59531e5c6cf38",
+      "selection_count": 4308,
+      "noise_sigma": 0.06
+    },
+    {
+      "name": "input_noise_05_r4",
+      "family": "input_noise",
+      "level_pct": 5,
+      "replicate": 4,
+      "seed": 20291429,
+      "selection_sha256": "735cccda3e5148e7b71d60428bbd49efd6d9a725f74c5315d9e36e272e76498e",
+      "selection_count": 4308,
+      "noise_sigma": 0.06
+    },
+    {
+      "name": "input_noise_10_r0",
+      "family": "input_noise",
+      "level_pct": 10,
+      "replicate": 0,
+      "seed": 20291925,
+      "selection_sha256": "a3e33389dcde582fda12acfb83243adb619dffb20de03991fcd3236334886fb0",
+      "selection_count": 4308,
+      "noise_sigma": 0.12,
+      "fpga_stimulus_mem_sha256": "450a4badaadcdbad3b0d77c50020e364d0fdf733a831f54b078b85e37d206574"
+    },
+    {
+      "name": "input_noise_10_r1",
+      "family": "input_noise",
+      "level_pct": 10,
+      "replicate": 1,
+      "seed": 20291926,
+      "selection_sha256": "127820d6171196cb93a4297b17a94f2999110f43d62002e94434fc3c3d0937fe",
+      "selection_count": 4308,
+      "noise_sigma": 0.12
+    },
+    {
+      "name": "input_noise_10_r2",
+      "family": "input_noise",
+      "level_pct": 10,
+      "replicate": 2,
+      "seed": 20291927,
+      "selection_sha256": "5df439a08a056eaf42bf94d3316cf13e29a3a7799d4f8fedadaae293d288f90d",
+      "selection_count": 4308,
+      "noise_sigma": 0.12
+    },
+    {
+      "name": "input_noise_10_r3",
+      "family": "input_noise",
+      "level_pct": 10,
+      "replicate": 3,
+      "seed": 20291928,
+      "selection_sha256": "e8ca77503b689589c7e5216e9dcfd5cf23aa4df4ad38d4f85b566ca30e31161c",
+      "selection_count": 4308,
+      "noise_sigma": 0.12
+    },
+    {
+      "name": "input_noise_10_r4",
+      "family": "input_noise",
+      "level_pct": 10,
+      "replicate": 4,
+      "seed": 20291929,
+      "selection_sha256": "ca24cd189ee2da1bad868743c06023aab637597f1355d3126ebdeefb9f9028e9",
+      "selection_count": 4308,
+      "noise_sigma": 0.12
+    },
+    {
+      "name": "input_noise_20_r0",
+      "family": "input_noise",
+      "level_pct": 20,
+      "replicate": 0,
+      "seed": 20292925,
+      "selection_sha256": "319ca783e6f53fa38b39812fb38f2c2f36a8196a8f813231f6e707a54cc1122c",
+      "selection_count": 4308,
+      "noise_sigma": 0.24,
+      "fpga_stimulus_mem_sha256": "88e81f6220998abf9915fb636ea0fea14b89044ea3a1939f16cd45406568886e"
+    },
+    {
+      "name": "input_noise_20_r1",
+      "family": "input_noise",
+      "level_pct": 20,
+      "replicate": 1,
+      "seed": 20292926,
+      "selection_sha256": "0828a3db4809b2744a19a524d650527addcb934c115d2a9704ae8e4168519e7a",
+      "selection_count": 4308,
+      "noise_sigma": 0.24
+    },
+    {
+      "name": "input_noise_20_r2",
+      "family": "input_noise",
+      "level_pct": 20,
+      "replicate": 2,
+      "seed": 20292927,
+      "selection_sha256": "26e5102c5112cb65a9ee62ab70b81de1e1146054dc120a05b6b2b7845e929652",
+      "selection_count": 4308,
+      "noise_sigma": 0.24
+    },
+    {
+      "name": "input_noise_20_r3",
+      "family": "input_noise",
+      "level_pct": 20,
+      "replicate": 3,
+      "seed": 20292928,
+      "selection_sha256": "e743352f544ebdceb6d69e2662962d2f4d35d6414b6c06ceec9fd0f7032cb018",
+      "selection_count": 4308,
+      "noise_sigma": 0.24
+    },
+    {
+      "name": "input_noise_20_r4",
+      "family": "input_noise",
+      "level_pct": 20,
+      "replicate": 4,
+      "seed": 20292929,
+      "selection_sha256": "c8cb9d722db8fafd0cfef00c94076922c936cebea4a7fa1d57ffc99a53bd4111",
+      "selection_count": 4308,
+      "noise_sigma": 0.24
+    },
+    {
+      "name": "ablate_auditory_input",
+      "family": "ablation",
+      "target": "auditory_input",
+      "level_pct": null,
+      "replicate": 0,
+      "seed": null,
+      "selection_sha256": "df5fdd1af6478f0021cb956603fc0a4febf09d209d8e833ce7719901b1e9860f",
+      "selection_count": 93
+    },
+    {
+      "name": "ablate_aPN1",
+      "family": "ablation",
+      "target": "aPN1",
+      "level_pct": null,
+      "replicate": 0,
+      "seed": null,
+      "selection_sha256": "7dae2d98839990fe1afa4ee67a3b76b238050d1ccd4dbf7c0224c80c5c4a065d",
+      "selection_count": 15
+    },
+    {
+      "name": "ablate_vPN1",
+      "family": "ablation",
+      "target": "vPN1",
+      "level_pct": null,
+      "replicate": 0,
+      "seed": null,
+      "selection_sha256": "a1dbd9277b629c3835958d95147f026c64b36e4a6a8d92a8c197722866b45821",
+      "selection_count": 11
+    },
+    {
+      "name": "ablate_pIP10",
+      "family": "ablation",
+      "target": "pIP10",
+      "level_pct": null,
+      "replicate": 0,
+      "seed": null,
+      "selection_sha256": "ba5ac821c3e01e6ddcc79ec83f996ca772d95df862e1e01a0245c591624800c5",
+      "selection_count": 2
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+requirement,status
+"A versioned, sex- and age-matched R71G01∩dsx expression-to-bodyId table, or an explicit morphology registration protocol with one-to-one bodyId assignments.",REQUIRED_BEFORE_EXACT_MAPPING
+"For calcium comparison, an ROI/neurite mask or an explicit bodyId-to-ROI membership rule in the same template space.",REQUIRED_BEFORE_EXACT_MAPPING
+"For quantitative calibration, raw or digitized experimental traces plus acquisition/normalization metadata; no values may be silently inferred from a plot.",REQUIRED_BEFORE_EXACT_MAPPING

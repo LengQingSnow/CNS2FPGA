@@ -1,0 +1,7 @@
+{
+  "pass": true,
+  "trials": 3,
+  "groups_per_trial": 6,
+  "neuron_group_timesteps_compared": 77544,
+  "mismatch_steps": 0
+}

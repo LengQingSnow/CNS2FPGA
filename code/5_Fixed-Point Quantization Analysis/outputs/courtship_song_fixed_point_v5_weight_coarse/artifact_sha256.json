@@ -1,0 +1,14 @@
+{
+  "engineering_reference_manifest.json": "43734924476e097ae91b2e6906add05879ca4a2c8672f2e7c4c4c1dc9886f55d",
+  "event_comparison.csv": "f36449217d121a8bfd41d3f9349d0657d2b7cb24b5653e5f6066465901c9584a",
+  "format_summary.csv": "b312d0ba073a430779a4addce11e021044177a15134bcfffd044937569632639",
+  "intervention_direction_checks.csv": "08f12f33f4c9e94bd72301f4c40eb8edd2dbc6a6964054966e89045fff189266",
+  "intervention_direction_preservation.png": "eff86c80e7a30b1ea3d875f1eb21a6f76cc760caa71d69f7535cbd8b12c06cc2",
+  "population_comparison.csv": "d4b9375d9d3316daf1ed6537c641437737f5faa9599e4030541aeeb64a4bfbc8",
+  "protocol_lock.json": "ec1b05fbaf3d80578ed790aacf59ecc4bd87c0521ac9ab025887271b164ab84c",
+  "quantization_error.png": "4ce8a9c7c77a198cde6cecc0f5522619358c536bb5937cc366808094f4407d1b",
+  "recommended_formats.json": "bf9d2500f936728f1e4c88bfe9f7f27f4a32e0115db8786700fd9e1822b1ef20",
+  "report.md": "ea01c463a7e00df37b736b59c02fd7b4df0842a8001b7ea28e9bbeff5d8c1ea5",
+  "run_metadata.json": "33640d3242322c40f8a5cd29c1f65655e243828f7532c3ca5308077ed7a324b6",
+  "tuning_direction_checks.csv": "a5c7a70cf35e98ed3368229d95d183305ae77351c00125b29620a1c02ff34d32"
+}

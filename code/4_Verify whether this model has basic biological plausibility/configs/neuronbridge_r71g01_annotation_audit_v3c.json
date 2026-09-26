@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "name": "neuronbridge_r71g01_annotation_audit_v3c",
+  "scope": "Join every MaleCNS v0.9 NeuronBridge result to pinned MaleCNS v1.0 annotations and audit the frozen step-2 path criterion.",
+  "search_config": "neuronbridge_r71g01_screen_v3b.json",
+  "extractor_root": "../../2_Subcircuit Automatic Extraction Tool",
+  "extractor_config": "../../2_Subcircuit Automatic Extraction Tool/configs/courtship_song_v0.json",
+  "annotation_table": "../../../support/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+  "connectivity_table": "../../../support/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+  "frozen_ir": "../../2_Subcircuit Automatic Extraction Tool/outputs/courtship_song_v0/neuron_table.csv",
+  "interpretation": {
+    "search_score": "NeuronBridge search score is retained for ranking within an export and is not treated as a calibrated confidence probability.",
+    "driver_scope": "R71G01 MCFO alone does not identify the Zhou 2015 R71G01-LexA∩dsxGAL4 intersection or calcium ROI.",
+    "version_join": "v0.9 result body IDs are checked against the pinned v1.0 annotation table; unmatched IDs remain explicit."
+  }
+}

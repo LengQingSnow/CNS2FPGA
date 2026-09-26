@@ -1,0 +1,6 @@
+part=xcku115-flva1517-2-e
+target_clock_mhz=250.000
+target_period_ns=4.000
+timing_met=0
+bitstream_generated=false
+bitstream_blocker=board_pin_constraints_required

@@ -1,0 +1,95 @@
+{
+  "config": {
+    "name": "visual_to_steering_v0",
+    "dataset": "MaleCNS v1.0",
+    "data": {
+      "annotations": "../../../support/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "neurotransmitters": "../../../support/body-neurotransmitters-male-cns-v1.0.feather",
+      "connectivity": "../../../support/connectome-weights-male-cns-v1.0-minconf-0.5.feather"
+    },
+    "selectors": {
+      "inputs": [
+        {
+          "field": "type",
+          "regex": "^LC10a$",
+          "label": "LC10a visual projection"
+        }
+      ],
+      "relays": [
+        {
+          "field": "type",
+          "regex": "^AOTU019$",
+          "label": "AOTU019 steering relay"
+        },
+        {
+          "field": "type",
+          "regex": "^AOTU025$",
+          "label": "AOTU025 steering relay"
+        }
+      ],
+      "outputs": [
+        {
+          "field": "type",
+          "regex": "^DNa02$",
+          "label": "DNa02 descending steering output"
+        }
+      ]
+    },
+    "annotation_filters": {
+      "include": [
+        {
+          "field": "type",
+          "regex": "^(?:LC10a|AOTU019|AOTU025|DNa02)$"
+        }
+      ],
+      "exclude": []
+    },
+    "extraction": {
+      "max_hops": 2,
+      "min_synapse_count": 5,
+      "batch_rows": 2000000,
+      "max_frontier_nodes": 250000
+    },
+    "ir": {
+      "neuron_record_bits": 64,
+      "synapse_record_bits": 64,
+      "offset_entry_bits": 32,
+      "bram36_bits": 36864
+    }
+  },
+  "counts": {
+    "input anchors matched": 275,
+    "relay anchors matched": 4,
+    "output anchors matched": 2,
+    "input anchors retained": 220,
+    "relay anchors retained": 4,
+    "output anchors retained": 2,
+    "forward reachable neurons": 281,
+    "backward reachable neurons": 226,
+    "path-retained neurons": 226
+  },
+  "graph": {
+    "neurons": 226,
+    "nonzero_edges": 1730,
+    "aggregate_synapses": 33748,
+    "max_fan_out_edges": 15,
+    "max_fan_in_edges": 96
+  },
+  "storage": {
+    "total_bits": 132448,
+    "bram36_equivalent": 4,
+    "assumption": "Storage estimate only; excludes buffers, port replication and control logic."
+  },
+  "derived_input_mapping": {
+    "purpose": "left LC10a only; connectivity and neuron order unchanged",
+    "source_ir": "E:\\Workspace\\CNS2FPGA\\code\\12_Visual-to-Steering Circuit\\outputs\\visual_to_steering_v0",
+    "source_input_count": 220,
+    "selected_input_count": 109,
+    "source_sha256": {
+      "neuron_table.csv": "4b1c6d5762506781c1c8e570f8f5777b6524c5377d108ec248fbdc429d346981",
+      "synapse_table.csv": "cfc1125e96be9e0d6ba4339c724c6dddf0c37d06ea7edc0f1ed1724247cf8405",
+      "offset_table.csv": "422e0ad4df2e0bb497bc0d168ab9b111af9fe41b086e6e0f293fb21bb4707aaa",
+      "metadata.json": "6e8dafe1d4521de4b921f7098e6dc299ea228f93db9bf5bb67f92fa8d25dd6f8"
+    }
+  }
+}

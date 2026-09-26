@@ -1,0 +1,47 @@
+{
+  "status": "ENGINEERING_REFERENCE_ONLY",
+  "biological_claim": "CONDITIONAL_SUPPORT; exact experimental pC1 ROI remains unresolved",
+  "frozen_ir": {
+    "neuron_table": {
+      "path": "E:\\Workspace\\CNS2FPGA\\code\\2_Subcircuit Automatic Extraction Tool\\outputs\\courtship_song_v0\\neuron_table.csv",
+      "sha256": "4e025152b9d6e6f76e913c4434cb92c621ae8a0a0e11dc1ff6f4a55fb6fb3e5e"
+    },
+    "synapse_table": {
+      "path": "E:\\Workspace\\CNS2FPGA\\code\\2_Subcircuit Automatic Extraction Tool\\outputs\\courtship_song_v0\\synapse_table.csv",
+      "sha256": "6e86a30f46a636553e0cb82bfc062c900ce9102637cd4c3504df0f254e078dd7"
+    },
+    "offset_table": {
+      "path": "E:\\Workspace\\CNS2FPGA\\code\\2_Subcircuit Automatic Extraction Tool\\outputs\\courtship_song_v0\\offset_table.csv",
+      "sha256": "46cf272270679cedd0398c121d8159cee24a6196373483a0e0c0e0dc844ad924"
+    },
+    "metadata": {
+      "path": "E:\\Workspace\\CNS2FPGA\\code\\2_Subcircuit Automatic Extraction Tool\\outputs\\courtship_song_v0\\metadata.json",
+      "sha256": "2cf83270394245ed7164b2457326afc589699f0ce7c0c031c7e132f1d9f2c016"
+    }
+  },
+  "float_model": {
+    "config_path": "E:\\Workspace\\CNS2FPGA\\code\\3_CPU Floating-Point Golden Model\\configs\\courtship_song_lif_v0.json",
+    "sha256": "cabed7b422f69cd30c213cc95cf819edcac11bdf0705205b46939ac9e069518a",
+    "effective_model": {
+      "dt_ms": 1.0,
+      "duration_ms": 4308.0,
+      "tau_membrane_ms": 20.0,
+      "threshold": 1.0,
+      "reset_voltage": 0.0,
+      "refractory_ms": 2.0,
+      "bias_current": 0.0,
+      "noise_std": 0.0,
+      "random_seed": 20260918,
+      "propagation_backend": "scipy_csr",
+      "weight_mode": "raw_linear",
+      "recurrent_gain": 0.015
+    }
+  },
+  "step4_protocol_locks": {
+    "v1": "d3d0e82f3e88f6a7baa39b03a9b56157a2c642a2a0a9743e8690c71b493c02a6",
+    "v2": "f80de45cd615ce4602953e14b80fe855b03f045fa45a62229c64d941afb8250d",
+    "v2b": "eb1c14017802b27f0736b42134dbfea10bcb4cbd6e23de9ab6687e47b638a6d0",
+    "v3d": "3d202b1f04743098e84bcbb27658ec09e4b795fb263d5921ecfc5948fb0d2932"
+  },
+  "reference_event_archives": 17
+}
