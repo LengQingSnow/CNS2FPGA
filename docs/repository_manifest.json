@@ -34,8 +34,8 @@
     {
       "path": "README.md",
       "source": "code/others/release/README.md",
-      "bytes": 10906,
-      "sha256": "fd92ae2a6ace6c03b1483dfc44583e26d09c46606ffb040d0f45fee125812b4b"
+      "bytes": 10700,
+      "sha256": "a946db34b60756fe45fa2f6263feaac50a493be9fa4f99b196db262cfc12c2d1"
     },
     {
       "path": "REPRODUCING.md",
@@ -6800,8 +6800,8 @@
     {
       "path": "hardware/bitstreams/README.md",
       "source": "code/others/release/BITSTREAMS.md",
-      "bytes": 3524,
-      "sha256": "59581564bbdd34b9aa0aab3f4da9c6e6c5c005015d764672327044add1098941"
+      "bytes": 3452,
+      "sha256": "09981ec1ee05cd442cd75364157d77d109a4df9bf05af642d1fc220e3a4a6ed3"
     },
     {
       "path": "hardware/bitstreams/cns2fpga_axku115_jtag_200mhz.bit",

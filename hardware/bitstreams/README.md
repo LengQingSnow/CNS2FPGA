@@ -8,7 +8,7 @@ execution artifacts, not source code or biological validation.
 | --- | --- | --- | --- |
 | `cns2fpga_axku115_jtag_200mhz.bit` | 6,279-neuron courtship candidate | `0dfb8e09e9509c40cf5f48e616ddd3b31ccc279d03946446fbc21e80523a53a9` | 13 stimulus conditions; 199,063-cycle maximum step |
 | `cns2fpga_visual_left_jtag_200mhz.bit` | 226-neuron visual candidate, left LC10a input | `aa11a5965beaef316c6a388bba3075294a5c4efe02616cdf2ed073d9af0cc572` | 560 ordered events; 4,439-cycle maximum step |
-| `cns2fpga_runtime_jtag_200mhz.bit` | Reusable `safe_wf24` graph engine over JTAG | `95f9b50ee03804ddc211828a9fbd3b3171b45bc3ffb79f9f3b2407f0d3190e52` | Offline timing/simulation pass; physical two-image swap not completed |
+| `cns2fpga_runtime_jtag_200mhz.bit` | Reusable `safe_wf24` graph engine over JTAG | `95f9b50ee03804ddc211828a9fbd3b3171b45bc3ffb79f9f3b2407f0d3190e52` | Offline timing/simulation pass |
 | `cns2fpga_runtime_eth_200mhz.bit` | Reusable `safe_wf24` graph engine over UDP | `581354a62c8c7aeb134f300e7ea1928d8b681b996807710c61e307b33530d8f8` | Visual and courtship images committed without reprogramming; courtship `smoke8` matched 2,475 ordered events, max 199,699 cycles |
 
 The matching RTL, constraints, implementation scripts, timing reports,
@@ -30,7 +30,7 @@ copied-file manifest under `docs/` records each binary's source and hash.
 | --- | --- | --- | --- |
 | `cns2fpga_axku115_jtag_200mhz.bit` | 6,279 个神经元的求偶鸣唱候选回路 | `0dfb8e09e9509c40cf5f48e616ddd3b31ccc279d03946446fbc21e80523a53a9` | 13 个刺激条件；最长时间步 199,063 周期 |
 | `cns2fpga_visual_left_jtag_200mhz.bit` | 226 个神经元的视觉候选回路，左侧 LC10a 输入 | `aa11a5965beaef316c6a388bba3075294a5c4efe02616cdf2ed073d9af0cc572` | 560 个有序事件；最长时间步 4,439 周期 |
-| `cns2fpga_runtime_jtag_200mhz.bit` | 通过 JTAG 换图的通用 `safe_wf24` 引擎 | `95f9b50ee03804ddc211828a9fbd3b3171b45bc3ffb79f9f3b2407f0d3190e52` | 离线时序和仿真通过；板上双镜像切换未完成 |
+| `cns2fpga_runtime_jtag_200mhz.bit` | 通过 JTAG 换图的通用 `safe_wf24` 引擎 | `95f9b50ee03804ddc211828a9fbd3b3171b45bc3ffb79f9f3b2407f0d3190e52` | 离线时序和仿真通过 |
 | `cns2fpga_runtime_eth_200mhz.bit` | 通过 UDP 换图的通用 `safe_wf24` 引擎 | `581354a62c8c7aeb134f300e7ea1928d8b681b996807710c61e307b33530d8f8` | 不重新烧录而提交视觉与求偶镜像；求偶 8 步与 2,475 个有序事件一致，最长 199,699 周期 |
 
 对应 RTL、约束、构建脚本及选定证据位于 `code/` 下的第 9、12、14、15 步。

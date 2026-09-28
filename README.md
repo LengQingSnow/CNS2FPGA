@@ -8,9 +8,8 @@ Connectome-constrained neural circuits compiled to a time-multiplexed FPGA engin
 The central idea is runtime graph deployment: compile a neural circuit to a
 validated image, then load it into a fixed FPGA bitstream over Ethernet or
 JTAG instead of rebuilding the bitstream for every network. Ethernet loading
-of visual and courtship images on one programmed AXKU115 is board-verified;
-the JTAG loading path has offline checks, but its physical two-image swap
-remains a candidate result.
+of visual and courtship images on one programmed AXKU115 is board-verified.
+The JTAG loading path has offline checks.
 
 This repository preserves the numbered research workflow from MaleCNS v1.0
 subgraph extraction through CPU reference models, fixed-point compilation,
@@ -61,7 +60,7 @@ differences and limitations.
   figures, selected CSV/JSON data, and the asset hash manifest.
 - [`code/14_Runtime Reconfigurable Deployment/`](code/14_Runtime%20Reconfigurable%20Deployment/) —
   JTAG runtime graph loader, image preflight, RTL and offline implementation
-  evidence; its physical two-image swap remains a candidate result.
+  evidence.
 - [`code/15_Ethernet_Runtime_Deployment/`](code/15_Ethernet_Runtime_Deployment/) —
   Ethernet RTL, protocol loader, vendor-licensed MAC sources, selected routed
   reports, board captures, and public excerpts of upload transcripts.
@@ -104,8 +103,8 @@ exports, and board vendor manual are not bundled here.
 
 本项目的核心思路是运行时部署网络图：先把神经回路编译为经过预检的镜像，
 再通过网口或 JTAG 将其装入固定的 FPGA bit 文件，不必为每张网络重新生成 bit 文件。
-同一块已烧录的 AXKU115 上，网口依次装载视觉与求偶镜像已有板卡验证；
-JTAG 装载路径通过了离线检查，但板上双镜像切换仍属待验证结果。
+同一块已烧录的 AXKU115 上，网口依次装载视觉与求偶镜像已有板卡验证。
+JTAG 装载路径通过了离线检查。
 
 本仓库保留了从 MaleCNS v1.0 子图抽取、CPU 浮点参考模型、定点编译、RTL
 校验、AXKU115 板卡测量、鲁棒性研究，到视觉到转向回路、网口运行时换图及完整论文的编号研究流程。
@@ -140,7 +139,7 @@ JTAG 装载路径通过了离线检查，但板上双镜像切换仍属待验证
 
 - [`code/`](code/)：按步骤编号的源码、配置、测试、选定的中间表示、测量结果和论文材料。
 - [`code/Paper/`](code/Paper/)：可编辑论文、PDF、七张正式引用的图、选定的 CSV/JSON 数据和素材哈希清单。
-- [`code/14_Runtime Reconfigurable Deployment/`](code/14_Runtime%20Reconfigurable%20Deployment/)：JTAG 运行时换图装载器、镜像预检、RTL 和离线实现证据；板上双镜像切换仍属候选结果。
+- [`code/14_Runtime Reconfigurable Deployment/`](code/14_Runtime%20Reconfigurable%20Deployment/)：JTAG 运行时换图装载器、镜像预检、RTL 和离线实现证据。
 - [`code/15_Ethernet_Runtime_Deployment/`](code/15_Ethernet_Runtime_Deployment/)：网口 RTL、装载器、第三方许可的 MAC 源码、选定的布线报告、板卡采集和去除本机身份信息的上传日志摘录。
 - [`hardware/bitstreams/`](hardware/bitstreams/)：两份此前的专用 bit 文件及已上板验证的网口运行时 bit 文件。
 - [`support/`](support/)：MaleCNS 原始数据清单与下载说明；1.05 GB 的原始连接表未放入 Git。
