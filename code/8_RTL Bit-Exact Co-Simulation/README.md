@@ -5,7 +5,7 @@
 运行：
 
 ```powershell
-$py = 'C:\Users\20474\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+$py = 'python'
 & $py '.\generate_reference.py'
 vsim -c -do sim/run_bit_exact.do
 ```

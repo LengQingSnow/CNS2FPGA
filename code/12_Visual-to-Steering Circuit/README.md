@@ -51,7 +51,7 @@ Use the Python runtime already installed for this workspace. The commands
 below are run from the repository root unless noted.
 
 ```powershell
-$py = 'C:\Users\20474\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+$py = 'python'
 & $py 'code\2_Subcircuit Automatic Extraction Tool\run_extractor.py' --config 'code\12_Visual-to-Steering Circuit\configs\visual_to_steering_v0.json' --output-dir 'code\12_Visual-to-Steering Circuit\outputs\visual_to_steering_v0'
 & $py 'code\12_Visual-to-Steering Circuit\run_visual_experiment.py'
 & $py 'code\12_Visual-to-Steering Circuit\derive_left_input_ir.py'

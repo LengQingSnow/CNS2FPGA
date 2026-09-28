@@ -63,7 +63,7 @@ v1 的因果方向要求是项目假设，而不是已验证的逐连接生物�
 从第四步目录执行（已有输出时必须指定新目录）：
 
 ```powershell
-$py = 'C:\Users\20474\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+$py = 'python'
 $env:PYTHONIOENCODING = 'utf-8'
 & $py '.\run_mechanism_diagnostics.py' --output-dir '.\outputs\courtship_song_mechanism_v2_repeat'
 & $py -m pytest '.\tests' -q -p no:cacheprovider

@@ -1,0 +1,215 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Workspace/CNS2FPGA/code/15_Runtime Reconfigurable Deployment
+T_opt
+!s110 1790442290
+VidnYUL[EihkSc]QOQ_]2Z0
+04 17 4 work tb_runtime_reload fast 0
+=1-28c5c8d5e228-6ab7fb31-330-5f78
+Z1 o-quiet -auto_acc_if_foreign -work sim_work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1790442294
+VO:I4CJ]h>bB7ZRO@<lm5l2
+04 20 4 work tb_visual_real_image fast 0
+=1-28c5c8d5e228-6ab7fb35-2db-9660
+R1
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1790442298
+VeY1z`]:^Mz6n=JkzW<:_j3
+04 23 4 work tb_courtship_real_image fast 0
+=1-28c5c8d5e228-6ab7fb39-30b-3784
+R1
+R2
+n@_opt2
+R3
+vcns2fpga_accumulator_add
+Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z5 !s110 1790442278
+!i10b 1
+!s100 PDZzN@]ASnUf0Pg<8Oa1E0
+Z6 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IUo85:eE8flbcaz=6Vn^`P2
+S1
+R0
+Z7 w1790442199
+Z8 8rtl/cns2fpga_core_sync_runtime.sv
+Z9 Frtl/cns2fpga_core_sync_runtime.sv
+!i122 22
+L0 473 11
+Z10 VDg1SIo80bB@j0V0VzS_@n1
+Z11 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z12 !s108 1790442278.000000
+Z13 !s107 sim/tb_courtship_real_image.sv|sim/tb_visual_real_image.sv|sim/tb_runtime_reload.sv|rtl/cns2fpga_axi_lite_slave.sv|rtl/cns2fpga_trial_engine_runtime.sv|rtl/cns2fpga_core_sync_runtime.sv|
+Z14 !s90 -sv|-work|sim_work|rtl/cns2fpga_core_sync_runtime.sv|rtl/cns2fpga_trial_engine_runtime.sv|rtl/cns2fpga_axi_lite_slave.sv|sim/tb_runtime_reload.sv|sim/tb_visual_real_image.sv|sim/tb_courtship_real_image.sv|
+!i113 0
+Z15 o-sv -work sim_work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vcns2fpga_axi_lite_slave
+R4
+R5
+!i10b 1
+!s100 hWQKkU`]lafUKXf?a3:Pd0
+R6
+IdAfU?VZJf4HZc?n1BAX_X3
+S1
+R0
+w1790323333
+8rtl/cns2fpga_axi_lite_slave.sv
+Frtl/cns2fpga_axi_lite_slave.sv
+!i122 22
+L0 6 100
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2
+vcns2fpga_core_sync
+R4
+R5
+!i10b 1
+!s100 ncjB1h;bJe^Xe9=kzI6W[2
+R6
+IhfjX]e;LS`[ZHGnI@oSQU3
+S1
+R0
+R7
+R8
+R9
+!i122 22
+L0 6 463
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2
+vcns2fpga_trial_engine
+R4
+R5
+!i10b 1
+!s100 1F3YTHCT^c2I`d3mBVBej0
+R6
+IY@RVHJk<4dcPUm1JCIlh92
+S1
+R0
+w1790442269
+8rtl/cns2fpga_trial_engine_runtime.sv
+Frtl/cns2fpga_trial_engine_runtime.sv
+!i122 22
+L0 5 577
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2
+vtb_courtship_real_image
+R4
+R5
+!i10b 1
+!s100 eTY7>4PT[J>`dP0fWG7m92
+R6
+IP18Z0LHFQQ3YHXZ7cD^z`1
+S1
+R0
+w1790419751
+8sim/tb_courtship_real_image.sv
+Fsim/tb_courtship_real_image.sv
+!i122 22
+L0 5 149
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2
+vtb_runtime_reload
+R4
+R5
+!i10b 1
+!s100 RzefbZ[Y5FZCiG^m1fK^Q3
+R6
+I5TinLQ[ai]73AaA9FgJz21
+S1
+R0
+w1790439625
+8sim/tb_runtime_reload.sv
+Fsim/tb_runtime_reload.sv
+!i122 22
+L0 3 172
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2
+vtb_visual_real_image
+R4
+R5
+!i10b 1
+!s100 UEHAfSNAFW^9i6aA@Q?1C2
+R6
+IMjWh4IM@1?3FbR;^]gX<P3
+S1
+R0
+w1790416292
+8sim/tb_visual_real_image.sv
+Fsim/tb_visual_real_image.sv
+!i122 22
+L0 5 144
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2

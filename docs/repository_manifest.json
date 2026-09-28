@@ -10,14 +10,14 @@
     {
       "path": ".gitignore",
       "source": "code/others/release/.gitignore",
-      "bytes": 734,
-      "sha256": "cb74e420267a84dbaf08f8429f2007d347618257659c791909bc7793fb9c32de"
+      "bytes": 998,
+      "sha256": "899f1d0717d29b63f099a25213d0d3444b0b789852d2c9456bde5a74b373c4bd"
     },
     {
       "path": "DATA_PROVENANCE.md",
       "source": "code/others/release/DATA_PROVENANCE.md",
-      "bytes": 3356,
-      "sha256": "2fba7c677ad669af276b4bde7512e9dd33f80f5c8fb5428a1c9818d2ee0ae703"
+      "bytes": 3350,
+      "sha256": "c4c569598d31ba165d071d48236d24d9a90918b783f92b726cf100462e18146d"
     },
     {
       "path": "LICENSE",
@@ -28,26 +28,27 @@
     {
       "path": "LICENSE_NOTICE.md",
       "source": "code/others/release/LICENSE_NOTICE.md",
-      "bytes": 1364,
-      "sha256": "24b421ddb1dfc868a181be4db2bf5b7c384a6ea850b0247843f2be4145b82dd2"
+      "bytes": 1837,
+      "sha256": "0cbc9d83a14ee839dd5930982a1cb509821759a601df400e9ec15f04bf167bfe"
     },
     {
       "path": "README.md",
       "source": "code/others/release/README.md",
-      "bytes": 5981,
-      "sha256": "14f8d12e9d6a00c9ed558bee34b26729346745d1bc88293fff2fb75222be3fe5"
+      "bytes": 10906,
+      "sha256": "fd92ae2a6ace6c03b1483dfc44583e26d09c46606ffb040d0f45fee125812b4b"
     },
     {
       "path": "REPRODUCING.md",
       "source": "code/others/release/REPRODUCING.md",
-      "bytes": 5505,
-      "sha256": "4329d96c990392648ea1f74b2e63e0d234718e9609b251db7da16595f619229e"
+      "bytes": 8431,
+      "sha256": "4010d86eb53de9d5abd916a8831a30200ddffd3cb9aab4020cc51b1bcb6c6dc3"
     },
     {
       "path": "code/10_Complete Courtship-Song Circuit Experiment/README.md",
       "source": "code/10_Complete Courtship-Song Circuit Experiment/README.md",
-      "bytes": 2058,
-      "sha256": "246815e5724d15414756d27e0323adebb95d4cff2b725c78ace8d52d32265572"
+      "bytes": 1975,
+      "sha256": "bba94d2e9efde77fd52dbf827c71cbaa7730a5c04a826c0141168e15e103eb18",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/10_Complete Courtship-Song Circuit Experiment/outputs/courtship_song_v1/captures/alternating_20_50/registers.csv",
@@ -406,8 +407,9 @@
     {
       "path": "code/10_Complete Courtship-Song Circuit Experiment/run_board_trials.ps1",
       "source": "code/10_Complete Courtship-Song Circuit Experiment/run_board_trials.ps1",
-      "bytes": 2535,
-      "sha256": "f9853bb51b6d0b22a83b87d5d60cf7cdf7408cbc665146dc526d95c40b17d75c"
+      "bytes": 2452,
+      "sha256": "d941d499c806735975ea0361ee6835eac472824b888a7fea425a05d2f8c38f76",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/10_Complete Courtship-Song Circuit Experiment/run_experiment.py",
@@ -424,8 +426,9 @@
     {
       "path": "code/11_Courtship-Song Robustness/README.md",
       "source": "code/11_Courtship-Song Robustness/README.md",
-      "bytes": 2357,
-      "sha256": "2e28b27e55a90521fb4500629594de5e910bcfb11729e14ecb445a443d9d1288"
+      "bytes": 2274,
+      "sha256": "a38d1f238b86a1a0d7ce0038620b0e775765dd49ca3284cb5d0ff33ff6018b35",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/11_Courtship-Song Robustness/compare_quantization_envelope.py",
@@ -832,8 +835,9 @@
     {
       "path": "code/11_Courtship-Song Robustness/run_board_noise.ps1",
       "source": "code/11_Courtship-Song Robustness/run_board_noise.ps1",
-      "bytes": 2114,
-      "sha256": "e097dd5fd642d3981e7d14383679491f965fe73a81bfe2be204934e06e00ca88"
+      "bytes": 2031,
+      "sha256": "42fa6d2b909d6217c5691ff76a849ed382c1dadfaad0aca8bfb19b9cae8af24c",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/11_Courtship-Song Robustness/run_robustness.py",
@@ -856,8 +860,9 @@
     {
       "path": "code/12_Visual-to-Steering Circuit/README.md",
       "source": "code/12_Visual-to-Steering Circuit/README.md",
-      "bytes": 5371,
-      "sha256": "ef98884ad642e5ca4ffa59b0f6d2d77c9eca9897ea82ecb28bb2c865f403e28c"
+      "bytes": 5288,
+      "sha256": "5e9f62d69f79e30bcd645f7bac35f793f6387fd1cd052289c6efaf18b9c9a610",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/12_Visual-to-Steering Circuit/configs/visual_hw_ir_v0.json",
@@ -1366,32 +1371,37 @@
     {
       "path": "code/12_Visual-to-Steering Circuit/reports/visual_left_jtag_200mhz/drc.rpt",
       "source": "code/12_Visual-to-Steering Circuit/reports/visual_left_jtag_200mhz/drc.rpt",
-      "bytes": 17148,
-      "sha256": "ee04d14b008126d317b59fe4651806a6bd861ef64566d74a7842288c4b63004e"
+      "bytes": 17146,
+      "sha256": "20fd264e3a33fd8f96af893a7f2a0b4c299645687ae039df5a2c375f82c8277a",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/12_Visual-to-Steering Circuit/reports/visual_left_jtag_200mhz/post_route_timing_summary.rpt",
       "source": "code/12_Visual-to-Steering Circuit/reports/visual_left_jtag_200mhz/post_route_timing_summary.rpt",
-      "bytes": 4597653,
-      "sha256": "075624635b2435e00c850f8496c972315c91eac88e0f5b701c1d8a1e1f5723a8"
+      "bytes": 4597651,
+      "sha256": "e487156a0e2b1101d7315ec5cef96441d541866e2e1761ba8c305edf0ca95385",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/12_Visual-to-Steering Circuit/reports/visual_left_jtag_200mhz/post_route_utilization.rpt",
       "source": "code/12_Visual-to-Steering Circuit/reports/visual_left_jtag_200mhz/post_route_utilization.rpt",
-      "bytes": 16745,
-      "sha256": "a66024b7306509059fdae259589349584c57f5556afbcae53b70a9a607ce7a2b"
+      "bytes": 16743,
+      "sha256": "c136c6b1e0fc7485f65e87790d3d8b657cc10c192604fd9ec6c6d31d31900131",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/12_Visual-to-Steering Circuit/reports/visual_left_jtag_200mhz/post_synth_timing_summary.rpt",
       "source": "code/12_Visual-to-Steering Circuit/reports/visual_left_jtag_200mhz/post_synth_timing_summary.rpt",
-      "bytes": 275929,
-      "sha256": "d5569ec31f0ae8a71001b54a525ba081f6373063bec6d4fb57e2aa9efa2ee305"
+      "bytes": 275927,
+      "sha256": "aad8d48a573b622787f3d6568f09b87e6ef2e61a01feb79cdff3fa690d7bd30d",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/12_Visual-to-Steering Circuit/reports/visual_left_jtag_200mhz/post_synth_utilization.rpt",
       "source": "code/12_Visual-to-Steering Circuit/reports/visual_left_jtag_200mhz/post_synth_utilization.rpt",
-      "bytes": 13457,
-      "sha256": "55c6d7386a2861d4c9ca4ebc0ea3875739e11d7785b58e830dcdaeb6856464d0"
+      "bytes": 13455,
+      "sha256": "401319164b3fcf11dbf31b0e86c698ba13ba7358c1887f7bcd44f2625a3d7c45",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/12_Visual-to-Steering Circuit/reports/visual_left_jtag_200mhz/route_status.rpt",
@@ -1438,8 +1448,9 @@
     {
       "path": "code/12_Visual-to-Steering Circuit/run_visual_left_board.ps1",
       "source": "code/12_Visual-to-Steering Circuit/run_visual_left_board.ps1",
-      "bytes": 1830,
-      "sha256": "8855041525c24158be232fd7ec2c85f694e52aee0ebb4b594389a9823e667533"
+      "bytes": 1747,
+      "sha256": "5d6676565ba56740f85ca5f595e1bbb8f64ce5bcdf704b052acd5b7647057550",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/12_Visual-to-Steering Circuit/scripts/implement_visual_left_from_checkpoint.tcl",
@@ -1492,8 +1503,9 @@
     {
       "path": "code/13_Baselines and Ablations/README.md",
       "source": "code/13_Baselines and Ablations/README.md",
-      "bytes": 1991,
-      "sha256": "837aaa55346ca94f86318210a75439ed293d0db0848a8170f46eac5589e724d8"
+      "bytes": 1908,
+      "sha256": "f4d47450085a56258f56c03ee6e5e267cd00aec287b306391c4dbef53ccb3478",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/13_Baselines and Ablations/make_figures.py",
@@ -1556,190 +1568,828 @@
       "sha256": "891165f4c75f427604d0b61639d9deeee5a87cf5dc329459bc0651c0a0c8bbf1"
     },
     {
-      "path": "code/14_Paper/README.md",
-      "source": "code/14_Paper/README.md",
-      "bytes": 1714,
-      "sha256": "4e7a86b10ed17a803afe58ae43a6d6f5cc14757d5b48b95beff8f712f3b48e0d"
+      "path": "code/14_Runtime Reconfigurable Deployment/README.md",
+      "source": "code/14_Runtime Reconfigurable Deployment/README.md",
+      "bytes": 6543,
+      "sha256": "4f10b4982b83cdd10850487100fa1bdb71304e6b67c5c55fa7b31fa23e07ebbf"
     },
     {
-      "path": "code/14_Paper/build_paper_package.py",
-      "source": "code/14_Paper/build_paper_package.py",
-      "bytes": 13497,
-      "sha256": "5c6c310e32c4a7faa5bbdb1a66ffef372057f6c33b49523465765d2a48fdafcc"
+      "path": "code/14_Runtime Reconfigurable Deployment/build_runtime_bitstream.ps1",
+      "source": "code/14_Runtime Reconfigurable Deployment/build_runtime_bitstream.ps1",
+      "bytes": 730,
+      "sha256": "2e62f5a98b49c5478ec7ff5d7385f62349563601c44e9bba23a96d06d1c373b4"
     },
     {
-      "path": "code/14_Paper/figures/figure1_pipeline.png",
-      "source": "code/14_Paper/figures/figure1_pipeline.png",
-      "bytes": 110069,
-      "sha256": "795659760efa8fd64aab87183fb5eb14381bdd03a40230a6c1988bed1a2be527"
+      "path": "code/14_Runtime Reconfigurable Deployment/constraints/axku115_jtag_200mhz.xdc",
+      "source": "code/14_Runtime Reconfigurable Deployment/constraints/axku115_jtag_200mhz.xdc",
+      "bytes": 1287,
+      "sha256": "c017d20504c004cc2df688375042c03224241c3280d78d439baeb062c183914a"
     },
     {
-      "path": "code/14_Paper/figures/figure2_courtship_response.png",
-      "source": "code/14_Paper/figures/figure2_courtship_response.png",
-      "bytes": 194855,
-      "sha256": "2afc6f70ae62cecb56105327563e735a9d3a3c8a450e059e4c10fa95d71e34be"
-    },
-    {
-      "path": "code/14_Paper/figures/figure3_courtship_raster.png",
-      "source": "code/14_Paper/figures/figure3_courtship_raster.png",
-      "bytes": 675433,
-      "sha256": "03d940531b2798e73024702802f943cf7a8f4a925e4a8ae204c479555083eddb"
-    },
-    {
-      "path": "code/14_Paper/figures/figure4_robustness.png",
-      "source": "code/14_Paper/figures/figure4_robustness.png",
-      "bytes": 180818,
-      "sha256": "9b549830ed66f0cd6834ea1041138508e7f7561dacf754b29a9b16ec25eddcff"
-    },
-    {
-      "path": "code/14_Paper/figures/figure5_quantization.png",
-      "source": "code/14_Paper/figures/figure5_quantization.png",
-      "bytes": 76112,
-      "sha256": "fc986431dc72f0c4fbb201cbd5cdbf3e9a695c900b9840ad7becfac08dd9bae0"
-    },
-    {
-      "path": "code/14_Paper/figures/figure6_lateralized_baseline.png",
-      "source": "code/14_Paper/figures/figure6_lateralized_baseline.png",
-      "bytes": 62297,
-      "sha256": "70acbd9db0b336a50875c160fc3c7d5e93f056b4f74dc61b413660b880bacdf3"
-    },
-    {
-      "path": "code/14_Paper/figures/pipeline.png",
-      "source": "code/14_Paper/figures/pipeline.png",
-      "bytes": 75918,
-      "sha256": "0fea4e32be279a8c51b00c4d583c11cdee12a6ebed84ffd0d277410f6fcd10ca"
-    },
-    {
-      "path": "code/14_Paper/figures/pipeline_paper.png",
-      "source": "code/14_Paper/figures/pipeline_paper.png",
-      "bytes": 110069,
-      "sha256": "795659760efa8fd64aab87183fb5eb14381bdd03a40230a6c1988bed1a2be527"
-    },
-    {
-      "path": "code/14_Paper/make_paper_pipeline.py",
-      "source": "code/14_Paper/make_paper_pipeline.py",
-      "bytes": 2054,
-      "sha256": "5ebcb9b046346c32324aed040c8920fdc4dabf730b57fafbd41f5bdb3e43b9bb"
-    },
-    {
-      "path": "code/14_Paper/make_pipeline_figure.py",
-      "source": "code/14_Paper/make_pipeline_figure.py",
-      "bytes": 2253,
-      "sha256": "56b0366d5c6e2e0ba55e91de68ae4aa5d52d7bfc518725a3b960bf69b96a7c71"
-    },
-    {
-      "path": "code/14_Paper/manuscript_draft_v1.md",
-      "source": "code/14_Paper/manuscript_draft_v1.md",
-      "bytes": 16758,
-      "sha256": "7f7d5e339c0d806f579d03c555674f3788b097812a417cbd07cb5aeb00287f6a"
-    },
-    {
-      "path": "code/14_Paper/manuscript_full_v2.docx",
-      "source": "code/14_Paper/manuscript_full_v2.docx",
-      "bytes": 1281671,
-      "sha256": "b277a5886b3aadfab8ab5051f3b1987dfd7fd9f00f7cacd01fb7fe135d06293c"
-    },
-    {
-      "path": "code/14_Paper/manuscript_full_v2.md",
-      "source": "code/14_Paper/manuscript_full_v2.md",
-      "bytes": 29622,
-      "sha256": "7b06fb873a264334b809ed6a7a96f4c33317597ea2e4b708a726664383a8c63d"
-    },
-    {
-      "path": "code/14_Paper/paper_data/courtship_condition_metrics.csv",
-      "source": "code/14_Paper/paper_data/courtship_condition_metrics.csv",
-      "bytes": 38213,
-      "sha256": "abee78aa1a5ebfdcfd423cfd55f3ebaa7e7732950fe531acbc9fd84291e4823b"
-    },
-    {
-      "path": "code/14_Paper/paper_data/courtship_degradation_summary.csv",
-      "source": "code/14_Paper/paper_data/courtship_degradation_summary.csv",
-      "bytes": 5211,
-      "sha256": "e998d9c15fd36b7cc537fc5a55d3668e1fbb9ceedb7dac7509a7b30639204dea"
-    },
-    {
-      "path": "code/14_Paper/paper_data/courtship_fpga_noise_comparison.csv",
-      "source": "code/14_Paper/paper_data/courtship_fpga_noise_comparison.csv",
-      "bytes": 1679,
-      "sha256": "4274e06febb4e6d7355a38d6a6522a9946e593f1d2eec1c0b911f3ffc9232f47"
-    },
-    {
-      "path": "code/14_Paper/paper_data/courtship_fpga_noise_per_step_verification.json",
-      "source": "code/14_Paper/paper_data/courtship_fpga_noise_per_step_verification.json",
-      "bytes": 133,
-      "sha256": "e5778ea54ec582f424f7c567db920de80b8e0251a5a443f7e742bc797c28cb76"
-    },
-    {
-      "path": "code/14_Paper/paper_data/courtship_latency_throughput.csv",
-      "source": "code/14_Paper/paper_data/courtship_latency_throughput.csv",
-      "bytes": 2381,
-      "sha256": "98600bbb8dd8647a682918d51a3f51050d71e1a80805eb1d1ef15514cf1192d8"
-    },
-    {
-      "path": "code/14_Paper/paper_data/courtship_quantization_envelope.csv",
-      "source": "code/14_Paper/paper_data/courtship_quantization_envelope.csv",
-      "bytes": 261,
-      "sha256": "e2948df0c265decf189611883c0b33def70b2af08decce3a3d3ba69f6b13036f"
-    },
-    {
-      "path": "code/14_Paper/paper_data/courtship_resource_timing.json",
-      "source": "code/14_Paper/paper_data/courtship_resource_timing.json",
-      "bytes": 328,
-      "sha256": "74188bc38195e1ad2e8f127ec73c626d88688c4a06e6fda15468f5e5716195d9"
-    },
-    {
-      "path": "code/14_Paper/paper_data/courtship_response_comparison.csv",
-      "source": "code/14_Paper/paper_data/courtship_response_comparison.csv",
-      "bytes": 4084,
-      "sha256": "a42c10c951a450000e3dd8679e92c6f26d803f4d5e2fb2d724236f3d928e511b"
-    },
-    {
-      "path": "code/14_Paper/paper_data/courtship_short_spike_raster.csv",
-      "source": "code/14_Paper/paper_data/courtship_short_spike_raster.csv",
-      "bytes": 672759,
-      "sha256": "f7dd12de465e98bf422e3ce24c704999936be4519ec6902723c3345529900a2a"
-    },
-    {
-      "path": "code/14_Paper/paper_data/manifest.json",
-      "source": "code/14_Paper/paper_data/manifest.json",
-      "bytes": 6979,
-      "sha256": "79252806a38230a9f3af2ab9c9527fefa31d468aeedf1daf5e70c0884d008f1d"
-    },
-    {
-      "path": "code/14_Paper/paper_data/visual_board_counts.csv",
-      "source": "code/14_Paper/paper_data/visual_board_counts.csv",
-      "bytes": 9781,
-      "sha256": "2551e69e69811ff0b7195e8f83ebebbf9ec0a2d4b6975a46db9606881a3b2700"
-    },
-    {
-      "path": "code/14_Paper/paper_data/visual_board_events.csv",
-      "source": "code/14_Paper/paper_data/visual_board_events.csv",
-      "bytes": 4018,
-      "sha256": "57330a19ed1ed33d12bbdf0d2a9add91babde988bcf16865f5bb6d6d8469ff73"
-    },
-    {
-      "path": "code/14_Paper/paper_data/visual_board_verification.json",
-      "source": "code/14_Paper/paper_data/visual_board_verification.json",
-      "bytes": 929,
-      "sha256": "e64b3ddff447886d65a326b7c4a3a1fbec122b71088cfd9f97720ebf424b93f2"
-    },
-    {
-      "path": "code/14_Paper/paper_data/visual_manual_vs_automatic.csv",
-      "source": "code/14_Paper/paper_data/visual_manual_vs_automatic.csv",
+      "path": "code/14_Runtime Reconfigurable Deployment/docs/implementation_status.md",
+      "source": "code/14_Runtime Reconfigurable Deployment/docs/implementation_status.md",
       "bytes": 2380,
-      "sha256": "3b7408741b7412d9ce66537e417ace34e37688a9285c29d2f5438e3bfaeb6b61"
+      "sha256": "b8b61d417a3e320592208029a6977cd5876cc2c3fb3d7fe3849f302fb7dca9b4"
     },
     {
-      "path": "code/14_Paper/paper_data/visual_structural_comparison.json",
-      "source": "code/14_Paper/paper_data/visual_structural_comparison.json",
-      "bytes": 252,
-      "sha256": "4dcc5363080c0fdbab2e85996eea9f9a8efa6c85a5a6c2209b5ca0d296761e48"
+      "path": "code/14_Runtime Reconfigurable Deployment/host/load_runtime_image.ps1",
+      "source": "code/14_Runtime Reconfigurable Deployment/host/load_runtime_image.ps1",
+      "bytes": 1465,
+      "sha256": "6f641bc56f3f52f551ef683087a60e5471f9e1375c04763c8a5105df17a5f7e6",
+      "curation": "local host/Python path redacted for public release"
     },
     {
-      "path": "code/14_Paper/paper_data/visual_width_ablation.csv",
-      "source": "code/14_Paper/paper_data/visual_width_ablation.csv",
-      "bytes": 9524,
-      "sha256": "7d5cfc58138281c81680fd4a6bec9f27775bd5496882016ab7636e0404528bdf"
+      "path": "code/14_Runtime Reconfigurable Deployment/host/load_runtime_image.tcl",
+      "source": "code/14_Runtime Reconfigurable Deployment/host/load_runtime_image.tcl",
+      "bytes": 6966,
+      "sha256": "431e48a2dd4781bc3f7e94142f4a90414c0c51c607e525cfb5cc61bfe258bb2a"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/host/prepare_image.py",
+      "source": "code/14_Runtime Reconfigurable Deployment/host/prepare_image.py",
+      "bytes": 5828,
+      "sha256": "dd53367c2fb9cea3d19a406875c3a3f8fbdd55887937470715f89655f1f97cb0"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/host/run_courtship_board_test.ps1",
+      "source": "code/14_Runtime Reconfigurable Deployment/host/run_courtship_board_test.ps1",
+      "bytes": 2462,
+      "sha256": "ad5a550dd479fdc3ee55b05bd67506fbbe83f7c66df381b9298a74558dfd3d37",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/host/run_runtime_trial.ps1",
+      "source": "code/14_Runtime Reconfigurable Deployment/host/run_runtime_trial.ps1",
+      "bytes": 3659,
+      "sha256": "96532d6964decca8631fb41cc8bb592efc9c49d39fdec768326417bee7f5b6b3"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/host/run_runtime_trial.tcl",
+      "source": "code/14_Runtime Reconfigurable Deployment/host/run_runtime_trial.tcl",
+      "bytes": 8509,
+      "sha256": "e1b65f466d04b4e324bc3f7bf8f748d798bda87666bb68bb49fa4cf362585090"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/host/run_two_image_demo.ps1",
+      "source": "code/14_Runtime Reconfigurable Deployment/host/run_two_image_demo.ps1",
+      "bytes": 3510,
+      "sha256": "25f7dc50ceaf76478bdc446365ec2150c53818c67a57259f52a368b58a71be35",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/host/test_verify_runtime_capture.py",
+      "source": "code/14_Runtime Reconfigurable Deployment/host/test_verify_runtime_capture.py",
+      "bytes": 2839,
+      "sha256": "259fa5d85bcb21e976c9460b30005114f9953fea1b678b077889c81b8e97e8c2"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/host/verify_runtime_capture.py",
+      "source": "code/14_Runtime Reconfigurable Deployment/host/verify_runtime_capture.py",
+      "bytes": 5755,
+      "sha256": "769142041fbcdbddf469f6572ed5b07d079f8d192e1fd61851c00c1c262e76d1"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/program_runtime_bitstream.ps1",
+      "source": "code/14_Runtime Reconfigurable Deployment/program_runtime_bitstream.ps1",
+      "bytes": 957,
+      "sha256": "e6a8547485079c0024ec642f36402977ab99272ed39e05dca77f76f94ddaf5d7"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/drc.rpt",
+      "source": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/drc.rpt",
+      "bytes": 34858,
+      "sha256": "bda584f1292889789e57ca01ab6ca1b085928e068d0d190f150c6a6abeed6a3b",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/drc_explore.rpt",
+      "source": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/drc_explore.rpt",
+      "bytes": 35769,
+      "sha256": "e25d0a70381749064d430962d53002085490259a667b8b154768bd3a48d7a5da",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/post_place_timing_summary.rpt",
+      "source": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/post_place_timing_summary.rpt",
+      "bytes": 656342,
+      "sha256": "7c141c3d10235294db29e94656a7b3afd8c10be86a6e10c5c60299945a679f89",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/post_route_bus_skew.rpt",
+      "source": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/post_route_bus_skew.rpt",
+      "bytes": 205212,
+      "sha256": "9e0820eb55582cf08d4ce996e4a2d0a736643233ca70bc091f842d1b58cc5319",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/post_route_explore_bus_skew.rpt",
+      "source": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/post_route_explore_bus_skew.rpt",
+      "bytes": 205238,
+      "sha256": "9a48eb09d3a085246a4b8a11e1930c2610c95111c6bb28f9ebde892f3bbf3a84",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/post_route_explore_timing_summary.rpt",
+      "source": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/post_route_explore_timing_summary.rpt",
+      "bytes": 4613771,
+      "sha256": "9d55e48efcf7d44b3dc5b17b77abae260aed3429af85f36a088b994ee514daf7",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/post_route_timing_summary.rpt",
+      "source": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/post_route_timing_summary.rpt",
+      "bytes": 4580552,
+      "sha256": "dac8e9351a80cb60ec645b4a7e98e99c0f88fd5282053d231d02e462792ce315",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/post_route_utilization.rpt",
+      "source": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/post_route_utilization.rpt",
+      "bytes": 16944,
+      "sha256": "8e18a4f0ab0bf819a1a04b9540b4e9c7720f0a713eadcd203b6206011a91983c",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/post_synth_timing_summary.rpt",
+      "source": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/post_synth_timing_summary.rpt",
+      "bytes": 277540,
+      "sha256": "66c98b73db74639ae9b11e7668343411883c41ae704ce985e12ca8983d1d5772",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/post_synth_utilization.rpt",
+      "source": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/post_synth_utilization.rpt",
+      "bytes": 13603,
+      "sha256": "ecef4de81e61c4c87e5f39a8393e1fd9ec680a985188e0e9de8b221b98f7bfa9",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/route_status.rpt",
+      "source": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/route_status.rpt",
+      "bytes": 651,
+      "sha256": "b0381818f533aea07490e0983d3c7ec9138459c6c42c1078d231f77d61bd3c09"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/route_status_explore.rpt",
+      "source": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/route_status_explore.rpt",
+      "bytes": 651,
+      "sha256": "63a9583978e5155a09c0298dd3bb36f5cc9fdb1b1c767c4e16481ed3703b6b29"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/run_status.txt",
+      "source": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/run_status.txt",
+      "bytes": 140,
+      "sha256": "2a5478014d560ec1d5df508037f8ec5882433e66fe61304be5cbe9e1c5063513"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/run_status_explore.txt",
+      "source": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/run_status_explore.txt",
+      "bytes": 171,
+      "sha256": "f21e6854d045638d83aef088c25d38e4f99d54d70c911b20345d133f50a61427"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/rtl/cns2fpga_axi_lite_slave.sv",
+      "source": "code/14_Runtime Reconfigurable Deployment/rtl/cns2fpga_axi_lite_slave.sv",
+      "bytes": 3919,
+      "sha256": "348de89ce5fc1f6322b6fa51c85054ec39e3b7c6cd708eea035cf5f4209c2a45"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/rtl/cns2fpga_axku115_jtag_top_runtime.sv",
+      "source": "code/14_Runtime Reconfigurable Deployment/rtl/cns2fpga_axku115_jtag_top_runtime.sv",
+      "bytes": 4431,
+      "sha256": "1a4334fd7cc92a43ea3fe9b19c8af083be3cfaa416c9533938b0e6c28323ffb3"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/rtl/cns2fpga_core_sync_runtime.sv",
+      "source": "code/14_Runtime Reconfigurable Deployment/rtl/cns2fpga_core_sync_runtime.sv",
+      "bytes": 21618,
+      "sha256": "4a2110129ee0f5c6f68bbfac36f8278b59c4eabbce043338bd189505c04d890d"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/rtl/cns2fpga_trial_engine_runtime.sv",
+      "source": "code/14_Runtime Reconfigurable Deployment/rtl/cns2fpga_trial_engine_runtime.sv",
+      "bytes": 26365,
+      "sha256": "82bb63bb3965f9a5f56b11cb199fcf23ed9fca3237aaaec01b33821611a1cc16"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/scripts/benchmark_axi_queue.tcl",
+      "source": "code/14_Runtime Reconfigurable Deployment/scripts/benchmark_axi_queue.tcl",
+      "bytes": 1168,
+      "sha256": "ed106fcb11d809de75be6d8be1c119fa236ea6aafe12ab4e9cf0f23c87e44308"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/scripts/build_runtime_bitstream.tcl",
+      "source": "code/14_Runtime Reconfigurable Deployment/scripts/build_runtime_bitstream.tcl",
+      "bytes": 3884,
+      "sha256": "8cd5bc73415ff2e85f31f2476284e48716e0b243150c2053b73e749b2c05a0b2"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/scripts/inspect_acc_dsp_placement.tcl",
+      "source": "code/14_Runtime Reconfigurable Deployment/scripts/inspect_acc_dsp_placement.tcl",
+      "bytes": 639,
+      "sha256": "007a79bcf10f8c9bfd8b60aeba030d0883e545916d5b1f0889dc4ecb594c3ceb"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/scripts/inspect_runtime_board.tcl",
+      "source": "code/14_Runtime Reconfigurable Deployment/scripts/inspect_runtime_board.tcl",
+      "bytes": 1273,
+      "sha256": "04d12c381580a34324613117381599b8edbf463dc8ab67bf191e9b371e562124"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/scripts/probe_board.tcl",
+      "source": "code/14_Runtime Reconfigurable Deployment/scripts/probe_board.tcl",
+      "bytes": 544,
+      "sha256": "ff968631228cd8daa679756fa1d8a2e4d341311253b2320403092e65833c67db"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/scripts/program_runtime_bitstream.tcl",
+      "source": "code/14_Runtime Reconfigurable Deployment/scripts/program_runtime_bitstream.tcl",
+      "bytes": 1389,
+      "sha256": "9cce979e952a2277bed64316ad95534abbcbe0189686dc3fb41fe60bc067dc84"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/scripts/resume_runtime_implementation.tcl",
+      "source": "code/14_Runtime Reconfigurable Deployment/scripts/resume_runtime_implementation.tcl",
+      "bytes": 2975,
+      "sha256": "ed10872bfe51031075c3c95d51e8d2fb587f1eebf06e9954de3a2556d27f99a2"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/scripts/retry_postroute_explore.tcl",
+      "source": "code/14_Runtime Reconfigurable Deployment/scripts/retry_postroute_explore.tcl",
+      "bytes": 2124,
+      "sha256": "ff23c935fde483aa8e88ec8b82f5140e812775fa8648c8afe86ce4e0977a079c"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/sim/tb_courtship_real_image.sv",
+      "source": "code/14_Runtime Reconfigurable Deployment/sim/tb_courtship_real_image.sv",
+      "bytes": 6159,
+      "sha256": "62eca6f7997a6de37b45544ee49d505418a0cc7835021013a4356df8a17fc875"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/sim/tb_runtime_reload.sv",
+      "source": "code/14_Runtime Reconfigurable Deployment/sim/tb_runtime_reload.sv",
+      "bytes": 5973,
+      "sha256": "c9db0760667b774434498a1f1ae5f5ce6f48aa7a0e632a009018edca039551f7"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/sim/tb_visual_real_image.sv",
+      "source": "code/14_Runtime Reconfigurable Deployment/sim/tb_visual_real_image.sv",
+      "bytes": 5954,
+      "sha256": "590c51da02568787d40315a63581dea7e7d9f554ee8cd620b718598c3eee1506"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/sim_work/@_opt/_data/exemptkcdam2",
+      "source": "code/14_Runtime Reconfigurable Deployment/sim_work/@_opt/_data/exemptkcdam2",
+      "bytes": 304,
+      "sha256": "2301130555d2ee44ce44904b08da36300a6aeed81dc79e64d7e67c8c26394f37"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/sim_work/@_opt/_data/exemptwkw9ty",
+      "source": "code/14_Runtime Reconfigurable Deployment/sim_work/@_opt/_data/exemptwkw9ty",
+      "bytes": 524288,
+      "sha256": "3a41585c2b1564e0733e42e00a778412a7fb644929efb349e0ec566dbbee5145"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/sim_work/@_opt/_data/exemptwwm921",
+      "source": "code/14_Runtime Reconfigurable Deployment/sim_work/@_opt/_data/exemptwwm921",
+      "bytes": 196,
+      "sha256": "63aa0397fa1309cd5b3e15c1aab729e9a76316bb016787cde04cac31ce93b87b"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/sim_work/@_opt1/_data/exempt219mnm",
+      "source": "code/14_Runtime Reconfigurable Deployment/sim_work/@_opt1/_data/exempt219mnm",
+      "bytes": 196,
+      "sha256": "1332ae449df155339a5979f49c1cba9497dfceb33fdaac5d73481ceae54c4401"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/sim_work/@_opt1/_data/exempt25amam",
+      "source": "code/14_Runtime Reconfigurable Deployment/sim_work/@_opt1/_data/exempt25amam",
+      "bytes": 524288,
+      "sha256": "5886a09d016dcd9d2f149d115431ef94a18c17b11eeeef79755f168706112e91"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/sim_work/@_opt1/_data/exemptkvv0kn",
+      "source": "code/14_Runtime Reconfigurable Deployment/sim_work/@_opt1/_data/exemptkvv0kn",
+      "bytes": 256,
+      "sha256": "7bc4285c14b804279691c30c69ca234437e8c4c8506ffb6d24a7279e85f25491"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/sim_work/@_opt2/_data/exempted1156",
+      "source": "code/14_Runtime Reconfigurable Deployment/sim_work/@_opt2/_data/exempted1156",
+      "bytes": 264,
+      "sha256": "90a77493623118437ce068f4f730664fa5d68f0ca6fbaaf1ae85ea3011533f64"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/sim_work/@_opt2/_data/exemptzfxqj2",
+      "source": "code/14_Runtime Reconfigurable Deployment/sim_work/@_opt2/_data/exemptzfxqj2",
+      "bytes": 524288,
+      "sha256": "d56b8d0415ceebaa91b6811c2dc9d4de561f209044ab8143bef927ed1366196c"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/sim_work/@_opt2/_data/exemptzkwqw2",
+      "source": "code/14_Runtime Reconfigurable Deployment/sim_work/@_opt2/_data/exemptzkwqw2",
+      "bytes": 196,
+      "sha256": "27308c2511c30dddfd533fb00a20f945a3115c187dd0948a32bea36a02a3b0bd"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/sim_work/_info",
+      "source": "code/14_Runtime Reconfigurable Deployment/sim_work/_info",
+      "bytes": 2940,
+      "sha256": "e6ff49f3b82788c56eb4b2c3785e51b1af50a9e51fc8a1fec1b07b8d8b46db9f"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/sim_work/_vmake",
+      "source": "code/14_Runtime Reconfigurable Deployment/sim_work/_vmake",
+      "bytes": 29,
+      "sha256": "d287f8a335408d3f94fea840ad628f2cbed3775952c49131049ef8f60fd337c9"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/README.md",
+      "source": "code/15_Ethernet_Runtime_Deployment/README.md",
+      "bytes": 9326,
+      "sha256": "dd29570098cda22e240d25192a4617480e716c44a6a2df85a235c893e470377b"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/build_ethernet_bitstream.ps1",
+      "source": "code/15_Ethernet_Runtime_Deployment/build_ethernet_bitstream.ps1",
+      "bytes": 680,
+      "sha256": "7cf86e267739e66cfab8b8666c1c1e1bebff491de8b18ddc849e04bfc8e48c85"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/constraints/axku115_eth_200mhz.xdc",
+      "source": "code/15_Ethernet_Runtime_Deployment/constraints/axku115_eth_200mhz.xdc",
+      "bytes": 4755,
+      "sha256": "bccf320189d0fe1aa4c0fc33e015e1b8a63058ae589a4d18e74a5197d1c08e89"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/host/probe_udp_status.py",
+      "source": "code/15_Ethernet_Runtime_Deployment/host/probe_udp_status.py",
+      "bytes": 3098,
+      "sha256": "722668d630ef9e7a380cf6f437e755dce4d7c3fa1ad586cb0b13d1a116599f4e"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/host/upload_image_udp.py",
+      "source": "code/15_Ethernet_Runtime_Deployment/host/upload_image_udp.py",
+      "bytes": 6310,
+      "sha256": "b3389485a06e9a2c968919c6293159d96e007d506d36a44caffc100037280efb"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/program_ethernet_bitstream.ps1",
+      "source": "code/15_Ethernet_Runtime_Deployment/program_ethernet_bitstream.ps1",
+      "bytes": 1043,
+      "sha256": "ed0e9ccdf064d1a738d8e9355dd402bdaaa0a868265051e3f39fd5abbfd04a03"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/courtship_trial_20260928/event_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/courtship_trial_20260928/event_words.hex",
+      "bytes": 24750,
+      "sha256": "2b3a10a3f2cf9543e40cb0e65042ddf6c1e74e060ee286e4bb146627b25f6e0d"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/courtship_trial_20260928/registers.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/courtship_trial_20260928/registers.csv",
+      "bytes": 376,
+      "sha256": "68253b626652016a10e9dc46e7b7564bb2a55f9b721e325085ff5ff1c0005644"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/courtship_trial_20260928/summary_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/courtship_trial_20260928/summary_words.hex",
+      "bytes": 640,
+      "sha256": "e14b299e099213a994efbe0245ab0657f7f20eaac294bbccd602e3ffd9289634"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/courtship_upload/courtship_upload_20260928_072927.log",
+      "source": "code/others/release/evidence/ethernet_courtship_upload_excerpt.log",
+      "bytes": 761,
+      "sha256": "b32c98275d9fd5af9fe6dd1d8113e77f9cc728327bd9cf5c1a284180a7848364"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/deployment_evidence_v1.json",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/deployment_evidence_v1.json",
+      "bytes": 3770,
+      "sha256": "22f408af720ea7dcf549e5b7365a00a659d1c81c3715ada852fe06a0bbdcfdcb"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/ethernet_probe/capture.log",
+      "source": "code/others/release/evidence/ethernet_visual_status_excerpt.log",
+      "bytes": 308,
+      "sha256": "37d11a8603189a464affe50a9033f0a9d041ecf66df2725ef5c437e70bc2a3d0"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/old_new_board_comparison_v1.json",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/old_new_board_comparison_v1.json",
+      "bytes": 4399,
+      "sha256": "39a4a80055df4a845fc143f2242e79c5b29ba4d51dc3205c96d6ed2f399a6b42"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/runtime_eth_portfilter_200mhz/post_route_utilization.rpt",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/runtime_eth_portfilter_200mhz/post_route_utilization.rpt",
+      "bytes": 17327,
+      "sha256": "633ca33a527995215edcc89646fb32f740485c21b4637f13592f9cb4d1342a7a",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/runtime_eth_portfilter_200mhz/run_status.txt",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/runtime_eth_portfilter_200mhz/run_status.txt",
+      "bytes": 251,
+      "sha256": "740c4d1f00d2558a1fdb718584dca03f2369627f65a111e4c795684d377aa7a0"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/visual_upload/visual_upload_20260928_072611.log",
+      "source": "code/others/release/evidence/ethernet_visual_upload_excerpt.log",
+      "bytes": 692,
+      "sha256": "13a67b09b8fc2941b700a5e9b4b6c9d93fbb8e94983c358e0b0254515f2cd86c"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/rtl/cns2fpga_axku115_eth_top.sv",
+      "source": "code/15_Ethernet_Runtime_Deployment/rtl/cns2fpga_axku115_eth_top.sv",
+      "bytes": 11762,
+      "sha256": "0c66af4ec665827173ee7b227d3b1c1ecadd4c00e534d0f7617b88cde814b547"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/rtl/cns2fpga_eth_bus_bridge.sv",
+      "source": "code/15_Ethernet_Runtime_Deployment/rtl/cns2fpga_eth_bus_bridge.sv",
+      "bytes": 2391,
+      "sha256": "87476f71de85936a3111efe084334c2bffb2395ba33f2507edd339c4a172d264"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/rtl/cns2fpga_eth_stack.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/rtl/cns2fpga_eth_stack.v",
+      "bytes": 24658,
+      "sha256": "184999918df6b244cdcfada370c7df9038548c075f1ffd5fa7ff7e0567c7d2e5"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/rtl/cns2fpga_mdio_diag.sv",
+      "source": "code/15_Ethernet_Runtime_Deployment/rtl/cns2fpga_mdio_diag.sv",
+      "bytes": 2747,
+      "sha256": "d594cae26935f4591375cf340fcccd4dc4fe990ffb02d60065bc448c91fb63a4"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/rtl/cns2fpga_udp_command.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/rtl/cns2fpga_udp_command.v",
+      "bytes": 10602,
+      "sha256": "c797a76ae5b955b93542c83c1727d0e6a1e8b4442f8e70a5e4e60a12bbb034aa"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/build_deployment_evidence.py",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/build_deployment_evidence.py",
+      "bytes": 8613,
+      "sha256": "2bbe401c9b857aa732727e1f48e8f57c5a0c740e56f7e3a2a842f22169b02813"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/build_ethernet_bitstream.tcl",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/build_ethernet_bitstream.tcl",
+      "bytes": 5818,
+      "sha256": "09160531eb5ea6d6a63bfe707b79aab4f7e44513d13afb33649fef7efcae8f38"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/build_old_new_board_comparison.py",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/build_old_new_board_comparison.py",
+      "bytes": 5633,
+      "sha256": "4588b2deef97206bbcfaa650ec7a395cb947df1dc5bc3e9a023027a468037a8b"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/check_ethernet_eco_skew.tcl",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/check_ethernet_eco_skew.tcl",
+      "bytes": 477,
+      "sha256": "cb7cd5ed52327f78b7e097a1fdc9a682d221741d627baafb723e1fcfc04d4da9"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/emit_test_frames.tcl",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/emit_test_frames.tcl",
+      "bytes": 1950,
+      "sha256": "72998f6ca21cf48fe5d02b6aa73f7efd67263e45d31f3f02ccdcc04ac0c5eb56"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/finalize_ethernet_eco.tcl",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/finalize_ethernet_eco.tcl",
+      "bytes": 4330,
+      "sha256": "33ab8dceb0d4fab147a93c3487921b86acc53244c2ec2dc1bbde55b813577404"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/inspect_eth_clocks.tcl",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/inspect_eth_clocks.tcl",
+      "bytes": 501,
+      "sha256": "0f05933d777060180434262e5e8e50c0b619b390c8923a1b0ee1835b5583a552"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/inspect_ethernet_diagnostics.tcl",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/inspect_ethernet_diagnostics.tcl",
+      "bytes": 1796,
+      "sha256": "19e236dddcd338051502571fce2352ab368d6a152be17d251039879cb22764d3"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/inspect_rx_delay.tcl",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/inspect_rx_delay.tcl",
+      "bytes": 417,
+      "sha256": "62977a8393927d8580ec5b514ce16bb1698245cd1fb9eab1067e1bcce4b18408"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/program_ethernet_bitstream.tcl",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/program_ethernet_bitstream.tcl",
+      "bytes": 1370,
+      "sha256": "0406e4cf817082e3b7c7d73f2413d9493f726c8c66f7fc1bffaf76b6d1b4ed59"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/restart_phy_autoneg.tcl",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/restart_phy_autoneg.tcl",
+      "bytes": 1989,
+      "sha256": "362a1d1185f31c678d291ca65c1fd14606d24a273404552d9436b785a4604fe3"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/resume_ethernet_repair.tcl",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/resume_ethernet_repair.tcl",
+      "bytes": 2239,
+      "sha256": "c952eba67535fb9cdf82798a08395d1032cf24b5682740682c3cd50cb2dfaa5b"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/run_local_phy_loopback.tcl",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/run_local_phy_loopback.tcl",
+      "bytes": 3947,
+      "sha256": "0594c95dcda7a67f8d2d25118c900ee415a54bd2e6eca7b2756b49ccc3555f81"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/run_remote_phy_loopback.tcl",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/run_remote_phy_loopback.tcl",
+      "bytes": 2416,
+      "sha256": "f633c930141a3077e8cadb54fa328ccc6c1d4d6971cde6bc52ec362e5af044b1"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/scan_ethernet_phy.tcl",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/scan_ethernet_phy.tcl",
+      "bytes": 2473,
+      "sha256": "e3f3d6db4453f738d84a231a33d6233c4a85853ef4e46ee25a862155d72e3301"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/test_rx_timing.tcl",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/test_rx_timing.tcl",
+      "bytes": 1495,
+      "sha256": "3681be2a69370dbd424e0fbff856b427b0867b77d3492a3a709da5827f16a3bf"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/upload_courtship_board_test.ps1",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/upload_courtship_board_test.ps1",
+      "bytes": 3241,
+      "sha256": "285d79bd77ae29d5179acb578738b8c384bb21ea925e2e6f99a143f04e0d5257"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/upload_visual_board_test.ps1",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/upload_visual_board_test.ps1",
+      "bytes": 2993,
+      "sha256": "0671ec55bcdb1be3568a4dfbb05c97515936835424ddca3f124d997a06651284"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/verify_courtship_image_jtag.tcl",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/verify_courtship_image_jtag.tcl",
+      "bytes": 2058,
+      "sha256": "4457055cad28e27f99603f73c1fb6c74a630a8c5d92c2e5fd5899f356b7bbd2a"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/tests/run_rgmii_arp_sim.ps1",
+      "source": "code/15_Ethernet_Runtime_Deployment/tests/run_rgmii_arp_sim.ps1",
+      "bytes": 774,
+      "sha256": "f57f90227dd8344010994087aa855edc50793c2a97636d1ee9db9e875b3644c8"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/tests/run_udp_sim.ps1",
+      "source": "code/15_Ethernet_Runtime_Deployment/tests/run_udp_sim.ps1",
+      "bytes": 662,
+      "sha256": "3b465592ca751e6c207d43254128e217c4ca9f4ef8bd79ebe45ee6a0f8563ff4"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/tests/tb_mdio_diag.sv",
+      "source": "code/15_Ethernet_Runtime_Deployment/tests/tb_mdio_diag.sv",
+      "bytes": 1719,
+      "sha256": "fa253360193223a3a7c7a841147899e3cca7dc3a328c2614149748e278eb46c8"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/tests/tb_rgmii_arp.sv",
+      "source": "code/15_Ethernet_Runtime_Deployment/tests/tb_rgmii_arp.sv",
+      "bytes": 9678,
+      "sha256": "56c01fdc702d24ddadbca7ff3a84c38201125bd87f995d679a1883b7d911a5da"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/tests/tb_rgmii_test_frame.sv",
+      "source": "code/15_Ethernet_Runtime_Deployment/tests/tb_rgmii_test_frame.sv",
+      "bytes": 4552,
+      "sha256": "ea2ef3bb8595a22bf621683840b5ef1d4ffe1344110c7091350c6302a527f3a5"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/tests/tb_udp_command.sv",
+      "source": "code/15_Ethernet_Runtime_Deployment/tests/tb_udp_command.sv",
+      "bytes": 7808,
+      "sha256": "a9d66ecc935782f5f245538dbf5cdc494e0b4b481518cd820e12930b5b6acc03"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/COPYING",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/COPYING",
+      "bytes": 1081,
+      "sha256": "fdeb472a27d096a325c8a1b5b8427fcc9041d9b4ab4c185786954d8eafb9c861"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/arbiter.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/arbiter.v",
+      "bytes": 5152,
+      "sha256": "4b4291e2afc5cdb93e261d43c439ea3c9bedce3d628d3db9c6e2ed8f4c27c3f1"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/arp.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/arp.v",
+      "bytes": 18389,
+      "sha256": "46d339fe7b4de1ff5c6c881c53f9c0c718ec8eb776673bc4d5916ea230512512"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/arp_cache.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/arp_cache.v",
+      "bytes": 7199,
+      "sha256": "e7eb3f5fc90c6e5cc9f1f9f3d59afefcfc87fd667a1893de8ddad3aa94309529"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/arp_eth_rx.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/arp_eth_rx.v",
+      "bytes": 12005,
+      "sha256": "6a49bd6f7c2311baffe1b3985d7eee0b9adee54f7d05ffa4316cf201adb526ee"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/arp_eth_tx.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/arp_eth_tx.v",
+      "bytes": 13865,
+      "sha256": "8125cf542196132b388c30f4ac3005a0153082c7cd9f87916680c6767db72dfb"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/axis_async_fifo.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/axis_async_fifo.v",
+      "bytes": 35378,
+      "sha256": "65f3c86ee1fcb1470fd43291fa80598117e3d7a694e52695c80cb31682113cb2"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/axis_async_fifo_adapter.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/axis_async_fifo_adapter.v",
+      "bytes": 13345,
+      "sha256": "3472e2624af75bbc978c15603b78afc9e08a0d61dc9471cbfb4ba4579df5c4d3"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/axis_fifo.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/axis_fifo.v",
+      "bytes": 22221,
+      "sha256": "8ee436631ece272f478a4396c3819f62e5cd4f9a492b80502562aeb73c9e6294"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/axis_gmii_rx.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/axis_gmii_rx.v",
+      "bytes": 10951,
+      "sha256": "9fc42a832d36ab6e2f43fb69dcf897a3b38db7a072bdc26ff2e6f8a2fd19aae8"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/axis_gmii_tx.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/axis_gmii_tx.v",
+      "bytes": 14131,
+      "sha256": "0afecab08286491137c605b306b034232eb136aa3ba5aec2885027ab3fb02668"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/eth_arb_mux.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/eth_arb_mux.v",
+      "bytes": 13561,
+      "sha256": "ce578195dc565962e3515d5444d13d6a47c42ee82bd2109d31dd62a7ed0775ea"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/eth_axis_rx.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/eth_axis_rx.v",
+      "bytes": 15788,
+      "sha256": "394d811d97bb10e865fde1e4820af594313296cf36fb8d1316defca8ba222bb7"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/eth_axis_tx.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/eth_axis_tx.v",
+      "bytes": 15518,
+      "sha256": "633d15019041a2ab8144d0b5d5c76122f2829f6f23d1b45d82ddf1cc00476653"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/eth_mac_1g.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/eth_mac_1g.v",
+      "bytes": 22097,
+      "sha256": "5e53e066ac7b7d5c7699fb4fa97e633766133e499f22c4addb9b3e2d8dd97900"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/eth_mac_1g_rgmii.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/eth_mac_1g_rgmii.v",
+      "bytes": 7405,
+      "sha256": "3fc3865548cdc12e40deda47855c5907fb11d2e99a3b8f0a1c1a018c0c6490bd"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/eth_mac_1g_rgmii_fifo.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/eth_mac_1g_rgmii_fifo.v",
+      "bytes": 11341,
+      "sha256": "60864524b8bbb566187126a96ba114f30f8e6daa715e4542ac31806f029cffd8"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/iddr.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/iddr.v",
+      "bytes": 4478,
+      "sha256": "dbbee64c98133ef7b4169c3f01503a96b7b280c5e95d9621aac76851ba43d7cc"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/ip.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/ip.v",
+      "bytes": 11839,
+      "sha256": "0fa6834e1d4eade6641ea6c0dc918bc3fb8d758dd8e0a38c7853d7c10f7853a3"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/ip_arb_mux.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/ip_arb_mux.v",
+      "bytes": 18175,
+      "sha256": "429fce396c6d5e311497b419f6d0c930e4e17eea5637efb4f7a4df1299cfea6e"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/ip_complete.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/ip_complete.v",
+      "bytes": 16137,
+      "sha256": "c0f5981200d90312065eece7117dd22733d224169af1865760522e38122df120"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/ip_eth_rx.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/ip_eth_rx.v",
+      "bytes": 23082,
+      "sha256": "ad9c44691fe27d76373e64d3aadf8e076d819030266d4569e683030cc67a05bc"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/ip_eth_tx.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/ip_eth_tx.v",
+      "bytes": 19556,
+      "sha256": "a9d5bdbea9ccecedf7ff513dfe3e34cbfbc505bfc3877d1430a3416b8689fd1c"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/lfsr.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/lfsr.v",
+      "bytes": 16774,
+      "sha256": "86362b06f992221f26c8e81ed82bbeb26eeb94edc381fd87d35bf0cca3b23c95"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/oddr.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/oddr.v",
+      "bytes": 4047,
+      "sha256": "4ca505b400cac874863eeea41a0616fed32e70738bdf8638f94cbd815bf07e25"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/priority_encoder.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/priority_encoder.v",
+      "bytes": 3345,
+      "sha256": "07c610b8dda24daf67dec36c743f79fca30f9d01d5469e1e7f795a16f4c7aa97"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/rgmii_phy_if.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/rgmii_phy_if.v",
+      "bytes": 7186,
+      "sha256": "cda24bf60bcf547b96ab6f68458ed276a82fcdc52f810d8e0d948485dea1b84d"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/ssio_ddr_in.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/ssio_ddr_in.v",
+      "bytes": 3768,
+      "sha256": "64c46ac87ca297a56f4938932997854620bd7b32a56c21ca55fd4ab76ab83c55"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/ssio_ddr_out.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/ssio_ddr_out.v",
+      "bytes": 2365,
+      "sha256": "0c24735eb5c5d500c61c2d1fc1f8707a0e21a48993cc0f59424045e2b3f43ef8"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/sync_reset.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/sync_reset.v",
+      "bytes": 1758,
+      "sha256": "3c333fc4596a932c3ec3a1541e3d8ceec91ed1d5119b64724cad9b5fae4b7322"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/udp.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/udp.v",
+      "bytes": 15764,
+      "sha256": "a11fcaaf918868706c2a3ea97ecb5842813b6a21a4bd9d35ad38906be81a4c7f"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/udp_checksum_gen.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/udp_checksum_gen.v",
+      "bytes": 21357,
+      "sha256": "1a5656276e8481fc0f82c128da36bc2a748844ad20651fdc35e7afda6de17f2d"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/udp_complete.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/udp_complete.v",
+      "bytes": 24075,
+      "sha256": "94c2f9a93a07256493c2f87e77444cc14cec686247f653d5a769264a43a9faee"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/udp_ip_rx.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/udp_ip_rx.v",
+      "bytes": 20623,
+      "sha256": "a3d11dac41e6349e52c9fbe531b9e3345d5688b062157b8c6a85f4b40cc41050"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/udp_ip_tx.v",
+      "source": "code/15_Ethernet_Runtime_Deployment/vendor/rtl/udp_ip_tx.v",
+      "bytes": 18915,
+      "sha256": "4df5a48a8eded39d4503923e14aa3f66824bbc830008e2c37b3e767ca345f60a"
     },
     {
       "path": "code/1_biological circuit/README.md",
@@ -2068,8 +2718,9 @@
     {
       "path": "code/4_Verify whether this model has basic biological plausibility/README.md",
       "source": "code/4_Verify whether this model has basic biological plausibility/README.md",
-      "bytes": 5072,
-      "sha256": "d859eb68c3413f8c7d3a435b1193d9a45be8a81dae6e13cf7920ec77ae00865b"
+      "bytes": 4989,
+      "sha256": "1a776fd84ba99705f9977c31ef54e15f2cb72b46b00f0af2c7187b1f143bee46",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/4_Verify whether this model has basic biological plausibility/configs/courtship_song_equal_pulse_v1.json",
@@ -2128,20 +2779,23 @@
     {
       "path": "code/4_Verify whether this model has basic biological plausibility/docs/equal_pulse_protocol_v1.md",
       "source": "code/4_Verify whether this model has basic biological plausibility/docs/equal_pulse_protocol_v1.md",
-      "bytes": 4874,
-      "sha256": "ed72a2f5f0b43ba3f301329f77d7194646d3ae5cf704d56ea83cf36499a5664a"
+      "bytes": 4791,
+      "sha256": "df93ec33ed4b084195f7d1c1057627d80c03057791c16feea6f1aa8856224b0b",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/4_Verify whether this model has basic biological plausibility/docs/external_roi_mapping_contract_v3.md",
       "source": "code/4_Verify whether this model has basic biological plausibility/docs/external_roi_mapping_contract_v3.md",
-      "bytes": 1509,
-      "sha256": "39d6c0a9e0d827883d43f746a29473b30e98cc73ee80537124c84d689c3cb6d1"
+      "bytes": 1426,
+      "sha256": "37cb2b3064d345db9a5bc0df80c8bc52b75fb7726755cf11bc52a465eca9a90e",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/4_Verify whether this model has basic biological plausibility/docs/mechanism_diagnostics_v2.md",
       "source": "code/4_Verify whether this model has basic biological plausibility/docs/mechanism_diagnostics_v2.md",
-      "bytes": 5770,
-      "sha256": "523eb12b4d92201fc15597c2b082e6eba865a6cf52f1360802fb129a15c77399"
+      "bytes": 5687,
+      "sha256": "36551a8a60b4c30c656d5e9cdbc60c79f89da35201c0344ac202dbe48e92a28f",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/4_Verify whether this model has basic biological plausibility/docs/online_roi_evidence_search_v3.md",
@@ -3574,8 +4228,9 @@
     {
       "path": "code/5_Fixed-Point Quantization Analysis/README.md",
       "source": "code/5_Fixed-Point Quantization Analysis/README.md",
-      "bytes": 1804,
-      "sha256": "a3cd3c9d5538342f1ed23bc08e90aa8ff057b44f8ee9b6a5363319f5bbbb8843"
+      "bytes": 1721,
+      "sha256": "77e4a31df6bff12b1c330e7e6c07619880d385646251ccfa6cdcf917de94430b",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/5_Fixed-Point Quantization Analysis/configs/courtship_song_fixed_point_v0.json",
@@ -4210,8 +4865,9 @@
     {
       "path": "code/6_Connectome Compiler/README.md",
       "source": "code/6_Connectome Compiler/README.md",
-      "bytes": 1419,
-      "sha256": "17137756fd5ba56d6f6501b0b21b85085981eac0e32729a78b39aeebf263117b"
+      "bytes": 1336,
+      "sha256": "aab0b961e0b8336f1192c2ab7c1f287d4ecff03d21d63fe946dff06e924a1f9a",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/6_Connectome Compiler/compile_hardware_ir.py",
@@ -4480,8 +5136,9 @@
     {
       "path": "code/8_RTL Bit-Exact Co-Simulation/README.md",
       "source": "code/8_RTL Bit-Exact Co-Simulation/README.md",
-      "bytes": 478,
-      "sha256": "7d23c037a6a02b5d5b190234b340948683faa09cee22313df03c296ab61f46d6"
+      "bytes": 395,
+      "sha256": "642073e007e9a47ea9edc9abf95fc9163b6675a0d890d05032bcc1c242c80320",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/8_RTL Bit-Exact Co-Simulation/analyze_clock_target.py",
@@ -4732,8 +5389,9 @@
     {
       "path": "code/9_KU115 FPGA Validation/docs/host_protocol.md",
       "source": "code/9_KU115 FPGA Validation/docs/host_protocol.md",
-      "bytes": 6655,
-      "sha256": "ff437c8afb831b80b62336b19602d33ac5b2ab38293dd439581d811c6a474e5b"
+      "bytes": 6572,
+      "sha256": "0eba5fa0047ecc6351f9ec27c73df27c144a1faa7ede2be32d83abbed34a936e",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/docs/implementation_result_195mhz.md",
@@ -5062,8 +5720,9 @@
     {
       "path": "code/9_KU115 FPGA Validation/host/run_ipi_sweep.ps1",
       "source": "code/9_KU115 FPGA Validation/host/run_ipi_sweep.ps1",
-      "bytes": 1446,
-      "sha256": "dfae3c4fd0c1920a71d3f342750a2a54587b15ffeed705c1f5ddb1eb3a7422a3"
+      "bytes": 1363,
+      "sha256": "bc1b0a699a48947606f6776952575b29cb745296c52b8a591fcc9a577520e7e7",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/host/run_jtag_trial.ps1",
@@ -5350,44 +6009,51 @@
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_195mhz/clock_utilization.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_195mhz/clock_utilization.rpt",
-      "bytes": 63150,
-      "sha256": "98d171af2d258621df3de204b2a6e15ab396a4d1dd98186621ef0c5b30091910"
+      "bytes": 63148,
+      "sha256": "8b17269094f53e027e27599a5f44bb70f41f3f46b796345ed77ef23db7cfd831",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_195mhz/drc.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_195mhz/drc.rpt",
-      "bytes": 5541,
-      "sha256": "2b3a8e94e60a2cc5c3574fae71b729431ea42215d2ab2ee5ec97cb5ccb494ec0"
+      "bytes": 5539,
+      "sha256": "f6e3e7c4693d13ba87f8e540a688db195b51281c63f7c4467a3bee5b1b7e13ae",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_195mhz/methodology.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_195mhz/methodology.rpt",
-      "bytes": 247420,
-      "sha256": "8fcc72ece94ced9767d6ad9bf811ea3d74e3361f5e8ea292d5b2c86dbb2a8ee6"
+      "bytes": 247418,
+      "sha256": "0c077dd1d46920e5caa0f2305dbbc04733ec2191a72dc72108c623c11896a5e4",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_195mhz/post_route_timing_summary.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_195mhz/post_route_timing_summary.rpt",
-      "bytes": 701565,
-      "sha256": "7768927753befe11e228111ab8b3e3f5e9549a0a556e901fe1e0c8f9a0226fba"
+      "bytes": 701563,
+      "sha256": "c1fce57a2dbc826d2d38fbfb690716aa3f9f386e8c5051b886379b4ddc0825e8",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_195mhz/post_route_utilization.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_195mhz/post_route_utilization.rpt",
-      "bytes": 16226,
-      "sha256": "6da9d6366af400147ea4b3502e251f7f93a4ee5de1b7ac11ff0d836cca7fa1f7"
+      "bytes": 16224,
+      "sha256": "42e3e4da011b36d0b8796750279caa01fdd779707d0786bb39d4369f0cd316d0",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_195mhz/post_synth_timing_summary.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_195mhz/post_synth_timing_summary.rpt",
-      "bytes": 165148,
-      "sha256": "2f3a1e469d687b75baee058864311558892b2081614d233b8726e7465dcba14f"
+      "bytes": 165146,
+      "sha256": "16bfc34973296c2a011de8043e0bbb76e22af4fbd48b05fcf01ecdb4400f6925",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_195mhz/post_synth_utilization.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_195mhz/post_synth_utilization.rpt",
-      "bytes": 13378,
-      "sha256": "f6c8665e4688f494059acce122187319b92b1e2ae7c4abec4cc89fd4636ac1bd"
+      "bytes": 13376,
+      "sha256": "7d76c09e97267c5ce057d18b9c0764b32cf489a6f542e9ce0d0ade47b34cf458",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_195mhz/route_status.rpt",
@@ -5404,32 +6070,37 @@
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_195mhz/drc.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_jtag_195mhz/drc.rpt",
-      "bytes": 19002,
-      "sha256": "4009a5116996695f5150449c5479d02a8c86dd322227b5f9f55a329ee293e81e"
+      "bytes": 19000,
+      "sha256": "3866aebb793b351b184efc4aab028e9f413b63a9870235b720d5336d2323f1a8",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_195mhz/post_route_timing_summary.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_jtag_195mhz/post_route_timing_summary.rpt",
-      "bytes": 4892261,
-      "sha256": "5f766b1239c2ae390f163705d65412eada41f40a70ecfb76e6ec4b213a105684"
+      "bytes": 4892259,
+      "sha256": "6231b6acbe85f393f0def5994e39b73c0c1358bf77d000d4ac60361a76d09823",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_195mhz/post_route_utilization.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_jtag_195mhz/post_route_utilization.rpt",
-      "bytes": 16803,
-      "sha256": "c695ccb8079b406460dc032c4c8fe2bc599b39740fc65b550e469bff10c1dbf0"
+      "bytes": 16801,
+      "sha256": "bb357b6f6686d135b4535d691e36a4ee4b900f30cb7874e6152d62b95bfec0ce",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_195mhz/post_synth_timing_summary.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_jtag_195mhz/post_synth_timing_summary.rpt",
-      "bytes": 296390,
-      "sha256": "06cb257f164f5573fbae0a02b435e7d388b756c1f9fd6bacad9b378e740a5911"
+      "bytes": 296388,
+      "sha256": "4f024a54d75540c9a499893e025dde554baa37aefc75dbb27f97057eab239dfb",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_195mhz/post_synth_utilization.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_jtag_195mhz/post_synth_utilization.rpt",
-      "bytes": 13515,
-      "sha256": "07f20e1938615be408ae9879de34a92a6cd050854af6eff5976400c682495f2b"
+      "bytes": 13513,
+      "sha256": "8a356eebfe56a3a1251a752492456ffe760dfddbf5394ecf6477328f97bdbed4",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_195mhz/route_status.rpt",
@@ -5446,20 +6117,23 @@
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/drc.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/drc.rpt",
-      "bytes": 17640,
-      "sha256": "fde30b1fa3cf6708a72883d897ca4111efea08335488e96c00036dab239f0992"
+      "bytes": 17638,
+      "sha256": "b6ba2eafab31952cdabe28212571f8a35497d1382c85f51c9a6e251c03f67c72",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/final_bus_skew.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/final_bus_skew.rpt",
-      "bytes": 205159,
-      "sha256": "8be21030690416fcaff45e56258c83c73d68dc89965a2b5b69e211afd91139b1"
+      "bytes": 205157,
+      "sha256": "07a9cdded1ffab0d2f2405cfa91bd5905b20e155885e3f457fc96417305c7fee",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/final_drc.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/final_drc.rpt",
-      "bytes": 17652,
-      "sha256": "355e12f53a63c33fb56de55f7ea63b83838477fe70d5123c83b9233cc0f89fbf"
+      "bytes": 17650,
+      "sha256": "31913f1746cdaf0d206f7e6509a16e6b42225e1149c984e62c133e67d17e9300",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/final_route_status.rpt",
@@ -5476,8 +6150,9 @@
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/final_timing_summary.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/final_timing_summary.rpt",
-      "bytes": 4790586,
-      "sha256": "d0a69c159646d192c49030b008fe8463a8d4d4daf853e963a59d0456976ac9f1"
+      "bytes": 4790584,
+      "sha256": "71f5db841e86dd78bf708ce4e9d606594a11167515410ef2392f36b78a85c4f5",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/hold_fix_status.txt",
@@ -5488,8 +6163,9 @@
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/post_hold_drc.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/post_hold_drc.rpt",
-      "bytes": 17665,
-      "sha256": "28a0afa80a2038b6ed222f7579af8919ba0c37b906e6648e4aa3457ae1b49a95"
+      "bytes": 17663,
+      "sha256": "03e3b6ab2fdd0c38607570ecb9f2413029e53be1459c1265c877ef48125c6d84",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/post_hold_route_status.rpt",
@@ -5500,32 +6176,37 @@
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/post_hold_timing_summary.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/post_hold_timing_summary.rpt",
-      "bytes": 4790592,
-      "sha256": "ace6e4eae8379ff3f67487ff0f2e351ff601511d094c9b01b50797aa17f9dfaf"
+      "bytes": 4790590,
+      "sha256": "0d22ba67c3eeb7a4dc9c8088863d58fd197055280c8b2cf0540acac3d19d14ad",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/post_route_timing_summary.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/post_route_timing_summary.rpt",
-      "bytes": 4789030,
-      "sha256": "9960b830905fdfe9fddeceb0711d630cb7db111977492262b9917fd86ce4bc30"
+      "bytes": 4789028,
+      "sha256": "eac4853ddc886340a5c6f6358213789c8711495e5c57d8091ce07079ea0be61a",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/post_route_utilization.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/post_route_utilization.rpt",
-      "bytes": 16851,
-      "sha256": "5a3b9aa7057f31cd598166954373af9e9764fc4bfaf20c332703d60346afc194"
+      "bytes": 16849,
+      "sha256": "9b08111ca8eb074ab9901e8a78f52b6363331e9e123e3aa968f962b8355d8a80",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/post_synth_timing_summary.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/post_synth_timing_summary.rpt",
-      "bytes": 275736,
-      "sha256": "bcb76a79e4bf0b1d3e08ab11cc03e6922d526cc35181f69140373b2f05862458"
+      "bytes": 275734,
+      "sha256": "6b2869ad42b2f044db6bccf54cab95af719736ceb3ba6c315e442af6ec673783",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/post_synth_utilization.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/post_synth_utilization.rpt",
-      "bytes": 13540,
-      "sha256": "4701349eeae40b1fe3168e114d9e555d06f92d47ad4f2516790daaf9a7e3da74"
+      "bytes": 13538,
+      "sha256": "c50f9988f5f66babd5f3cfc058d36d9b75f0930cf035158858200c3ca29ee501",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/axku115_jtag_200mhz/route_status.rpt",
@@ -5542,38 +6223,44 @@
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_195mhz/clock_utilization.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/ooc_195mhz/clock_utilization.rpt",
-      "bytes": 57921,
-      "sha256": "c8fe60d17a6de2cd7788c2fc58c98019b74182895a380ee9b7d70b73d9b75891"
+      "bytes": 57919,
+      "sha256": "7320d852bb0df54bfd66192080f1ef67a194f4806f73811e9788fff1a8bb7bca",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_195mhz/methodology.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/ooc_195mhz/methodology.rpt",
-      "bytes": 255857,
-      "sha256": "cba1a9cd3c96b2e8ad8de646f51a0e327ff48ac4d212d90f8a38e80ea8b24b76"
+      "bytes": 255855,
+      "sha256": "ef2921cd5d48158596b72325d00d7084d6ad6f47cd33e30a64d0b8e68367e5cf",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_195mhz/post_route_timing_summary.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/ooc_195mhz/post_route_timing_summary.rpt",
-      "bytes": 759265,
-      "sha256": "c7aae980e1344de96ddbe6071f3060ad33168bd0eff29ea9659859064d26bc64"
+      "bytes": 759263,
+      "sha256": "5b472315e08988cd1af31c16cc9e49fa0fc38dc02378b22793e8117541c89a13",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_195mhz/post_route_utilization.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/ooc_195mhz/post_route_utilization.rpt",
-      "bytes": 15494,
-      "sha256": "ab1a06469658873dab9679bbc8679a4d5b349222a3873f0651b8a9e04ea73e28"
+      "bytes": 15492,
+      "sha256": "7f7021bcb8bf4c13707292828adc52e79bfbac15b875506cbdac80701a0d1329",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_195mhz/post_synth_timing_summary.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/ooc_195mhz/post_synth_timing_summary.rpt",
-      "bytes": 115122,
-      "sha256": "21fec2bed70ee4f32caac13c18d03f0803d36e45136a1d108d7d198342f39be2"
+      "bytes": 115120,
+      "sha256": "343848d086938860ff8ac9a732c6b2a3b74dc053b44fe123ae59fab870e9b269",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_195mhz/post_synth_utilization.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/ooc_195mhz/post_synth_utilization.rpt",
-      "bytes": 12556,
-      "sha256": "eae17fa169c14da0a1ca650f9c9cac2e420f67f219dcd5600d57520c7ca79ef1"
+      "bytes": 12554,
+      "sha256": "5236122d4e9716c6b74ea56558ef1de6457a0f5cb167044eaf44a130d1a4bfa6",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_195mhz/run_status.txt",
@@ -5584,38 +6271,44 @@
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_200mhz/clock_utilization.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/ooc_200mhz/clock_utilization.rpt",
-      "bytes": 57931,
-      "sha256": "10ef427e19c4d718b2623beb3d367371525f9b6dc1763d3a01f88c601d979afd"
+      "bytes": 57929,
+      "sha256": "791c6ec3d69a634b2a96e575ab0a3c2eba05d534765037f4046b3b876bb87195",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_200mhz/methodology.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/ooc_200mhz/methodology.rpt",
-      "bytes": 256101,
-      "sha256": "88b688108fae2603bcc07e6fe68eb9449a8c107b092d1d678ecb1f71ecff01fd"
+      "bytes": 256099,
+      "sha256": "4365a2d66705addb9617334002d8968074111d3c45b613c110d25c45bb53b642",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_200mhz/post_route_timing_summary.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/ooc_200mhz/post_route_timing_summary.rpt",
-      "bytes": 781998,
-      "sha256": "1f7ea15ef0802681568a39b08697f295c3513624d5ca3999fe7a34348922fddd"
+      "bytes": 781996,
+      "sha256": "a8bbf646b167ced6476d849c579b656d97135fb897de5ebe35b3d9cc1cb77f72",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_200mhz/post_route_utilization.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/ooc_200mhz/post_route_utilization.rpt",
-      "bytes": 15494,
-      "sha256": "e392d8646e89f665ed957f5cbf4ba661fe83cfec7039ec0846203dc1df45b8ca"
+      "bytes": 15492,
+      "sha256": "d077ba6f880e7ecab0ef62763c8929a38591ea4b39fe41201c465b7b98a34038",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_200mhz/post_synth_timing_summary.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/ooc_200mhz/post_synth_timing_summary.rpt",
-      "bytes": 115122,
-      "sha256": "a98d641fecad445a37a537a7c3b34426fa24f84cfbd047aa2317e11b3ca5cebc"
+      "bytes": 115120,
+      "sha256": "f9068f6e3fc2249731a35ea3871c1e4f9c4b21e82cdb6aa31fe55a383e4014cf",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_200mhz/post_synth_utilization.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/ooc_200mhz/post_synth_utilization.rpt",
-      "bytes": 12556,
-      "sha256": "c3d097298be49301f788fc024c5d1f361f9dff16a9a9c84e6ae315d26b4458e2"
+      "bytes": 12554,
+      "sha256": "7e107b996e9431525ca7036ad890129a5de1729838869f485acea0a24c42603d",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_200mhz/run_status.txt",
@@ -5626,38 +6319,44 @@
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_250mhz/clock_utilization.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/ooc_250mhz/clock_utilization.rpt",
-      "bytes": 61574,
-      "sha256": "095abaf1c87e62f4bd1beaa3a92a4ec25e6b805104d30efb8da372606b17e3fb"
+      "bytes": 61572,
+      "sha256": "34821acc7c6423755c706128744fb78824ed2ad6f7a5591ee2e45a5388ea76bc",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_250mhz/methodology.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/ooc_250mhz/methodology.rpt",
-      "bytes": 724231,
-      "sha256": "b951c03d0af91d26dda71eeee4be38866cef33cff27196da1b0ad63190941010"
+      "bytes": 724229,
+      "sha256": "c9268db5baf696f82a6c2fd0093249acbf9a300ba1ef7469e6240b18d6e10910",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_250mhz/post_route_timing_summary.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/ooc_250mhz/post_route_timing_summary.rpt",
-      "bytes": 1115036,
-      "sha256": "539864924215ec9a12d75b9e08396b11bcb19e086eb63b0a6dd95bae4c18c495"
+      "bytes": 1115034,
+      "sha256": "df5f6b1ed729dc5352dd8181998f86fd5bef0c66fca7423854601db0a992a0b9",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_250mhz/post_route_utilization.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/ooc_250mhz/post_route_utilization.rpt",
-      "bytes": 15494,
-      "sha256": "8b68a4418b3d2fab5bfd8bc6ac5f2b3db8e305c0661360cca4f641c596237d2e"
+      "bytes": 15492,
+      "sha256": "f84326c7e5cc1d8021cc9e660e4efd45400e7f425825997450f07de583cac3f3",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_250mhz/post_synth_timing_summary.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/ooc_250mhz/post_synth_timing_summary.rpt",
-      "bytes": 145335,
-      "sha256": "c2e46fc59f0c458a9b0308d7afbfc394f39b26d779232d59073a5b0b6f6922ba"
+      "bytes": 145333,
+      "sha256": "34323878d89e7faa31be105798ed11e57eb00e72ae950d95fc86287de3ccc285",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_250mhz/post_synth_utilization.rpt",
       "source": "code/9_KU115 FPGA Validation/reports/ooc_250mhz/post_synth_utilization.rpt",
-      "bytes": 12556,
-      "sha256": "5a63fcdacdedb950f2dc5fc713cce379b528e643ebfdb2f31cee3fdf6671ae9f"
+      "bytes": 12554,
+      "sha256": "30566926e7ec138d7c753fde17fc6808e9aa43e44f9d2338d6fe67a5ec198b50",
+      "curation": "local host/Python path redacted for public release"
     },
     {
       "path": "code/9_KU115 FPGA Validation/reports/ooc_250mhz/run_status.txt",
@@ -5866,20 +6565,261 @@
     {
       "path": "code/EXECUTION_STATUS.md",
       "source": "code/EXECUTION_STATUS.md",
-      "bytes": 2313,
-      "sha256": "8ae50d7ec65179cf33f2bd9ee924ad2c9e5720752ad742a4479a499d381ce2ff"
+      "bytes": 2827,
+      "sha256": "3aaa80051071cdf7d515d5cb8069791fb48a72dea78314f1291b9b24bfad0c94"
+    },
+    {
+      "path": "code/Paper/README.md",
+      "source": "code/Paper/README.md",
+      "bytes": 2844,
+      "sha256": "3c244324d636e8034cae58ebcb699b224ceb24d69b8e583d6821fd52c5eba7f0"
+    },
+    {
+      "path": "code/Paper/build_paper_package.py",
+      "source": "code/Paper/build_paper_package.py",
+      "bytes": 14159,
+      "sha256": "5fe2a7991463863638ccdafbadbafc916c342dd3e13f7861a8d2ef89dbb8e3d8"
+    },
+    {
+      "path": "code/Paper/build_paper_pdf.py",
+      "source": "code/Paper/build_paper_pdf.py",
+      "bytes": 6772,
+      "sha256": "07197847a017e900dd790d6b21a199508caa96fe41e858d77bd14c5d5375df40"
+    },
+    {
+      "path": "code/Paper/figures/figure1_pipeline.png",
+      "source": "code/Paper/figures/figure1_pipeline.png",
+      "bytes": 68348,
+      "sha256": "e37a2fa98e646bdde1c29fee8f1d19951d0abb1407590909fc82ced3783fa93d"
+    },
+    {
+      "path": "code/Paper/figures/figure2_courtship_response.png",
+      "source": "code/Paper/figures/figure2_courtship_response.png",
+      "bytes": 194855,
+      "sha256": "2afc6f70ae62cecb56105327563e735a9d3a3c8a450e059e4c10fa95d71e34be"
+    },
+    {
+      "path": "code/Paper/figures/figure3_courtship_raster.png",
+      "source": "code/Paper/figures/figure3_courtship_raster.png",
+      "bytes": 675433,
+      "sha256": "03d940531b2798e73024702802f943cf7a8f4a925e4a8ae204c479555083eddb"
+    },
+    {
+      "path": "code/Paper/figures/figure4_robustness.png",
+      "source": "code/Paper/figures/figure4_robustness.png",
+      "bytes": 180818,
+      "sha256": "9b549830ed66f0cd6834ea1041138508e7f7561dacf754b29a9b16ec25eddcff"
+    },
+    {
+      "path": "code/Paper/figures/figure5_quantization.png",
+      "source": "code/Paper/figures/figure5_quantization.png",
+      "bytes": 76112,
+      "sha256": "fc986431dc72f0c4fbb201cbd5cdbf3e9a695c900b9840ad7becfac08dd9bae0"
+    },
+    {
+      "path": "code/Paper/figures/figure6_lateralized_baseline.png",
+      "source": "code/Paper/figures/figure6_lateralized_baseline.png",
+      "bytes": 62297,
+      "sha256": "70acbd9db0b336a50875c160fc3c7d5e93f056b4f74dc61b413660b880bacdf3"
+    },
+    {
+      "path": "code/Paper/figures/figure7_ethernet_reconfiguration.png",
+      "source": "code/Paper/figures/figure7_ethernet_reconfiguration.png",
+      "bytes": 119440,
+      "sha256": "6d2e416addb95f20635dc426e4cd355f2ae2751eb9a498ab884ae450b2bff476"
+    },
+    {
+      "path": "code/Paper/figures/pipeline.png",
+      "source": "code/Paper/figures/pipeline.png",
+      "bytes": 75918,
+      "sha256": "0fea4e32be279a8c51b00c4d583c11cdee12a6ebed84ffd0d277410f6fcd10ca"
+    },
+    {
+      "path": "code/Paper/figures/pipeline_paper.png",
+      "source": "code/Paper/figures/pipeline_paper.png",
+      "bytes": 68348,
+      "sha256": "e37a2fa98e646bdde1c29fee8f1d19951d0abb1407590909fc82ced3783fa93d"
+    },
+    {
+      "path": "code/Paper/make_ethernet_board_figure.py",
+      "source": "code/Paper/make_ethernet_board_figure.py",
+      "bytes": 3735,
+      "sha256": "6237ee76e2933bab88b87f6b2ef23a25cf7dde915b5ab200a7c5cf7bc95f18e8"
+    },
+    {
+      "path": "code/Paper/make_paper_pipeline.py",
+      "source": "code/Paper/make_paper_pipeline.py",
+      "bytes": 2155,
+      "sha256": "0b918779e431b5a2e113818eeac3c13ffd9fb36dcf91ace740b41bec5c91ed33"
+    },
+    {
+      "path": "code/Paper/make_pipeline_figure.py",
+      "source": "code/Paper/make_pipeline_figure.py",
+      "bytes": 2253,
+      "sha256": "56b0366d5c6e2e0ba55e91de68ae4aa5d52d7bfc518725a3b960bf69b96a7c71"
+    },
+    {
+      "path": "code/Paper/manuscript_draft_v1.md",
+      "source": "code/Paper/manuscript_draft_v1.md",
+      "bytes": 16758,
+      "sha256": "7f7d5e339c0d806f579d03c555674f3788b097812a417cbd07cb5aeb00287f6a"
+    },
+    {
+      "path": "code/Paper/manuscript_full_v2.docx",
+      "source": "code/Paper/manuscript_full_v2.docx",
+      "bytes": 1353465,
+      "sha256": "a8aaf6b5013bef3de0b2c5d1389a003d4d4206a7bf1694bb3d1145aa42b18ff9"
+    },
+    {
+      "path": "code/Paper/manuscript_full_v2.md",
+      "source": "code/Paper/manuscript_full_v2.md",
+      "bytes": 37855,
+      "sha256": "c65f10027db785b48209b89aa1b9af3bffe3d26440a191d60076a1ebeb250830"
+    },
+    {
+      "path": "code/Paper/manuscript_full_v2.pdf",
+      "source": "code/Paper/qa_render/manuscript_full_v2.pdf",
+      "bytes": 1552516,
+      "sha256": "1a7e415b1ee4a4f46fea27b3cbff7e04a669cd9f669fcff45ae1d2e43a3d62be"
+    },
+    {
+      "path": "code/Paper/paper_data/courtship_condition_metrics.csv",
+      "source": "code/Paper/paper_data/courtship_condition_metrics.csv",
+      "bytes": 38213,
+      "sha256": "abee78aa1a5ebfdcfd423cfd55f3ebaa7e7732950fe531acbc9fd84291e4823b"
+    },
+    {
+      "path": "code/Paper/paper_data/courtship_degradation_summary.csv",
+      "source": "code/Paper/paper_data/courtship_degradation_summary.csv",
+      "bytes": 5211,
+      "sha256": "e998d9c15fd36b7cc537fc5a55d3668e1fbb9ceedb7dac7509a7b30639204dea"
+    },
+    {
+      "path": "code/Paper/paper_data/courtship_fpga_noise_comparison.csv",
+      "source": "code/Paper/paper_data/courtship_fpga_noise_comparison.csv",
+      "bytes": 1679,
+      "sha256": "4274e06febb4e6d7355a38d6a6522a9946e593f1d2eec1c0b911f3ffc9232f47"
+    },
+    {
+      "path": "code/Paper/paper_data/courtship_fpga_noise_per_step_verification.json",
+      "source": "code/Paper/paper_data/courtship_fpga_noise_per_step_verification.json",
+      "bytes": 133,
+      "sha256": "e5778ea54ec582f424f7c567db920de80b8e0251a5a443f7e742bc797c28cb76"
+    },
+    {
+      "path": "code/Paper/paper_data/courtship_latency_throughput.csv",
+      "source": "code/Paper/paper_data/courtship_latency_throughput.csv",
+      "bytes": 2381,
+      "sha256": "98600bbb8dd8647a682918d51a3f51050d71e1a80805eb1d1ef15514cf1192d8"
+    },
+    {
+      "path": "code/Paper/paper_data/courtship_quantization_envelope.csv",
+      "source": "code/Paper/paper_data/courtship_quantization_envelope.csv",
+      "bytes": 261,
+      "sha256": "e2948df0c265decf189611883c0b33def70b2af08decce3a3d3ba69f6b13036f"
+    },
+    {
+      "path": "code/Paper/paper_data/courtship_resource_timing.json",
+      "source": "code/Paper/paper_data/courtship_resource_timing.json",
+      "bytes": 328,
+      "sha256": "74188bc38195e1ad2e8f127ec73c626d88688c4a06e6fda15468f5e5716195d9"
+    },
+    {
+      "path": "code/Paper/paper_data/courtship_response_comparison.csv",
+      "source": "code/Paper/paper_data/courtship_response_comparison.csv",
+      "bytes": 4084,
+      "sha256": "a42c10c951a450000e3dd8679e92c6f26d803f4d5e2fb2d724236f3d928e511b"
+    },
+    {
+      "path": "code/Paper/paper_data/courtship_short_spike_raster.csv",
+      "source": "code/Paper/paper_data/courtship_short_spike_raster.csv",
+      "bytes": 672759,
+      "sha256": "f7dd12de465e98bf422e3ce24c704999936be4519ec6902723c3345529900a2a"
+    },
+    {
+      "path": "code/Paper/paper_data/ethernet_deployment_evidence_v1.json",
+      "source": "code/Paper/paper_data/ethernet_deployment_evidence_v1.json",
+      "bytes": 3770,
+      "sha256": "22f408af720ea7dcf549e5b7365a00a659d1c81c3715ada852fe06a0bbdcfdcb"
+    },
+    {
+      "path": "code/Paper/paper_data/manifest.json",
+      "source": "code/Paper/paper_data/manifest.json",
+      "bytes": 7738,
+      "sha256": "2fae93727f7b870e49f7b036027bb4c04b5afefb351e1c6d69e1a5ac93a28082",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/Paper/paper_data/old_new_board_comparison_v1.json",
+      "source": "code/Paper/paper_data/old_new_board_comparison_v1.json",
+      "bytes": 4399,
+      "sha256": "39a4a80055df4a845fc143f2242e79c5b29ba4d51dc3205c96d6ed2f399a6b42"
+    },
+    {
+      "path": "code/Paper/paper_data/visual_board_counts.csv",
+      "source": "code/Paper/paper_data/visual_board_counts.csv",
+      "bytes": 9781,
+      "sha256": "2551e69e69811ff0b7195e8f83ebebbf9ec0a2d4b6975a46db9606881a3b2700"
+    },
+    {
+      "path": "code/Paper/paper_data/visual_board_events.csv",
+      "source": "code/Paper/paper_data/visual_board_events.csv",
+      "bytes": 4018,
+      "sha256": "57330a19ed1ed33d12bbdf0d2a9add91babde988bcf16865f5bb6d6d8469ff73"
+    },
+    {
+      "path": "code/Paper/paper_data/visual_board_verification.json",
+      "source": "code/Paper/paper_data/visual_board_verification.json",
+      "bytes": 929,
+      "sha256": "e64b3ddff447886d65a326b7c4a3a1fbec122b71088cfd9f97720ebf424b93f2"
+    },
+    {
+      "path": "code/Paper/paper_data/visual_manual_vs_automatic.csv",
+      "source": "code/Paper/paper_data/visual_manual_vs_automatic.csv",
+      "bytes": 2380,
+      "sha256": "3b7408741b7412d9ce66537e417ace34e37688a9285c29d2f5438e3bfaeb6b61"
+    },
+    {
+      "path": "code/Paper/paper_data/visual_structural_comparison.json",
+      "source": "code/Paper/paper_data/visual_structural_comparison.json",
+      "bytes": 252,
+      "sha256": "4dcc5363080c0fdbab2e85996eea9f9a8efa6c85a5a6c2209b5ca0d296761e48"
+    },
+    {
+      "path": "code/Paper/paper_data/visual_width_ablation.csv",
+      "source": "code/Paper/paper_data/visual_width_ablation.csv",
+      "bytes": 9524,
+      "sha256": "7d5cfc58138281c81680fd4a6bec9f27775bd5496882016ab7636e0404528bdf"
+    },
+    {
+      "path": "code/Paper/verify_paper_package.py",
+      "source": "code/Paper/verify_paper_package.py",
+      "bytes": 2759,
+      "sha256": "4ca38248dfb2cbf1acc89e9009624b6f46ec834ca7fde9d61b70886e823f971a"
     },
     {
       "path": "hardware/bitstreams/README.md",
       "source": "code/others/release/BITSTREAMS.md",
-      "bytes": 2022,
-      "sha256": "8b490023478029d11f56fa24150c08a3e7190b293110af671673cc1fbf844cc0"
+      "bytes": 3524,
+      "sha256": "59581564bbdd34b9aa0aab3f4da9c6e6c5c005015d764672327044add1098941"
     },
     {
       "path": "hardware/bitstreams/cns2fpga_axku115_jtag_200mhz.bit",
       "source": "code/9_KU115 FPGA Validation/build/axku115_jtag_200mhz/cns2fpga_axku115_jtag_200mhz.bit",
       "bytes": 15488180,
       "sha256": "0dfb8e09e9509c40cf5f48e616ddd3b31ccc279d03946446fbc21e80523a53a9"
+    },
+    {
+      "path": "hardware/bitstreams/cns2fpga_runtime_eth_200mhz.bit",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/runtime_eth_portfilter_200mhz/cns2fpga_runtime_eth_portfilter_200mhz.bit",
+      "bytes": 14623907,
+      "sha256": "581354a62c8c7aeb134f300e7ea1928d8b681b996807710c61e307b33530d8f8"
+    },
+    {
+      "path": "hardware/bitstreams/cns2fpga_runtime_jtag_200mhz.bit",
+      "source": "code/14_Runtime Reconfigurable Deployment/build/runtime_jtag_200mhz/cns2fpga_runtime_jtag_200mhz.bit",
+      "bytes": 14806256,
+      "sha256": "95f9b50ee03804ddc211828a9fbd3b3171b45bc3ffb79f9f3b2407f0d3190e52"
     },
     {
       "path": "hardware/bitstreams/cns2fpga_visual_left_jtag_200mhz.bit",
@@ -5890,8 +6830,8 @@
     {
       "path": "requirements-paper.txt",
       "source": "code/others/release/requirements-paper.txt",
-      "bytes": 50,
-      "sha256": "8febd7d79f32e5b33f2f5711c3c4b3855cce2fa7eaee532096b43720a4b8ed8d"
+      "bytes": 76,
+      "sha256": "ba6d4212e35f72fff344414ee2db119847e47adbab1377935abca8e14fa3a5f6"
     },
     {
       "path": "requirements.txt",
@@ -5908,8 +6848,8 @@
     {
       "path": "scripts/validate_repository.py",
       "source": "code/others/release/validate_repository.py",
-      "bytes": 2525,
-      "sha256": "3050f1a87d0960971b0af6345506e347f7af1d6426d78140bdb2a890a8c7b91d"
+      "bytes": 2807,
+      "sha256": "8602ab93ca106f8bb3ee42915d7229ca501f707d813d1e902be6620bdc47c94b"
     },
     {
       "path": "support/data_sources.json",

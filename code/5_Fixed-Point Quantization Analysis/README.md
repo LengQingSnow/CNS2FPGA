@@ -10,7 +10,7 @@
 运行：
 
 ```powershell
-$py = 'C:\Users\20474\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+$py = 'python'
 & $py '.\run_quantization_analysis.py'
 & $py -m pytest -p no:cacheprovider '.\tests' -q
 ```

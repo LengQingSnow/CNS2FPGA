@@ -1,0 +1,120 @@
+{
+  "schema": "cns2fpga.ethernet_deployment_evidence.v1",
+  "board": "ALINX AXKU115 V1.0",
+  "bitstream": {
+    "path": "code/15_Ethernet_Runtime_Deployment/build/runtime_eth_portfilter_200mhz/cns2fpga_runtime_eth_portfilter_200mhz.bit",
+    "sha256": "581354A62C8C7AEB134F300E7EA1928D8B681B996807710C61E307B33530D8F8",
+    "part": "xcku115-flva1517-2-i",
+    "core_clock_mhz": 200,
+    "setup_wns_ns": 0.012,
+    "hold_whs_ns": 0.01,
+    "unrouted_nets": 0,
+    "drc_errors": 0,
+    "lut": 32422,
+    "flip_flops": 11670,
+    "ramb36": 592,
+    "ramb18": 6,
+    "dsp": 4
+  },
+  "link": {
+    "protocol": "UDP/IPv4 over RGMII",
+    "measured_negotiated_mbps": 100,
+    "note": "This run negotiated 100 Mbps; 1 Gbps was seen in earlier diagnostic transmission, not in this upload run."
+  },
+  "images_in_order": [
+    {
+      "name": "visual_left_hw_ir_v0",
+      "neurons": 226,
+      "synapses": 1730,
+      "words": 4816,
+      "packets": 81,
+      "checksum_hex": "6C233D31",
+      "commit": "PASS",
+      "independent_status": "PASS after corrected sequence-number probe",
+      "new_bit_execution_trial": "not run"
+    },
+    {
+      "name": "courtship_song",
+      "neurons": 6279,
+      "synapses": 350185,
+      "words": 738044,
+      "packets": 11538,
+      "checksum_hex": "45AEAAAE",
+      "commit": "PASS",
+      "independent_status": "PASS",
+      "image_epoch": 2,
+      "new_bit_execution_trial": "8-step smoke8"
+    }
+  ],
+  "fpga_reprogramming_between_images": false,
+  "courtship_trial": {
+    "steps": 8,
+    "reference": "fixed-point CPU smoke8",
+    "step_counts": [
+      {
+        "step": 0,
+        "cpu_fixed": 93,
+        "fpga": 93
+      },
+      {
+        "step": 1,
+        "cpu_fixed": 138,
+        "fpga": 138
+      },
+      {
+        "step": 2,
+        "cpu_fixed": 322,
+        "fpga": 322
+      },
+      {
+        "step": 3,
+        "cpu_fixed": 636,
+        "fpga": 636
+      },
+      {
+        "step": 4,
+        "cpu_fixed": 616,
+        "fpga": 616
+      },
+      {
+        "step": 5,
+        "cpu_fixed": 346,
+        "fpga": 346
+      },
+      {
+        "step": 6,
+        "cpu_fixed": 227,
+        "fpga": 227
+      },
+      {
+        "step": 7,
+        "cpu_fixed": 97,
+        "fpga": 97
+      }
+    ],
+    "ordered_events_compared": 2475,
+    "ordered_event_mismatches": 0,
+    "step_count_mismatches": 0,
+    "max_latency_cycles": 199699,
+    "max_latency_us": 998.495,
+    "deadline_cycles": 200000,
+    "deadline_margin_cycles": 301,
+    "missed_steps": 0,
+    "summary_fault_flags": 0,
+    "image_checksum_hex": "45AEAAAE",
+    "image_epoch": 2
+  },
+  "raw_evidence": {
+    "visual_upload_log": "code/15_Ethernet_Runtime_Deployment/reports/visual_upload/visual_upload_20260928_072611.log",
+    "courtship_upload_log": "code/15_Ethernet_Runtime_Deployment/reports/courtship_upload/courtship_upload_20260928_072927.log",
+    "capture_directory": "code/15_Ethernet_Runtime_Deployment/reports/courtship_trial_20260928",
+    "reference_directory": "code/9_KU115 FPGA Validation/host/trials/smoke8",
+    "route_status": "code/15_Ethernet_Runtime_Deployment/reports/runtime_eth_portfilter_200mhz/run_status.txt",
+    "utilization_report": "code/15_Ethernet_Runtime_Deployment/reports/runtime_eth_portfilter_200mhz/post_route_utilization.rpt"
+  },
+  "limitations": [
+    "Only courtship smoke8 was executed after the two UDP uploads on the new bitstream.",
+    "The visual 250-step event result and long courtship stimulus suite belong to earlier dedicated/JTAG implementations.",
+    "No host-inclusive transfer throughput benchmark, power measurement, or independent repeat-board trial was performed."
+  ]
+}

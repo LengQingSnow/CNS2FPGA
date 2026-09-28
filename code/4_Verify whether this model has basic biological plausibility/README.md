@@ -55,7 +55,7 @@ The current three-point sweep supports only a trend test. A numerical correlatio
 ## Run
 
 ```powershell
-$py = 'C:\Users\20474\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+$py = 'python'
 & $py '.\run_plausibility_validation.py' --config '.\configs\courtship_song_plausibility_v0.json' --output-dir '.\outputs\v0_repeat'
 & $py -m pytest '.\tests' -q
 ```

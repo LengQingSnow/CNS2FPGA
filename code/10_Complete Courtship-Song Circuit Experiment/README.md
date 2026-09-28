@@ -14,7 +14,7 @@
 ## 复现
 
 ```powershell
-$py = 'C:\Users\20474\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+$py = 'python'
 & $py '.\run_experiment.py' prepare
 & '.\run_board_trials.ps1' -Python $py
 & $py '.\run_experiment.py' analyze

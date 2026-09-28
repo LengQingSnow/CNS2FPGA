@@ -25,6 +25,9 @@ __pycache__/
 !code/7_Minimum FPGA Architecture/sim/transcript.log
 !code/7_Minimum FPGA Architecture/sim/full_image_load.log
 !code/8_RTL Bit-Exact Co-Simulation/sim/bit_exact_transcript.log
+!code/16_Ethernet_Runtime_Deployment/reports/visual_upload/visual_upload_20260928_072611.log
+!code/16_Ethernet_Runtime_Deployment/reports/courtship_upload/courtship_upload_20260928_072927.log
+!code/16_Ethernet_Runtime_Deployment/reports/ethernet_probe/capture.log
 *.wlf
 *.qdb
 *.qpg

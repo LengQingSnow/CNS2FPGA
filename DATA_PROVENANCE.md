@@ -15,7 +15,7 @@ derived graphs or results.
 
 The `code/<step>/outputs/` directories contain project-derived graph tables,
 model responses, memory images, and verification records. The selected
-publication figures and tables are in `code/14_Paper/`; its
+publication figures and tables are in `code/Paper/`; its
 `paper_data/manifest.json` links each item to the source result file and hash.
 Two board-specific bitstreams are included separately in
 `hardware/bitstreams/`, with SHA-256 values in its README.
@@ -48,7 +48,7 @@ MaleCNS v1.0。所需三个原始 Feather 文件的准确链接、大小和本�
 ### 项目衍生材料
 
 `code/<step>/outputs/` 包含项目生成的图表、模型响应、存储镜像及验证记录。
-选定的论文图表和数据位于 `code/14_Paper/`；其中 `paper_data/manifest.json`
+选定的论文图表和数据位于 `code/Paper/`；其中 `paper_data/manifest.json`
 把每个素材关联到原始结果文件和哈希。两份板卡专用 bit 文件单独放在
 `hardware/bitstreams/`，其 SHA-256 见该目录的 README。
 

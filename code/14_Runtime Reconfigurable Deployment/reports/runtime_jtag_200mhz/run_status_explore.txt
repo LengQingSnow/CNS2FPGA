@@ -1,0 +1,8 @@
+part=xcku115-flva1517-2-i
+core_clock_mhz=200.000
+directive=post_route_Explore
+wns_ns=-0.031
+whs_ns=0.030
+unrouted_nets=0
+partially_routed_nets=0
+drc_error_count=0

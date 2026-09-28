@@ -21,7 +21,7 @@ zhou2015_pC1_intersection,12345,figure_or_dataset_item,direct_expression_registr
 导入器还强制要求 male、明确年龄/阶段、证据编号、来源 URL 与版本。
 
 ```powershell
-$py = 'C:\Users\20474\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+$py = 'python'
 & $py '.\import_external_roi_map.py' `
   --mapping-csv '.\evidence\zhou2015_pC1_bodyids.csv' `
   --output-dir '.\outputs\courtship_song_roi_mapping_v3_direct'

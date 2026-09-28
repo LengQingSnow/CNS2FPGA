@@ -11,6 +11,12 @@ project's MIT text. See `DATA_PROVENANCE.md` and the
 [official download page](https://male-cns.janelia.org/download/). Third-party
 NeuronBridge image exports and the board vendor's PDF are not included.
 
+Step 15 incorporates Ethernet MAC/ARP/IP/UDP RTL adapted from
+`alexforencich/verilog-ethernet` at commit
+`77320a9471d19c7dd383914bc049e02d9f4f1ffb`. Its separate MIT notice is
+preserved at `code/15_Ethernet_Runtime_Deployment/vendor/COPYING`; the root
+project license does not replace that attribution.
+
 ## 中文说明：许可范围
 
 项目作者为 CNS2FPGA 原创源码、文档及原创图像选择了 MIT 许可证，全文见仓库根目录
@@ -21,3 +27,6 @@ MaleCNS 原始数据及衍生图数据仍遵循原发布者的 CC BY 条款和�
 因本项目采用 MIT 而被重新许可。来源及署名信息见 `DATA_PROVENANCE.md` 与
 [官方下载页](https://male-cns.janelia.org/download/)。仓库不包含第三方
 NeuronBridge 图像导出或板卡厂商的 PDF 手册。
+
+第 15 步改编自 `alexforencich/verilog-ethernet` 的以太网 RTL 保留其独立 MIT
+许可及署名，见 `code/15_Ethernet_Runtime_Deployment/vendor/COPYING`。

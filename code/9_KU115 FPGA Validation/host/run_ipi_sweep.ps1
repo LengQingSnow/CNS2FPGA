@@ -4,7 +4,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$python = 'C:\Users\20474\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+$python = 'python'
 $prepare = Join-Path $PSScriptRoot 'step9_host.py'
 $runner = Join-Path $PSScriptRoot 'run_jtag_trial.ps1'
 if (-not (Test-Path -LiteralPath $python -PathType Leaf)) { throw "Python not found: $python" }

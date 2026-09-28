@@ -1,0 +1,140 @@
+{
+  "schema": "cns2fpga.old_new_board_comparison.v1",
+  "scope": "Same 8-step courtship smoke8 stimulus on the AXKU115 at 200 MHz; dedicated bitstream versus Ethernet runtime bitstream after UDP image load.",
+  "bitstreams": {
+    "dedicated_courtship_sha256": "0DFB8E09E9509C40CF5F48E616DDD3B31CCC279D03946446FBC21E80523A53A9",
+    "ethernet_runtime_sha256": "581354A62C8C7AEB134F300E7EA1928D8B681B996807710C61E307B33530D8F8"
+  },
+  "ordered_event_words": {
+    "count_each": 2475,
+    "byte_identical": true,
+    "sha256_each": "2B3A10A3F2CF9543E40CB0E65042DDF6C1E74E060EE286E4BB146627B25F6E0D"
+  },
+  "step_comparison": [
+    {
+      "step": 0,
+      "spikes_both": 93,
+      "dedicated_cycles": 51013,
+      "ethernet_runtime_cycles": 51106,
+      "cycle_delta": 93,
+      "other_seven_summary_words_identical": true
+    },
+    {
+      "step": 1,
+      "spikes_both": 138,
+      "dedicated_cycles": 78166,
+      "ethernet_runtime_cycles": 78304,
+      "cycle_delta": 138,
+      "other_seven_summary_words_identical": true
+    },
+    {
+      "step": 2,
+      "spikes_both": 322,
+      "dedicated_cycles": 124591,
+      "ethernet_runtime_cycles": 124913,
+      "cycle_delta": 322,
+      "other_seven_summary_words_identical": true
+    },
+    {
+      "step": 3,
+      "spikes_both": 636,
+      "dedicated_cycles": 199063,
+      "ethernet_runtime_cycles": 199699,
+      "cycle_delta": 636,
+      "other_seven_summary_words_identical": true
+    },
+    {
+      "step": 4,
+      "spikes_both": 616,
+      "dedicated_cycles": 166432,
+      "ethernet_runtime_cycles": 167048,
+      "cycle_delta": 616,
+      "other_seven_summary_words_identical": true
+    },
+    {
+      "step": 5,
+      "spikes_both": 346,
+      "dedicated_cycles": 105691,
+      "ethernet_runtime_cycles": 106037,
+      "cycle_delta": 346,
+      "other_seven_summary_words_identical": true
+    },
+    {
+      "step": 6,
+      "spikes_both": 227,
+      "dedicated_cycles": 96541,
+      "ethernet_runtime_cycles": 96768,
+      "cycle_delta": 227,
+      "other_seven_summary_words_identical": true
+    },
+    {
+      "step": 7,
+      "spikes_both": 97,
+      "dedicated_cycles": 65470,
+      "ethernet_runtime_cycles": 65567,
+      "cycle_delta": 97,
+      "other_seven_summary_words_identical": true
+    }
+  ],
+  "summary_words_per_step": 8,
+  "summary_differing_word_indices_each_step": [
+    0
+  ],
+  "max_latency_cycles": {
+    "dedicated": 199063,
+    "ethernet_runtime": 199699,
+    "delta": 636
+  },
+  "deadline_margin_cycles": {
+    "dedicated": 937,
+    "ethernet_runtime": 301
+  },
+  "resource_comparison_order": [
+    "dedicated_courtship",
+    "ethernet_runtime"
+  ],
+  "resource_comparison": {
+    "lut": [
+      11912,
+      32422
+    ],
+    "flip_flops": [
+      4093,
+      11670
+    ],
+    "ramb36": [
+      589,
+      592
+    ],
+    "ramb18": [
+      3,
+      6
+    ],
+    "dsp": [
+      4,
+      4
+    ],
+    "setup_wns_ns": [
+      0.073,
+      0.012
+    ],
+    "hold_whs_ns": [
+      0.03,
+      0.01
+    ]
+  },
+  "interpretation_limits": [
+    "The cycle delta equals each step's spike count in this capture; this is an observed numerical relationship, not a proven causal attribution to a particular RTL stage.",
+    "Graph and stimulus outputs are unchanged in smoke8, but the bitstream and hardware timing/resources differ.",
+    "The new bitstream has no visual execution trial or rerun of the 13 long courtship conditions, so this comparison cannot assert their equality.",
+    "This is one paired short trial, not a distribution of repeated measurements."
+  ],
+  "sources": {
+    "dedicated_summary": "code/9_KU115 FPGA Validation/host/captures/smoke8_events/summary_words.hex",
+    "ethernet_runtime_summary": "code/15_Ethernet_Runtime_Deployment/reports/courtship_trial_20260928/summary_words.hex",
+    "dedicated_events": "code/9_KU115 FPGA Validation/host/captures/smoke8_events/event_words.hex",
+    "ethernet_runtime_events": "code/15_Ethernet_Runtime_Deployment/reports/courtship_trial_20260928/event_words.hex",
+    "dedicated_resource_timing": "code/10_Complete Courtship-Song Circuit Experiment/outputs/courtship_song_v1/resource_timing.json",
+    "ethernet_deployment_evidence": "code/15_Ethernet_Runtime_Deployment/reports/deployment_evidence_v1.json"
+  }
+}

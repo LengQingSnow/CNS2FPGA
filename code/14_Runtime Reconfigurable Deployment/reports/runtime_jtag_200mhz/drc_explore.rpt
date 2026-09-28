@@ -1,0 +1,502 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Sat Sep 26 19:33:47 2026
+| Host         : REDACTED_HOST running 64-bit major release  (build 9200)
+| Command      : report_drc -file {E:/Workspace/CNS2FPGA/code/15_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/drc_explore.rpt}
+| Design       : cns2fpga_axku115_jtag_top
+| Device       : xcku115-flva1517-2-i
+| Speed File   : -2
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_post_route
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 89
++-----------+----------+---------------------------------------------------+------------+
+| Rule      | Severity | Description                                       | Violations |
++-----------+----------+---------------------------------------------------+------------+
+| DPIP-2    | Warning  | Input pipelining                                  | 6          |
+| DPOP-4    | Warning  | MREG Output pipelining                            | 4          |
+| PDCN-1569 | Warning  | LUT equation term check                           | 9          |
+| REQP-1773 | Warning  | RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31 | 66         |
+| REQP-1857 | Warning  | RAMB18E2_writefirst_collision_advisory            | 1          |
+| REQP-1858 | Warning  | RAMB36E2_writefirst_collision_advisory            | 2          |
+| RTSTAT-10 | Warning  | No routable loads                                 | 1          |
++-----------+----------+---------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-2#1 Warning
+Input pipelining  
+DSP experiment/core/product_hh_reg_reg input experiment/core/product_hh_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#2 Warning
+Input pipelining  
+DSP experiment/core/product_hh_reg_reg input experiment/core/product_hh_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#3 Warning
+Input pipelining  
+DSP experiment/core/product_hl_reg_reg input experiment/core/product_hl_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#4 Warning
+Input pipelining  
+DSP experiment/core/product_lh_reg_reg input experiment/core/product_lh_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#5 Warning
+Input pipelining  
+DSP experiment/core/product_lh_reg_reg input experiment/core/product_lh_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#6 Warning
+Input pipelining  
+DSP experiment/core/product_ll_reg_reg input experiment/core/product_ll_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-4#1 Warning
+MREG Output pipelining  
+DSP experiment/core/product_hh_reg_reg multiplier stage experiment/core/product_hh_reg_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#2 Warning
+MREG Output pipelining  
+DSP experiment/core/product_hl_reg_reg multiplier stage experiment/core/product_hl_reg_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#3 Warning
+MREG Output pipelining  
+DSP experiment/core/product_lh_reg_reg multiplier stage experiment/core/product_lh_reg_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#4 Warning
+MREG Output pipelining  
+DSP experiment/core/product_ll_reg_reg multiplier stage experiment/core/product_ll_reg_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDCN-1569#1 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I1) is not included in the LUT equation: 'O5=(A3*A5)+(A3*(~A5)*(~A4))+((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#2 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell jtag_master/inst/jtag_axi_engine_u/rd_cmd_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state[0]_i_1__2 (pin jtag_master/inst/jtag_axi_engine_u/rd_cmd_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state[0]_i_1__2/I1) is not included in the LUT equation: 'O6=(A6+~A6)*((A5)+((~A5)*(~A2)*A4))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#3 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell jtag_master/inst/jtag_axi_engine_u/tx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state[0]_i_1__0 (pin jtag_master/inst/jtag_axi_engine_u/tx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state[0]_i_1__0/I1) is not included in the LUT equation: 'O6=(A6+~A6)*((A3)+((~A3)*(~A4)*A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#4 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell jtag_master/inst/jtag_axi_engine_u/tx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0 (pin jtag_master/inst/jtag_axi_engine_u/tx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0/I1) is not included in the LUT equation: 'O6=(A2)+((~A2)*(~A5)*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#5 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell jtag_master/inst/jtag_axi_engine_u/wr_cmd_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state[0]_i_1__1 (pin jtag_master/inst/jtag_axi_engine_u/wr_cmd_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state[0]_i_1__1/I1) is not included in the LUT equation: 'O6=(A6+~A6)*((A3)+((~A3)*(~A5)*A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#6 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell jtag_master/inst/jtag_axi_engine_u/wr_cmd_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__1 (pin jtag_master/inst/jtag_axi_engine_u/wr_cmd_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__1/I1) is not included in the LUT equation: 'O6=(A3)+((~A3)*(~A5)*A2)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#7 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I0) is not included in the LUT equation: 'O5=(A3*A5)+(A3*(~A5)*(~A4))+((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#8 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#9 Warning
+LUT equation term check  
+Used physical LUT pin 'A6' of cell jtag_master/inst/jtag_axi_engine_u/rd_cmd_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__2 (pin jtag_master/inst/jtag_axi_engine_u/rd_cmd_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__2/I1) is not included in the LUT equation: 'O6=(A3)+((~A3)*(~A4)*A1)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+REQP-1773#1 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_136 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#2 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_137 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#3 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_138 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#4 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_139 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#5 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_140 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#6 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_141 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#7 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_142 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#8 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_143 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#9 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_144 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#10 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_145 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#11 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_146 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#12 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_191 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#13 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_192 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#14 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_193 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#15 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_194 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#16 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_195 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#17 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_196 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#18 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_197 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#19 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_198 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#20 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_199 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#21 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_200 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#22 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_201 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#23 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_246 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#24 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_247 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#25 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_248 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#26 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_249 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#27 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_250 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#28 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_251 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#29 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_252 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#30 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_253 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#31 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_254 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#32 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_255 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#33 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_256 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#34 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_26 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#35 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_27 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#36 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_28 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#37 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_29 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#38 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_30 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#39 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_301 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#40 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_302 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#41 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_303 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#42 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_304 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#43 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_305 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#44 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_306 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#45 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_307 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#46 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_308 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#47 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_309 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#48 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_31 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#49 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_310 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#50 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_311 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#51 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_32 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#52 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_33 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#53 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_34 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#54 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_35 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#55 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_36 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#56 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_81 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#57 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_82 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#58 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_83 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#59 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_84 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#60 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_85 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#61 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_86 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#62 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_87 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#63 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_88 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#64 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_89 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#65 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_90 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1773#66 Warning
+RAMB36E2_WRITE_WIDTH_A_9_or_less_doesnt_use_WEA31  
+The RAMB36E2 cell experiment/core/synapse_mem_reg_0_bram_91 has WRITE_WIDTH_A set to 9 or less. The WEA[3:1] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1857#1 Warning
+RAMB18E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (jtag_master/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#1 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (jtag_master/inst/jtag_axi_engine_u/rd_cmd_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#2 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (jtag_master/inst/jtag_axi_engine_u/wr_cmd_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+37 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1],
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1],
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0],
+jtag_master/inst/jtag_axi_engine_u/rd_cmd_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+jtag_master/inst/jtag_axi_engine_u/rd_cmd_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i,
+jtag_master/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+jtag_master/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i,
+jtag_master/inst/jtag_axi_engine_u/tx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+jtag_master/inst/jtag_axi_engine_u/tx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i,
+jtag_master/inst/jtag_axi_engine_u/wr_cmd_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+jtag_master/inst/jtag_axi_engine_u/wr_cmd_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i
+ (the first 15 of 35 listed).
+Related violations: <none>
+
+

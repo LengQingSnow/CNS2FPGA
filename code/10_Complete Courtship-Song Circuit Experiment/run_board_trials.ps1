@@ -1,5 +1,5 @@
 param(
-    [string]$Python = 'C:\Users\20474\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe',
+    [string]$Python = 'python',
     [string]$TargetPattern = '*',
     [string]$DevicePattern = '*xcku115*',
     [string]$AxisPattern = '*'

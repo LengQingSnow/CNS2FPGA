@@ -7,7 +7,7 @@
 在第四步目录执行：
 
 ```powershell
-$py = 'C:\Users\20474\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+$py = 'python'
 & $py '.\run_plausibility_validation.py'
 # 直接入口；另存一次运行，并在核心判据未通过时返回退出码 2：
 & $py '.\run_equal_pulse_validation.py' --output-dir '.\outputs\equal_pulse_v1_repeat' --require-pass

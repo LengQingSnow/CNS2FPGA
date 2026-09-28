@@ -28,7 +28,7 @@ Outputs in `outputs/baseline_v0/`: `manual_vs_automatic.csv`,
 hashes and `lateralized_baseline.png`.
 
 ```powershell
-$py = 'C:\Users\20474\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+$py = 'python'
 & $py 'code\13_Baselines and Ablations\run_baselines.py'
 & $py 'code\13_Baselines and Ablations\make_figures.py'
 ```

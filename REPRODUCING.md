@@ -36,7 +36,7 @@ When rerunning an extractor or compiler, use a new output directory instead
 of replacing the recorded `outputs/*_v0`/`*_v1` snapshots. The original
 MaleCNS release and source hashes are listed in `support/data_sources.json`;
 the paper CSV/figure sources are listed in
-`code/14_Paper/paper_data/manifest.json`.
+`code/Paper/paper_data/manifest.json`.
 
 The hardware flow requires licensed/installed Vivado, a compatible simulator,
 and (for board trials) the ALINX AXKU115 V1.0 and JTAG cable. The verified
@@ -50,6 +50,35 @@ excerpts of the original ModelSim output, not full simulator transcripts.
 They preserve the project testbench PASS lines and final error summaries;
 their headers record SHA-256 values of the full local logs. Rerun ModelSim
 with the supplied scripts for independent confirmation.
+
+## 4 Inspect the Ethernet runtime deployment
+
+The board-tested runtime image is
+`hardware/bitstreams/cns2fpga_runtime_eth_200mhz.bit` (SHA-256
+`581354a62c8c7aeb134f300e7ea1928d8b681b996807710c61e307b33530d8f8`).
+The public package includes the matching Step-16 RTL, MAC dependency with its
+own MIT notice, constraints, UDP host loader, key routed summaries, upload
+transcript **excerpts**, and complete eight-step courtship capture words.
+PowerShell host identity/session metadata and diagnostic packet captures are
+not published. The untouched full transcripts remain in the development
+workspace. The repository manifest identifies the source of each curated file.
+
+Read `code/15_Ethernet_Runtime_Deployment/README.md` for the board protocol.
+Its historical one-click PowerShell wrappers default to machine-specific Vivado
+and NIC settings; review and override their parameters before use. In
+particular, public release packaging does not make them safe to execute on an
+arbitrary computer or network. This UDP control port has no authentication:
+use an isolated lab link. The 100-Mbps negotiated upload is not a measured
+end-to-end throughput benchmark.
+
+For a hardware-free comparison of the two captured `smoke8` runs, execute
+`python "code/15_Ethernet_Runtime_Deployment/scripts/build_old_new_board_comparison.py"`
+from the repository root. The script asserts identical ordered events and
+non-latency summary words and reports the per-step cycle differences. The
+updated paper is available as Markdown, DOCX and PDF under `code/Paper/`;
+its Table 5 is paired only over this eight-step input. The visual graph was
+committed and status-checked on the new bitstream but was **not** executed in
+a new-bitstream trial.
 
 ## Comparison levels
 
@@ -95,7 +124,7 @@ python -m venv .venv
 各编号目录中的 `README.md` 给出了相应命令和接口约定。重跑抽取器或编译器时，
 请使用新的输出目录，不要覆盖已记录的 `outputs/*_v0`/`*_v1` 快照。
 MaleCNS 发行版本及原始文件哈希在 `support/data_sources.json`；论文 CSV 与图像
-素材来源在 `code/14_Paper/paper_data/manifest.json`。
+素材来源在 `code/Paper/paper_data/manifest.json`。
 
 硬件流程需要已安装且具备许可的 Vivado、兼容的仿真器；板卡试验还需要
 ALINX AXKU115 V1.0 和 JTAG 线。已验证的 bit 文件在 `hardware/bitstreams/`。
@@ -105,6 +134,24 @@ ALINX AXKU115 V1.0 和 JTAG 线。已验证的 bit 文件在 `hardware/bitstream
 仓库中的三份第 7、8 步 `.log` 文件是原始 ModelSim 输出的精简摘录，**并非完整
 仿真日志**。它们保留了项目 testbench 的 PASS 行和最终错误摘要，文件头记录
 完整本地日志的 SHA-256。独立确认时应使用提供的脚本重新运行 ModelSim。
+
+### 4 检查网口运行时部署
+
+已上板测试的网口 bit 文件为 `hardware/bitstreams/cns2fpga_runtime_eth_200mhz.bit`
+（SHA-256 `581354a62c8c7aeb134f300e7ea1928d8b681b996807710c61e307b33530d8f8`）。
+公开包包含对应第 15 步 RTL、带独立 MIT 声明的 MAC 依赖、约束、UDP 装载器、
+选定布线摘要、上传日志**摘录**和完整的求偶 8 步采集字。不会发布 PowerShell
+主机身份与会话元数据或诊断抓包；未经修改的完整日志仍保留在开发工作区。
+
+历史一键式 PowerShell 脚本默认采用本机 Vivado 和网卡设定，运行前须按
+目标环境检查和修改，不应在任意电脑或网络上直接执行。UDP 控制口没有认证，
+只能用于隔离的实验链路；100 Mbps 是本次协商速率，不是端到端吞吐率。
+
+无需板卡即可运行
+`python "code/15_Ethernet_Runtime_Deployment/scripts/build_old_new_board_comparison.py"`
+核查新旧 `smoke8` 的事件、摘要和周期差异。更新的论文以 Markdown、DOCX 和 PDF
+放在 `code/Paper/`；表 5 只比较相同的 8 步输入。视觉图在新 bit 文件上完成
+COMMIT 与 STATUS 校验，**尚未在该 bit 文件上执行新试验**。
 
 ### 比较层级
 

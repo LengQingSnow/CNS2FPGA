@@ -59,7 +59,7 @@ Summary flags：bit0 state saturation、bit1 accumulator saturation、bit2 本�
 
 ```powershell
 $base = 'E:\Workspace\CNS2FPGA\code\9_KU115 FPGA Validation'
-$py = 'C:\Users\20474\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+$py = 'python'
 & $py "$base\host\step9_host.py" selftest
 & $py "$base\host\step9_host.py" generate --profile smoke8 --output-dir "$base\host\trials"
 & $py "$base\host\step9_host.py" generate --profile ipi --output-dir "$base\host\trials"

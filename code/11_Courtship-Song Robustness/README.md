@@ -17,7 +17,7 @@
 在本目录运行：
 
 ```powershell
-$py = 'C:\Users\20474\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+$py = 'python'
 & $py '.\run_robustness.py' prepare
 & '.\run_board_noise.ps1' -Python $py # 已有采集可跳过
 & $py '.\run_robustness.py' analyze

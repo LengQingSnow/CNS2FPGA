@@ -17,7 +17,7 @@
 运行：
 
 ```powershell
-$py = 'C:\Users\20474\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+$py = 'python'
 & $py '.\compile_hardware_ir.py'
 & $py '.\verify_compiled_ir.py'
 & $py -m pytest -p no:cacheprovider '.\tests' -q
