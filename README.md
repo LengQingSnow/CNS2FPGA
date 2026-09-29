@@ -1,4 +1,4 @@
-# CNS2FPGA
+# CNS2FPGA — 神经映芯
 
 English first; a complete Chinese translation follows below.
 英文在前，完整中文翻译见下文。
@@ -99,7 +99,7 @@ exports, and board vendor manual are not bundled here.
 
 ## 中文说明
 
-将连接组约束的神经回路编译到时分复用 FPGA 引擎。
+神经映芯将连接组约束的神经回路编译到时分复用 FPGA 引擎。
 
 本项目的核心思路是运行时部署网络图：先把神经回路编译为经过预检的镜像，
 再通过网口或 JTAG 将其装入固定的 FPGA bit 文件，不必为每张网络重新生成 bit 文件。

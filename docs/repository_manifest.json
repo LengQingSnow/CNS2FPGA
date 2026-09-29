@@ -34,8 +34,8 @@
     {
       "path": "README.md",
       "source": "code/others/release/README.md",
-      "bytes": 10700,
-      "sha256": "a946db34b60756fe45fa2f6263feaac50a493be9fa4f99b196db262cfc12c2d1"
+      "bytes": 10729,
+      "sha256": "489ca881164811415f96994a3dc6d5caf70ede54c18c271ad3ca550fc63536a7"
     },
     {
       "path": "REPRODUCING.md",
