@@ -2,11 +2,11 @@
 # Usage:
 #   vivado -mode batch -source run_runtime_trial.tcl -tclargs \
 #     <trial-directory> <capture-directory> <capture-events:0|1> <expected-neurons> \
-#     ?hw-target-pattern? ?hw-device-pattern? ?hw-axi-pattern?
+#     ?hw-target-pattern? ?hw-device-pattern? ?hw-axi-pattern? ?event-capacity?
 # The FPGA must already contain the runtime bitstream and a committed image.
 
-if {[llength $argv] < 4 || [llength $argv] > 7} {
-    error "Usage: <trial-dir> <capture-dir> <capture-events:0|1> <expected-neurons> ?target-pattern? ?device-pattern? ?axis-pattern?"
+if {[llength $argv] < 4 || [llength $argv] > 8} {
+    error "Usage: <trial-dir> <capture-dir> <capture-events:0|1> <expected-neurons> ?target-pattern? ?device-pattern? ?axis-pattern? ?event-capacity?"
 }
 set trial_dir [file normalize [lindex $argv 0]]
 set capture_dir [file normalize [lindex $argv 1]]
@@ -18,6 +18,11 @@ set axis_pattern "*"
 if {[llength $argv] >= 5} {set target_pattern [lindex $argv 4]}
 if {[llength $argv] >= 6} {set device_pattern [lindex $argv 5]}
 if {[llength $argv] >= 7} {set axis_pattern [lindex $argv 6]}
+set event_capacity 65536
+if {[llength $argv] >= 8} {set event_capacity [lindex $argv 7]}
+if {$event_capacity != 65536 && $event_capacity != 131072} {
+    error "Event capacity must be 65536 or 131072"
+}
 if {$capture_events ne "0" && $capture_events ne "1"} {
     error "capture-events must be 0 or 1"
 }
@@ -193,8 +198,10 @@ if {$completed != $length} {
     error "Completed step count $completed differs from requested $length"
 }
 set global_events [read_word 0x0018]
-if {$capture_events && $global_events > 65536} {
-    error "Global event count $global_events exceeds 65536-event BRAM"
+# The Ethernet top reserves 0x70 for diagnostics, so capacity comes from the
+# SHA-256-pinned bitstream selected by the host, not from that address.
+if {$capture_events && $global_events > $event_capacity} {
+    error "Global event count $global_events exceeds $event_capacity-event BRAM"
 }
 
 file mkdir $capture_dir

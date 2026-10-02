@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import html
 import re
+import shutil
 from pathlib import Path
 
 from PIL import Image as PILImage
@@ -58,7 +59,7 @@ def page_footer(canvas, doc):
     canvas.saveState()
     canvas.setFont("Arial", 8)
     canvas.setFillColor(colors.HexColor("#687780"))
-    canvas.drawString(0.78*inch, 0.48*inch, "CNS2FPGA  |  28 September 2026")
+    canvas.drawString(0.78*inch, 0.48*inch, "CNS2FPGA  |  V0.3  |  2 October 2026")
     canvas.drawRightString(7.73*inch, 0.48*inch, str(doc.page))
     canvas.restoreState()
 
@@ -153,4 +154,6 @@ document = SimpleDocTemplate(
     title="CNS2FPGA Runtime Image Deployment", author="CNS2FPGA project"
 )
 document.build(story, onFirstPage=page_footer, onLaterPages=page_footer)
-print(OUTPUT)
+published = HERE / "manuscript_full_v2.pdf"
+shutil.copy2(OUTPUT, published)
+print(published)

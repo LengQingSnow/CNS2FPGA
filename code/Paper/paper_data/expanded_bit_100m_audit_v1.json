@@ -1,0 +1,125 @@
+{
+  "schema": "cns2fpga.100m_board_audit.v1",
+  "status": "PASS",
+  "test_date": "2026-10-01",
+  "board": "ALINX AXKU115 V1.0",
+  "bitstream_sha256": "D4C9378D461147062FA5DC590CB3647D241C789B01CC6255F38DA16CB21990DF",
+  "actual_link_mbps": 100,
+  "core_frequency_hz": 200000000,
+  "programming_operations_in_recorded_session": 1,
+  "status_probes_passed": 20,
+  "status_probes_total": 20,
+  "status_rtt_ms": [
+    1.16,
+    1.17,
+    1.76,
+    1.13,
+    0.94,
+    1.77,
+    1.13,
+    0.32,
+    0.33,
+    0.32,
+    0.24,
+    0.29,
+    0.31,
+    0.31,
+    0.32,
+    0.25,
+    0.35,
+    0.33,
+    0.35,
+    0.3
+  ],
+  "upload_words": 738044,
+  "upload_protocol_packets": 11538,
+  "image_checksum": "45AEAAAE",
+  "image_epoch": 1,
+  "steps": 8,
+  "ordered_events_compared": 2475,
+  "event_mismatches": 0,
+  "max_latency_cycles": 199699,
+  "period_cycles": 200000,
+  "deadline_margin_cycles": 301,
+  "missed_steps": 0,
+  "fault_flags": 0,
+  "bad_fcs_after_trial": 0,
+  "good_rx_counter_after_trial": 11783,
+  "udp_rx_counter_after_trial": 11710,
+  "capture_sha256": {
+    "registers.csv": "2040A597E156D60AADC9E3D8525E05999559B771C505245E256FE2F00F4BAC86",
+    "event_words.hex": "2B3A10A3F2CF9543E40CB0E65042DDF6C1E74E060EE286E4BB146627B25F6E0D",
+    "summary_words.hex": "E14B299E099213A994EFBE0245AB0657F7F20EAAC294BBCCD602E3FFD9289634"
+  },
+  "cpu_reference_sha256": {
+    "reference_summary.csv": "E048A6277A173553D07569FB9EF7BE6BAA7C87011062C5DF6EACFDEB3B171D8D",
+    "expected_spike.mem": "8B9751B64A2A7240D96A074002327FAC05FBCCD8D3418FDAA66F916171FF2C27"
+  },
+  "per_step": [
+    {
+      "timestep": 0,
+      "cpu_spikes": 93,
+      "board_spikes": 93,
+      "cycles": 51106,
+      "event_start": 0,
+      "flags": 0
+    },
+    {
+      "timestep": 1,
+      "cpu_spikes": 138,
+      "board_spikes": 138,
+      "cycles": 78304,
+      "event_start": 93,
+      "flags": 0
+    },
+    {
+      "timestep": 2,
+      "cpu_spikes": 322,
+      "board_spikes": 322,
+      "cycles": 124913,
+      "event_start": 231,
+      "flags": 0
+    },
+    {
+      "timestep": 3,
+      "cpu_spikes": 636,
+      "board_spikes": 636,
+      "cycles": 199699,
+      "event_start": 553,
+      "flags": 0
+    },
+    {
+      "timestep": 4,
+      "cpu_spikes": 616,
+      "board_spikes": 616,
+      "cycles": 167048,
+      "event_start": 1189,
+      "flags": 0
+    },
+    {
+      "timestep": 5,
+      "cpu_spikes": 346,
+      "board_spikes": 346,
+      "cycles": 106037,
+      "event_start": 1805,
+      "flags": 0
+    },
+    {
+      "timestep": 6,
+      "cpu_spikes": 227,
+      "board_spikes": 227,
+      "cycles": 96768,
+      "event_start": 2151,
+      "flags": 0
+    },
+    {
+      "timestep": 7,
+      "cpu_spikes": 97,
+      "board_spikes": 97,
+      "cycles": 65567,
+      "event_start": 2378,
+      "flags": 0
+    }
+  ],
+  "limits": "One measured 100-Mbps programming session and one eight-step trial; not a cold-boot reliability estimate. Prior 1-Gbps receive failures remain unresolved; cable capability is a hypothesis and further 1-Gbps tests are deferred."
+}

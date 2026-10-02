@@ -1,2 +1,6 @@
 # Keep archived data, hashes, and source bytes identical across platforms.
-* -text
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.pdf binary
+*.docx binary
+*.png binary
+*.bit binary

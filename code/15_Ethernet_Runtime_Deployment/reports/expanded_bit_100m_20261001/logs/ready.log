@@ -1,0 +1,3 @@
+# Selected public excerpt; complete original log retained locally.
+# Original SHA-256: C507288EB969B4065DD3343987ABD29397CF5C2AF06FF5A460BF4139BA4D0FF2
+ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=0 image_status=0x00000001 attempt=1 rtt_ms=1.50

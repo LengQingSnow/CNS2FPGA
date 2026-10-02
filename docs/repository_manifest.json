@@ -4,14 +4,20 @@
     {
       "path": ".gitattributes",
       "source": "code/others/release/.gitattributes",
-      "bytes": 83,
-      "sha256": "31e2d37d265d5b075aa1ad23ca9ac48216c2464a59b8b80a4e1a4013b03ed83f"
+      "bytes": 200,
+      "sha256": "066e88f3dfa51b469f2aa5bb914d94be13d16be840c9b107df7c3d8e91378139"
     },
     {
       "path": ".gitignore",
       "source": "code/others/release/.gitignore",
-      "bytes": 998,
-      "sha256": "899f1d0717d29b63f099a25213d0d3444b0b789852d2c9456bde5a74b373c4bd"
+      "bytes": 1404,
+      "sha256": "909d0f1208987ba3e00f624b72abed592d8993eee49b23cae9c7cc8898b34c85"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "source": "code/others/release/CHANGELOG.md",
+      "bytes": 6014,
+      "sha256": "df663ecf88d71c33654d80647bfbb690f45b160948d8694e76d720a03f33b8f6"
     },
     {
       "path": "DATA_PROVENANCE.md",
@@ -34,14 +40,20 @@
     {
       "path": "README.md",
       "source": "code/others/release/README.md",
-      "bytes": 10729,
-      "sha256": "489ca881164811415f96994a3dc6d5caf70ede54c18c271ad3ca550fc63536a7"
+      "bytes": 14693,
+      "sha256": "65a97d90b387d9d2698d2635af3dc2b20a37e177af4eb2454ef2be7e98212147"
     },
     {
       "path": "REPRODUCING.md",
       "source": "code/others/release/REPRODUCING.md",
-      "bytes": 8431,
-      "sha256": "4010d86eb53de9d5abd916a8831a30200ddffd3cb9aab4020cc51b1bcb6c6dc3"
+      "bytes": 11906,
+      "sha256": "caaba136042dabbc3ee26b5d3b515cecb638bb83d02e6118690884f7846f9565"
+    },
+    {
+      "path": "VERSION",
+      "source": "code/others/release/VERSION",
+      "bytes": 6,
+      "sha256": "d915cc95d6ca8f47ae297713ed46d4e5c5d99ddd29fc3c61e263bdf305f2b5b0"
     },
     {
       "path": "code/10_Complete Courtship-Song Circuit Experiment/README.md",
@@ -1570,8 +1582,8 @@
     {
       "path": "code/14_Runtime Reconfigurable Deployment/README.md",
       "source": "code/14_Runtime Reconfigurable Deployment/README.md",
-      "bytes": 6543,
-      "sha256": "4f10b4982b83cdd10850487100fa1bdb71304e6b67c5c55fa7b31fa23e07ebbf"
+      "bytes": 7666,
+      "sha256": "17c6f762b3a431063d59a557fa88e27d874808089cc64a07bda832513cc0412a"
     },
     {
       "path": "code/14_Runtime Reconfigurable Deployment/build_runtime_bitstream.ps1",
@@ -1588,8 +1600,8 @@
     {
       "path": "code/14_Runtime Reconfigurable Deployment/docs/implementation_status.md",
       "source": "code/14_Runtime Reconfigurable Deployment/docs/implementation_status.md",
-      "bytes": 2380,
-      "sha256": "b8b61d417a3e320592208029a6977cd5876cc2c3fb3d7fe3849f302fb7dca9b4"
+      "bytes": 2623,
+      "sha256": "f3f2159decb27f38c10c895413963697c6a74dd6673c3808fd59fdcefb60f3f2"
     },
     {
       "path": "code/14_Runtime Reconfigurable Deployment/host/load_runtime_image.ps1",
@@ -1618,16 +1630,23 @@
       "curation": "local host/Python path redacted for public release"
     },
     {
+      "path": "code/14_Runtime Reconfigurable Deployment/host/run_jtag_fault_recovery.ps1",
+      "source": "code/14_Runtime Reconfigurable Deployment/host/run_jtag_fault_recovery.ps1",
+      "bytes": 3285,
+      "sha256": "455afb9ce35cfee7d347f52a70b8b073319d8372b82da2b082b2a79c3c365f43",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
       "path": "code/14_Runtime Reconfigurable Deployment/host/run_runtime_trial.ps1",
       "source": "code/14_Runtime Reconfigurable Deployment/host/run_runtime_trial.ps1",
-      "bytes": 3659,
-      "sha256": "96532d6964decca8631fb41cc8bb592efc9c49d39fdec768326417bee7f5b6b3"
+      "bytes": 3761,
+      "sha256": "5b53424959ddc1fb4138fc7d9755444712eea7f9ad41d81432d52a45e73bb7f7"
     },
     {
       "path": "code/14_Runtime Reconfigurable Deployment/host/run_runtime_trial.tcl",
       "source": "code/14_Runtime Reconfigurable Deployment/host/run_runtime_trial.tcl",
-      "bytes": 8509,
-      "sha256": "e1b65f466d04b4e324bc3f7bf8f748d798bda87666bb68bb49fa4cf362585090"
+      "bytes": 8915,
+      "sha256": "c2710903aa017c1149e2a5d21b8dfa4e8e557ee09c8f648b0bc4506fc6826f80"
     },
     {
       "path": "code/14_Runtime Reconfigurable Deployment/host/run_two_image_demo.ps1",
@@ -1635,6 +1654,12 @@
       "bytes": 3510,
       "sha256": "25f7dc50ceaf76478bdc446365ec2150c53818c67a57259f52a368b58a71be35",
       "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/host/test_jtag_fault_recovery.tcl",
+      "source": "code/14_Runtime Reconfigurable Deployment/host/test_jtag_fault_recovery.tcl",
+      "bytes": 4046,
+      "sha256": "fd9b1a2cccee2bff80261a2a1085a143355558a89beda3447c1588ae1b2f5326"
     },
     {
       "path": "code/14_Runtime Reconfigurable Deployment/host/test_verify_runtime_capture.py",
@@ -1653,6 +1678,81 @@
       "source": "code/14_Runtime Reconfigurable Deployment/program_runtime_bitstream.ps1",
       "bytes": 957,
       "sha256": "e6a8547485079c0024ec642f36402977ab99272ed39e05dca77f76f94ddaf5d7"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930/courtship/event_words.hex",
+      "source": "code/14_Runtime Reconfigurable Deployment/build/p0_jtag_20260930/courtship/event_words.hex",
+      "bytes": 24750,
+      "sha256": "2b3a10a3f2cf9543e40cb0e65042ddf6c1e74e060ee286e4bb146627b25f6e0d"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930/courtship/registers.csv",
+      "source": "code/14_Runtime Reconfigurable Deployment/build/p0_jtag_20260930/courtship/registers.csv",
+      "bytes": 376,
+      "sha256": "68253b626652016a10e9dc46e7b7564bb2a55f9b721e325085ff5ff1c0005644"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930/courtship/summary_words.hex",
+      "source": "code/14_Runtime Reconfigurable Deployment/build/p0_jtag_20260930/courtship/summary_words.hex",
+      "bytes": 640,
+      "sha256": "e14b299e099213a994efbe0245ab0657f7f20eaac294bbccd602e3ffd9289634"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930/interrupt.log",
+      "source": "code/14_Runtime Reconfigurable Deployment/build/p0_jtag_recovery_logged_20260930/interrupt.log",
+      "bytes": 2488,
+      "sha256": "1ce207a4cbd82c3e4b40d816e08132ec094ffe81254e9ede530e8d4e72bda9dc",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930/reject.log",
+      "source": "code/14_Runtime Reconfigurable Deployment/build/p0_jtag_recovery_logged_20260930/reject.log",
+      "bytes": 2162,
+      "sha256": "e1a45cdaea4acd27b76de424f6228816c84a5e3a78bce70fe82057333f83c779",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930/transcript.log",
+      "source": "code/14_Runtime Reconfigurable Deployment/build/p0_jtag_20260930_transcript.log",
+      "bytes": 2907,
+      "sha256": "b4f11a3f5d9ab0215bb55be928f790ed552d89efe758dc49d0d243e962ad5bea",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930/visual/event_words.hex",
+      "source": "code/14_Runtime Reconfigurable Deployment/build/p0_jtag_20260930/visual/event_words.hex",
+      "bytes": 5600,
+      "sha256": "3312ec497cc7087671cfd1737b46795f30c18ef2377fd71b5dc24beacfb49c04"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930/visual/registers.csv",
+      "source": "code/14_Runtime Reconfigurable Deployment/build/p0_jtag_20260930/visual/registers.csv",
+      "bytes": 376,
+      "sha256": "e92b571db2de8c11aed0ff632599d32e21257832f576f8760a407ba8ea5bd436"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930/visual/summary_words.hex",
+      "source": "code/14_Runtime Reconfigurable Deployment/build/p0_jtag_20260930/visual/summary_words.hex",
+      "bytes": 20000,
+      "sha256": "1b9897a9fb2c564a100d8140868ca1b2a99b7f11a6138960b64a65d6438b6c80"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930/visual_recovered/event_words.hex",
+      "source": "code/14_Runtime Reconfigurable Deployment/build/p0_jtag_recovery_logged_20260930/visual_recovered/event_words.hex",
+      "bytes": 5600,
+      "sha256": "3312ec497cc7087671cfd1737b46795f30c18ef2377fd71b5dc24beacfb49c04"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930/visual_recovered/registers.csv",
+      "source": "code/14_Runtime Reconfigurable Deployment/build/p0_jtag_recovery_logged_20260930/visual_recovered/registers.csv",
+      "bytes": 376,
+      "sha256": "e7cf00f3b76f11ea9f64c01f66b1d698041f5edabdf601c937ba58af8d5b251f"
+    },
+    {
+      "path": "code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930/visual_recovered/summary_words.hex",
+      "source": "code/14_Runtime Reconfigurable Deployment/build/p0_jtag_recovery_logged_20260930/visual_recovered/summary_words.hex",
+      "bytes": 20000,
+      "sha256": "1b9897a9fb2c564a100d8140868ca1b2a99b7f11a6138960b64a65d6438b6c80"
     },
     {
       "path": "code/14_Runtime Reconfigurable Deployment/reports/runtime_jtag_200mhz/drc.rpt",
@@ -1769,8 +1869,8 @@
     {
       "path": "code/14_Runtime Reconfigurable Deployment/rtl/cns2fpga_trial_engine_runtime.sv",
       "source": "code/14_Runtime Reconfigurable Deployment/rtl/cns2fpga_trial_engine_runtime.sv",
-      "bytes": 26365,
-      "sha256": "82bb63bb3965f9a5f56b11cb199fcf23ed9fca3237aaaec01b33821611a1cc16"
+      "bytes": 26424,
+      "sha256": "827482ec4351832e9863fdfd85f9a3e914b3af727680c20223496cf1e023a4ec"
     },
     {
       "path": "code/14_Runtime Reconfigurable Deployment/scripts/benchmark_axi_queue.tcl",
@@ -1907,8 +2007,8 @@
     {
       "path": "code/15_Ethernet_Runtime_Deployment/README.md",
       "source": "code/15_Ethernet_Runtime_Deployment/README.md",
-      "bytes": 9326,
-      "sha256": "dd29570098cda22e240d25192a4617480e716c44a6a2df85a235c893e470377b"
+      "bytes": 15426,
+      "sha256": "99f795af8be43d2669909e350aa90e988db9d5d6a3b24c7d5ee504b754f54918"
     },
     {
       "path": "code/15_Ethernet_Runtime_Deployment/build_ethernet_bitstream.ps1",
@@ -1929,10 +2029,48 @@
       "sha256": "722668d630ef9e7a380cf6f437e755dce4d7c3fa1ad586cb0b13d1a116599f4e"
     },
     {
+      "path": "code/15_Ethernet_Runtime_Deployment/host/run_ethernet_p0_campaign.ps1",
+      "source": "code/15_Ethernet_Runtime_Deployment/host/run_ethernet_p0_campaign.ps1",
+      "bytes": 9056,
+      "sha256": "fdcfc9bd10e4f73f7364e1886885f9e23f9c354a42e827df09e31da07e2fafaf",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/host/run_long_event_campaign.ps1",
+      "source": "code/15_Ethernet_Runtime_Deployment/host/run_long_event_campaign.ps1",
+      "bytes": 4104,
+      "sha256": "c2be88a497706f04597e0da0d8c5499c1a4d591ecbe141d2e3751d009a437caf",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/host/run_p0_detached_worker.ps1",
+      "source": "code/15_Ethernet_Runtime_Deployment/host/run_p0_detached_worker.ps1",
+      "bytes": 1277,
+      "sha256": "286924c712b0ec65e94a2a4404adaed3ccf4665f18769266cd04e107b28dce79"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/host/test_udp_recovery.py",
+      "source": "code/15_Ethernet_Runtime_Deployment/host/test_udp_recovery.py",
+      "bytes": 3850,
+      "sha256": "a08c4e0b439edd4bd8adfed788fbdedabda2d97a82c5d6d91b1152b4f15ca6e8"
+    },
+    {
       "path": "code/15_Ethernet_Runtime_Deployment/host/upload_image_udp.py",
       "source": "code/15_Ethernet_Runtime_Deployment/host/upload_image_udp.py",
       "bytes": 6310,
       "sha256": "b3389485a06e9a2c968919c6293159d96e007d506d36a44caffc100037280efb"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/host/verify_long_event_capture.py",
+      "source": "code/15_Ethernet_Runtime_Deployment/host/verify_long_event_capture.py",
+      "bytes": 5563,
+      "sha256": "0e0e6d45115fee77c01e9d0bfacdcb1c7f28d8816e4f3ee62cb1b6595e49f865"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/host/verify_long_runtime_capture.py",
+      "source": "code/15_Ethernet_Runtime_Deployment/host/verify_long_runtime_capture.py",
+      "bytes": 4221,
+      "sha256": "4a9191744875d332d049cc1b182f0d9c2d076702f1a2448cb56c67483952387f"
     },
     {
       "path": "code/15_Ethernet_Runtime_Deployment/program_ethernet_bitstream.ps1",
@@ -1971,16 +2109,503 @@
       "sha256": "22f408af720ea7dcf549e5b7365a00a659d1c81c3715ada852fe06a0bbdcfdcb"
     },
     {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/ethernet_100m_vs_1g_diagnosis_20261001.md",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/ethernet_100m_vs_1g_diagnosis_20261001.md",
+      "bytes": 6472,
+      "sha256": "5cf294b3e15fd167a1d4856fd2e5c66ad765cc6a6f4826308e88351bdf2c5700"
+    },
+    {
       "path": "code/15_Ethernet_Runtime_Deployment/reports/ethernet_probe/capture.log",
       "source": "code/others/release/evidence/ethernet_visual_status_excerpt.log",
       "bytes": 308,
       "sha256": "37d11a8603189a464affe50a9033f0a9d041ecf66df2725ef5c437e70bc2a3d0"
     },
     {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/board/event_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/board/event_words.hex",
+      "bytes": 24750,
+      "sha256": "2b3a10a3f2cf9543e40cb0e65042ddf6c1e74e060ee286e4bb146627b25f6e0d"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/board/registers.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/board/registers.csv",
+      "bytes": 376,
+      "sha256": "2040a597e156d60aadc9e3d8525e05999559b771c505245e256fe2f00f4bac86"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/board/summary_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/board/summary_words.hex",
+      "bytes": 640,
+      "sha256": "e14b299e099213a994efbe0245ab0657f7f20eaac294bbccd602e3ffd9289634"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/logs/diag.log",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/logs/diag.log",
+      "bytes": 381,
+      "sha256": "de39b537f90be189dcb2150dc9875eb3c2107a0a84e9322cb5f32ad5c5b0c642"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/logs/link.log",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/logs/link.log",
+      "bytes": 273,
+      "sha256": "f9107fae4e3d162c58581c561d0babb74b69f7872a74e2a9a21716573f410bbb"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/logs/program.log",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/logs/program.log",
+      "bytes": 180,
+      "sha256": "4a21f10b7474a94b84912616646f333d9b7c30696c49fec88e44cc0a4a071bf1"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/logs/ready.log",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/logs/ready.log",
+      "bytes": 259,
+      "sha256": "7c3f46205ced2e90a91115dedc22afa3f80aad8a8cecc408ee0ee98f85f60762"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/logs/restore.log",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/logs/restore.log",
+      "bytes": 384,
+      "sha256": "5670052d4677f9f469af6ac90f7e38db10454887759893399a5fd73181e212e4"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/logs/status_repeat.log",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/logs/status_repeat.log",
+      "bytes": 2423,
+      "sha256": "40fc0e004a55e8676210781b64316694d91a80022fe075bb50258e4f18863ab0"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/logs/upload.log",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/logs/upload.log",
+      "bytes": 298,
+      "sha256": "b6fd361400274cd312ee7a7118e6374b01e20eae2258fd98e32c4f690641d8ff"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_audit_v1.json",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_audit_v1.json",
+      "bytes": 3168,
+      "sha256": "1b61d18058c8d7ffceeaace8b799235c268fae7b1e290a7b00c08d3072416a18"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_board_test_20261001.md",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_board_test_20261001.md",
+      "bytes": 3676,
+      "sha256": "3e8c67ce9f4cc08f3547ea101f46543273ac9559c0addf71ae779d33eff53858"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/campaign_status.json",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/campaign_status.json",
+      "bytes": 242,
+      "sha256": "31f89c27c63540e2a7c4a32695b08dcdcf390273bc140195b50a150188dd06e7"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/first_program_attempt_status.json",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/first_program_attempt_status.json",
+      "bytes": 219,
+      "sha256": "f1d6fa52c39e97e5105f9a87be879d59b726e0dcdd2daa43f79daf85a10df7b8"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_15/board/event_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_15/board/event_words.hex",
+      "bytes": 408680,
+      "sha256": "e9073341c8d0c539c18f72b67c6990bce39d7ba0a26933905ed52282e513eae1"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_15/board/registers.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_15/board/registers.csv",
+      "bytes": 376,
+      "sha256": "16819cd2d78282ba9c7ec8a3d08f582978648c90b8f2f6b088860681e2db2e79"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_15/board/summary_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_15/board/summary_words.hex",
+      "bytes": 344640,
+      "sha256": "1abc80bbbb72061a51aed3d3e7f2b8194cdfd38ee6b065dd9ef7ad285046973c"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_15/cpu/expected_counts.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_15/cpu/expected_counts.csv",
+      "bytes": 34088,
+      "sha256": "8fcd3a27f8f6d3c6682750893b54a3985318bb792780cd827a58c370626b5fbc"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_15/cpu/expected_events.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_15/cpu/expected_events.csv",
+      "bytes": 396635,
+      "sha256": "1bac36f8cd34d42052460653ce5d4f12721784afd513d4fdbfecad4735d09ac7"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_15/cpu/reference_manifest.json",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_15/cpu/reference_manifest.json",
+      "bytes": 375,
+      "sha256": "7c1c50bb3f97f1858549fbad470250265bf308eeffe966755c4fe702254f7db1"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_15/verification.json",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_15/verification.json",
+      "bytes": 688,
+      "sha256": "1fb432b4edd0dce3f4bf695dd941c2df5396710a4fc3958a51320acdcc8193c9"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_35/board/event_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_35/board/event_words.hex",
+      "bytes": 747650,
+      "sha256": "bd6eaa6693661548d9ea8b0ee76c84eb15e0029b07c10cb9927707a26f2c7abd"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_35/board/registers.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_35/board/registers.csv",
+      "bytes": 376,
+      "sha256": "32530d40886429a11a8f1ef1020fd143ba5ac5940320ca5d961028fe041945e3"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_35/board/summary_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_35/board/summary_words.hex",
+      "bytes": 344640,
+      "sha256": "2537fc54af0baf65bb9a3d761895dbda1dd395e2474616f61c5047407d6fb44f"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_35/cpu/expected_counts.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_35/cpu/expected_counts.csv",
+      "bytes": 34296,
+      "sha256": "9d0a03c5b5a132ee397a76371ab592a0b08f70d7b8917f60518b9f2a19802b17"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_35/cpu/expected_events.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_35/cpu/expected_events.csv",
+      "bytes": 750876,
+      "sha256": "2f9fc4248916e66e7bd23d3ae7414a84da9a717f55e2f78c78305236b40d186e"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_35/cpu/reference_manifest.json",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_35/cpu/reference_manifest.json",
+      "bytes": 375,
+      "sha256": "43172750cf3c61e33a79f49608c00a1dd6837404aefce948c72c76552ca43c2c"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_35/verification.json",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_35/verification.json",
+      "bytes": 688,
+      "sha256": "055dffc3a8dd2650380a9b27a8c329e8aab0b50fd8ab019f1150abd8cac1fbf8"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_65/board/event_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_65/board/event_words.hex",
+      "bytes": 993490,
+      "sha256": "78ff5b9b513153959c7f90907dbfa61f058b515a691f6d36d65ea7bdcd945194"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_65/board/registers.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_65/board/registers.csv",
+      "bytes": 376,
+      "sha256": "57347a3f152c93010001617ec6a29acf0c35aed85ae12fd07927934ee3d5c38b"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_65/board/summary_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_65/board/summary_words.hex",
+      "bytes": 344640,
+      "sha256": "330953fcb8d7fa23bd5fbe720b55845d77d2e20e8a3c407815e075d68fd537d4"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_65/cpu/expected_counts.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_65/cpu/expected_counts.csv",
+      "bytes": 34252,
+      "sha256": "9aadd7c9ad5921c09c3d7dd93098e1e9796f7a93c5a34da9cb8a4306c0b5e622"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_65/cpu/expected_events.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_65/cpu/expected_events.csv",
+      "bytes": 1029412,
+      "sha256": "05cacf352e4d031031851f54570639f3c1ed0af75d60ccc2d3fe5243136086b5"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_65/cpu/reference_manifest.json",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_65/cpu/reference_manifest.json",
+      "bytes": 375,
+      "sha256": "5792b4d79e72d1fa54525f2f78aa73549003d0aed5a741d07a59174064488635"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_65/verification.json",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_65/verification.json",
+      "bytes": 688,
+      "sha256": "37ad65e802ac0878e2ddb45a7e9709b0069587d7d1a9bc7ad8d36ce4510d5424"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/old_bit_ipi_15/event_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/old_bit_ipi_15/event_words.hex",
+      "bytes": 408680,
+      "sha256": "e9073341c8d0c539c18f72b67c6990bce39d7ba0a26933905ed52282e513eae1"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/old_bit_ipi_15/registers.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/old_bit_ipi_15/registers.csv",
+      "bytes": 401,
+      "sha256": "ab3c1c8c2b348fb5127115d136256d0b4dbb17b15ae6f49e7bee910a23265377"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/old_bit_ipi_15/summary_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/old_bit_ipi_15/summary_words.hex",
+      "bytes": 344640,
+      "sha256": "1abc80bbbb72061a51aed3d3e7f2b8194cdfd38ee6b065dd9ef7ad285046973c"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/physical_signoff.txt",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/physical_signoff.txt",
+      "bytes": 251,
+      "sha256": "7b46ff322c06c272b603b83e0c122a7b2d04d10c8c3643967597ab5ee162adbf"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_audit_v1.json",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_audit_v1.json",
+      "bytes": 7025,
+      "sha256": "8cb6d999147f4622ed354deac9c0647cd1c1036bc85b69dc876a664de67a462c"
+    },
+    {
       "path": "code/15_Ethernet_Runtime_Deployment/reports/old_new_board_comparison_v1.json",
       "source": "code/15_Ethernet_Runtime_Deployment/reports/old_new_board_comparison_v1.json",
       "bytes": 4399,
       "sha256": "39a4a80055df4a845fc143f2242e79c5b29ba4d51dc3205c96d6ed2f399a6b42"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/campaign.log",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached.log",
+      "bytes": 103927,
+      "sha256": "d36420bae798d06ae41adad129ed4865c356d621ca8d54c732edc908a8514697",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/campaign_summary.json",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/campaign_summary.json",
+      "bytes": 1028,
+      "sha256": "545f1814024ddef82aa2e0d2c7545807d581da85632b38e63a9bcddd020c1654"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_1/courtship_ipi_15/registers.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_1/courtship_ipi_15/registers.csv",
+      "bytes": 376,
+      "sha256": "425b9ca7b63d1be44b50764da12769abb5ea75fa800f05db60da203ef354662d"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_1/courtship_ipi_15/summary_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_1/courtship_ipi_15/summary_words.hex",
+      "bytes": 344640,
+      "sha256": "60e5065fb844c048078fd8aa1b6a299f6860b6a1a2271ee721c77c1cf6fc37f7"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_1/courtship_ipi_15_parsed/counts.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_1/courtship_ipi_15_parsed/counts.csv",
+      "bytes": 169618,
+      "sha256": "341669e5f5ea719fac32458924294cc9191981b7bb22f5261a3ba57ea8d8f64b"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_1/courtship_ipi_35/registers.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_1/courtship_ipi_35/registers.csv",
+      "bytes": 376,
+      "sha256": "0a3d55b6fe1b60653bed075549baea6667f8baa50713084f8671f7132dcf6f55"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_1/courtship_ipi_35/summary_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_1/courtship_ipi_35/summary_words.hex",
+      "bytes": 344640,
+      "sha256": "aaa83ccd3c4ffe39b6f86425a04d3369a7602a94740985c6add983163ad425e2"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_1/courtship_ipi_35_parsed/counts.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_1/courtship_ipi_35_parsed/counts.csv",
+      "bytes": 170376,
+      "sha256": "fb9ca47d7bfe8e77f88c658bf6d5c5a00d58b6485eb6f5ce7d2c5919d994f4ac"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_1/courtship_ipi_65/registers.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_1/courtship_ipi_65/registers.csv",
+      "bytes": 376,
+      "sha256": "370470568b734696ebfe277ef446ecf88c04a3a3b4cf22bd88edcd85cbd56805"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_1/courtship_ipi_65/summary_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_1/courtship_ipi_65/summary_words.hex",
+      "bytes": 344640,
+      "sha256": "c081ca7eea83a6cc184d14e68ab1e51898da4b6f65cb83c8699da3baa18d8396"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_1/courtship_ipi_65_parsed/counts.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_1/courtship_ipi_65_parsed/counts.csv",
+      "bytes": 170389,
+      "sha256": "94b7da5132fc0d004fb217359fa6f93cae9f2aecac22f164ea24d0930dd2793a"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_1/courtship_smoke8/event_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_1/courtship_smoke8/event_words.hex",
+      "bytes": 24750,
+      "sha256": "2b3a10a3f2cf9543e40cb0e65042ddf6c1e74e060ee286e4bb146627b25f6e0d"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_1/courtship_smoke8/registers.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_1/courtship_smoke8/registers.csv",
+      "bytes": 376,
+      "sha256": "68253b626652016a10e9dc46e7b7564bb2a55f9b721e325085ff5ff1c0005644"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_1/courtship_smoke8/summary_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_1/courtship_smoke8/summary_words.hex",
+      "bytes": 640,
+      "sha256": "e14b299e099213a994efbe0245ab0657f7f20eaac294bbccd602e3ffd9289634"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_1/visual_250/event_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_1/visual_250/event_words.hex",
+      "bytes": 5600,
+      "sha256": "3312ec497cc7087671cfd1737b46795f30c18ef2377fd71b5dc24beacfb49c04"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_1/visual_250/registers.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_1/visual_250/registers.csv",
+      "bytes": 376,
+      "sha256": "e92b571db2de8c11aed0ff632599d32e21257832f576f8760a407ba8ea5bd436"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_1/visual_250/summary_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_1/visual_250/summary_words.hex",
+      "bytes": 20000,
+      "sha256": "1b9897a9fb2c564a100d8140868ca1b2a99b7f11a6138960b64a65d6438b6c80"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_1/visual_recovered_250/event_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_1/visual_recovered_250/event_words.hex",
+      "bytes": 5600,
+      "sha256": "3312ec497cc7087671cfd1737b46795f30c18ef2377fd71b5dc24beacfb49c04"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_1/visual_recovered_250/registers.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_1/visual_recovered_250/registers.csv",
+      "bytes": 376,
+      "sha256": "6c5bf1b0c04d0d143a7be290892f495d32500f69c828cbf3cb0edfd07672a73c"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_1/visual_recovered_250/summary_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_1/visual_recovered_250/summary_words.hex",
+      "bytes": 20000,
+      "sha256": "1b9897a9fb2c564a100d8140868ca1b2a99b7f11a6138960b64a65d6438b6c80"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_2/courtship_ipi_15/registers.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_2/courtship_ipi_15/registers.csv",
+      "bytes": 376,
+      "sha256": "425b9ca7b63d1be44b50764da12769abb5ea75fa800f05db60da203ef354662d"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_2/courtship_ipi_15/summary_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_2/courtship_ipi_15/summary_words.hex",
+      "bytes": 344640,
+      "sha256": "60e5065fb844c048078fd8aa1b6a299f6860b6a1a2271ee721c77c1cf6fc37f7"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_2/courtship_ipi_15_parsed/counts.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_2/courtship_ipi_15_parsed/counts.csv",
+      "bytes": 169618,
+      "sha256": "341669e5f5ea719fac32458924294cc9191981b7bb22f5261a3ba57ea8d8f64b"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_2/courtship_ipi_35/registers.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_2/courtship_ipi_35/registers.csv",
+      "bytes": 376,
+      "sha256": "0a3d55b6fe1b60653bed075549baea6667f8baa50713084f8671f7132dcf6f55"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_2/courtship_ipi_35/summary_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_2/courtship_ipi_35/summary_words.hex",
+      "bytes": 344640,
+      "sha256": "aaa83ccd3c4ffe39b6f86425a04d3369a7602a94740985c6add983163ad425e2"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_2/courtship_ipi_35_parsed/counts.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_2/courtship_ipi_35_parsed/counts.csv",
+      "bytes": 170376,
+      "sha256": "fb9ca47d7bfe8e77f88c658bf6d5c5a00d58b6485eb6f5ce7d2c5919d994f4ac"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_2/courtship_ipi_65/registers.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_2/courtship_ipi_65/registers.csv",
+      "bytes": 376,
+      "sha256": "370470568b734696ebfe277ef446ecf88c04a3a3b4cf22bd88edcd85cbd56805"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_2/courtship_ipi_65/summary_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_2/courtship_ipi_65/summary_words.hex",
+      "bytes": 344640,
+      "sha256": "c081ca7eea83a6cc184d14e68ab1e51898da4b6f65cb83c8699da3baa18d8396"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_2/courtship_ipi_65_parsed/counts.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_2/courtship_ipi_65_parsed/counts.csv",
+      "bytes": 170389,
+      "sha256": "94b7da5132fc0d004fb217359fa6f93cae9f2aecac22f164ea24d0930dd2793a"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_2/courtship_smoke8/event_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_2/courtship_smoke8/event_words.hex",
+      "bytes": 24750,
+      "sha256": "2b3a10a3f2cf9543e40cb0e65042ddf6c1e74e060ee286e4bb146627b25f6e0d"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_2/courtship_smoke8/registers.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_2/courtship_smoke8/registers.csv",
+      "bytes": 376,
+      "sha256": "68253b626652016a10e9dc46e7b7564bb2a55f9b721e325085ff5ff1c0005644"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_2/courtship_smoke8/summary_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_2/courtship_smoke8/summary_words.hex",
+      "bytes": 640,
+      "sha256": "e14b299e099213a994efbe0245ab0657f7f20eaac294bbccd602e3ffd9289634"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_2/visual_250/event_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_2/visual_250/event_words.hex",
+      "bytes": 5600,
+      "sha256": "3312ec497cc7087671cfd1737b46795f30c18ef2377fd71b5dc24beacfb49c04"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_2/visual_250/registers.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_2/visual_250/registers.csv",
+      "bytes": 376,
+      "sha256": "e92b571db2de8c11aed0ff632599d32e21257832f576f8760a407ba8ea5bd436"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_2/visual_250/summary_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_2/visual_250/summary_words.hex",
+      "bytes": 20000,
+      "sha256": "1b9897a9fb2c564a100d8140868ca1b2a99b7f11a6138960b64a65d6438b6c80"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_2/visual_recovered_250/event_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_2/visual_recovered_250/event_words.hex",
+      "bytes": 5600,
+      "sha256": "3312ec497cc7087671cfd1737b46795f30c18ef2377fd71b5dc24beacfb49c04"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_2/visual_recovered_250/registers.csv",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_2/visual_recovered_250/registers.csv",
+      "bytes": 376,
+      "sha256": "6c5bf1b0c04d0d143a7be290892f495d32500f69c828cbf3cb0edfd07672a73c"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/session_2/visual_recovered_250/summary_words.hex",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/p0_ethernet_20260930_detached/session_2/visual_recovered_250/summary_words.hex",
+      "bytes": 20000,
+      "sha256": "1b9897a9fb2c564a100d8140868ca1b2a99b7f11a6138960b64a65d6438b6c80"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_audit_v1.json",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_audit_v1.json",
+      "bytes": 12674,
+      "sha256": "30900bc5d33e9c35b804237ac01136f60c4936ff09aeefee38ce4b8f095a958c"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/p0_host_link_observation_20260930.md",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/p0_host_link_observation_20260930.md",
+      "bytes": 915,
+      "sha256": "d6a748c66ed296c8a6cc6d9064105f91734b40d9adce46aa77cfcd7479dd63e4"
     },
     {
       "path": "code/15_Ethernet_Runtime_Deployment/reports/runtime_eth_portfilter_200mhz/post_route_utilization.rpt",
@@ -1994,6 +2619,40 @@
       "source": "code/15_Ethernet_Runtime_Deployment/reports/runtime_eth_portfilter_200mhz/run_status.txt",
       "bytes": 251,
       "sha256": "740c4d1f00d2558a1fdb718584dca03f2369627f65a111e4c795684d377aa7a0"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/rx_input_timing_new_20261001_max.rpt",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/rx_input_timing_new_20261001_max.rpt",
+      "bytes": 34280,
+      "sha256": "404ce3cf1b1203614a76d352c49175821d6dce2ce82c4b277aa8fe86f1006f55",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/rx_input_timing_new_20261001_min.rpt",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/rx_input_timing_new_20261001_min.rpt",
+      "bytes": 34165,
+      "sha256": "5ccf454330d2119b5e59655c61bdb83d6a01f564973ec26996c2393e1aaa85c4",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/rx_input_timing_old_20261001_max.rpt",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/rx_input_timing_old_20261001_max.rpt",
+      "bytes": 42944,
+      "sha256": "232adf2ad42f4c3e30f5fc4b2a45838254aa8ae8ca613998c32b2cec82242739",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/rx_input_timing_old_20261001_min.rpt",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/rx_input_timing_old_20261001_min.rpt",
+      "bytes": 42826,
+      "sha256": "d392fb8361e9bb5750fb5d29829dbfa63e9dfbe8cef6bea121fdba005e10bf67",
+      "curation": "local host/Python path redacted for public release"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/reports/startup_stability_probe_20260930.md",
+      "source": "code/15_Ethernet_Runtime_Deployment/reports/startup_stability_probe_20260930.md",
+      "bytes": 8818,
+      "sha256": "388e6a3d5f5be357ca365645a31483a9844147d04a015d05bce2839e22c57a5d"
     },
     {
       "path": "code/15_Ethernet_Runtime_Deployment/reports/visual_upload/visual_upload_20260928_072611.log",
@@ -2032,6 +2691,30 @@
       "sha256": "c797a76ae5b955b93542c83c1727d0e6a1e8b4442f8e70a5e4e60a12bbb034aa"
     },
     {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/audit_100m_board_test.py",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/audit_100m_board_test.py",
+      "bytes": 9489,
+      "sha256": "82c0ebce1ed90bef5bfa93fb036bce25845a40b7b9c422adeaae1d46b576070c"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/audit_long_event_campaign.py",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/audit_long_event_campaign.py",
+      "bytes": 6871,
+      "sha256": "258b60ee70f3107b357e39614e3c95d4236f48c57e3cf2ef2cb302085a3db53f"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/audit_p0_campaign.py",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/audit_p0_campaign.py",
+      "bytes": 13514,
+      "sha256": "1cebfaba0459d59fa093020e9275aec2cf5b5b481a1ff3eea8afd324702f44a4"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/audit_rx_input_timing.tcl",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/audit_rx_input_timing.tcl",
+      "bytes": 1116,
+      "sha256": "897c7217ba3420a605c4e91329a033d9cd118995d8c0facc52f7cec306804e5c"
+    },
+    {
       "path": "code/15_Ethernet_Runtime_Deployment/scripts/build_deployment_evidence.py",
       "source": "code/15_Ethernet_Runtime_Deployment/scripts/build_deployment_evidence.py",
       "bytes": 8613,
@@ -2041,7 +2724,7 @@
       "path": "code/15_Ethernet_Runtime_Deployment/scripts/build_ethernet_bitstream.tcl",
       "source": "code/15_Ethernet_Runtime_Deployment/scripts/build_ethernet_bitstream.tcl",
       "bytes": 5818,
-      "sha256": "09160531eb5ea6d6a63bfe707b79aab4f7e44513d13afb33649fef7efcae8f38"
+      "sha256": "47f6238be212f0c27ddb0a2ac113b6c3602c18d8c100030c44ced4945ed71774"
     },
     {
       "path": "code/15_Ethernet_Runtime_Deployment/scripts/build_old_new_board_comparison.py",
@@ -2068,6 +2751,12 @@
       "sha256": "33ab8dceb0d4fab147a93c3487921b86acc53244c2ec2dc1bbde55b813577404"
     },
     {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/generate_long_event_reference.py",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/generate_long_event_reference.py",
+      "bytes": 4239,
+      "sha256": "6c54b29c36e37ac7b3a7d1e61fed61fb5243f092167c08bd52f18f7064f316b4"
+    },
+    {
       "path": "code/15_Ethernet_Runtime_Deployment/scripts/inspect_eth_clocks.tcl",
       "source": "code/15_Ethernet_Runtime_Deployment/scripts/inspect_eth_clocks.tcl",
       "bytes": 501,
@@ -2090,6 +2779,12 @@
       "source": "code/15_Ethernet_Runtime_Deployment/scripts/program_ethernet_bitstream.tcl",
       "bytes": 1370,
       "sha256": "0406e4cf817082e3b7c7d73f2413d9493f726c8c66f7fc1bffaf76b6d1b4ed59"
+    },
+    {
+      "path": "code/15_Ethernet_Runtime_Deployment/scripts/read_phy_rgmii_skew.tcl",
+      "source": "code/15_Ethernet_Runtime_Deployment/scripts/read_phy_rgmii_skew.tcl",
+      "bytes": 2382,
+      "sha256": "c058ccaaa63802a497e21081114b9b63e6ef2972a81bb50b57b3ab2049710d60"
     },
     {
       "path": "code/15_Ethernet_Runtime_Deployment/scripts/restart_phy_autoneg.tcl",
@@ -6565,26 +7260,32 @@
     {
       "path": "code/EXECUTION_STATUS.md",
       "source": "code/EXECUTION_STATUS.md",
-      "bytes": 2827,
-      "sha256": "3aaa80051071cdf7d515d5cb8069791fb48a72dea78314f1291b9b24bfad0c94"
+      "bytes": 3934,
+      "sha256": "d9249f10eca2eec994bf6d6ebe0cb90b019bbccc6cb50c77af9fb2a62b2620af"
     },
     {
       "path": "code/Paper/README.md",
       "source": "code/Paper/README.md",
-      "bytes": 2844,
-      "sha256": "3c244324d636e8034cae58ebcb699b224ceb24d69b8e583d6821fd52c5eba7f0"
+      "bytes": 5425,
+      "sha256": "da55b3d56e5e5ec6a42d37a96633c3fdd0a8f8b79b8e92d3cf514ac08932bfe0"
     },
     {
       "path": "code/Paper/build_paper_package.py",
       "source": "code/Paper/build_paper_package.py",
-      "bytes": 14159,
-      "sha256": "5fe2a7991463863638ccdafbadbafc916c342dd3e13f7861a8d2ef89dbb8e3d8"
+      "bytes": 16693,
+      "sha256": "f3af2426c083749be2c614ac599ddaac575c63fafbe5d8ceeb2fda497a87ac64"
     },
     {
       "path": "code/Paper/build_paper_pdf.py",
       "source": "code/Paper/build_paper_pdf.py",
-      "bytes": 6772,
-      "sha256": "07197847a017e900dd790d6b21a199508caa96fe41e858d77bd14c5d5375df40"
+      "bytes": 6871,
+      "sha256": "8f52500eaeebea9091e01a84228578842cef8b60651d078dfd66128c2d625a4e"
+    },
+    {
+      "path": "code/Paper/figures/figure10_100m_board_validation.png",
+      "source": "code/Paper/figures/figure10_100m_board_validation.png",
+      "bytes": 172441,
+      "sha256": "3f9233a7be637356b511977671be1b3a27551572e4ead508a4fd584bf32111d3"
     },
     {
       "path": "code/Paper/figures/figure1_pipeline.png",
@@ -6629,6 +7330,18 @@
       "sha256": "6d2e416addb95f20635dc426e4cd355f2ae2751eb9a498ab884ae450b2bff476"
     },
     {
+      "path": "code/Paper/figures/figure8_p0_repeated_board_validation.png",
+      "source": "code/Paper/figures/figure8_p0_repeated_board_validation.png",
+      "bytes": 145357,
+      "sha256": "627eeb7501006a244ba633a8387d3fd4596c1e461c7560e68fb5680ba59cc753"
+    },
+    {
+      "path": "code/Paper/figures/figure9_long_ordered_events.png",
+      "source": "code/Paper/figures/figure9_long_ordered_events.png",
+      "bytes": 200679,
+      "sha256": "4fa58403969821d3f27c4ecff25977817f5c8d20673bc81bd7de7a343ed515ed"
+    },
+    {
       "path": "code/Paper/figures/pipeline.png",
       "source": "code/Paper/figures/pipeline.png",
       "bytes": 75918,
@@ -6641,10 +7354,28 @@
       "sha256": "e37a2fa98e646bdde1c29fee8f1d19951d0abb1407590909fc82ced3783fa93d"
     },
     {
+      "path": "code/Paper/make_100m_board_figure.py",
+      "source": "code/Paper/make_100m_board_figure.py",
+      "bytes": 2431,
+      "sha256": "d186178b296f45d24bde8602bd8e4b8302f5687f1cd2600fe2815005f9bb0cda"
+    },
+    {
       "path": "code/Paper/make_ethernet_board_figure.py",
       "source": "code/Paper/make_ethernet_board_figure.py",
       "bytes": 3735,
       "sha256": "6237ee76e2933bab88b87f6b2ef23a25cf7dde915b5ab200a7c5cf7bc95f18e8"
+    },
+    {
+      "path": "code/Paper/make_long_event_figure.py",
+      "source": "code/Paper/make_long_event_figure.py",
+      "bytes": 5411,
+      "sha256": "2323e5209ad85e31c5342e8956ded2cfe13432829f08c472c6a68bbcbbdcbbfc"
+    },
+    {
+      "path": "code/Paper/make_p0_board_figure.py",
+      "source": "code/Paper/make_p0_board_figure.py",
+      "bytes": 6064,
+      "sha256": "eebf92d6563d8ddf1833e62f7998d69604e0071a5ee7639ddbeeb07d8ea494cd"
     },
     {
       "path": "code/Paper/make_paper_pipeline.py",
@@ -6659,6 +7390,12 @@
       "sha256": "56b0366d5c6e2e0ba55e91de68ae4aa5d52d7bfc518725a3b960bf69b96a7c71"
     },
     {
+      "path": "code/Paper/make_qa_contact_sheet.py",
+      "source": "code/Paper/make_qa_contact_sheet.py",
+      "bytes": 1280,
+      "sha256": "9e65e2e66b1cbe6766ea0fc7947a230f4723aa097c4b5d6a787410c8901db101"
+    },
+    {
       "path": "code/Paper/manuscript_draft_v1.md",
       "source": "code/Paper/manuscript_draft_v1.md",
       "bytes": 16758,
@@ -6667,20 +7404,20 @@
     {
       "path": "code/Paper/manuscript_full_v2.docx",
       "source": "code/Paper/manuscript_full_v2.docx",
-      "bytes": 1353465,
-      "sha256": "a8aaf6b5013bef3de0b2c5d1389a003d4d4206a7bf1694bb3d1145aa42b18ff9"
+      "bytes": 1832679,
+      "sha256": "56199b93b8e5091fcac0cc1c9d56f6dfcbd349b4c756425e14b18ff56e8e0c58"
     },
     {
       "path": "code/Paper/manuscript_full_v2.md",
       "source": "code/Paper/manuscript_full_v2.md",
-      "bytes": 37855,
-      "sha256": "c65f10027db785b48209b89aa1b9af3bffe3d26440a191d60076a1ebeb250830"
+      "bytes": 54918,
+      "sha256": "64b8be29f3a06f73424701a7fe6c6e4101cccb8b9eee205e267b5974f812d786"
     },
     {
       "path": "code/Paper/manuscript_full_v2.pdf",
       "source": "code/Paper/qa_render/manuscript_full_v2.pdf",
-      "bytes": 1552516,
-      "sha256": "1a7e415b1ee4a4f46fea27b3cbff7e04a669cd9f669fcff45ae1d2e43a3d62be"
+      "bytes": 2164819,
+      "sha256": "9981cd2e0d8c014652f40bdaab403b7ae55d1166516420e28335350f840c9e67"
     },
     {
       "path": "code/Paper/paper_data/courtship_condition_metrics.csv",
@@ -6737,16 +7474,118 @@
       "sha256": "f7dd12de465e98bf422e3ce24c704999936be4519ec6902723c3345529900a2a"
     },
     {
+      "path": "code/Paper/paper_data/ethernet_100m_vs_1g_diagnosis_20261001.md",
+      "source": "code/Paper/paper_data/ethernet_100m_vs_1g_diagnosis_20261001.md",
+      "bytes": 6472,
+      "sha256": "5cf294b3e15fd167a1d4856fd2e5c66ad765cc6a6f4826308e88351bdf2c5700"
+    },
+    {
       "path": "code/Paper/paper_data/ethernet_deployment_evidence_v1.json",
       "source": "code/Paper/paper_data/ethernet_deployment_evidence_v1.json",
       "bytes": 3770,
       "sha256": "22f408af720ea7dcf549e5b7365a00a659d1c81c3715ada852fe06a0bbdcfdcb"
     },
     {
+      "path": "code/Paper/paper_data/expanded_bit_100m_audit_v1.json",
+      "source": "code/Paper/paper_data/expanded_bit_100m_audit_v1.json",
+      "bytes": 3168,
+      "sha256": "1b61d18058c8d7ffceeaace8b799235c268fae7b1e290a7b00c08d3072416a18"
+    },
+    {
+      "path": "code/Paper/paper_data/expanded_bit_100m_board_test_20261001.md",
+      "source": "code/Paper/paper_data/expanded_bit_100m_board_test_20261001.md",
+      "bytes": 3676,
+      "sha256": "3e8c67ce9f4cc08f3547ea101f46543273ac9559c0addf71ae779d33eff53858"
+    },
+    {
+      "path": "code/Paper/paper_data/expanded_bit_100m_event_words.hex",
+      "source": "code/Paper/paper_data/expanded_bit_100m_event_words.hex",
+      "bytes": 24750,
+      "sha256": "2b3a10a3f2cf9543e40cb0e65042ddf6c1e74e060ee286e4bb146627b25f6e0d"
+    },
+    {
+      "path": "code/Paper/paper_data/expanded_bit_100m_registers.csv",
+      "source": "code/Paper/paper_data/expanded_bit_100m_registers.csv",
+      "bytes": 376,
+      "sha256": "2040a597e156d60aadc9e3d8525e05999559b771c505245e256fe2f00f4bac86"
+    },
+    {
+      "path": "code/Paper/paper_data/expanded_bit_100m_summary_words.hex",
+      "source": "code/Paper/paper_data/expanded_bit_100m_summary_words.hex",
+      "bytes": 640,
+      "sha256": "e14b299e099213a994efbe0245ab0657f7f20eaac294bbccd602e3ffd9289634"
+    },
+    {
+      "path": "code/Paper/paper_data/long_event_board_audit_v1.json",
+      "source": "code/Paper/paper_data/long_event_board_audit_v1.json",
+      "bytes": 7025,
+      "sha256": "8cb6d999147f4622ed354deac9c0647cd1c1036bc85b69dc876a664de67a462c"
+    },
+    {
+      "path": "code/Paper/paper_data/long_event_ipi_15_board_events.hex",
+      "source": "code/Paper/paper_data/long_event_ipi_15_board_events.hex",
+      "bytes": 408680,
+      "sha256": "e9073341c8d0c539c18f72b67c6990bce39d7ba0a26933905ed52282e513eae1"
+    },
+    {
+      "path": "code/Paper/paper_data/long_event_ipi_15_board_summary.hex",
+      "source": "code/Paper/paper_data/long_event_ipi_15_board_summary.hex",
+      "bytes": 344640,
+      "sha256": "1abc80bbbb72061a51aed3d3e7f2b8194cdfd38ee6b065dd9ef7ad285046973c"
+    },
+    {
+      "path": "code/Paper/paper_data/long_event_ipi_15_cpu_events.csv",
+      "source": "code/Paper/paper_data/long_event_ipi_15_cpu_events.csv",
+      "bytes": 396635,
+      "sha256": "1bac36f8cd34d42052460653ce5d4f12721784afd513d4fdbfecad4735d09ac7"
+    },
+    {
+      "path": "code/Paper/paper_data/long_event_ipi_35_board_events.hex",
+      "source": "code/Paper/paper_data/long_event_ipi_35_board_events.hex",
+      "bytes": 747650,
+      "sha256": "bd6eaa6693661548d9ea8b0ee76c84eb15e0029b07c10cb9927707a26f2c7abd"
+    },
+    {
+      "path": "code/Paper/paper_data/long_event_ipi_35_board_summary.hex",
+      "source": "code/Paper/paper_data/long_event_ipi_35_board_summary.hex",
+      "bytes": 344640,
+      "sha256": "2537fc54af0baf65bb9a3d761895dbda1dd395e2474616f61c5047407d6fb44f"
+    },
+    {
+      "path": "code/Paper/paper_data/long_event_ipi_35_cpu_events.csv",
+      "source": "code/Paper/paper_data/long_event_ipi_35_cpu_events.csv",
+      "bytes": 750876,
+      "sha256": "2f9fc4248916e66e7bd23d3ae7414a84da9a717f55e2f78c78305236b40d186e"
+    },
+    {
+      "path": "code/Paper/paper_data/long_event_ipi_65_board_events.hex",
+      "source": "code/Paper/paper_data/long_event_ipi_65_board_events.hex",
+      "bytes": 993490,
+      "sha256": "78ff5b9b513153959c7f90907dbfa61f058b515a691f6d36d65ea7bdcd945194"
+    },
+    {
+      "path": "code/Paper/paper_data/long_event_ipi_65_board_summary.hex",
+      "source": "code/Paper/paper_data/long_event_ipi_65_board_summary.hex",
+      "bytes": 344640,
+      "sha256": "330953fcb8d7fa23bd5fbe720b55845d77d2e20e8a3c407815e075d68fd537d4"
+    },
+    {
+      "path": "code/Paper/paper_data/long_event_ipi_65_cpu_events.csv",
+      "source": "code/Paper/paper_data/long_event_ipi_65_cpu_events.csv",
+      "bytes": 1029412,
+      "sha256": "05cacf352e4d031031851f54570639f3c1ed0af75d60ccc2d3fe5243136086b5"
+    },
+    {
+      "path": "code/Paper/paper_data/long_event_physical_signoff.txt",
+      "source": "code/Paper/paper_data/long_event_physical_signoff.txt",
+      "bytes": 251,
+      "sha256": "7b46ff322c06c272b603b83e0c122a7b2d04d10c8c3643967597ab5ee162adbf"
+    },
+    {
       "path": "code/Paper/paper_data/manifest.json",
       "source": "code/Paper/paper_data/manifest.json",
-      "bytes": 7738,
-      "sha256": "2fae93727f7b870e49f7b036027bb4c04b5afefb351e1c6d69e1a5ac93a28082",
+      "bytes": 14848,
+      "sha256": "ac8ed966bb9964948def2f2d66e85fe216d561eccad2d970273c058cd82e0794",
       "curation": "local host/Python path redacted for public release"
     },
     {
@@ -6754,6 +7593,18 @@
       "source": "code/Paper/paper_data/old_new_board_comparison_v1.json",
       "bytes": 4399,
       "sha256": "39a4a80055df4a845fc143f2242e79c5b29ba4d51dc3205c96d6ed2f399a6b42"
+    },
+    {
+      "path": "code/Paper/paper_data/p0_board_audit_v1.json",
+      "source": "code/Paper/paper_data/p0_board_audit_v1.json",
+      "bytes": 12674,
+      "sha256": "30900bc5d33e9c35b804237ac01136f60c4936ff09aeefee38ce4b8f095a958c"
+    },
+    {
+      "path": "code/Paper/paper_data/p0_host_link_observation_20260930.md",
+      "source": "code/Paper/paper_data/p0_host_link_observation_20260930.md",
+      "bytes": 915,
+      "sha256": "d6a748c66ed296c8a6cc6d9064105f91734b40d9adce46aa77cfcd7479dd63e4"
     },
     {
       "path": "code/Paper/paper_data/visual_board_counts.csv",
@@ -6794,14 +7645,20 @@
     {
       "path": "code/Paper/verify_paper_package.py",
       "source": "code/Paper/verify_paper_package.py",
-      "bytes": 2759,
-      "sha256": "4ca38248dfb2cbf1acc89e9009624b6f46ec834ca7fde9d61b70886e823f971a"
+      "bytes": 3516,
+      "sha256": "f956ed099d48da2e9c0ddff52c1990f2eaad9f84e67cc706ba914cc329c828b2"
+    },
+    {
+      "path": "docs/version_log.txt",
+      "source": "version_log/version_log.txt",
+      "bytes": 1275,
+      "sha256": "6015eb0cb0562575f01cbb3eaa5d1aa924513c9bb4c4460bf7d71574624ee6f1"
     },
     {
       "path": "hardware/bitstreams/README.md",
       "source": "code/others/release/BITSTREAMS.md",
-      "bytes": 3452,
-      "sha256": "09981ec1ee05cd442cd75364157d77d109a4df9bf05af642d1fc220e3a4a6ed3"
+      "bytes": 6190,
+      "sha256": "c7ca2f4b94cb07acf08f48d7bbacf631cb85d089b96f18f20411d4b3c5c5827e"
     },
     {
       "path": "hardware/bitstreams/cns2fpga_axku115_jtag_200mhz.bit",
@@ -6814,6 +7671,12 @@
       "source": "code/15_Ethernet_Runtime_Deployment/build/runtime_eth_portfilter_200mhz/cns2fpga_runtime_eth_portfilter_200mhz.bit",
       "bytes": 14623907,
       "sha256": "581354a62c8c7aeb134f300e7ea1928d8b681b996807710c61e307b33530d8f8"
+    },
+    {
+      "path": "hardware/bitstreams/cns2fpga_runtime_eth_long_events_200mhz.bit",
+      "source": "code/15_Ethernet_Runtime_Deployment/build/runtime_eth_long_events_retry_200mhz/cns2fpga_runtime_eth_long_events_retry_200mhz.bit",
+      "bytes": 15106283,
+      "sha256": "d4c9378d461147062fa5dc590cb3647d241c789b01cc6255f38da16cb21990df"
     },
     {
       "path": "hardware/bitstreams/cns2fpga_runtime_jtag_200mhz.bit",
@@ -6848,8 +7711,8 @@
     {
       "path": "scripts/validate_repository.py",
       "source": "code/others/release/validate_repository.py",
-      "bytes": 2807,
-      "sha256": "8602ab93ca106f8bb3ee42915d7229ca501f707d813d1e902be6620bdc47c94b"
+      "bytes": 3695,
+      "sha256": "49125dffb4cd34add8d0374690aed2c67ab2e5b7cb12429b8d93cc5e83a96d1b"
     },
     {
       "path": "support/data_sources.json",

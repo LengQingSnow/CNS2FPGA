@@ -56,29 +56,45 @@ with the supplied scripts for independent confirmation.
 The board-tested runtime image is
 `hardware/bitstreams/cns2fpga_runtime_eth_200mhz.bit` (SHA-256
 `581354a62c8c7aeb134f300e7ea1928d8b681b996807710c61e307b33530d8f8`).
-The public package includes the matching Step-16 RTL, MAC dependency with its
+The public package includes the matching Step-15 RTL, MAC dependency with its
 own MIT notice, constraints, UDP host loader, key routed summaries, upload
-transcript **excerpts**, and complete eight-step courtship capture words.
-PowerShell host identity/session metadata and diagnostic packet captures are
-not published. The untouched full transcripts remain in the development
-workspace. The repository manifest identifies the source of each curated file.
+transcript excerpts, the original eight-step capture, and curated P0 captures
+from two independently programmed sessions. The P0 campaign/fault logs have
+local machine paths redacted; diagnostic packet captures are not included.
+Untouched full development transcripts remain local. The repository manifest
+identifies each curated source.
+The separate expanded-event image is
+`hardware/bitstreams/cns2fpga_runtime_eth_long_events_200mhz.bit` (SHA-256
+`d4c9378d461147062fa5dc590cb3647d241c789b01cc6255f38da16cb21990df`).
+Its 131,072-entry event buffer was physically tested in one successful
+courtship campaign after a failed first-program Ethernet attempt and
+reprogramming of the same bitstream. The archived audit and complete raw
+board/CPU event data are under
+`code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/`.
 
 Read `code/15_Ethernet_Runtime_Deployment/README.md` for the board protocol.
 Its historical one-click PowerShell wrappers default to machine-specific Vivado
 and NIC settings; review and override their parameters before use. In
 particular, public release packaging does not make them safe to execute on an
 arbitrary computer or network. This UDP control port has no authentication:
-use an isolated lab link. The 100-Mbps negotiated upload is not a measured
-end-to-end throughput benchmark.
+use an isolated lab link. The initial 100-Mbps and P0 host-observed 1-Gbps
+negotiated links are separate observations, neither a line-rate benchmark.
 
 For a hardware-free comparison of the two captured `smoke8` runs, execute
 `python "code/15_Ethernet_Runtime_Deployment/scripts/build_old_new_board_comparison.py"`
 from the repository root. The script asserts identical ordered events and
 non-latency summary words and reports the per-step cycle differences. The
 updated paper is available as Markdown, DOCX and PDF under `code/Paper/`;
-its Table 5 is paired only over this eight-step input. The visual graph was
-committed and status-checked on the new bitstream but was **not** executed in
-a new-bitstream trial.
+Table 5 pairs the eight-step trial, while Table 6 reports three 4,308-step
+courtship conditions on the Ethernet bitstream. The visual image was also
+executed for 250 steps in both P0 sessions, matching 560 ordered events each.
+The complete offline P0 audit can be rerun from the repository root:
+
+```powershell
+python "code/15_Ethernet_Runtime_Deployment/scripts/audit_p0_campaign.py" --campaign-root "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930" --campaign-log "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/campaign.log" --jtag-root "code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930" --jtag-fault-root "code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930" --output "code/15_Ethernet_Runtime_Deployment/reports/p0_board_audit_recheck.json"
+```
+
+Use a new output name so the archived audit is not replaced.
 
 ## Comparison levels
 
@@ -86,11 +102,28 @@ a new-bitstream trial.
 2. Fixed CPU versus RTL tests virtual-neuron state in short simulations.
 3. Fixed CPU versus programmed FPGA tests exported events and counters.
 
-Long courtship board trials did not export every neuron event; they exported
-per-timestep population counts. The short courtship raster and visual-left
-trial did export ordered event records. The biological interpretation remains
+The original P0 long courtship trials exported per-timestep counts but not
+every neuron event. The later expanded-event runtime trial exported all
+40,868/74,765/99,349 ordered individual events and matched independent
+fixed-CPU references in the three selected conditions. The biological interpretation remains
 conditional because experimental ROI-to-MaleCNS cell mapping and stimulus
 transduction are not independently validated.
+
+### Additional measured 100-Mbps capture (V0.3)
+
+Recheck the archived capture without a board or a network connection:
+
+```powershell
+python "code/15_Ethernet_Runtime_Deployment/scripts/audit_100m_board_test.py" --output "$env:TEMP/cns2fpga_100m_recheck.json"
+```
+
+The audit verifies the bitstream hash, all eight counts, 2,475 ordered events,
+epoch/checksum, deadline/fault flags and the selected upload/link/FCS logs.
+Its canonical output is `reports/expanded_bit_100m_audit_v1.json`. The raw
+capture and selected log excerpts are in `reports/expanded_bit_100m_20261001/`.
+This is a separate short trial, not another long-event campaign. Actual
+100-Mbps operation passed; further 1-Gbps testing is deferred, with neither
+cable capability nor a specific RGMII fault confirmed.
 
 ## 中文说明：复现已记录的结果
 
@@ -140,18 +173,26 @@ ALINX AXKU115 V1.0 和 JTAG 线。已验证的 bit 文件在 `hardware/bitstream
 已上板测试的网口 bit 文件为 `hardware/bitstreams/cns2fpga_runtime_eth_200mhz.bit`
 （SHA-256 `581354a62c8c7aeb134f300e7ea1928d8b681b996807710c61e307b33530d8f8`）。
 公开包包含对应第 15 步 RTL、带独立 MIT 声明的 MAC 依赖、约束、UDP 装载器、
-选定布线摘要、上传日志**摘录**和完整的求偶 8 步采集字。不会发布 PowerShell
-主机身份与会话元数据或诊断抓包；未经修改的完整日志仍保留在开发工作区。
+选定布线摘要、上传日志摘录，以及 P0 双会话的视觉、求偶板卡采集。
+P0 试验与异常日志会去除本机路径后发布；诊断抓包不发布，未经修改的完整日志
+仍保留在开发工作区。
+另有扩展事件容量的 `hardware/bitstreams/cns2fpga_runtime_eth_long_events_200mhz.bit`
+（SHA-256 `d4c9378d461147062fa5dc590cb3647d241c789b01cc6255f38da16cb21990df`），
+将事件容量增加到 131,072。首次烧录后网口未应答，重新烧录同一文件后的一次
+成功试验，完整采集三组求偶长试验的 40,868/74,765/99,349 个有序事件，
+全部与独立定点 CPU 参考一致。原始数据和审计见第 15 步 `reports/long_event_board_20260930/`。
 
 历史一键式 PowerShell 脚本默认采用本机 Vivado 和网卡设定，运行前须按
 目标环境检查和修改，不应在任意电脑或网络上直接执行。UDP 控制口没有认证，
-只能用于隔离的实验链路；100 Mbps 是本次协商速率，不是端到端吞吐率。
+只能用于隔离的实验链路。初始试验的 100 Mbps 与 P0 期间主机观察到的
+1 Gbps 是两次不同的链路记录，都不代表达到线速吞吐率。
 
 无需板卡即可运行
 `python "code/15_Ethernet_Runtime_Deployment/scripts/build_old_new_board_comparison.py"`
 核查新旧 `smoke8` 的事件、摘要和周期差异。更新的论文以 Markdown、DOCX 和 PDF
-放在 `code/Paper/`；表 5 只比较相同的 8 步输入。视觉图在新 bit 文件上完成
-COMMIT 与 STATUS 校验，**尚未在该 bit 文件上执行新试验**。
+放在 `code/Paper/`；表 5 比较相同的 8 步输入，表 6 则记录网口新版的三组
+4,308 步求偶条件。视觉图也在 P0 双会话中各执行 250 步、匹配 560 个有序事件。
+完整 P0 离线复核命令见上文英文段落；请使用新输出文件名，避免覆盖归档结果。
 
 ### 比较层级
 
@@ -159,6 +200,15 @@ COMMIT 与 STATUS 校验，**尚未在该 bit 文件上执行新试验**。
 2. 定点 CPU 对 RTL：在短仿真中检查虚拟神经元状态。
 3. 定点 CPU 对已编程 FPGA：检查导出的事件与计数器。
 
-长时间求偶鸣唱板卡试验没有导出每个神经元的事件，仅导出了各时间步的群体计数。
-短时求偶鸣唱 raster 和视觉左侧输入试验导出了有序事件记录。由于实验成像 ROI
+原版 P0 长求偶试验仅导出逐步群体计数；扩展事件版已完整导出三组长试验的
+40,868/74,765/99,349 个有序事件，并逐条匹配独立定点 CPU。短时求偶鸣唱 raster
+和视觉左侧输入试验也导出了有序事件记录。由于实验成像 ROI
 与 MaleCNS 细胞之间的映射以及刺激转导尚未得到独立验证，生物学解释仍有条件限制。
+
+### V0.3 新增的实际 100 Mbps 采集
+
+无需连接板卡即可运行上述 `audit_100m_board_test.py` 命令，离线核对 bit 哈希、
+八步计数、2,475 个有序事件、epoch/checksum、截止时间／异常标志及上传、链路、
+FCS 日志摘录。使用临时输出文件可保留归档审计原样。原始采集位于
+`reports/expanded_bit_100m_20261001/`。此测试是新增短试验，不算另一轮长事件
+测试；实际 100 Mbps 已通过，后续 1G 测试暂缓，网线能力和具体 RGMII 故障均未证实。

@@ -1,0 +1,55 @@
+**********************
+PowerShell transcript start
+Start time: 20260930084130
+Username: REDACTED_HOST\REDACTED_USER
+RunAs User: REDACTED_HOST\REDACTED_USER
+Configuration Name: 
+Machine: REDACTED_HOST (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Users\REDACTED_USER\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell\pwsh.dll -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$log='<local-project>\code\14_Runtime Reconfigurable Deployment\build\p0_jtag_20260930_transcript.log'; Start-Transcript -LiteralPath $log; try { & '<local-project>\code\14_Runtime Reconfigurable Deployment\host\run_two_image_demo.ps1' -CaptureRoot '<local-project>\code\14_Runtime Reconfigurable Deployment\build\p0_jtag_20260930'; if (-not $?) { throw 'Two-image demonstration returned failure' } } finally { Stop-Transcript }
+Process ID: 29136
+PSVersion: 7.6.5
+PSEdition: Core
+GitCommitId: 7.6.5
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is <local-project>\code\14_Runtime Reconfigurable Deployment\build\p0_jtag_20260930_transcript.log
+Trial: <local-project>\code\12_Visual-to-Steering Circuit\outputs\visual_left_board_v0\trial
+Steps: 250, events: 0
+Capture: <local-project>\code\14_Runtime Reconfigurable Deployment\build\p0_jtag_20260930\visual
+Vivado: E:\Xilinx\Vivado\2021.2\bin\vivado.bat
+Validation passed. No hardware connection or trial was started.
+Trial: <local-project>\code\9_KU115 FPGA Validation\host\trials\smoke8
+Steps: 8, events: 0
+Capture: <local-project>\code\14_Runtime Reconfigurable Deployment\build\p0_jtag_20260930\courtship
+Vivado: E:\Xilinx\Vivado\2021.2\bin\vivado.bat
+Validation passed. No hardware connection or trial was started.
+
+Validated visual_left_hw_ir_v0: 226 neurons, 1730 synapses, checksum 6C233D31
+
+Trial: <local-project>\code\12_Visual-to-Steering Circuit\outputs\visual_left_board_v0\trial
+Steps: 250, events: 1
+Capture: <local-project>\code\14_Runtime Reconfigurable Deployment\build\p0_jtag_20260930\visual
+Vivado: E:\Xilinx\Vivado\2021.2\bin\vivado.bat
+
+JTAG capture completed.
+
+Validated courtship_song_hw_ir_v1: 6279 neurons, 350185 synapses, checksum 45AEAAAE
+
+Trial: <local-project>\code\9_KU115 FPGA Validation\host\trials\smoke8
+Steps: 8, events: 1
+Capture: <local-project>\code\14_Runtime Reconfigurable Deployment\build\p0_jtag_20260930\courtship
+Vivado: E:\Xilinx\Vivado\2021.2\bin\vivado.bat
+
+JTAG capture completed.
+
+TWO_IMAGE_BOARD_DEMO_PASS capture=<local-project>\code\14_Runtime Reconfigurable Deployment\build\p0_jtag_20260930
+**********************
+PowerShell transcript end
+End time: 20260930093449
+**********************

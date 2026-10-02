@@ -1,0 +1,4 @@
+# Selected public excerpt; complete original log retained locally.
+# Original SHA-256: B759E3EDBE80CA1786E19DA53FE481FF6C9EE510EBD25757BB0BEB1E1602C836
+AB_SPEED_BEFORE mode=Enable setting=6 actual=100 Mbps
+AB_SPEED_AFTER mode=Enable setting=4 status=Up actual=100 Mbps

@@ -6,6 +6,7 @@ param(
     [string]$CaptureDir,
 
     [switch]$CaptureEvents,
+    [ValidateSet(65536, 131072)][int]$EventCapacity = 65536,
     [string]$TargetPattern = '*',
     [string]$DevicePattern = '*xcku115*',
     [string]$AxisPattern = '*',
@@ -63,7 +64,7 @@ if ([string]::IsNullOrWhiteSpace($TargetPattern) -or
 
 $captureBit = if ($CaptureEvents.IsPresent) { '1' } else { '0' }
 Write-Host "Trial: $trial"
-Write-Host "Steps: $($metadata.timesteps), events: $captureBit"
+Write-Host "Steps: $($metadata.timesteps), events: $captureBit, capacity: $EventCapacity"
 Write-Host "Capture: $capture"
 Write-Host "Vivado: $vivado"
 if ($ValidateOnly) {
@@ -75,7 +76,7 @@ $oldLicense = $env:XILINXD_LICENSE_FILE
 try {
     $env:XILINXD_LICENSE_FILE = $license
     & $vivado -mode batch -nolog -nojournal -notrace -source $tcl -tclargs `
-        $trial $capture $captureBit $metadata.network_neurons $TargetPattern $DevicePattern $AxisPattern
+        $trial $capture $captureBit $metadata.network_neurons $TargetPattern $DevicePattern $AxisPattern $EventCapacity
     if ($LASTEXITCODE -ne 0) {
         throw "Vivado JTAG trial failed with exit code $LASTEXITCODE"
     }

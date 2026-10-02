@@ -14,15 +14,20 @@ external instrumentation if energy efficiency is claimed.
 
 ## Full manuscript package
 
-`manuscript_full_v2.md` is the complete editable text with seven embedded figure
-references, five main tables, figure captions, methods, results, limitations,
+`manuscript_full_v2.md` is the complete editable V0.3 text with ten embedded figure
+references, seven main tables, figure captions, methods, results, limitations,
 references, and a supplementary data index. `manuscript_full_v2.docx` is the
 editable Word version. `CNS2FPGA_paper_package_v2.zip` contains Markdown, Word,
 and the print PDF in `qa_render/`,
-the seven cited PNG figures, fifteen earlier CSV/JSON result files, the
-machine-checked Ethernet deployment evidence JSON and paired old/new board
-comparison JSON, and a
-SHA-256 manifest tracing every asset to its project source.
+the ten cited PNG figures, fifteen earlier CSV/JSON result files, the
+machine-checked Ethernet deployment and paired old/new board comparison JSON,
+the P0 repeated-board audit JSON and host link observation, and a
+full ordered-event long-trial audit with raw board events, summaries, and
+independent CPU reference events for IPI 15/35/65 ms, and a
+SHA-256 manifest tracing every asset to its project source. The 2 October
+revision also includes the independently audited measured-100-Mbps trial,
+three raw capture files and two receive-path reports (36 data snapshots
+in total). Figure 10 shows its eight-step count and deadline agreement.
 The ZIP is a generated local duplicate and is not committed; the public
 repository includes the DOCX, Markdown, PDF, figures, and data separately.
 
@@ -34,6 +39,11 @@ python 'code\Paper\make_paper_pipeline.py'
 python 'code\15_Ethernet_Runtime_Deployment\scripts\build_deployment_evidence.py'
 python 'code\15_Ethernet_Runtime_Deployment\scripts\build_old_new_board_comparison.py'
 python 'code\Paper\make_ethernet_board_figure.py'
+python 'code\15_Ethernet_Runtime_Deployment\scripts\audit_p0_campaign.py' --campaign-root '<completed-campaign>' --campaign-log '<campaign-log>' --jtag-root '<JTAG-capture>' --jtag-fault-root '<JTAG-fault-capture>' --output 'code\15_Ethernet_Runtime_Deployment\reports\p0_board_audit_v1.json'
+python 'code\Paper\make_p0_board_figure.py'
+python 'code\Paper\make_long_event_figure.py'
+python 'code\15_Ethernet_Runtime_Deployment\scripts\audit_100m_board_test.py'
+python 'code\Paper\make_100m_board_figure.py'
 python 'code\Paper\build_paper_package.py'
 python 'code\Paper\build_paper_pdf.py'
 python 'code\Paper\build_paper_package.py'
@@ -42,12 +52,35 @@ python 'code\Paper\build_paper_package.py'
 The paper reports engineering fidelity, not validated biological behavior.
 The experimental pC1 imaging ROI remains without a unique confirmed MaleCNS
 cell mapping; visual input is synthetic synchronous LC10a current.
-The new single-bitstream result validates two UDP image commits/status checks
-and an eight-step courtship execution. The visual 250-step and long courtship
-results are from earlier dedicated/JTAG implementations, not the Ethernet bit.
+The initial single-bitstream result validated two UDP image commits/status
+checks and an eight-step courtship execution. The 30 September P0 campaign
+then repeated a complete visual 250-step trial, courtship smoke8, and three
+4,308-step courtship conditions in two independently programmed Ethernet
+sessions. It also verified interrupted/invalid-image rejection and recovery.
+The earlier dedicated/JTAG results remain separate comparators.
 Table 5 compares the dedicated and Ethernet-loaded courtship bitstreams under
 the same eight-step stimulus: their 2,475 event words are byte-identical, but
 every step's core cycle count differs. The comparison does not claim that
-longer trials or internal state are identical.
+all longer individual events or internal state are identical. The P0 long
+trials instead establish fixed-CPU group-count equality and exact per-step
+non-cycle summaries against the dedicated board for three stated stimuli.
+The later expanded-event bitstream captured all 40,868, 74,765, and 99,349
+ordered events in these conditions. Every event matched the independent
+fixed-CPU reference; all 30,156 per-step group and synapse-operation fields
+per condition matched the earlier dedicated capture. This is one successful
+Ethernet campaign after a failed first programming/UDP attempt and
+reprogramming of the same bitstream, not two successful campaigns. Its audit
+is `../15_Ethernet_Runtime_Deployment/reports/long_event_board_audit_v1.json`.
+The same expanded-event bitstream subsequently passed one programmed session
+at a measured 100 Mbps: 20/20 STATUS probes, full graph loading and 2,475 exact
+ordered events over eight steps, with zero bad FCS. This is not a second
+long-trial campaign. The previous 1-Gbps receive failures remain recorded;
+cable capability has not been independently verified and further gigabit
+testing is deferred. No root cause or gigabit reliability is claimed.
+
+同一扩展事件 bit 文件在实际 100 Mbps 下完成一次烧录会话，20/20 次 STATUS、
+完整求偶镜像加载和八步 2,475 个有序事件均通过，坏 FCS 为零。此结果单独记录，
+不算第二次长试验。此前千兆接收异常及网线能力仍待核查，1G 测试暂缓。
+
 The PDF is generated directly from the same Markdown as the DOCX because the
 bundled Windows runtime does not include LibreOffice for DOCX-to-PDF rendering.

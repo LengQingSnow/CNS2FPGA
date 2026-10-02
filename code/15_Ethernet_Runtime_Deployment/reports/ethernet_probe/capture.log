@@ -1,0 +1,6 @@
+# Public excerpt of the corrected independent visual STATUS probe.
+# PowerShell host/user/session metadata and packet-capture paths are omitted.
+LINK_SPEED=100 Mbps
+ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=0 image_status=0x00000001 attempt=1 rtt_ms=2.99
+UDP_STATUS_EXIT=0
+TEMPORARY_IP_REMOVED

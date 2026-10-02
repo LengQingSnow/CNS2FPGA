@@ -1,0 +1,13 @@
+# Public excerpt of the 2026-09-28 courtship-image upload transcript.
+# PowerShell host/user/session metadata and machine-local paths are omitted.
+# The original, unmodified transcript remains in the development workspace.
+PREFLIGHT neurons=6279 synapses=350185 words=738044 packets=11538 checksum=45AEAAAE
+LINK_SPEED=100 Mbps
+PREFLIGHT neurons=6279 synapses=350185 words=738044 packets=11538 checksum=45AEAAAE
+UPLOAD words=8192/738044 region=neuron_param
+UPLOAD words=16384/738044 region=neuron_param
+UPLOAD words=24576/738044 region=neuron_param
+ETHERNET_IMAGE_COMMIT_PASS words=738044 checksum=45AEAAAE
+ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=0 image_status=0x00000001 attempt=1 rtt_ms=0.26
+COURTSHIP_UDP_BOARD_TEST_PASS
+TEMPORARY_IP_REMOVED

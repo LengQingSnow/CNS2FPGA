@@ -25,9 +25,14 @@ __pycache__/
 !code/7_Minimum FPGA Architecture/sim/transcript.log
 !code/7_Minimum FPGA Architecture/sim/full_image_load.log
 !code/8_RTL Bit-Exact Co-Simulation/sim/bit_exact_transcript.log
-!code/16_Ethernet_Runtime_Deployment/reports/visual_upload/visual_upload_20260928_072611.log
-!code/16_Ethernet_Runtime_Deployment/reports/courtship_upload/courtship_upload_20260928_072927.log
-!code/16_Ethernet_Runtime_Deployment/reports/ethernet_probe/capture.log
+!code/15_Ethernet_Runtime_Deployment/reports/visual_upload/visual_upload_20260928_072611.log
+!code/15_Ethernet_Runtime_Deployment/reports/courtship_upload/courtship_upload_20260928_072927.log
+!code/15_Ethernet_Runtime_Deployment/reports/ethernet_probe/capture.log
+!code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930/interrupt.log
+!code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930/reject.log
+!code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930/transcript.log
+!code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/campaign.log
+!code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/logs/*.log
 *.wlf
 *.qdb
 *.qpg

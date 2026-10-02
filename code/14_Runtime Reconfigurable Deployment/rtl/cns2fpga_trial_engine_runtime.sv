@@ -4,7 +4,7 @@
 // capacity; the host loads a validated image before any trial may start.
 module cns2fpga_trial_engine #(
     parameter integer MAX_STEPS = 8192,
-    parameter integer MAX_EVENTS = 65536,
+    parameter integer MAX_EVENTS = 131072,
     parameter integer MAX_NEURONS = 6279,
     parameter integer MAX_SYNAPSES = 350185
 ) (
@@ -391,7 +391,7 @@ module cns2fpga_trial_engine #(
                 read_pending_kind <= 3'd0;
             end
         end else if (bus_rd_en) begin
-            if (bus_rd_addr >= 20'h60000 && bus_rd_addr < 20'ha0000) begin
+            if (bus_rd_addr >= 20'h60000 && bus_rd_addr < 20'he0000) begin
                 event_read <= event_mem[(bus_rd_addr - 20'h60000) >> 2];
                 read_pending_kind <= 3'd2;
             end else if (bus_rd_addr >= 20'h20000 && bus_rd_addr < 20'h60000) begin
@@ -431,6 +431,7 @@ module cns2fpga_trial_engine #(
                     20'h00064: bus_rd_data <= {13'd0, active_synapses};
                     20'h00068: bus_rd_data <= MAX_NEURONS;
                     20'h0006c: bus_rd_data <= MAX_SYNAPSES;
+                    20'h00070: bus_rd_data <= MAX_EVENTS;
                     default: bus_rd_data <= 32'd0;
                 endcase
                 bus_rd_valid <= 1'b1;
@@ -522,7 +523,7 @@ module cns2fpga_trial_engine #(
                         if (spike_group_flags[4]) pmp2_spikes <= pmp2_spikes + 1'b1;
                         if (capture_events) begin
                             if (event_count < MAX_EVENTS) begin
-                                event_mem[event_count[15:0]] <= {3'b0, spike_neuron};
+                                event_mem[event_count[16:0]] <= {3'b0, spike_neuron};
                                 event_count <= event_count + 1'b1;
                             end else
                                 event_overflow <= 1'b1;

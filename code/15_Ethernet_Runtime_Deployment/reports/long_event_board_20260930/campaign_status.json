@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "phase": "COMPLETE",
+  "bit_sha256": "D4C9378D461147062FA5DC590CB3647D241C789B01CC6255F38DA16CB21990DF",
+  "programming_skipped": true,
+  "completed_ipi_ms": [
+    15,
+    35,
+    65
+  ],
+  "error": null
+}

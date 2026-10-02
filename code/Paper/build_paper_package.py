@@ -34,6 +34,9 @@ FIGURES = {
     "figure5_quantization.png": CODE / "11_Courtship-Song Robustness" / "outputs" / "courtship_song_robustness_v2" / "quantization_envelope.png",
     "figure6_lateralized_baseline.png": CODE / "13_Baselines and Ablations" / "outputs" / "baseline_v0" / "lateralized_baseline.png",
     "figure7_ethernet_reconfiguration.png": HERE / "figures" / "figure7_ethernet_reconfiguration.png",
+    "figure8_p0_repeated_board_validation.png": HERE / "figures" / "figure8_p0_repeated_board_validation.png",
+    "figure9_long_ordered_events.png": HERE / "figures" / "figure9_long_ordered_events.png",
+    "figure10_100m_board_validation.png": HERE / "figures" / "figure10_100m_board_validation.png",
 }
 
 DATA = {
@@ -54,7 +57,21 @@ DATA = {
     "visual_width_ablation.csv": CODE / "13_Baselines and Ablations" / "outputs" / "baseline_v0" / "width_ablation.csv",
     "ethernet_deployment_evidence_v1.json": CODE / "15_Ethernet_Runtime_Deployment" / "reports" / "deployment_evidence_v1.json",
     "old_new_board_comparison_v1.json": CODE / "15_Ethernet_Runtime_Deployment" / "reports" / "old_new_board_comparison_v1.json",
+    "p0_board_audit_v1.json": CODE / "15_Ethernet_Runtime_Deployment" / "reports" / "p0_board_audit_v1.json",
+    "p0_host_link_observation_20260930.md": CODE / "15_Ethernet_Runtime_Deployment" / "reports" / "p0_host_link_observation_20260930.md",
+    "long_event_board_audit_v1.json": CODE / "15_Ethernet_Runtime_Deployment" / "reports" / "long_event_board_audit_v1.json",
+    "long_event_physical_signoff.txt": CODE / "15_Ethernet_Runtime_Deployment" / "reports" / "long_event_board_20260930" / "physical_signoff.txt",
+    "expanded_bit_100m_audit_v1.json": CODE / "15_Ethernet_Runtime_Deployment" / "reports" / "expanded_bit_100m_audit_v1.json",
+    "expanded_bit_100m_board_test_20261001.md": CODE / "15_Ethernet_Runtime_Deployment" / "reports" / "expanded_bit_100m_board_test_20261001.md",
+    "ethernet_100m_vs_1g_diagnosis_20261001.md": CODE / "15_Ethernet_Runtime_Deployment" / "reports" / "ethernet_100m_vs_1g_diagnosis_20261001.md",
 }
+for name in ("registers.csv", "summary_words.hex", "event_words.hex"):
+    DATA[f"expanded_bit_100m_{name}"] = CODE / "15_Ethernet_Runtime_Deployment" / "reports" / "expanded_bit_100m_20261001" / "board" / name
+for ipi in (15, 35, 65):
+    source = CODE / "15_Ethernet_Runtime_Deployment" / "reports" / "long_event_board_20260930" / f"ipi_{ipi}"
+    DATA[f"long_event_ipi_{ipi}_board_events.hex"] = source / "board" / "event_words.hex"
+    DATA[f"long_event_ipi_{ipi}_board_summary.hex"] = source / "board" / "summary_words.hex"
+    DATA[f"long_event_ipi_{ipi}_cpu_events.csv"] = source / "cpu" / "expected_events.csv"
 
 ALT_TEXT = {
     "figure1_pipeline.png": "Flowchart from MaleCNS source through extraction and compilation to CPU and FPGA verification",
@@ -64,6 +81,9 @@ ALT_TEXT = {
     "figure5_quantization.png": "Bar chart showing only the narrowest fixed-point profile exceeds the five percent response-error criterion",
     "figure6_lateralized_baseline.png": "Left and right unilateral LC10a input produce ipsilateral DNa02 spikes in the extracted graph but none in the simplified graph",
     "figure7_ethernet_reconfiguration.png": "One AXKU115 bitstream accepts visual and courtship graph images over UDP; the courtship smoke8 FPGA counts exactly overlap fixed CPU at every step",
+    "figure8_p0_repeated_board_validation.png": "Two independent AXKU115 sessions show exact visual event output, three long courtship population responses equal to fixed CPU, and host-inclusive upload times",
+    "figure9_long_ordered_events.png": "Three binned courtship event rasters and cumulative event traces; all 214982 raw ordered board events matched fixed CPU, with two trials exceeding the old 65536-event buffer",
+    "figure10_100m_board_validation.png": "Eight-step courtship counts coincide between fixed CPU and AXKU115 at a measured 100-Mbps link, and each core step meets the 200000-cycle deadline; all 2475 ordered events match and bad FCS is zero",
 }
 
 

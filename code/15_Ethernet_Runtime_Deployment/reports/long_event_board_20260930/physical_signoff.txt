@@ -1,0 +1,12 @@
+board=ALINX_AXKU115_V1.0
+network=KSZ9031RNX_RGMII_1000BASE_T
+part=xcku115-flva1517-2-i
+core_clock_mhz=200.000
+wns_ns=0.008
+timing_met=1
+whs_ns=0.030
+hold_met=1
+unrouted_nets=0
+partially_routed_nets=0
+drc_error_count=0
+drc_critical_count=0

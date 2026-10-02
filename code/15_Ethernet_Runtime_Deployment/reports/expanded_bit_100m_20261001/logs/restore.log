@@ -1,0 +1,6 @@
+# Selected public excerpt; complete original log retained locally.
+# Original SHA-256: 12D600C098FE34C195A8227C818255A6B463EDD516BF8F8E47E36F934DC982B9
+ETHERNET_ADDRESS_RESTORED 192.168.0.3/24
+AB_SPEED_BEFORE mode=Restore setting=4 actual=100 Mbps
+AB_SPEED_AFTER mode=Restore setting=6 status=Up actual=100 Mbps
+AB_HOST_RESTORED setting=6 ip=192.168.0.3/24 actual_link=100 Mbps

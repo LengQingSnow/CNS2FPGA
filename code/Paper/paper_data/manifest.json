@@ -52,6 +52,27 @@
       "bytes": 119440
     },
     {
+      "category": "figure",
+      "paper_path": "figures/figure8_p0_repeated_board_validation.png",
+      "source_path": "code/Paper/figures/figure8_p0_repeated_board_validation.png",
+      "sha256": "627eeb7501006a244ba633a8387d3fd4596c1e461c7560e68fb5680ba59cc753",
+      "bytes": 145357
+    },
+    {
+      "category": "figure",
+      "paper_path": "figures/figure9_long_ordered_events.png",
+      "source_path": "code/Paper/figures/figure9_long_ordered_events.png",
+      "sha256": "4fa58403969821d3f27c4ecff25977817f5c8d20673bc81bd7de7a343ed515ed",
+      "bytes": 200679
+    },
+    {
+      "category": "figure",
+      "paper_path": "figures/figure10_100m_board_validation.png",
+      "source_path": "code/Paper/figures/figure10_100m_board_validation.png",
+      "sha256": "3f9233a7be637356b511977671be1b3a27551572e4ead508a4fd584bf32111d3",
+      "bytes": 172441
+    },
+    {
       "category": "data",
       "paper_path": "paper_data/courtship_response_comparison.csv",
       "source_path": "code/10_Complete Courtship-Song Circuit Experiment/outputs/courtship_song_v1/response_comparison.csv",
@@ -169,6 +190,139 @@
       "source_path": "code/15_Ethernet_Runtime_Deployment/reports/old_new_board_comparison_v1.json",
       "sha256": "39a4a80055df4a845fc143f2242e79c5b29ba4d51dc3205c96d6ed2f399a6b42",
       "bytes": 4399
+    },
+    {
+      "category": "data",
+      "paper_path": "paper_data/p0_board_audit_v1.json",
+      "source_path": "code/15_Ethernet_Runtime_Deployment/reports/p0_board_audit_v1.json",
+      "sha256": "30900bc5d33e9c35b804237ac01136f60c4936ff09aeefee38ce4b8f095a958c",
+      "bytes": 12674
+    },
+    {
+      "category": "data",
+      "paper_path": "paper_data/p0_host_link_observation_20260930.md",
+      "source_path": "code/15_Ethernet_Runtime_Deployment/reports/p0_host_link_observation_20260930.md",
+      "sha256": "d6a748c66ed296c8a6cc6d9064105f91734b40d9adce46aa77cfcd7479dd63e4",
+      "bytes": 915
+    },
+    {
+      "category": "data",
+      "paper_path": "paper_data/long_event_board_audit_v1.json",
+      "source_path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_audit_v1.json",
+      "sha256": "8cb6d999147f4622ed354deac9c0647cd1c1036bc85b69dc876a664de67a462c",
+      "bytes": 7025
+    },
+    {
+      "category": "data",
+      "paper_path": "paper_data/long_event_physical_signoff.txt",
+      "source_path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/physical_signoff.txt",
+      "sha256": "7b46ff322c06c272b603b83e0c122a7b2d04d10c8c3643967597ab5ee162adbf",
+      "bytes": 251
+    },
+    {
+      "category": "data",
+      "paper_path": "paper_data/expanded_bit_100m_audit_v1.json",
+      "source_path": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_audit_v1.json",
+      "sha256": "1b61d18058c8d7ffceeaace8b799235c268fae7b1e290a7b00c08d3072416a18",
+      "bytes": 3168
+    },
+    {
+      "category": "data",
+      "paper_path": "paper_data/expanded_bit_100m_board_test_20261001.md",
+      "source_path": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_board_test_20261001.md",
+      "sha256": "3e8c67ce9f4cc08f3547ea101f46543273ac9559c0addf71ae779d33eff53858",
+      "bytes": 3676
+    },
+    {
+      "category": "data",
+      "paper_path": "paper_data/ethernet_100m_vs_1g_diagnosis_20261001.md",
+      "source_path": "code/15_Ethernet_Runtime_Deployment/reports/ethernet_100m_vs_1g_diagnosis_20261001.md",
+      "sha256": "5cf294b3e15fd167a1d4856fd2e5c66ad765cc6a6f4826308e88351bdf2c5700",
+      "bytes": 6472
+    },
+    {
+      "category": "data",
+      "paper_path": "paper_data/expanded_bit_100m_registers.csv",
+      "source_path": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/board/registers.csv",
+      "sha256": "2040a597e156d60aadc9e3d8525e05999559b771c505245e256fe2f00f4bac86",
+      "bytes": 376
+    },
+    {
+      "category": "data",
+      "paper_path": "paper_data/expanded_bit_100m_summary_words.hex",
+      "source_path": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/board/summary_words.hex",
+      "sha256": "e14b299e099213a994efbe0245ab0657f7f20eaac294bbccd602e3ffd9289634",
+      "bytes": 640
+    },
+    {
+      "category": "data",
+      "paper_path": "paper_data/expanded_bit_100m_event_words.hex",
+      "source_path": "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/board/event_words.hex",
+      "sha256": "2b3a10a3f2cf9543e40cb0e65042ddf6c1e74e060ee286e4bb146627b25f6e0d",
+      "bytes": 24750
+    },
+    {
+      "category": "data",
+      "paper_path": "paper_data/long_event_ipi_15_board_events.hex",
+      "source_path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_15/board/event_words.hex",
+      "sha256": "e9073341c8d0c539c18f72b67c6990bce39d7ba0a26933905ed52282e513eae1",
+      "bytes": 408680
+    },
+    {
+      "category": "data",
+      "paper_path": "paper_data/long_event_ipi_15_board_summary.hex",
+      "source_path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_15/board/summary_words.hex",
+      "sha256": "1abc80bbbb72061a51aed3d3e7f2b8194cdfd38ee6b065dd9ef7ad285046973c",
+      "bytes": 344640
+    },
+    {
+      "category": "data",
+      "paper_path": "paper_data/long_event_ipi_15_cpu_events.csv",
+      "source_path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_15/cpu/expected_events.csv",
+      "sha256": "1bac36f8cd34d42052460653ce5d4f12721784afd513d4fdbfecad4735d09ac7",
+      "bytes": 396635
+    },
+    {
+      "category": "data",
+      "paper_path": "paper_data/long_event_ipi_35_board_events.hex",
+      "source_path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_35/board/event_words.hex",
+      "sha256": "bd6eaa6693661548d9ea8b0ee76c84eb15e0029b07c10cb9927707a26f2c7abd",
+      "bytes": 747650
+    },
+    {
+      "category": "data",
+      "paper_path": "paper_data/long_event_ipi_35_board_summary.hex",
+      "source_path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_35/board/summary_words.hex",
+      "sha256": "2537fc54af0baf65bb9a3d761895dbda1dd395e2474616f61c5047407d6fb44f",
+      "bytes": 344640
+    },
+    {
+      "category": "data",
+      "paper_path": "paper_data/long_event_ipi_35_cpu_events.csv",
+      "source_path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_35/cpu/expected_events.csv",
+      "sha256": "2f9fc4248916e66e7bd23d3ae7414a84da9a717f55e2f78c78305236b40d186e",
+      "bytes": 750876
+    },
+    {
+      "category": "data",
+      "paper_path": "paper_data/long_event_ipi_65_board_events.hex",
+      "source_path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_65/board/event_words.hex",
+      "sha256": "78ff5b9b513153959c7f90907dbfa61f058b515a691f6d36d65ea7bdcd945194",
+      "bytes": 993490
+    },
+    {
+      "category": "data",
+      "paper_path": "paper_data/long_event_ipi_65_board_summary.hex",
+      "source_path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_65/board/summary_words.hex",
+      "sha256": "330953fcb8d7fa23bd5fbe720b55845d77d2e20e8a3c407815e075d68fd537d4",
+      "bytes": 344640
+    },
+    {
+      "category": "data",
+      "paper_path": "paper_data/long_event_ipi_65_cpu_events.csv",
+      "source_path": "code/15_Ethernet_Runtime_Deployment/reports/long_event_board_20260930/ipi_65/cpu/expected_events.csv",
+      "sha256": "05cacf352e4d031031851f54570639f3c1ed0af75d60ccc2d3fe5243136086b5",
+      "bytes": 1029412
     }
   ]
 }

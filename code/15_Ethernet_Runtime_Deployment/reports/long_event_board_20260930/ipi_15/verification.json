@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "steps": 4308,
+  "ordered_events_compared": 40868,
+  "exact_event_mismatches": 0,
+  "group_and_synops_fields_compared": 30156,
+  "image_epoch": 1,
+  "image_checksum": "45AEAAAE",
+  "event_capacity": 131072,
+  "max_latency_cycles": 199699,
+  "missed_steps": 0,
+  "fault_flags": 0,
+  "cycle_different_steps_from_dedicated": 642,
+  "max_absolute_cycle_delta": 636,
+  "event_words_sha256": "E9073341C8D0C539C18F72B67C6990BCE39D7BA0A26933905ED52282E513EAE1",
+  "summary_words_sha256": "1ABC80BBBB72061A51AED3D3E7F2B8194CDFD38EE6B065DD9EF7AD285046973C",
+  "reference_events_sha256": "1BAC36F8CD34D42052460653CE5D4F12721784AFD513D4FDBFECAD4735D09AC7"
+}

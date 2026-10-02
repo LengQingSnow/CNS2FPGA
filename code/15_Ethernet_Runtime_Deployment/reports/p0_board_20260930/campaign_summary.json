@@ -1,0 +1,46 @@
+[
+  {
+    "session": 1,
+    "bit_sha256": "581354A62C8C7AEB134F300E7EA1928D8B681B996807710C61E307B33530D8F8",
+    "program_operations": 1,
+    "visual_upload_seconds": 0.173,
+    "courtship_upload_seconds": 1.36,
+    "visual_steps": 250,
+    "courtship_smoke_steps": 8,
+    "courtship_long_ipi_ms": [
+      15,
+      35,
+      65
+    ],
+    "courtship_long_steps_each": 4308,
+    "recovery_visual_steps": 250,
+    "image_epochs": [
+      1,
+      2,
+      3
+    ],
+    "status": "PASS"
+  },
+  {
+    "session": 2,
+    "bit_sha256": "581354A62C8C7AEB134F300E7EA1928D8B681B996807710C61E307B33530D8F8",
+    "program_operations": 1,
+    "visual_upload_seconds": 0.135,
+    "courtship_upload_seconds": 1.848,
+    "visual_steps": 250,
+    "courtship_smoke_steps": 8,
+    "courtship_long_ipi_ms": [
+      15,
+      35,
+      65
+    ],
+    "courtship_long_steps_each": 4308,
+    "recovery_visual_steps": 250,
+    "image_epochs": [
+      1,
+      2,
+      3
+    ],
+    "status": "PASS"
+  }
+]

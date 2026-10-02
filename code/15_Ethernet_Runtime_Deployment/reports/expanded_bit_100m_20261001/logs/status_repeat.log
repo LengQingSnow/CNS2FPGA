@@ -1,0 +1,23 @@
+# Selected public excerpt; complete original log retained locally.
+# Original SHA-256: BB5E5C80C4E507BEA905A2285225C9E37D38EEF4EB23D062013AE8D9C8701B86
+ITER=1 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=1.16
+ITER=2 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=1.17
+ITER=3 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=1.76
+ITER=4 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=1.13
+ITER=5 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=0.94
+ITER=6 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=1.77
+ITER=7 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=1.13
+ITER=8 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=0.32
+ITER=9 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=0.33
+ITER=10 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=0.32
+ITER=11 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=0.24
+ITER=12 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=0.29
+ITER=13 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=0.31
+ITER=14 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=0.31
+ITER=15 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=0.32
+ITER=16 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=0.25
+ITER=17 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=0.35
+ITER=18 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=0.33
+ITER=19 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=0.35
+ITER=20 ETHERNET_STATUS_PASS peer=192.168.1.128:4321 ack_status=4 image_status=0x00000000 attempt=1 rtt_ms=0.30
+PASS_COUNT=20/20

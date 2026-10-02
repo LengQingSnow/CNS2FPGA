@@ -1,0 +1,452 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date              : Thu Oct  1 11:40:09 2026
+| Host              : REDACTED_HOST running 64-bit major release  (build 9200)
+| Command           : report_timing -from [get_ports {{phy_rxd[*]} phy_rx_ctl}] -delay_type max -max_paths 10 -path_type full_clock_expanded -file E:/Workspace/CNS2FPGA/code/15_Ethernet_Runtime_Deployment/reports/rx_input_timing_old_20261001_max.rpt
+| Design            : cns2fpga_axku115_eth_top
+| Device            : xcku115-flva1517
+| Speed File        : -2  PRODUCTION 1.26 12-04-2018
+| Temperature Grade : I
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             2.632ns  (required time - arrival time)
+  Source:                 phy_rx_ctl
+                            (input port clocked by phy_rx_clk  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            ethernet/raw_rx_ctl_seen_reg/D
+                            (rising edge-triggered cell FDCE clocked by phy_rx_clk  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             phy_rx_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (phy_rx_clk rise@8.000ns - phy_rx_clk fall@4.000ns)
+  Data Path Delay:        5.237ns  (logic 3.485ns (66.546%)  route 1.752ns (33.454%))
+  Logic Levels:           4  (IBUFCTRL=1 IDELAYE3=1 INBUF=1 LUT2=1)
+  Input Delay:            -1.000ns
+  Clock Path Skew:        2.842ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.842ns = ( 10.842 - 8.000 ) 
+    Source Clock Delay      (SCD):    0.000ns = ( 4.000 - 4.000 ) 
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Destination): 1.812ns (routing 0.313ns, distribution 1.499ns)
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock phy_rx_clk fall edge)
+                                                                    4.000     4.000 f  
+                                       input delay                 -1.000     3.000    
+                  AT37                                              0.000     3.000 r  phy_rx_ctl (IN)
+                                       net (fo=0)                   0.000     3.000    phy_rx_ctl_IBUF_inst/I
+    Routing       AT37                                                              r  phy_rx_ctl_IBUF_inst/INBUF_INST/PAD
+    Routing       AT37                 INBUF (Prop_INBUF_HPIOB_PAD_O)
+                                                                    0.529     3.529 r  phy_rx_ctl_IBUF_inst/INBUF_INST/O
+                                       net (fo=1, routed)           0.089     3.618    phy_rx_ctl_IBUF_inst/OUT
+    Routing       AT37                                                              r  phy_rx_ctl_IBUF_inst/IBUFCTRL_INST/I
+    Routing       AT37                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                                    0.000     3.618 r  phy_rx_ctl_IBUF_inst/IBUFCTRL_INST/O
+                                       net (fo=1, routed)           0.158     3.776    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/d[0]
+    Routing       BITSLICE_RX_TX_X0Y74                                              r  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/IDELAYE3/IDATAIN
+    Routing       BITSLICE_RX_TX_X0Y74 IDELAYE3 (Prop_IDELAY_BITSLICE_COMPONENT_RX_TX_IDATAIN_DATAOUT)
+                                                                    2.762     6.538 r  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/IDELAYE3/DATAOUT
+                                       net (fo=2, routed)           1.470     8.008    ethernet/lopt
+    Routing       SLICE_X35Y90                                                      r  ethernet/raw_rx_ctl_seen_i_1/I1
+    Routing       SLICE_X35Y90         LUT2 (Prop_D5LUT_SLICEM_I1_O)
+                                                                    0.194     8.202 r  ethernet/raw_rx_ctl_seen_i_1/O
+                                       net (fo=1, routed)           0.035     8.237    ethernet/raw_rx_ctl_seen_reg0
+    Routing       SLICE_X35Y90         FDCE                                         r  ethernet/raw_rx_ctl_seen_reg/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock phy_rx_clk rise edge)
+                                                                    8.000     8.000 r  
+                  AR37                                              0.000     8.000 r  phy_rx_clk (IN)
+                                       net (fo=0)                   0.000     8.000    phy_rx_clk_IBUF_inst/I
+                  AR37                                                              r  phy_rx_clk_IBUF_inst/INBUF_INST/PAD
+                  AR37                 INBUF (Prop_INBUF_HPIOB_PAD_O)
+                                                                    0.256     8.256 r  phy_rx_clk_IBUF_inst/INBUF_INST/O
+                                       net (fo=1, routed)           0.050     8.306    phy_rx_clk_IBUF_inst/OUT
+                  AR37                                                              r  phy_rx_clk_IBUF_inst/IBUFCTRL_INST/I
+                  AR37                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                                    0.000     8.306 r  phy_rx_clk_IBUF_inst/IBUFCTRL_INST/O
+                                       net (fo=2, routed)           0.649     8.955    phy_rx_clk_IBUF
+                  BUFGCE_X0Y47                                                      r  phy_rx_clk_IBUF_BUFGCE_collapsed_inst/I
+                  BUFGCE_X0Y47         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                                    0.075     9.030 r  phy_rx_clk_IBUF_BUFGCE_collapsed_inst/O
+                  X0Y1 (CLOCK_ROOT)    net (fo=233, routed)         1.812    10.842    ethernet/phy_rx_clk
+                  SLICE_X35Y90         FDCE                                         r  ethernet/raw_rx_ctl_seen_reg/C
+                                       clock pessimism              0.000    10.842    
+                                       clock uncertainty           -0.035    10.806    
+                  SLICE_X35Y90         FDCE (Setup_DFF2_SLICEM_C_D)
+                                                                    0.063    10.869    ethernet/raw_rx_ctl_seen_reg
+  ---------------------------------------------------------------------------------
+                                       required time                         10.869    
+                                       arrival time                          -8.237    
+  ---------------------------------------------------------------------------------
+                                       slack                                  2.632    
+
+Slack (MET) :             4.060ns  (required time - arrival time)
+  Source:                 phy_rx_ctl
+                            (input port clocked by phy_rx_clk  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[0].iddr_inst/D
+                            (falling edge-triggered cell ISERDESE3 clocked by phy_rx_clk  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             phy_rx_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (phy_rx_clk fall@4.000ns - phy_rx_clk rise@0.000ns)
+  Data Path Delay:        3.538ns  (logic 3.291ns (93.019%)  route 0.247ns (6.981%))
+  Logic Levels:           3  (IBUFCTRL=1 IDELAYE3=1 INBUF=1)
+  Input Delay:            -1.000ns
+  Clock Path Skew:        2.505ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.505ns = ( 6.505 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Destination): 1.475ns (routing 0.313ns, distribution 1.162ns)
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock phy_rx_clk rise edge)
+                                                                    0.000     0.000 r  
+                                       input delay                 -1.000    -1.000    
+                  AT37                                              0.000    -1.000 r  phy_rx_ctl (IN)
+                                       net (fo=0)                   0.000    -1.000    phy_rx_ctl_IBUF_inst/I
+    Routing       AT37                                                              r  phy_rx_ctl_IBUF_inst/INBUF_INST/PAD
+    Routing       AT37                 INBUF (Prop_INBUF_HPIOB_PAD_O)
+                                                                    0.529    -0.471 r  phy_rx_ctl_IBUF_inst/INBUF_INST/O
+                                       net (fo=1, routed)           0.089    -0.382    phy_rx_ctl_IBUF_inst/OUT
+    Routing       AT37                                                              r  phy_rx_ctl_IBUF_inst/IBUFCTRL_INST/I
+    Routing       AT37                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                                    0.000    -0.382 r  phy_rx_ctl_IBUF_inst/IBUFCTRL_INST/O
+                                       net (fo=1, routed)           0.158    -0.224    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/d[0]
+    Routing       BITSLICE_RX_TX_X0Y74                                              r  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/IDELAYE3/IDATAIN
+    Routing       BITSLICE_RX_TX_X0Y74 IDELAYE3 (Prop_IDELAY_BITSLICE_COMPONENT_RX_TX_IDATAIN_DATAOUT)
+                                                                    2.762     2.538 r  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/IDELAYE3/DATAOUT
+                                       net (fo=2, routed)           0.000     2.538    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/xlnx_opt_
+    Routing       BITSLICE_RX_TX_X0Y74 ISERDESE3                                    r  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[0].iddr_inst/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock phy_rx_clk fall edge)
+                                                                    4.000     4.000 f  
+                  AR37                                              0.000     4.000 f  phy_rx_clk (IN)
+                                       net (fo=0)                   0.000     4.000    phy_rx_clk_IBUF_inst/I
+                  AR37                                                              f  phy_rx_clk_IBUF_inst/INBUF_INST/PAD
+                  AR37                 INBUF (Prop_INBUF_HPIOB_PAD_O)
+                                                                    0.256     4.256 f  phy_rx_clk_IBUF_inst/INBUF_INST/O
+                                       net (fo=1, routed)           0.050     4.306    phy_rx_clk_IBUF_inst/OUT
+                  AR37                                                              f  phy_rx_clk_IBUF_inst/IBUFCTRL_INST/I
+                  AR37                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                                    0.000     4.306 f  phy_rx_clk_IBUF_inst/IBUFCTRL_INST/O
+                                       net (fo=2, routed)           0.649     4.955    phy_rx_clk_IBUF
+                  BUFGCE_X0Y47                                                      f  phy_rx_clk_IBUF_BUFGCE_collapsed_inst/I
+                  BUFGCE_X0Y47         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                                    0.075     5.030 f  phy_rx_clk_IBUF_BUFGCE_collapsed_inst/O
+                  X0Y1 (CLOCK_ROOT)    net (fo=233, routed)         1.475     6.505    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/clk
+                  BITSLICE_RX_TX_X0Y74 ISERDESE3                                    f  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[0].iddr_inst/CLK
+                                       clock pessimism              0.000     6.505    
+                                       clock uncertainty           -0.035     6.469    
+                  BITSLICE_RX_TX_X0Y74 ISERDESE3 (Setup_ISERDES_BITSLICE_COMPONENT_RX_TX_CLK_D)
+                                                                    0.129     6.598    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[0].iddr_inst
+  ---------------------------------------------------------------------------------
+                                       required time                          6.598    
+                                       arrival time                          -2.538    
+  ---------------------------------------------------------------------------------
+                                       slack                                  4.060    
+
+Slack (MET) :             4.081ns  (required time - arrival time)
+  Source:                 phy_rxd[1]
+                            (input port clocked by phy_rx_clk  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[2].iddr_inst/D
+                            (rising edge-triggered cell ISERDESE3 clocked by phy_rx_clk  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             phy_rx_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (phy_rx_clk rise@8.000ns - phy_rx_clk fall@4.000ns)
+  Data Path Delay:        3.511ns  (logic 3.256ns (92.737%)  route 0.255ns (7.263%))
+  Logic Levels:           3  (IBUFCTRL=1 IDELAYE3=1 INBUF=1)
+  Input Delay:            -1.000ns
+  Clock Path Skew:        2.495ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.495ns = ( 10.495 - 8.000 ) 
+    Source Clock Delay      (SCD):    0.000ns = ( 4.000 - 4.000 ) 
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Destination): 1.465ns (routing 0.313ns, distribution 1.152ns)
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock phy_rx_clk fall edge)
+                                                                    4.000     4.000 f  
+                                       input delay                 -1.000     3.000    
+                  AK37                                              0.000     3.000 r  phy_rxd[1] (IN)
+                                       net (fo=0)                   0.000     3.000    phy_rxd_IBUF[1]_inst/I
+    Routing       AK37                                                              r  phy_rxd_IBUF[1]_inst/INBUF_INST/PAD
+    Routing       AK37                 INBUF (Prop_INBUF_HPIOB_PAD_O)
+                                                                    0.492     3.492 r  phy_rxd_IBUF[1]_inst/INBUF_INST/O
+                                       net (fo=1, routed)           0.089     3.581    phy_rxd_IBUF[1]_inst/OUT
+    Routing       AK37                                                              r  phy_rxd_IBUF[1]_inst/IBUFCTRL_INST/I
+    Routing       AK37                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                                    0.000     3.581 r  phy_rxd_IBUF[1]_inst/IBUFCTRL_INST/O
+                                       net (fo=1, routed)           0.166     3.747    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/d[2]
+    Routing       BITSLICE_RX_TX_X0Y97                                              r  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/IDELAYE3_2/IDATAIN
+    Routing       BITSLICE_RX_TX_X0Y97 IDELAYE3 (Prop_IDELAY_BITSLICE_COMPONENT_RX_TX_IDATAIN_DATAOUT)
+                                                                    2.764     6.511 r  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/IDELAYE3_2/DATAOUT
+                                       net (fo=1, routed)           0.000     6.511    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/xlnx_opt__2
+    Routing       BITSLICE_RX_TX_X0Y97 ISERDESE3                                    r  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[2].iddr_inst/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock phy_rx_clk rise edge)
+                                                                    8.000     8.000 r  
+                  AR37                                              0.000     8.000 r  phy_rx_clk (IN)
+                                       net (fo=0)                   0.000     8.000    phy_rx_clk_IBUF_inst/I
+                  AR37                                                              r  phy_rx_clk_IBUF_inst/INBUF_INST/PAD
+                  AR37                 INBUF (Prop_INBUF_HPIOB_PAD_O)
+                                                                    0.256     8.256 r  phy_rx_clk_IBUF_inst/INBUF_INST/O
+                                       net (fo=1, routed)           0.050     8.306    phy_rx_clk_IBUF_inst/OUT
+                  AR37                                                              r  phy_rx_clk_IBUF_inst/IBUFCTRL_INST/I
+                  AR37                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                                    0.000     8.306 r  phy_rx_clk_IBUF_inst/IBUFCTRL_INST/O
+                                       net (fo=2, routed)           0.649     8.955    phy_rx_clk_IBUF
+                  BUFGCE_X0Y47                                                      r  phy_rx_clk_IBUF_BUFGCE_collapsed_inst/I
+                  BUFGCE_X0Y47         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                                    0.075     9.030 r  phy_rx_clk_IBUF_BUFGCE_collapsed_inst/O
+                  X0Y1 (CLOCK_ROOT)    net (fo=233, routed)         1.465    10.495    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/clk
+                  BITSLICE_RX_TX_X0Y97 ISERDESE3                                    f  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[2].iddr_inst/CLK_B  (IS_INVERTED)
+                                       clock pessimism              0.000    10.495    
+                                       clock uncertainty           -0.035    10.459    
+                  BITSLICE_RX_TX_X0Y97 ISERDESE3 (Setup_ISERDES_BITSLICE_COMPONENT_RX_TX_CLK_B_D)
+                                                                    0.133    10.592    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[2].iddr_inst
+  ---------------------------------------------------------------------------------
+                                       required time                         10.592    
+                                       arrival time                          -6.511    
+  ---------------------------------------------------------------------------------
+                                       slack                                  4.081    
+
+Slack (MET) :             4.084ns  (required time - arrival time)
+  Source:                 phy_rxd[2]
+                            (input port clocked by phy_rx_clk  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[3].iddr_inst/D
+                            (falling edge-triggered cell ISERDESE3 clocked by phy_rx_clk  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             phy_rx_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (phy_rx_clk fall@4.000ns - phy_rx_clk rise@0.000ns)
+  Data Path Delay:        3.507ns  (logic 3.259ns (92.928%)  route 0.248ns (7.072%))
+  Logic Levels:           3  (IBUFCTRL=1 IDELAYE3=1 INBUF=1)
+  Input Delay:            -1.000ns
+  Clock Path Skew:        2.500ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.500ns = ( 6.500 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Destination): 1.470ns (routing 0.313ns, distribution 1.157ns)
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock phy_rx_clk rise edge)
+                                                                    0.000     0.000 r  
+                                       input delay                 -1.000    -1.000    
+                  AK38                                              0.000    -1.000 r  phy_rxd[2] (IN)
+                                       net (fo=0)                   0.000    -1.000    phy_rxd_IBUF[2]_inst/I
+    Routing       AK38                                                              r  phy_rxd_IBUF[2]_inst/INBUF_INST/PAD
+    Routing       AK38                 INBUF (Prop_INBUF_HPIOB_PAD_O)
+                                                                    0.500    -0.500 r  phy_rxd_IBUF[2]_inst/INBUF_INST/O
+                                       net (fo=1, routed)           0.089    -0.411    phy_rxd_IBUF[2]_inst/OUT
+    Routing       AK38                                                              r  phy_rxd_IBUF[2]_inst/IBUFCTRL_INST/I
+    Routing       AK38                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                                    0.000    -0.411 r  phy_rxd_IBUF[2]_inst/IBUFCTRL_INST/O
+                                       net (fo=1, routed)           0.159    -0.252    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/d[3]
+    Routing       BITSLICE_RX_TX_X0Y98                                              r  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/IDELAYE3_3/IDATAIN
+    Routing       BITSLICE_RX_TX_X0Y98 IDELAYE3 (Prop_IDELAY_BITSLICE_COMPONENT_RX_TX_IDATAIN_DATAOUT)
+                                                                    2.759     2.507 r  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/IDELAYE3_3/DATAOUT
+                                       net (fo=1, routed)           0.000     2.507    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/xlnx_opt__3
+    Routing       BITSLICE_RX_TX_X0Y98 ISERDESE3                                    r  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[3].iddr_inst/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock phy_rx_clk fall edge)
+                                                                    4.000     4.000 f  
+                  AR37                                              0.000     4.000 f  phy_rx_clk (IN)
+                                       net (fo=0)                   0.000     4.000    phy_rx_clk_IBUF_inst/I
+                  AR37                                                              f  phy_rx_clk_IBUF_inst/INBUF_INST/PAD
+                  AR37                 INBUF (Prop_INBUF_HPIOB_PAD_O)
+                                                                    0.256     4.256 f  phy_rx_clk_IBUF_inst/INBUF_INST/O
+                                       net (fo=1, routed)           0.050     4.306    phy_rx_clk_IBUF_inst/OUT
+                  AR37                                                              f  phy_rx_clk_IBUF_inst/IBUFCTRL_INST/I
+                  AR37                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                                    0.000     4.306 f  phy_rx_clk_IBUF_inst/IBUFCTRL_INST/O
+                                       net (fo=2, routed)           0.649     4.955    phy_rx_clk_IBUF
+                  BUFGCE_X0Y47                                                      f  phy_rx_clk_IBUF_BUFGCE_collapsed_inst/I
+                  BUFGCE_X0Y47         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                                    0.075     5.030 f  phy_rx_clk_IBUF_BUFGCE_collapsed_inst/O
+                  X0Y1 (CLOCK_ROOT)    net (fo=233, routed)         1.470     6.500    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/clk
+                  BITSLICE_RX_TX_X0Y98 ISERDESE3                                    f  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[3].iddr_inst/CLK
+                                       clock pessimism              0.000     6.500    
+                                       clock uncertainty           -0.035     6.464    
+                  BITSLICE_RX_TX_X0Y98 ISERDESE3 (Setup_ISERDES_BITSLICE_COMPONENT_RX_TX_CLK_D)
+                                                                    0.127     6.591    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[3].iddr_inst
+  ---------------------------------------------------------------------------------
+                                       required time                          6.591    
+                                       arrival time                          -2.507    
+  ---------------------------------------------------------------------------------
+                                       slack                                  4.084    
+
+Slack (MET) :             4.087ns  (required time - arrival time)
+  Source:                 phy_rxd[3]
+                            (input port clocked by phy_rx_clk  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[4].iddr_inst/D
+                            (rising edge-triggered cell ISERDESE3 clocked by phy_rx_clk  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             phy_rx_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (phy_rx_clk rise@8.000ns - phy_rx_clk fall@4.000ns)
+  Data Path Delay:        3.504ns  (logic 3.262ns (93.095%)  route 0.242ns (6.906%))
+  Logic Levels:           3  (IBUFCTRL=1 IDELAYE3=1 INBUF=1)
+  Input Delay:            -1.000ns
+  Clock Path Skew:        2.503ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.503ns = ( 10.503 - 8.000 ) 
+    Source Clock Delay      (SCD):    0.000ns = ( 4.000 - 4.000 ) 
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Destination): 1.473ns (routing 0.313ns, distribution 1.160ns)
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock phy_rx_clk fall edge)
+                                                                    4.000     4.000 f  
+                                       input delay                 -1.000     3.000    
+                  AJ39                                              0.000     3.000 r  phy_rxd[3] (IN)
+                                       net (fo=0)                   0.000     3.000    phy_rxd_IBUF[3]_inst/I
+    Routing       AJ39                                                              r  phy_rxd_IBUF[3]_inst/INBUF_INST/PAD
+    Routing       AJ39                 INBUF (Prop_INBUF_HPIOB_PAD_O)
+                                                                    0.500     3.500 r  phy_rxd_IBUF[3]_inst/INBUF_INST/O
+                                       net (fo=1, routed)           0.089     3.589    phy_rxd_IBUF[3]_inst/OUT
+    Routing       AJ39                                                              r  phy_rxd_IBUF[3]_inst/IBUFCTRL_INST/I
+    Routing       AJ39                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                                    0.000     3.589 r  phy_rxd_IBUF[3]_inst/IBUFCTRL_INST/O
+                                       net (fo=1, routed)           0.153     3.742    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/d[4]
+    Routing       BITSLICE_RX_TX_X0Y103
+                                                                                    r  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/IDELAYE3_4/IDATAIN
+    Routing       BITSLICE_RX_TX_X0Y103
+                                       IDELAYE3 (Prop_IDELAY_BITSLICE_COMPONENT_RX_TX_IDATAIN_DATAOUT)
+                                                                    2.762     6.504 r  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/IDELAYE3_4/DATAOUT
+                                       net (fo=1, routed)           0.000     6.504    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/xlnx_opt__4
+    Routing       BITSLICE_RX_TX_X0Y103
+                                       ISERDESE3                                    r  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[4].iddr_inst/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock phy_rx_clk rise edge)
+                                                                    8.000     8.000 r  
+                  AR37                                              0.000     8.000 r  phy_rx_clk (IN)
+                                       net (fo=0)                   0.000     8.000    phy_rx_clk_IBUF_inst/I
+                  AR37                                                              r  phy_rx_clk_IBUF_inst/INBUF_INST/PAD
+                  AR37                 INBUF (Prop_INBUF_HPIOB_PAD_O)
+                                                                    0.256     8.256 r  phy_rx_clk_IBUF_inst/INBUF_INST/O
+                                       net (fo=1, routed)           0.050     8.306    phy_rx_clk_IBUF_inst/OUT
+                  AR37                                                              r  phy_rx_clk_IBUF_inst/IBUFCTRL_INST/I
+                  AR37                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                                    0.000     8.306 r  phy_rx_clk_IBUF_inst/IBUFCTRL_INST/O
+                                       net (fo=2, routed)           0.649     8.955    phy_rx_clk_IBUF
+                  BUFGCE_X0Y47                                                      r  phy_rx_clk_IBUF_BUFGCE_collapsed_inst/I
+                  BUFGCE_X0Y47         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                                    0.075     9.030 r  phy_rx_clk_IBUF_BUFGCE_collapsed_inst/O
+                  X0Y1 (CLOCK_ROOT)    net (fo=233, routed)         1.473    10.503    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/clk
+                  BITSLICE_RX_TX_X0Y103
+                                       ISERDESE3                                    f  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[4].iddr_inst/CLK_B  (IS_INVERTED)
+                                       clock pessimism              0.000    10.503    
+                                       clock uncertainty           -0.035    10.467    
+                  BITSLICE_RX_TX_X0Y103
+                                       ISERDESE3 (Setup_ISERDES_BITSLICE_COMPONENT_RX_TX_CLK_B_D)
+                                                                    0.124    10.591    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[4].iddr_inst
+  ---------------------------------------------------------------------------------
+                                       required time                         10.591    
+                                       arrival time                          -6.504    
+  ---------------------------------------------------------------------------------
+                                       slack                                  4.087    
+
+Slack (MET) :             4.098ns  (required time - arrival time)
+  Source:                 phy_rxd[0]
+                            (input port clocked by phy_rx_clk  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[1].iddr_inst/D
+                            (rising edge-triggered cell ISERDESE3 clocked by phy_rx_clk  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             phy_rx_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (phy_rx_clk rise@8.000ns - phy_rx_clk fall@4.000ns)
+  Data Path Delay:        3.510ns  (logic 3.268ns (93.105%)  route 0.242ns (6.895%))
+  Logic Levels:           3  (IBUFCTRL=1 IDELAYE3=1 INBUF=1)
+  Input Delay:            -1.000ns
+  Clock Path Skew:        2.519ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.519ns = ( 10.519 - 8.000 ) 
+    Source Clock Delay      (SCD):    0.000ns = ( 4.000 - 4.000 ) 
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Destination): 1.489ns (routing 0.313ns, distribution 1.176ns)
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock phy_rx_clk fall edge)
+                                                                    4.000     4.000 f  
+                                       input delay                 -1.000     3.000    
+                  AP35                                              0.000     3.000 r  phy_rxd[0] (IN)
+                                       net (fo=0)                   0.000     3.000    phy_rxd_IBUF[0]_inst/I
+    Routing       AP35                                                              r  phy_rxd_IBUF[0]_inst/INBUF_INST/PAD
+    Routing       AP35                 INBUF (Prop_INBUF_HPIOB_PAD_O)
+                                                                    0.505     3.505 r  phy_rxd_IBUF[0]_inst/INBUF_INST/O
+                                       net (fo=1, routed)           0.089     3.594    phy_rxd_IBUF[0]_inst/OUT
+    Routing       AP35                                                              r  phy_rxd_IBUF[0]_inst/IBUFCTRL_INST/I
+    Routing       AP35                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                                    0.000     3.594 r  phy_rxd_IBUF[0]_inst/IBUFCTRL_INST/O
+                                       net (fo=1, routed)           0.153     3.747    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/d[1]
+    Routing       BITSLICE_RX_TX_X0Y90                                              r  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/IDELAYE3_1/IDATAIN
+    Routing       BITSLICE_RX_TX_X0Y90 IDELAYE3 (Prop_IDELAY_BITSLICE_COMPONENT_RX_TX_IDATAIN_DATAOUT)
+                                                                    2.762     6.510 r  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/IDELAYE3_1/DATAOUT
+                                       net (fo=1, routed)           0.000     6.510    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/xlnx_opt__1
+    Routing       BITSLICE_RX_TX_X0Y90 ISERDESE3                                    r  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[1].iddr_inst/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock phy_rx_clk rise edge)
+                                                                    8.000     8.000 r  
+                  AR37                                              0.000     8.000 r  phy_rx_clk (IN)
+                                       net (fo=0)                   0.000     8.000    phy_rx_clk_IBUF_inst/I
+                  AR37                                                              r  phy_rx_clk_IBUF_inst/INBUF_INST/PAD
+                  AR37                 INBUF (Prop_INBUF_HPIOB_PAD_O)
+                                                                    0.256     8.256 r  phy_rx_clk_IBUF_inst/INBUF_INST/O
+                                       net (fo=1, routed)           0.050     8.306    phy_rx_clk_IBUF_inst/OUT
+                  AR37                                                              r  phy_rx_clk_IBUF_inst/IBUFCTRL_INST/I
+                  AR37                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                                    0.000     8.306 r  phy_rx_clk_IBUF_inst/IBUFCTRL_INST/O
+                                       net (fo=2, routed)           0.649     8.955    phy_rx_clk_IBUF
+                  BUFGCE_X0Y47                                                      r  phy_rx_clk_IBUF_BUFGCE_collapsed_inst/I
+                  BUFGCE_X0Y47         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                                    0.075     9.030 r  phy_rx_clk_IBUF_BUFGCE_collapsed_inst/O
+                  X0Y1 (CLOCK_ROOT)    net (fo=233, routed)         1.489    10.519    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/clk
+                  BITSLICE_RX_TX_X0Y90 ISERDESE3                                    f  ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[1].iddr_inst/CLK_B  (IS_INVERTED)
+                                       clock pessimism              0.000    10.519    
+                                       clock uncertainty           -0.035    10.483    
+                  BITSLICE_RX_TX_X0Y90 ISERDESE3 (Setup_ISERDES_BITSLICE_COMPONENT_RX_TX_CLK_B_D)
+                                                                    0.124    10.607    ethernet/eth_mac_inst/eth_mac_1g_rgmii_inst/rgmii_phy_if_inst/rx_ssio_ddr_inst/data_iddr_inst/iddr[1].iddr_inst
+  ---------------------------------------------------------------------------------
+                                       required time                         10.607    
+                                       arrival time                          -6.510    
+  ---------------------------------------------------------------------------------
+                                       slack                                  4.098    
+
+
+
+

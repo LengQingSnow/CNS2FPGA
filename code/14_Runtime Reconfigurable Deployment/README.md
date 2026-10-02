@@ -80,11 +80,11 @@ Run Vivado `-mode batch -source scripts/build_runtime_bitstream.tcl`. Set
 unless timing, hold, routing and DRC pass. The board sequence is: program the
 **new runtime bitstream once**, load image A with `host/load_runtime_image.ps1`,
 run a trial, load image B with the same script **without reprogramming**, and
-run a second trial. The board experiment is pending; simulation alone is not
-proof of physical deployment. On 2026-09-27, Vivado 2021.2 completed the
+run a second trial. This physical sequence passed on 30 September 2026;
+simulation alone was not used as proof. On 2026-09-27, Vivado 2021.2 completed the
 200 MHz build with setup WNS +0.043 ns, hold WHS +0.030 ns, zero unrouted
 nets, and zero DRC errors. See `docs/implementation_status.md` for the
-bitstream hash and the remaining physical validation gate.
+bitstream hash and original implementation signoff.
 
 Example board commands from this directory (only after the full build passes):
 
@@ -106,6 +106,24 @@ For manual control, another valid sequence is:
 The trial wrapper checks that the loaded image's neuron count matches the
 stimulus metadata and captures image epoch/checksum/counts with the results.
 Changing images **does not** call `program_hw_devices` or write a new bit file.
+
+## P0 physical result (30 September 2026)
+
+The runtime JTAG bitstream SHA-256 is
+`95F9B50EE03804DDC211828A9FBD3B3171B45BC3FFB79F9F3B2407F0D3190E52`.
+With one programming operation, the visual image reached epoch 1 and matched
+560 ordered fixed-CPU events over 250 steps; the courtship image reached epoch 2
+and matched 2,475 ordered events over eight steps. An interrupted partial
+upload was not committed. Incomplete COMMIT and an invalid postsynaptic index
+were rejected; a valid visual reload reached epoch 4 and again matched the
+full 250-step trial. Raw captures are under `build/p0_jtag_20260930/` and
+`build/p0_jtag_recovery_logged_20260930/`; the curated public copy is under
+`reports/p0_board_20260930/`. The offline cross-transport audit is
+`../15_Ethernet_Runtime_Deployment/reports/p0_board_audit_v1.json`.
+
+JTAG 运行时 bit 文件只烧录一次，视觉与求偶镜像随后顺序装载且事件分别匹配
+560 和 2,475 个；中断、不完整提交及非法索引被拒绝，重新装载有效视觉镜像后
+250 步试验再次通过。该测试验证已注入的异常，不等于穷举所有故障。
 
 The courtship image requires 738,044 single-word graph writes. AXI-Lite/JTAG
 upload may be slow; this is a functional first version, not a high-throughput

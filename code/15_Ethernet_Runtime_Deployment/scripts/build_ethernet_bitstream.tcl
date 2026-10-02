@@ -30,7 +30,7 @@ if {[file exists $ip_xci]} {
 generate_target all [get_ips cns2fpga_jtag_axi]
 synth_ip [get_ips cns2fpga_jtag_axi]
 
-set previous_root [file normalize [file join $root_dir .. 15_Runtime\ Reconfigurable\ Deployment]]
+set previous_root [file normalize [file join $root_dir .. 14_Runtime\ Reconfigurable\ Deployment]]
 set rtl_core [file join $previous_root rtl cns2fpga_core_sync_runtime.sv]
 set rtl_engine [file join $previous_root rtl cns2fpga_trial_engine_runtime.sv]
 set rtl_axi [file join $previous_root rtl cns2fpga_axi_lite_slave.sv]

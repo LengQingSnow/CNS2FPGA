@@ -1,0 +1,49 @@
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+CRITICAL WARNING: [Common 17-741] No write access right to the local Tcl store at 'C'. XilinxTclStore is reverted to the installation area. If you want to use local Tcl Store, please change the access right and relaunch Vivado.
+WARNING: [Common 17-1509] Migration of commands.paini file failed with error : boost::filesystem::directory_iterator::construct
+source {<local-project>\code\14_Runtime Reconfigurable Deployment\host\test_jtag_fault_recovery.tcl} -notrace
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.2
+  **** Build date : Oct 19 2021 at 03:13:30
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.2.0
+  ****** Build date   : Sep 28 2021-05:44:20
+    **** Build number : 2021.2.1632779060
+      ** Copyright 2017-2026 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1603.543 ; gain = 0.000
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/REDACTED_JTAG_SERIAL
+INFO: [Labtools 27-2302] Device xcku115 (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtoolstcl 44-481] READ DATA is: 434e5352
+INFO: [Labtoolstcl 44-481] READ DATA is: 00000003
+INFO: [Labtoolstcl 44-481] READ DATA is: 00000001
+INFO: [Labtoolstcl 44-481] WRITE DATA is: 00000001
+INFO: [Labtoolstcl 44-481] WRITE DATA is: 000000E2
+INFO: [Labtoolstcl 44-481] WRITE DATA is: 000006C2
+INFO: [Labtoolstcl 44-481] WRITE DATA is: 00000000
+INFO: [Labtoolstcl 44-481] WRITE DATA is: 00000000
+INFO: [Labtoolstcl 44-481] READ DATA is: 00000002
+INFO: [Labtoolstcl 44-481] READ DATA is: 00000001
+INFO: [Labtoolstcl 44-481] READ DATA is: 00000003
+P0_JTAG_INTERRUPTED_PASS status=00000002 epoch=3 words=1
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/REDACTED_JTAG_SERIAL
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 30 09:38:10 2026...

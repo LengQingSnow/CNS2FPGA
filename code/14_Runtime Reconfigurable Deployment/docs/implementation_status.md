@@ -1,6 +1,7 @@
 # 200 MHz runtime bitstream status / 200 MHz 运行时 bit 文件状态
 
-Date: 2026-09-27. Part: `xcku115-flva1517-2-i`. Vivado: 2021.2.
+Build date: 2026-09-27; physical validation: 2026-09-30.
+Part: `xcku115-flva1517-2-i`. Vivado: 2021.2.
 
 One FPGA image contains the fixed `safe_wf24` compute architecture and graph
 storage. The graph is written after configuration through JTAG AXI-Lite; the
@@ -32,19 +33,20 @@ Vivado reported 85 non-error DRC warnings: input/output pipelining advice,
 LUT equation term checks, BRAM write-width and write-first collision advisories,
 and one no-routable-load warning. These are not a replacement for board testing.
 
-## Physical validation gate
+## Physical validation gate — PASS
 
-The board test has **not** run. At 2026-09-27 01:44 and again at 01:59 local
-time, Vivado `hw_server` reported no JTAG targets after refresh; Windows did not show a
-present Digilent/FTDI/JTAG USB device. No FPGA was programmed. After power and
-USB-JTAG are restored, the next sequence is:
+The earlier 27 September attempt was blocked because no Digilent JTAG device
+was visible. The connected AXKU115 was subsequently detected and tested on
+30 September. The signed-off bitstream was programmed once; visual image
+epoch 1 produced 560 exact ordered events in 250 steps, then courtship image
+epoch 2 produced 2,475 exact ordered events in eight steps without another
+FPGA programming operation. A transport interruption, incomplete COMMIT and
+invalid postsynaptic index were rejected. A valid visual reload at epoch 4
+again passed 250 steps with 560 exact events. Both captures and fault logs
+are preserved under `build/p0_jtag_20260930/` and
+`build/p0_jtag_recovery_logged_20260930/`; the cross-transport audit is under
+`../15_Ethernet_Runtime_Deployment/reports/p0_board_audit_v1.json`.
 
-1. Probe and uniquely identify the AXKU115 JTAG target.
-2. Program this signed-off bitstream once.
-3. Upload the courtship image, run/capture its smoke trial.
-4. Upload the visual-left image without calling `program_hw_devices` again,
-   run/capture its trial, and compare both captures with references.
-
-Successful simulation and timing closure establish an offline engineering
-candidate. The no-recompile/no-reprogram deployment claim remains physically
-unverified until the two-image board sequence passes.
+This closes the physical two-image and tested-recovery gate for this bitstream.
+It does not establish arbitrary graph compatibility, independent-board
+reproduction, or biological model validity.

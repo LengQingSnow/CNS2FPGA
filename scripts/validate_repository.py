@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 from pathlib import Path
 
 
@@ -18,7 +19,15 @@ ALLOWED_LOGS = {
     "code/15_Ethernet_Runtime_Deployment/reports/visual_upload/visual_upload_20260928_072611.log",
     "code/15_Ethernet_Runtime_Deployment/reports/courtship_upload/courtship_upload_20260928_072927.log",
     "code/15_Ethernet_Runtime_Deployment/reports/ethernet_probe/capture.log",
+    "code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930/interrupt.log",
+    "code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930/reject.log",
+    "code/14_Runtime Reconfigurable Deployment/reports/p0_board_20260930/transcript.log",
+    "code/15_Ethernet_Runtime_Deployment/reports/p0_board_20260930/campaign.log",
 }
+ALLOWED_LOGS.update(
+    "code/15_Ethernet_Runtime_Deployment/reports/expanded_bit_100m_20261001/logs/" + name
+    for name in ("status_repeat.log", "upload.log", "ready.log", "diag.log", "link.log", "restore.log", "program.log")
+)
 
 
 def sha256(path: Path) -> str:
@@ -57,6 +66,10 @@ def main() -> None:
         path = Path(relative)
         if path.name == "transcript" or FORBIDDEN_PARTS.intersection(path.parts) or path.suffix.lower() in {".feather", ".dcp", ".jou"} or (path.suffix.lower() == ".log" and relative not in ALLOWED_LOGS):
             raise RuntimeError(f"Generated/raw file in package: {relative}")
+        if relative in ALLOWED_LOGS:
+            log = (ROOT / path).read_text(encoding="utf-8", errors="replace")
+            if re.search(r"LAPTOP-[A-Za-z0-9]+|CodexSandboxOffline|C:\\Users\\[0-9]+|210512180081", log):
+                raise RuntimeError(f"Unredacted host identity in {relative}")
     print(f"validated {len(records)} files; {sum(item['bytes'] for item in records):,} bytes")
 
 
